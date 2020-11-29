@@ -1,0 +1,77 @@
+.content {
+  @apply text-gray-700;
+  @apply leading-7;
+
+  ul {
+    @apply list-disc;
+    @apply mx-8;
+  }
+
+  ol {
+    @apply list-decimal;
+    @apply mx-6;
+  }
+
+  a {
+    @apply text-purple;
+
+    &:hover {
+      @apply underline;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    @apply my-5;
+  }
+
+  h1 {
+    @apply text-4xl;
+    @apply text-black;
+  }
+
+  h2 {
+    @apply text-3xl;
+    @apply text-black;
+    @apply leading-10;
+  }
+
+  h3 {
+    @apply text-2xl;
+    @apply text-black;
+  }
+
+  h4 {
+    @apply text-xl;
+    @apply text-black;
+  }
+
+  h5 {
+    @apply text-lg;
+    @apply text-black;
+  }
+
+  h6 {
+    @apply text-black;
+  }
+
+  .anchor {
+    @apply flex;
+    @apply items-center;
+    @apply justify-end;
+    @apply h-full;
+
+    svg {
+      visibility: visible;
+      @apply fill-current;
+      @apply text-purple;
+      height: 55%;
+      max-width: 25px;
+    }
+  }
+}

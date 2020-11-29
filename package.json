@@ -5,20 +5,34 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/free-brands-svg-icons": "^5.15.1",
+    "@fortawesome/free-regular-svg-icons": "^5.15.1",
+    "@fortawesome/free-solid-svg-icons": "^5.15.1",
+    "@fortawesome/react-fontawesome": "^0.1.13",
+    "autoprefixer": "^9.8.6",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.5.0",
     "gatsby-plugin-manifest": "^2.6.1",
     "gatsby-plugin-offline": "^3.4.0",
     "gatsby-plugin-react-helmet": "^3.4.0",
-    "gatsby-plugin-sharp": "^2.8.0",
+    "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-source-filesystem": "^2.5.0",
+    "gatsby-transformer-remark": "^2.11.1",
     "gatsby-transformer-sharp": "^2.6.0",
+    "postcss": "^7.0.35",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.1"
   },
   "devDependencies": {
+    "gatsby-plugin-purgecss": "^5.0.0",
+    "gatsby-plugin-sass": "^2.6.0",
+    "gatsby-plugin-sharp": "^2.9.1",
+    "gatsby-remark-autolink-headers": "^2.6.0",
+    "gatsby-remark-images": "^3.6.0",
     "prettier": "2.1.2"
   },
   "keywords": [
