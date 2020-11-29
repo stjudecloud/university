@@ -1,0 +1,38 @@
+.contents-sidebar {
+  li {
+    @apply pt-2;
+    @apply pl-7;
+    @apply text-coolGray-600;
+
+    &:not(.title):hover {
+      @apply font-semibold;
+      @apply cursor-pointer;
+    }
+
+    &.title {
+      @apply pt-6;
+      @apply px-0;
+      @apply uppercase;
+      @apply font-semibold;
+      @apply cursor-default;
+      @apply select-none;
+
+      &:first-of-type {
+        @apply pt-0;
+      }
+    }
+  }
+
+  .active {
+    @apply text-purple;
+    @apply font-semibold;
+
+    &:before {
+      @apply absolute;
+      font-size: 2rem;
+      line-height: 22.5px;
+      translate: -150%;
+      content: "•";
+    }
+  }
+}
