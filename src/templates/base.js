@@ -13,7 +13,7 @@ import Navbar from "../components/navbar"
 import ContentsSidebarLeft from "../components/contentsbar"
 import DetailsSidebarRight from "../components/detailsbar"
 
-const BaseLayout = ({ children }) => {
+const BaseLayout = ({ children, fileAbsolutePath }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -28,7 +28,7 @@ const BaseLayout = ({ children }) => {
     <div className="bg-white text-gray-500 antialiased js-focus-visible">
       <Navbar />
       <ContentsSidebarLeft />
-      <DetailsSidebarRight />
+      <DetailsSidebarRight fileAbsolutePath={fileAbsolutePath} />
       <main className="min-w-screen min-h-screen">{children}</main>
       <footer>
         © {new Date().getFullYear()}, St. Jude Children's Research Hospital
@@ -39,6 +39,7 @@ const BaseLayout = ({ children }) => {
 
 BaseLayout.propTypes = {
   children: PropTypes.node.isRequired,
+  fileAbsolutePath: PropTypes.node.isRequired,
 }
 
 export default BaseLayout

@@ -8,7 +8,7 @@ export default function Template({
   const { markdownRemark } = data // data.markdownRemark holds your post data
   const { html } = markdownRemark
   return (
-    <BaseLayout>
+    <BaseLayout fileAbsolutePath={data.markdownRemark.fileAbsolutePath}>
       <div className="container px-20 pt-1 max-w-full md:max-w-4xl mx-auto">
         <div className="content" dangerouslySetInnerHTML={{ __html: html }} />
       </div>
@@ -19,6 +19,7 @@ export const pageQuery = graphql`
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      fileAbsolutePath
     }
   }
 `

@@ -8,6 +8,8 @@ module.exports = {
       colors: {
         navy: "#002856",
         purple: "#7531FF",
+        orange: colors.orange,
+        teal: colors.teal,
         coolGray: colors.coolGray,
       },
       fontFamily: {
