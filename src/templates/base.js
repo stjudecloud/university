@@ -12,6 +12,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Navbar from "../components/navbar"
 import ContentsSidebarLeft from "../components/contentsbar"
 import DetailsSidebarRight from "../components/detailsbar"
+import SearchModal from "../components/search"
 
 const BaseLayout = ({ children, fileAbsolutePath }) => {
   const data = useStaticQuery(graphql`
@@ -26,6 +27,7 @@ const BaseLayout = ({ children, fileAbsolutePath }) => {
 
   return (
     <div className="bg-white text-gray-500 antialiased js-focus-visible">
+      <SearchModal indices={[{ name: "docs" }]} />
       <Navbar />
       <ContentsSidebarLeft />
       <DetailsSidebarRight fileAbsolutePath={fileAbsolutePath} />

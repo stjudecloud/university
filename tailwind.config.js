@@ -15,6 +15,11 @@ module.exports = {
       fontFamily: {
         sans: ['"St. Jude Sans"'],
       },
+      spacing: {
+        320: "320px",
+        480: "480px",
+        640: "640px",
+      },
     },
   },
   variants: {

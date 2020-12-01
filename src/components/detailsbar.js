@@ -33,7 +33,7 @@ function editOnGitHub(fileAbsolutePath) {
 
 const DetailsSidebarRight = ({ fileAbsolutePath }) => {
   return (
-    <div className="z-40 fixed right-0 w-96 pt-9 px-7 invisible xl:visible">
+    <div className="z-30 fixed right-0 w-96 pt-9 px-7 invisible xl:visible">
       <div className="flex flex-col items-center justify-center">
         <div className="uppercase w-full text-center text-coolGray-400 pb-4">
           Actions

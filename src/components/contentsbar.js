@@ -1,7 +1,7 @@
 import React from "react"
 
 const ContentsSidebarLeft = () => (
-  <ul className="invisible xl:visible z-40 contents-sidebar fixed w-1/5 bg-coolGray-50 min-h-screen border-r border-coolGray-100 border-solid pt-9 pl-7 pr-3">
+  <ul className="invisible xl:visible z-30 contents-sidebar fixed w-1/5 bg-coolGray-50 min-h-screen border-r border-coolGray-100 border-solid pt-9 pl-7 pr-3">
     <li className="title">Getting Started</li>
     <li>First Steps</li>
     <li>Accounts / Billing</li>
