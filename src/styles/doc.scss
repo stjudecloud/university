@@ -62,7 +62,7 @@
 
   .anchor {
     @apply flex;
-    @apply items-center;
+    @apply items-end;
     @apply justify-end;
     @apply h-full;
 
@@ -70,8 +70,16 @@
       visibility: visible;
       @apply fill-current;
       @apply text-purple;
+      @apply text-opacity-80;
       height: 55%;
+      max-height: 25px;
       max-width: 25px;
+      margin-bottom: 7px;
+      transition: opacity 0.5s;
+
+      &:hover {
+        @apply text-opacity-100;
+      }
     }
   }
 }

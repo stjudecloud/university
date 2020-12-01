@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./base.scss";
+
 @import "./admonitions.scss";
+@import "./contentsbar.scss";
 @import "./doc.scss";
 @import "./fonts.scss";
-
-@import "./contentsbar.scss";
+@import "./search.scss";

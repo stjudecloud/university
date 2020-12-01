@@ -10,6 +10,7 @@
   .admonition-heading {
     @apply flex;
     @apply px-4;
+    @apply select-none;
 
     h5 {
       @apply flex;

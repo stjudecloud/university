@@ -6,7 +6,7 @@ import SearchIcon from "../icons/search.svg"
 import CommandSymbol from "../icons/cmd.svg"
 
 const Navbar = () => (
-  <nav className="sticky top-0 z-40 h-20 lg:z-50 bg-white border-b shadow-sm border-solid border-coolGray-100 flex items-center justify-between w-full px-7">
+  <nav className="sticky top-0 z-40 h-20 bg-white border-b shadow-sm border-solid border-coolGray-100 flex items-center justify-between w-full px-7">
     <a
       href="https://stjude.cloud"
       className="flex flex-1 justify-left items-center cursor-pointer"
