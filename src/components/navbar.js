@@ -5,7 +5,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import SearchIcon from "../icons/search.svg"
 import CommandSymbol from "../icons/cmd.svg"
 
-const Navbar = () => (
+const Navbar = ({ searchModal, onSearchClick }) => (
   <nav className="sticky top-0 z-40 h-20 bg-white border-b shadow-sm border-solid border-coolGray-100 flex items-center justify-between w-full px-7">
     <a
       href="https://stjude.cloud"
@@ -23,7 +23,13 @@ const Navbar = () => (
         stjude.cloud
       </span>
     </a>
-    <span className="hidden md:flex flex-1 justify-center items-center">
+    <span
+      className="hidden md:flex flex-1 justify-center items-center cursor-pointer"
+      onClick={onSearchClick}
+      onFocus={event => {
+        event.preventDefault()
+      }}
+    >
       <SearchIcon className="fill-current text-coolGray-400" />
       <span className="flex lg:hidden text-coolGray-400 text-xl ml-4 select-none">
         Search
