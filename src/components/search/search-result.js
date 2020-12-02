@@ -20,14 +20,14 @@ const HitCount = connectStateResults(({ searchResults }) => {
 })
 
 const PageHit = ({ hit }) => (
-  <Link to={hit.slug}>
+  <a href={hit.slug}>
     <div className="my-2 p-4 bg-coolGray-100 rounded-md">
       <h4>
         <Highlight attribute="title" hit={hit} tagName="mark" />
       </h4>
       <Snippet attribute="excerpt" hit={hit} tagName="mark" />
     </div>
-  </Link>
+  </a>
 )
 
 const HitsInIndex = ({ index }) => (
