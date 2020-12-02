@@ -5,43 +5,48 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
+import React, { Component } from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
 
 import Navbar from "../components/navbar"
 import ContentsSidebarLeft from "../components/contentsbar"
 import DetailsSidebarRight from "../components/detailsbar"
 import SearchModal from "../components/search"
 
-const BaseLayout = ({ children, fileAbsolutePath }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+class BaseLayout extends Component {
+  static propTypes = {
+    children: PropTypes.node.isRequired,
+    fileAbsolutePath: PropTypes.node.isRequired,
+  }
 
-  return (
-    <div className="bg-white text-gray-500 antialiased js-focus-visible">
-      <SearchModal indices={[{ name: "docs" }]} />
-      <Navbar />
-      <ContentsSidebarLeft />
-      <DetailsSidebarRight fileAbsolutePath={fileAbsolutePath} />
-      <main className="min-w-screen min-h-screen">{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, St. Jude Children's Research Hospital
-      </footer>
-    </div>
-  )
-}
+  static defaultProps = {
+    searchModal: null,
+  }
 
-BaseLayout.propTypes = {
-  children: PropTypes.node.isRequired,
-  fileAbsolutePath: PropTypes.node.isRequired,
+  render() {
+    const { children, fileAbsolutePath } = this.props
+
+    return (
+      <div className="bg-white text-gray-500 antialiased js-focus-visible">
+        <SearchModal
+          ref={element => (this.searchModal = element)}
+          indices={[{ name: "docs" }]}
+        />
+        <Navbar
+          onSearchClick={event => {
+            event.preventDefault()
+            this.searchModal.setVisible(true)
+          }}
+        />
+        <ContentsSidebarLeft />
+        <DetailsSidebarRight fileAbsolutePath={fileAbsolutePath} />
+        <main className="min-w-screen min-h-screen">{children}</main>
+        <footer>
+          © {new Date().getFullYear()}, St. Jude Children's Research Hospital
+        </footer>
+      </div>
+    )
+  }
 }
 
 export default BaseLayout

@@ -1,57 +1,114 @@
 import algoliasearch from "algoliasearch/lite"
-import { createRef, default as React, useState } from "react"
+import React, { Component } from "react"
 import { InstantSearch } from "react-instantsearch-dom"
 import SearchBox from "./search-box"
 import SearchResult from "./search-result"
 import { GlobalHotKeys } from "react-hotkeys"
 
-const keyMap = {
-  SEARCH: "cmd+k",
-}
+export default class SearchModal extends Component {
+  constructor(props) {
+    super(props)
 
-export default function SearchModal({ indices }) {
-  const rootRef = createRef()
-  const [query, setQuery] = useState()
-  const [hasFocus, setFocus] = useState(false)
-  const [isVisible, setVisible] = useState(false)
-  const searchClient = algoliasearch(
-    process.env.GATSBY_ALGOLIA_APP_ID,
-    process.env.GATSBY_ALGOLIA_SEARCH_KEY
-  )
+    let { indices } = props
+    this.state = {
+      query: "",
+      hasFocus: false,
+      isVisible: false,
+      indices: indices,
+    }
 
-  const toggleVisible = () => {
-    setVisible(v => !v)
+    this.searchClient = algoliasearch(
+      "FYWCTC64T5",
+      "30e7df733efd7992d36f211e19a210f6"
+    )
   }
 
-  const handlers = {
-    SEARCH: event => toggleVisible(),
+  componentDidUpdate() {
+    this.textFieldInput.focus()
   }
 
-  return (
-    <div
-      id="search-backdrop"
-      style={{ backdropFilter: "blur(4px)" }}
-      className={
-        (isVisible ? "" : "invisible ") +
-        "z-50 fixed inset-0 bg-gray-800 bg-opacity-80"
-      }
-    >
-      <GlobalHotKeys keyMap={keyMap} handlers={handlers} />
-      <div className="flex container mx-auto v-full mt-20 justify-center">
-        <div className="flex flex-col w-320 sm:w-480 lg:w-640 rounded-lg bg-white ">
-          <InstantSearch
-            searchClient={searchClient}
-            indexName={indices[0].name}
-            onSearchStateChange={({ query }) => setQuery(query)}
+  setQuery(query) {
+    this.setState({ query: query })
+  }
+
+  setFocus(focus) {
+    this.setState({ hasFocus: focus })
+  }
+
+  setVisible(visibility) {
+    this.setState({ isVisible: visibility })
+  }
+
+  toggleVisible = () => {
+    this.setVisible(!this.state.isVisible)
+  }
+
+  handleClickOutside = e => {
+    if (this.modal.contains(e.target)) {
+      // Click was inside of modal
+      return
+    }
+
+    this.setVisible(false)
+  }
+
+  keyMap = {
+    SEARCH: "cmd+k",
+  }
+
+  handlers = {
+    SEARCH: e => {
+      e.preventDefault()
+      this.toggleVisible()
+    },
+  }
+
+  render() {
+    let { isVisible, indices, hasFocus, query } = this.state
+
+    return (
+      <div
+        id="search-backdrop"
+        ref={element => (this.background = element)}
+        onClick={this.handleClickOutside}
+        style={{ backdropFilter: "blur(4px)" }}
+        className={
+          (isVisible ? "" : "invisible ") +
+          "z-50 fixed inset-0 bg-gray-800 bg-opacity-80"
+        }
+      >
+        <GlobalHotKeys keyMap={this.keyMap} handlers={this.handlers} />
+        <div className="flex container mx-auto v-full mt-20 justify-center">
+          <div
+            ref={element => (this.modal = element)}
+            className="flex flex-col w-320 sm:w-480 lg:w-640 rounded-lg bg-white "
           >
-            <SearchBox onFocus={() => setFocus(true)} hasFocus={hasFocus} />
-            <SearchResult
-              show={query && query.length > 0 && hasFocus}
-              indices={indices}
-            />
-          </InstantSearch>
+            <InstantSearch
+              searchClient={this.searchClient}
+              indexName={indices[0].name}
+              onSearchStateChange={({ query }) => this.setQuery(query)}
+            >
+              <SearchBox
+                inputRef={element => (this.textFieldInput = element)}
+                onFocus={() => this.setFocus(true)}
+                hasFocus={hasFocus}
+              />
+              <SearchResult
+                show={query && query.length > 0 && hasFocus}
+                indices={indices}
+              />
+            </InstantSearch>
+          </div>
         </div>
       </div>
-    </div>
-  )
+    )
+  }
+}
+
+{
+  /* <SearchBox
+                ref={element => (this.searchBox = element)}
+                onFocus={() => this.setFocus(true)}
+                hasFocus={hasFocus}
+              /> */
 }
