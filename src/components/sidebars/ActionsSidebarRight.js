@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Question from "../icons/question.svg"
+import Question from "../../icons/question.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
@@ -31,7 +31,7 @@ function editOnGitHub(fileAbsolutePath) {
   }
 }
 
-const DetailsSidebarRight = ({ fileAbsolutePath }) => {
+const ActionSidebarRight = ({ fileAbsolutePath }) => {
   return (
     <div className="z-30 fixed right-0 w-96 pt-9 px-7 invisible xl:visible">
       <div className="flex flex-col items-center justify-center">
@@ -61,8 +61,8 @@ const DetailsSidebarRight = ({ fileAbsolutePath }) => {
   )
 }
 
-DetailsSidebarRight.propTypes = {
+ActionSidebarRight.propTypes = {
   fileAbsolutePath: PropTypes.node.isRequired,
 }
 
-export default DetailsSidebarRight
+export default ActionSidebarRight

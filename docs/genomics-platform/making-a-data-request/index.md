@@ -10,7 +10,7 @@ Creating a data request is the premier way to access raw St. Jude next generatio
 St. Jude Cloud does not allow for-profit companies to access any restricted access genomics data. We are actively working with our institution to assess the feasibility of providing data to for-profit entities. If you work for a for-profit company and would like to be notified if this restriction changes, feel free to email us at [support@stjude.cloud](mailto:support@stjude.cloud).
 !!!
 
-#### Helpful Things to Remember:
+#### Helpful Things to Remember
 
 1. Data in St. Jude Cloud is grouped into [Data Access Units (DAUs)](glossary.md#data-access-unit), which usually correspond to large-scale sequencing initiatives at St. Jude. 
 2. Individuals can [apply for access](glossary.md#data-access-agreement) to DAUs on a case-by-case basis for a specific amount of time (usually 1 year).

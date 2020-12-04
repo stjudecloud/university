@@ -1,6 +1,8 @@
 # Frequently Asked Questions
 
-[TOC]
+```toc
+from-heading: 2
+```
 
 ## Will I be charged for using St. Jude Cloud Genomics Platform?
 
@@ -135,11 +137,10 @@ Thus, of you'd like to delete your account, you'll need to email DNAnexus asking
 for it to be removed. You can do so by contacting DNAnexus support at
 <support@dnanexus.com> with the following email.
 
-!!!note "Subject: St. Jude Cloud account deletion"
+!!!note Subject: St. Jude Cloud account deletion
+Hi DNAnexus,
 
-    Hi DNAnexus,
+Would you please assist me in deleting my St. Jude Cloud account? My username is _____.
 
-    Would you please assist me in deleting my St. Jude Cloud account? My username is _____.
-
-    Thank you!
+Thank you!
 !!!

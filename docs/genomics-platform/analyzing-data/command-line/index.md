@@ -22,11 +22,11 @@ many other operations. You'll need to install that software on your
 computer by following [this guide](https://documentation.dnanexus.com/downloads#DNAnexus-Platform-SDK).
 
 !!!tip
-    A quickstart to getting up and running with the dx-toolkit:
+A quickstart to getting up and running with the dx-toolkit:
 
-    1. Install Python 2.7.13+. Note that using the system-level Python is usually not a good idea (by default, system level Python is typically too old/does not support the latest security protocols required). You can install using [Anaconda](https://conda.io/docs/user-guide/getting-started.html) (recommended) or using the default [Python installer](https://www.python.org/downloads/).
-    2. Run `pip install dxpy`.
-    3. Type `dx --help` at the command line.
+1. Install Python 2.7.13+. Note that using the system-level Python is usually not a good idea (by default, system level Python is typically too old/does not support the latest security protocols required). You can install using [Anaconda](https://conda.io/docs/user-guide/getting-started.html) (recommended) or using the default [Python installer](https://www.python.org/downloads/).
+2. Run `pip install dxpy`.
+3. Type `dx --help` at the command line.
 !!!
 
 ## A quick tour
@@ -41,8 +41,8 @@ dx login --noprojects
 ```
 
 !!!note
-    If you are a St. Jude employee, you'll need to follow [this
-    guide](https://documentation.dnanexus.com/user/login-and-logout#generating-an-authentication-token) to log in instead.
+If you are a St. Jude employee, you'll need to follow [this
+guide](https://documentation.dnanexus.com/user/login-and-logout#generating-an-authentication-token) to log in instead.
 !!!
 
 ### Selecting a project
@@ -104,9 +104,9 @@ Cloud Platform tools:
 ## Downloading data
 
 !!!warning
-    To download data from a St. Jude Cloud data request, you must have
-    indicated that you wished to download the data in your Data Access
-    Agreement (DAA) during your submission. Any downloading of St. Jude data without completing this step is strictly PROHIBITED.
+To download data from a St. Jude Cloud data request, you must have
+indicated that you wished to download the data in your Data Access
+Agreement (DAA) during your submission. Any downloading of St. Jude data without completing this step is strictly PROHIBITED.
 !!!
 
 You can use the following steps to download data from a St. Jude Cloud

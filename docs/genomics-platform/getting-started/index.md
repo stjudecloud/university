@@ -10,7 +10,8 @@ Our homepage offers our most popular actions, including visiting our data browse
 
 ## St. Jude Employee Quick Start
 
-!!!warning "The information displayed below this point is primarily intended for employees of St. Jude Children's Research Hospital."
+!!!warning 
+The information displayed below this point is primarily intended for employees of St. Jude Children's Research Hospital.
 !!! 
 
 Please complete the following check-list to get started with using St. Jude
@@ -50,7 +51,7 @@ Signing in to St. Jude Cloud is similarly easy — if you have a SJCRH account, 
 This should be sufficient for the purposes of this guide. For more detailed information, see our standard guide on [accounts and billing](../../guides/genomics-platform/accounts-and-billing.md).
 
 !!!tip
-    As you navigate around St. Jude Cloud, you can click the DNAnexus logo in the top left to go back to the home screen at any time.
+As you navigate around St. Jude Cloud, you can click the DNAnexus logo in the top left to go back to the home screen at any time.
 !!!
 
 ### Enable Microsoft Azure
@@ -76,8 +77,7 @@ This should be sufficient for the purposes of this guide. For more detailed info
 Billing is handled in St. Jude Cloud by creating and managing a DNAnexus billing organization (or "org"). Each project in DNAnexus is associated with a single org (you had to specify one when you created a project in the last step), and all compute and storage costs are billed to that org. By default, each new user on St. Jude Cloud gets a billing org called `user-[username]` with $50 of trial credit. You can view the billing orgs available to your account [here](https://platform.dnanexus.com/profile/settings/billing).  
 
 !!!info
-
-    There is the potential for additional funds to be available. If you are a lab that would like to use the cloud but do not have funds available, please let us know at [support@stjude.cloud](mailto:support@stjude.cloud).
+There is the potential for additional funds to be available. If you are a lab that would like to use the cloud but do not have funds available, please let us know at [support@stjude.cloud](mailto:support@stjude.cloud).
 !!!    
 
 **Steps**
