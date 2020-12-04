@@ -31,16 +31,14 @@ const PageHit = ({ hit }) => (
 )
 
 const HitsInIndex = ({ index }) => (
-  <Index indexName={index.name}>
+  <Index indexName={index}>
     <Hits className="hits" hitComponent={PageHit} />
   </Index>
 )
 
-const SearchResult = ({ indices }) => (
+const SearchResult = ({ index }) => (
   <div className="mx-8 my-4">
-    {indices.map(index => (
-      <HitsInIndex index={index} key={index.name} />
-    ))}
+    <HitsInIndex index={index} key={index} />
     <div className="flex justify-between mt-8">
       <HitCount />
       <PoweredBy className="flex" />

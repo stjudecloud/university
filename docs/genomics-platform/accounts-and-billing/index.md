@@ -4,8 +4,8 @@ St. Jude Cloud is built on top of [DNAnexus](https://www.dnanexus.com/), a data-
 
 Each new user receives a $50 credit upon creation of their St. Jude Cloud account with DNAnexus (see the [note](#billing-setup) in the Billing Setup section). If you use this initial credit and are interested in additional funding, please reach out to support@stjude.cloud as additional collaboration funds may be available.
 
-!!!warning "St. Jude Employees"
-    The account creation and login process is slightly different if you are an internal user (you work at St. Jude). Internal users please go to the [intranet home page](https://home.stjude.org) and type 'Bioinformatics Self-Service' into the search bar. From there, click on the link that says 'Bioinformatics Self-Service on St. Jude Cloud' to access the internal guide to creating an account.
+!!!warning St. Jude Employees
+The account creation and login process is slightly different if you are an internal user (you work at St. Jude). Internal users please go to the [intranet home page](https://home.stjude.org) and type 'Bioinformatics Self-Service' into the search bar. From there, click on the link that says 'Bioinformatics Self-Service on St. Jude Cloud' to access the internal guide to creating an account.
 !!!
 
 
@@ -18,16 +18,13 @@ Each new user receives a $50 credit upon creation of their St. Jude Cloud accoun
 Go to the [St. Jude Employee login page](https://auth.stjude.org/SecureAuth61/) and log in with your current St. Jude credentials.
 
 !!!note
-    If you are unable to log in at this link, and you know you have been on St. Jude Cloud before, you may have already set up a DNAnexus account through the DNANexus log in page using your St. Jude email address. To continue using this account, you will need to log in through the [DNAnexus log in page](https://platform.dnanexus.com/login?client_id=sjcloudplatform). You can request that your accounts be merged by contacting [DNAnexus support](mailto:support@dnanexus.com).   
+If you are unable to log in at this link, and you know you have been on St. Jude Cloud before, you may have already set up a DNAnexus account through the DNANexus log in page using your St. Jude email address. To continue using this account, you will need to log in through the [DNAnexus log in page](https://platform.dnanexus.com/login?client_id=sjcloudplatform). You can request that your accounts be merged by contacting [DNAnexus support](mailto:support@dnanexus.com).   
 
-
-    !!!quote "Example Email to DNAnexus Support" 
-        Hello DNAnexus support, 
-
-        I am a St. Jude employee and I would like to have my account switched over so I can use my St. Jude credentials to log in. 
-
-        Thank you, 
-    !!!
+> Hello DNAnexus support, 
+> 
+> I am a St. Jude employee and I would like to have my account switched over so I can use my St. Jude credentials to log in. 
+> 
+> Thank you, 
 !!!
 
 ### Billing 
@@ -61,7 +58,7 @@ If your account is already set up and you would like to access your Billing info
 5. Click 'Upgrade Account'. This will send an email to the individual listed as the billing contact requesting that they verify the change.
 
 !!!note 
-    On step 4, you must enter the billing contact's name, physical address, email address and phone number. You do not need to enter any credit card information. Once the billing contact has verified the account upgrade request, your account will be credited $50.
+On step 4, you must enter the billing contact's name, physical address, email address and phone number. You do not need to enter any credit card information. Once the billing contact has verified the account upgrade request, your account will be credited $50.
 
-    Please [contact us](mailto:support@stjude.cloud) for help if you encounter any problems creating an account.
+Please [contact us](mailto:support@stjude.cloud) for help if you encounter any problems creating an account.
 !!!

@@ -9,8 +9,7 @@ import React, { Component } from "react"
 import PropTypes from "prop-types"
 
 import Navbar from "../components/navbar"
-import ContentsSidebarLeft from "../components/contentsbar"
-import DetailsSidebarRight from "../components/detailsbar"
+import { ContentsSidebarLeft, ActionSidebarRight } from "../components/sidebars"
 import SearchModal from "../components/search"
 
 class BaseLayout extends Component {
@@ -30,7 +29,7 @@ class BaseLayout extends Component {
       <div className="bg-white text-gray-500 antialiased js-focus-visible">
         <SearchModal
           ref={element => (this.searchModal = element)}
-          indices={[{ name: "docs" }]}
+          algoliaIndex="docs"
         />
         <Navbar
           onSearchClick={event => {
@@ -39,7 +38,7 @@ class BaseLayout extends Component {
           }}
         />
         <ContentsSidebarLeft />
-        <DetailsSidebarRight fileAbsolutePath={fileAbsolutePath} />
+        <ActionSidebarRight fileAbsolutePath={fileAbsolutePath} />
         <main className="min-w-screen min-h-screen">{children}</main>
         <footer>
           © {new Date().getFullYear()}, St. Jude Children's Research Hospital

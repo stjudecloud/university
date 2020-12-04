@@ -1,20 +1,18 @@
 import algoliasearch from "algoliasearch/lite"
 import React, { Component } from "react"
 import { InstantSearch } from "react-instantsearch-dom"
-import SearchBox from "./search-box"
-import SearchResult from "./search-result"
+import SearchBox from "./SearchBox"
+import SearchResult from "./SearchResult"
 import { GlobalHotKeys } from "react-hotkeys"
 
 export default class SearchModal extends Component {
   constructor(props) {
     super(props)
 
-    let { indices } = props
     this.state = {
       query: "",
       hasFocus: false,
       isVisible: false,
-      indices: indices,
     }
 
     this.searchClient = algoliasearch(
@@ -64,7 +62,8 @@ export default class SearchModal extends Component {
   }
 
   render() {
-    let { isVisible, indices, hasFocus, query } = this.state
+    const { isVisible, hasFocus, query } = this.state
+    const { algoliaIndex } = this.props
 
     return (
       <div
@@ -85,7 +84,7 @@ export default class SearchModal extends Component {
           >
             <InstantSearch
               searchClient={this.searchClient}
-              indexName={indices[0].name}
+              indexName={algoliaIndex}
               onSearchStateChange={({ query }) => this.setQuery(query)}
             >
               <SearchBox
@@ -95,7 +94,7 @@ export default class SearchModal extends Component {
               />
               <SearchResult
                 show={query && query.length > 0 && hasFocus}
-                indices={indices}
+                index={algoliaIndex}
               />
             </InstantSearch>
           </div>
@@ -103,12 +102,4 @@ export default class SearchModal extends Component {
       </div>
     )
   }
-}
-
-{
-  /* <SearchBox
-                ref={element => (this.searchBox = element)}
-                onFocus={() => this.setFocus(true)}
-                hasFocus={hasFocus}
-              /> */
 }
