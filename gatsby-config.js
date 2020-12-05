@@ -2,9 +2,10 @@ require("dotenv").config()
 
 module.exports = {
   siteMetadata: {
-    title: `St. Jude Cloud Documentation`,
-    description: ``,
-    author: ``,
+    title: `St. Jude Cloud University`,
+    description: `A site containing all of the education material pertaining to St. Jude Cloud, the pediatric cancer data sharing ecosystem.`,
+    author: `St. Jude Cloud`,
+    siteUrl: `https://university.stjude.cloud`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -124,6 +125,20 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        env: {
+          development: {
+            policy: [{ userAgent: "*", disallow: ["/"] }],
+          },
+          production: {
+            policy: [{ userAgent: "*", allow: "/" }],
+          },
+        },
+      },
+    },
     {
       resolve: "gatsby-plugin-react-svg",
       options: {
