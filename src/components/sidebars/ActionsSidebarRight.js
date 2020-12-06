@@ -22,7 +22,6 @@ function editOnGitHub(fileAbsolutePath) {
 
   const position = fileAbsolutePath.indexOf(token) + token.length
   const relativeFilePath = fileAbsolutePath.substring(position)
-  console.log(relativeFilePath)
   return function () {
     let url =
       "https://github.com/stjudecloud/university/edit/master/docs/" +
