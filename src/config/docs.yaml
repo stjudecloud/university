@@ -1,0 +1,24 @@
+github:
+  url: https://github.com/stjudecloud/docs-v2
+  edit_path: edit/master/src/chapters # no preceding '/'
+modules:
+  - title: "Genomics Platform"
+    path: /genomics-platform/
+    icon: stjudecloud-genomics-platform-logo.svg
+    chapters:
+      - title: "Getting Started"
+        path: getting-started/
+      - title: "Requesting Data"
+        path: requesting-data/
+      - title: "Managing Data"
+        path: managing-data/
+      - title: "Accounts and Billing"
+        path: accounts-and-billing/
+      - title: "Frequently Asked Questions"
+        path: faq/
+  - title: "PeCan"
+    path: /pecan/
+    icon: stjudecloud-pecan-logo.svg
+  - title: "Visualization Community"
+    path: /visualization-community/
+    icon: stjudecloud-visualization-community-logo.svg

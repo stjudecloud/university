@@ -1,10 +1,8 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import { Transition } from "@headlessui/react"
-import StJudeCloudPecanLogo from "../../icons/stjudecloud-pecan-logo.svg"
-import StJudeCloudGenomicsPlatformLogo from "../../icons/stjudecloud-genomics-platform-logo.svg"
-import StJudeCloudVisualizationCommunityLogo from "../../icons/stjudecloud-visualization-community-logo.svg"
 
-const ModulePopUp = ({ show }) => {
+const ModulePopUp = ({ show, modules }) => {
   const [isInPopup, setIsInPopup] = useState(false)
 
   return (
@@ -27,26 +25,20 @@ const ModulePopUp = ({ show }) => {
         leaveTo="opacity-0"
       >
         <div className="flex flex-col w-full h-full">
-          <div className="flex justify-left items-center px-4 py-2 hover:bg-coolGray-100">
-            <StJudeCloudGenomicsPlatformLogo
-              width="40"
-              height="40"
-              className="mr-4"
-            />
-            <div>Genomics Platform</div>
-          </div>
-          <div className="flex justify-left items-center px-4 py-2 hover:bg-coolGray-100">
-            <StJudeCloudPecanLogo width="40" height="40" className="mr-4" />
-            <div>PeCan</div>
-          </div>
-          <div className="flex justify-left items-center px-4 py-2 hover:bg-coolGray-100">
-            <StJudeCloudVisualizationCommunityLogo
-              width="40"
-              height="40"
-              className="mr-4"
-            />
-            <div>Visualization Community</div>
-          </div>
+          {modules.map(module => {
+            const { icon, path, title } = module
+            const IconImported = require("../../icons/" + icon)
+            return (
+              <Link
+                key={path}
+                to={path}
+                className="flex justify-left items-center px-4 py-2 hover:bg-coolGray-100"
+              >
+                <IconImported width="40" height="40" className="mr-4" />
+                <div>{title}</div>
+              </Link>
+            )
+          })}
         </div>
       </Transition>
     </div>
