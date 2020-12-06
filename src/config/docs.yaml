@@ -3,22 +3,58 @@ github:
   edit_path: edit/master/src/chapters # no preceding '/'
 modules:
   - title: "Genomics Platform"
-    path: /genomics-platform/
+    path: /docs/genomics-platform/
     icon: stjudecloud-genomics-platform-logo.svg
     chapters:
       - title: "Getting Started"
-        path: getting-started/
-      - title: "Requesting Data"
-        path: requesting-data/
+        pages:
+          - title: "First Steps"
+            path: /docs/genomics-platform/getting-started/first-steps/
+          - title: "Accounts / Billing"
+            path: /docs/genomics-platform/getting-started/accounts-and-billing/
+          - title: "About Our Data"
+            path: /docs/genomics-platform/getting-started/about-our-data/
+          - title: "Requesting Data"
+            path: /docs/genomics-platform/getting-started/requesting-data/
+          - title: "Making a Data Request"
+            path: /docs/genomics-platform/getting-started/making-a-data-request/
+          - title: "Filling Out the DAA"
+            path: /docs/genomics-platform/getting-started/filling-out-the-daa/
+          - title: "Decision Making Criteria"
+            path: /docs/genomics-platform/getting-started/decision-making-criteria/
       - title: "Managing Data"
-        path: managing-data/
-      - title: "Accounts and Billing"
-        path: accounts-and-billing/
-      - title: "Frequently Asked Questions"
-        path: faq/
+        pages:
+          - title: "Overview"
+            path: /docs/genomics-platform/managing-data/overview/
+          - title: "Uploading / Downloading Data"
+            path: /docs/genomics-platform/managing-data/uploading-downloading-data/
+          - title: "Renewing Your DAA"
+            path: /docs/genomics-platform/managing-data/renewing-your-daa/
+      - title: "Analyzing Data"
+        pages:
+          - title: "Command Line Interaction"
+            path: /docs/genomics-platform/analyzing-data/command-line-interaction/
+          - title: "Running Our Workflows"
+            path: /docs/genomics-platform/analyzing-data/running-our-workflows/
+          - title: "Create Your Own Workflow"
+            path: /docs/genomics-platform/analyzing-data/create-your-own-workflow
+      - title: "FAQ"
+        pages:
+          - title: "Frequently Asked Questions"
+            path: /docs/genomics-platform/faq/frequently-asked-questions/
   - title: "PeCan"
-    path: /pecan/
+    path: /docs/pecan/
     icon: stjudecloud-pecan-logo.svg
+    chapters:
+      - title: "Getting Started"
+        pages:
+          - title: "PeCan Test Chapter"
+            path: /docs/pecan/getting-started/first-steps/
   - title: "Visualization Community"
-    path: /visualization-community/
+    path: /docs/visualization-community/
     icon: stjudecloud-visualization-community-logo.svg
+    chapters:
+      - title: "Getting Started"
+        pages:
+          - title: "VisComm Test Chapter"
+            path: /docs/visualization-community/getting-started/first-steps/

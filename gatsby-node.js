@@ -22,7 +22,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       node,
       name: `slug`,
-      value: slug
+      value: slug,
     })
   }
 }
@@ -56,11 +56,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.fields.slug,
-      component: path.resolve(`./src/templates/doc.js`),
+      path: "/docs" + node.fields.slug,
+      component: path.resolve(`./src/templates/docs-layout.js`),
       context: {
-        slug: node.fields.slug
-      }
+        slug: node.fields.slug,
+      },
     })
   })
 }
