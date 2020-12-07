@@ -57,7 +57,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
       path: "/docs" + node.fields.slug,
-      component: path.resolve(`./src/templates/docs-layout.js`),
+      component: path.resolve(`./src/components/docs/doc.js`),
       context: {
         slug: node.fields.slug,
       },

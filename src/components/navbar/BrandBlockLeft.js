@@ -2,7 +2,7 @@ import React from "react"
 import ChildLogo from "../../icons/stjudecloud-logo.svg"
 import { Link } from "gatsby"
 
-const BrandBlockLeft = () => {
+const BrandBlockLeft = ({ app }) => {
   return (
     <div className="flex flex-1 items-center justify-left">
       <a
@@ -22,12 +22,14 @@ const BrandBlockLeft = () => {
         >
           St. Jude Cloud
         </span>
-        <span
-          className="text-navy text-opacity-60"
-          style={{ paddingLeft: "8px", fontSize: "20px" }}
-        >
-          Docs
-        </span>
+        {app && (
+          <span
+            className="text-navy text-opacity-60"
+            style={{ paddingLeft: "8px", fontSize: "20px" }}
+          >
+            {app}
+          </span>
+        )}
       </Link>
     </div>
   )

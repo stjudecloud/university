@@ -1,6 +1,3 @@
-github:
-  url: https://github.com/stjudecloud/docs-v2
-  edit_path: edit/master/src/chapters # no preceding '/'
 modules:
   - title: "Genomics Platform"
     path: /docs/genomics-platform/
