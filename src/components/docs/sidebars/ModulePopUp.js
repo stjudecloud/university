@@ -27,7 +27,7 @@ const ModulePopUp = ({ show, modules }) => {
         <div className="flex flex-col w-full h-full">
           {modules.map(module => {
             const { icon, path, title } = module
-            const IconImported = require("../../icons/" + icon)
+            const IconImported = require("../../../icons/" + icon)
             return (
               <Link
                 key={path}

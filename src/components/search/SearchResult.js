@@ -38,7 +38,10 @@ const HitsInIndex = ({ index }) => (
 
 const SearchResult = ({ index }) => (
   <div className="mx-8 my-4">
-    <HitsInIndex index={index} key={index} />
+    <span className="uppercase text-coolGray-300">Results</span>
+    <div className="max-h-56 overflow-y-scroll">
+      <HitsInIndex index={index} key={index} />
+    </div>
     <div className="flex justify-between mt-8">
       <HitCount />
       <PoweredBy className="flex" />

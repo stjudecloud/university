@@ -23,6 +23,11 @@
         @apply cursor-default;
         @apply select-none;
       }
+
+      &.page {
+        @apply ml-2;
+        @apply whitespace-nowrap;
+      }
     }
 
     .active {
