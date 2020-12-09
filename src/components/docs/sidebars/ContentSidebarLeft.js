@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { ScrollContainer } from "gatsby-react-router-scroll"
 import { StaticQuery, graphql, Link } from "gatsby"
-import { globalHistory } from "@reach/router"
 import Chevron from "../../../icons/chevron.svg"
 import ModulePopUp from "./ModulePopUp"
 
@@ -61,6 +60,8 @@ const ContentsSidebarLeft = ({ location: currentPathBeingViewed }) => {
               <div
                 id="module"
                 className="h-28"
+                role="link"
+                tabIndex={0}
                 onMouseEnter={() => {
                   setIsOpen(true)
                 }}

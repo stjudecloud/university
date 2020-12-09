@@ -9,6 +9,8 @@ const ModulePopUp = ({ show, modules }) => {
     <div
       className="absolute inset-x-0 top-0"
       style={{ transform: "translate(100%)" }}
+      role="button"
+      tabIndex={0}
       onMouseEnter={() => {
         if (show) setIsInPopup(true)
       }}
