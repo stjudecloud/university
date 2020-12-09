@@ -69,7 +69,10 @@ export default class SearchModal extends Component {
       <div
         id="search-backdrop"
         ref={element => (this.background = element)}
+        role="button"
+        tabIndex={0}
         onClick={this.handleClickOutside}
+        onKeyPress={this.handleClickOutside}
         style={{ backdropFilter: "blur(4px)" }}
         className={
           (isVisible ? "" : "invisible ") +

@@ -8,6 +8,9 @@ const SearchBlock = ({ onSearchClick = null }) => {
     <span
       className="hidden md:flex md:flex-1 justify-center items-center cursor-pointer"
       onClick={onSearchClick}
+      role="button"
+      tabIndex={0}
+      onKeyDown={onSearchClick}
     >
       <SearchIcon className="fill-current text-coolGray-400" />
       <span className="flex lg:hidden text-coolGray-400 text-xl ml-4 select-none">

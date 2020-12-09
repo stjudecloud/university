@@ -7,7 +7,6 @@
 
 import React, { Component } from "react"
 import { graphql } from "gatsby"
-import PropTypes from "prop-types"
 
 import Navbar from "../navbar"
 import { ContentsSidebarLeft, ActionSidebarRight } from "./sidebars"
@@ -23,12 +22,12 @@ class BaseLayout extends Component {
     const { pathname } = this.props.location
     const { html, fileAbsolutePath } = markdownRemark
 
-    if (!markdownRemark.frontmatter?.title) {
-      console.error(
-        `Error! You must add a title frontmatter to ${fileAbsolutePath}. Example:\n\n---\ntitle: Making a Data Request\n---\n\nat the top of the file.`
-      )
-      throw new Error("Please see the error from the console above.")
-    }
+    // if (!markdownRemark.frontmatter?.title) {
+    //   console.error(
+    //     `Error! You must add a title frontmatter to ${fileAbsolutePath}. Example:\n\n---\ntitle: Making a Data Request\n---\n\nat the top of the file.`
+    //   )
+    //   throw new Error("Please see the error from the console above.")
+    // }
 
     return (
       <div className="bg-white text-gray-500 antialiased js-focus-visible">
