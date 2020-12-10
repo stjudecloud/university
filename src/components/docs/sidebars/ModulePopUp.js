@@ -2,13 +2,13 @@ import React, { useState } from "react"
 import { Link } from "gatsby"
 import { Transition } from "@headlessui/react"
 
-const ModulePopUp = ({ show, modules }) => {
+const ModulePopUp = ({ show, modules, isMobileMenuShown }) => {
   const [isInPopup, setIsInPopup] = useState(false)
 
   return (
     <div
-      className="absolute inset-x-0 top-0"
-      style={{ transform: "translate(100%)" }}
+      className="absolute inset-x-0 top-0 z-50"
+      style={!isMobileMenuShown ? { transform: "translate(100%)" } : {}}
       role="button"
       tabIndex={0}
       onMouseEnter={() => {
@@ -17,7 +17,17 @@ const ModulePopUp = ({ show, modules }) => {
       onMouseLeave={() => setIsInPopup(false)}
     >
       <Transition
-        className="m-4 p-2 border border-coolGray-100 rounded-lg bg-white w-full whitespace-nowrap shadow-md"
+        className="m-4 p-2 border border-coolGray-100 rounded-lg bg-white whitespace-nowrap shadow-md"
+        style={
+          isMobileMenuShown
+            ? {
+                width: "90%",
+                marginLeft: "auto",
+                marginRight: "auto",
+                marginTop: "10px",
+              }
+            : { width: "100%" }
+        }
         show={isInPopup || show}
         enter="transition-opacity duration-75"
         enterFrom="opacity-0"
