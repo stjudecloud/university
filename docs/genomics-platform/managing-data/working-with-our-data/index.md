@@ -1,3 +1,8 @@
+---
+title: Working With Our Data
+---
+
+
 In this overview, we will explain how to manage your data request(s) from St. Jude Cloud's genomics platform [My Dashboard page](https://platform.stjude.cloud/dashboard) and how to access and manage your data (once it has been vended to you) from within a DNAnexus project.  The [DNAnexus](https://www.dnanexus.com/) genomic ecosystem is the backbone for the computation and storage in St. Jude Cloud. This means that each data request in St. Jude Cloud corresponds to a project in DNAnexus. If you'd like, you can read an introduction to the DNAnexus ecosystem [here](https://documentation.dnanexus.com/). If you haven't already, follow [this guide](../requesting-data/data-request.md) to request access to St. Jude data in this secure cloud ecosystem.
 
 

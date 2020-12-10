@@ -1,3 +1,8 @@
+---
+title: About Our Decision Process and Terminology
+---
+
+
 ### Data Access Unit
 
 A St. Jude Cloud **Data Access Unit (DAU)** is a grouping of data that typically corresponds to a project, study, or dataset generated at the same time at the same institution. Each DAU has its own governing body of researchers, the [Data Access Committee](#data-access-committee), who preside over the data and who may grant or deny access. Each Data Access Committee has its own protocols for approving access to their DAU. Please [contact us](mailto:support@stjude.cloud) if you have questions about committee approval protocols. We currently have 5 DAUs: Pediatric Cancer Genome Project (PCGP), St. Jude Lifetime Cohort Study (SJLIFE), Genomes for Kids (G4K) and Clinical Genomics, Sickle Cell Genome Project (SGP), and Childhood Cancer Survivor Study (CCSS). For a brief description of each DAU see the [Studies page](about-our-data.md#data-access-units). For a more detailed description please see the respective [Schedule 1(s)](../../../citing-stjude-cloud.md#dataset-reference-table).
