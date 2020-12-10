@@ -1,0 +1,9 @@
+footer {
+  a {
+    @apply text-purple;
+
+    &:hover {
+      @apply underline;
+    }
+  }
+}
