@@ -114,6 +114,7 @@ let plugins = [
             icons: "svg",
           },
         },
+        `gatsby-remark-check-links`,
       ],
     },
   },
