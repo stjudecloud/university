@@ -7,11 +7,11 @@ title: Getting Started
 
 Genomics Platform is an app that allows you to browse, request, host, and analyze raw next-generation sequencing data. This app is a collaboration between [St. Jude Children's Research Hospital](https://www.stjude.org/), [Microsoft Azure](https://azure.microsoft.com/en-us/), and [DNAnexus](https://www.dnanexus.com/). 
 
-We provide high quality next generation Whole Genome (WGS), Whole Exome (WES), and RNA-Seq data to researchers around the world. There is a [request process](./requesting-data/data-request.md) to protect this data even though it is de-identified. One of the benefits of partnering with DNAnexus is that users can not only access our data, but also upload their own. [Click here to learn how](./managing-data/upload-local.md). 
+We provide high quality next generation Whole Genome (WGS), Whole Exome (WES), and RNA-Seq data to researchers around the world. There is a [request process](./requesting-data/making-a-data-request) to protect this data even though it is de-identified. One of the benefits of partnering with DNAnexus is that users can not only access our data, but also upload their own. [Click here to learn how](./managing-data/upload-local.md). 
 
 ![](./genomics-platform-home.png)
 
-Our homepage offers our most popular actions, including visiting our data browser, accessing our analysis workflows, or managing your current access through your dashboard. Browsing our data and workflows is free and does not require an account. If you would like to access the data or workflows, you will have to make a free account so that you can access them through your dashboard. Once approved for access to our data or workflows, you will not be charged for any associated storage fees. [See here how to request data and our process for approval.](./requesting-data/data-request.md)
+Our homepage offers our most popular actions, including visiting our data browser, accessing our analysis workflows, or managing your current access through your dashboard. Browsing our data and workflows is free and does not require an account. If you would like to access the data or workflows, you will have to make a free account so that you can access them through your dashboard. Once approved for access to our data or workflows, you will not be charged for any associated storage fees. [See here how to request data and our process for approval.](./requesting-data/making-a-data-request)
 
 ## St. Jude Employee Quick Start
 
@@ -53,7 +53,7 @@ Signing in to St. Jude Cloud is similarly easy — if you have a SJCRH account, 
 
 1. Visit [https://cloud.stjude.org](https://cloud.stjude.org), log in with your St. Jude credentials, and fill in the basic profile page to your satisfaction if prompted. Congrats! You're now logged in to St. Jude Cloud. 
 
-This should be sufficient for the purposes of this guide. For more detailed information, see our standard guide on [accounts and billing](../../guides/genomics-platform/accounts-and-billing.md).
+This should be sufficient for the purposes of this guide. For more detailed information, see our standard guide on [accounts and billing](./accounts-and-billing).
 
 !!!tip
 As you navigate around St. Jude Cloud, you can click the DNAnexus logo in the top left to go back to the home screen at any time.
