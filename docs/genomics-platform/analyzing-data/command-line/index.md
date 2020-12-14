@@ -117,7 +117,7 @@ Agreement (DAA) during your submission. Any downloading of St. Jude data without
 You can use the following steps to download data from a St. Jude Cloud
 data request:
 
-1. Complete a data request using the Genomics Platform application. See this [guide](../requesting-data/data-request.md) for instructions.
+1. Complete a data request using the Genomics Platform application. See this [guide](../../requesting-data/making-a-data-request) for instructions.
 
 2. Open up your terminal application and select the cloud workspace
    relevant to your data request. For instance, in this case we
