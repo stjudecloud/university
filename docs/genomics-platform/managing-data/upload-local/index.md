@@ -1,3 +1,7 @@
+---
+title: Upload Data (Local)
+---
+
 # Uploading Data from your Local Computer
 
 !!!warning
