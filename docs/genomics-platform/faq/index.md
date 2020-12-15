@@ -41,7 +41,7 @@ at St. Jude) or an external user. If you are a St. Jude Employee, please refer
 to the dedicated [intranet
 page](https://home.stjude.org/computational-biology/Pages/bioinformatics-self-service-cloud.aspx)
 for instructions. If you are not a St. Jude Employee, please refer to our
-[Create an Account](./accounts-and-billing.md#billing-setup) guide.
+[Create an Account](../accounts-and-billing/#billing-setup) guide.
 
 ## Does St. Jude Cloud allow for-profit companies to access genomics data? 
 
@@ -51,7 +51,7 @@ We do not allow for-profit companies to access any of our restricted access geno
 ## Why do I need to sign the Data Access Agreement (DAA)?
 
 The [data access
-agreement](./requesting-data/glossary.md#data-access-agreement)
+agreement](../requesting-data/glossary/#data-access-agreement)
 serves many purposes. Ultimately, the terms included in the data access
 agreement are in place to protect our patients. We take patient security very
 seriously, and we require that requesters are committed to protecting that
@@ -80,19 +80,19 @@ You can download the latest version of the DAA
 
 You can submit your Data Access Agreement in the drag and drop box on the [last
 step of the data request
-process](./requesting-data/data-request.md#requesting-data).
+process](../requesting-data/making-a-data-request/#requesting-data).
 
 ## What if I did not fill out the Data Download Permission section of the original DAA, but now I want to download data?
 
 This would be a change in terms from the original agreement, you would need to
 fill out a new DAA (including the [Data Download Permission
-section](./requesting-data/how-to-fill-out-DAA.md#the-data-access-agreement)
+section](../requesting-data/how-to-fill-out-daa/#the-data-access-agreement)
 for any data sets you want to download.
 
 ## What clinical information is available about samples in St. Jude Cloud?
 
 You can view the basic clinical and phenotypic information we currently provide
-[here](./requesting-data/about-our-data.md#metadata).
+[here](../requesting-data/about-our-data/#metadata).
 
 ## Can I gain access to further clinical information than what is currently available?
 
@@ -117,11 +117,11 @@ storage cost without any benefit. Several tools exist that you can leverage to
 revert BAM to FASTQ files — we recommend using Picard SamToFastq to revert BAM
 files. You can efficiently revert BAMs to FASTQs in the cloud by wrapping the
 conversion tool of your choice into a [Cloud
-App](./analyzing-data/creating-a-cloud-app.md)
+App](../analyzing-data/creating-a-cloud-app)
 
 ## How can I work with genomics data in the cloud?
 
-You can view [this guide](./analyzing-data/creating-a-cloud-app.md) to learn how
+You can view [this guide](../analyzing-data/creating-a-cloud-app) to learn how
 create a cloud application.
 
 ## Why am I getting a connectivity error when connecting to DNAnexus API via SSH?

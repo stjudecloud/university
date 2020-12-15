@@ -19,7 +19,7 @@ If you reside outside of the US, you must fill out the Data Access Agreement man
 
 ### Data Access Units
 
-A St. Jude Cloud **Data Access Unit (DAU)** is a grouping of data that typically corresponds to a project, study, or dataset generated at the same time at the same institution. To learn more, see our section on [Data Access Units](about-our-data.md#data-access-units).
+A St. Jude Cloud **Data Access Unit (DAU)** is a grouping of data that typically corresponds to a project, study, or dataset generated at the same time at the same institution. To learn more, see our section on [Data Access Units](../about-our-data/#data-access-units).
 
 On page 7 of the DAA, you must mark all Data Access Units for which you are applying. The DAU(s) associated to the data you requested are listed in the Controlled Access Data section, directly above the Download Data Access Agreement button. This can be found on the Request Data webpage which immediately follows your selection of data from the data browser. 
 
@@ -29,7 +29,7 @@ If you mark the incorrect datasets, you will be required to resubmit your agreem
 
 ### Contemplated Use
 
-On page 8 of the DAA, you must submit a description of your research project. Please specifically describe the intended role of St. Jude’s data in your research project. Your contemplated use can be anywhere from a paragraph to a few pages long, although a typical contemplated use is 1-2 paragraphs. Each [Data Access Committee](glossary.md#data-access-committee) will evaluate your contemplated use case and decide whether to approve or deny your application for data access based on their own set of protocols. Please [contact us](https://stjude.cloud/contact) if you have any questions regarding the protocols of the approval process.
+On page 8 of the DAA, you must submit a description of your research project. Please specifically describe the intended role of St. Jude’s data in your research project. Your contemplated use can be anywhere from a paragraph to a few pages long, although a typical contemplated use is 1-2 paragraphs. Each [Data Access Committee](../glossary/#data-access-committee) will evaluate your contemplated use case and decide whether to approve or deny your application for data access based on their own set of protocols. Please [contact us](https://stjude.cloud/contact) if you have any questions regarding the protocols of the approval process.
 
 ![](./docs-CU-short.png)
 
@@ -55,7 +55,7 @@ Pages 10 and 11 of the DAA must be signed by any additional person(s) who will h
 ### Institutional Authority
 
 Page 12 of the agreement must be filled out and signed by your Institutional or Administrative Authority. The institutional authority is an individual who has the authority to sign for a grant application. This individual cannot be the same as the Principal Investigator that signed on page 9, as this additional signature provides a second-party authority of the institution to ensure that the institution will uphold the terms of this agreement.
-    ![](./requesting-data/docs-IA.png)
+    ![](./docs-IA.png)
 
 
 ### Information Security Officer
@@ -73,14 +73,14 @@ Users who live in the United States will be given the option to complete the Dat
 
 After submitting the required information, the Data Access Agreement will be sent via email to each individual entered through the setup wizard. Each individual must follow the link in their email to sign the appropriate page of the agreement via DocuSign. If any individual rejects or declines to sign the agreement, you will need to start a new data request from the data browser. 
 
-Once you start the Electronic Data Access Agreement process, you will have a draft autosaved for you on your [My Dashboard](https://platform.stjude.cloud/requests/manage) page, accessible at any time. Learn how to [check your Request Status](../managing-data/working-with-our-data.md#managing-your-data-requests)  
+Once you start the Electronic Data Access Agreement process, you will have a draft autosaved for you on your [My Dashboard](https://platform.stjude.cloud/requests/manage) page, accessible at any time. Learn how to [check your Request Status](../../managing-data/working-with-our-data/#managing-your-data-requests)  
 
-Once all signatures have been collected, your data access request will be submitted to St. Jude Cloud. A St. Jude Cloud administrator will forward your Data Access Agreement and intended use to the appropriate [Data Access Committee(s)](glossary.md#data-access-committee) for approval. Upon approval from the DAC(s), you will receive an email with a link to the approved data, which will be hosted through DNAnexus.  
+Once all signatures have been collected, your data access request will be submitted to St. Jude Cloud. A St. Jude Cloud administrator will forward your Data Access Agreement and intended use to the appropriate [Data Access Committee(s)](../glossary/#data-access-committee) for approval. Upon approval from the DAC(s), you will receive an email with a link to the approved data, which will be hosted through DNAnexus.  
 
 
 ### Similar Topics
 
-[Studies](about-our-data.md#data-access-units)
-[Making a Data Request](data-request.md)  
-[Renewing your Data Access](../managing-data/how-to-fill-out-Extension.md)  
-[Managing Data Overview](../managing-data/working-with-our-data.md)
+[Studies](../about-our-data/#data-access-units) 
+[Making a Data Request](../making-a-data-request)  
+[Renewing your Data Access](../../managing-data/how-to-fill-out-extension)  
+[Managing Data Overview](../../managing-data/working-with-our-data)

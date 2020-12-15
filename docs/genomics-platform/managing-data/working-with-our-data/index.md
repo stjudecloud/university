@@ -3,12 +3,12 @@ title: Working With Our Data
 ---
 
 
-In this overview, we will explain how to manage your data request(s) from St. Jude Cloud's genomics platform [My Dashboard page](https://platform.stjude.cloud/dashboard) and how to access and manage your data (once it has been vended to you) from within a DNAnexus project.  The [DNAnexus](https://www.dnanexus.com/) genomic ecosystem is the backbone for the computation and storage in St. Jude Cloud. This means that each data request in St. Jude Cloud corresponds to a project in DNAnexus. If you'd like, you can read an introduction to the DNAnexus ecosystem [here](https://documentation.dnanexus.com/). If you haven't already, follow [this guide](../requesting-data/data-request.md) to request access to St. Jude data in this secure cloud ecosystem.
+In this overview, we will explain how to manage your data request(s) from St. Jude Cloud's genomics platform [My Dashboard page](https://platform.stjude.cloud/dashboard) and how to access and manage your data (once it has been vended to you) from within a DNAnexus project.  The [DNAnexus](https://www.dnanexus.com/) genomic ecosystem is the backbone for the computation and storage in St. Jude Cloud. This means that each data request in St. Jude Cloud corresponds to a project in DNAnexus. If you'd like, you can read an introduction to the DNAnexus ecosystem [here](https://documentation.dnanexus.com/). If you haven't already, follow [this guide](../../requesting-data/making-a-data-request) to request access to St. Jude data in this secure cloud ecosystem.
 
 
 ## Managing Your Data Requests
 
-Below is a snapshot of the [My Dashboard](https://platform.stjude.cloud/dashboard) on our Genomcis Platform. From this page you can check the status of your data request, complete an [EDAA](../requesting-data/how-to-fill-out-DAA.md#the-electronic-data-access-agreement-process) draft, upload a revised [DAA](../requesting-data/how-to-fill-out-DAA.md) or an [Extension Addendum](how-to-fill-out-Extension.md), or link to your DNAnexus project folder for a specific data request.
+Below is a snapshot of the [My Dashboard](https://platform.stjude.cloud/dashboard) on our Genomcis Platform. From this page you can check the status of your data request, complete an [EDAA](../../requesting-data/how-to-fill-out-daa/#the-electronic-data-access-agreement-process) draft, upload a revised [DAA](../../requesting-data/how-to-fill-out-daa) or an [Extension Addendum](../how-to-fill-out-extension), or link to your DNAnexus project folder for a specific data request.
 
 ![](./docs-manage-data-page-labelled-tagged.png)
     
@@ -38,18 +38,18 @@ project_space/
 └── SAMPLE_INFO.txt
 ```
 
-The `SAMPLE_INFO.txt` file provides all the [metadata](../requesting-data/about-our-data.md#metadata) associated with the request, and the restricted folder contains all the data for which you were approved separated by file type. 
+The `SAMPLE_INFO.txt` file provides all the [metadata](../../requesting-data/about-our-data/#metadata) associated with the request, and the restricted folder contains all the data for which you were approved separated by file type. 
 
 
 ## Using Your Data
 
 There are two primary ways you can interact with data vended to you in St. Jude Cloud:
 
-* **Cloud access**. You can choose to work with the data in DNAnexus' genomics cloud ecosystem. This is our suggested method of interaction, as you can avoid downloading the data to your local servers (which both takes time and is error prone). If you choose to leverage this approach, you can either wrap your own analysis pipeline as a cloud app (see [our guide](../analyzing-data/creating-a-cloud-app.md)) or leverage any of DNAnexus' publicly available apps (see [DNAnexus' guide](https://documentation.dnanexus.com/user/running-apps-and-workflows).
-* **Download the data** (*not suggested*). The second way to interact with data vended to you in St. Jude Cloud is by downloading the data to your local servers. If you wish to do this, you can download the data on the command line (see [our guide](../analyzing-data/command-line.md)). **Note that you must have indicated you wish to download the data in your [data access agreement](../requesting-data/how-to-fill-out-DAA.md#the-data-access-agreement).**
+* **Cloud access**. You can choose to work with the data in DNAnexus' genomics cloud ecosystem. This is our suggested method of interaction, as you can avoid downloading the data to your local servers (which both takes time and is error prone). If you choose to leverage this approach, you can either wrap your own analysis pipeline as a cloud app (see [our guide](../../analyzing-data/creating-a-cloud-app)) or leverage any of DNAnexus' publicly available apps (see [DNAnexus' guide](https://documentation.dnanexus.com/user/running-apps-and-workflows)).
+* **Download the data** (*not suggested*). The second way to interact with data vended to you in St. Jude Cloud is by downloading the data to your local servers. If you wish to do this, you can download the data on the command line (see [our guide](../../analyzing-data/command-line)). **Note that you must have indicated you wish to download the data in your [data access agreement](../../requesting-data/how-to-fill-out-daa/#the-data-access-agreement).**
 
 ## Similar Topics
 
-[About our Data](../requesting-data/about-our-data.md)   
-[Making a Data Request](../requesting-data/data-request.md)  
-[Upload/Download Data (local)](../managing-data/upload-local.md)  
+[About our Data](../../requesting-data/about-our-data)   
+[Making a Data Request](../../requesting-data/making-a-data-request)  
+[Upload/Download Data (local)](../upload-local)  
