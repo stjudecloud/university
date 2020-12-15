@@ -4,10 +4,6 @@ title: Creating a Cloud Application
 
 # Creating a Cloud Application
 
-!!!info
-If you came here from the remote work quickstart guide, you can use [this link](../../covid-19/creating-a-cloud-app-covid.md) to quickly jump back to your place in that guide.
-!!!
-
 This guide will take you through the process of writing an application for working with and manipulating the St. Jude data you've requested. By creating your own application, you will be able to wrap genomic tools and packages from external sources, as well as any tool or application you might have written yourself.
 
 !!!tip
@@ -33,7 +29,7 @@ For this tutorial I have requested the PCGP dataset, and once my access request 
 ![](./creating-a-cloud-app-0.png)
 
 !!!note
-If you do not yet have data in a DNAnexus project, you may request data from St. Jude Cloud by following the directions [here](../requesting-data/data-request.md) or you may upload your own data using [the command line](../analyzing-data/command-line.md). In order to make a data request or upload your own data using the command line, you must first [create a St. Jude Cloud account](../accounts-and-billing.md).
+If you do not yet have data in a DNAnexus project, you may request data from St. Jude Cloud by following the directions [here](../../requesting-data/making-a-data-request) or you may upload your own data using [the command line](../command-line). In order to make a data request or upload your own data using the command line, you must first [create a St. Jude Cloud account](../../accounts-and-billing).
 !!!
 
 
@@ -80,7 +76,7 @@ The easiest way to install `dx-toolkit` is through `pip`, the Python package man
 pip install dxpy --upgrade
 ```
 
-For this application, we will be using the `dx-app-wizard` command that is included in the `dx-toolkit`. `dx-app-wizard` is an interactive prompt that creates a boilerplate project that will allow you to quickly create an application. For more on `dx-app-wizard`, refer to the DNAnexus wiki article on [Intro to Building Apps](https://documentation.dnanexus.com/developer/apps/intro-to-building-apps). Before continuing, be sure to refer to the [command line interaction page](command-line.md) for a walkthrough on how to install [dx-toolkit](https://documentation.dnanexus.com/downloads#DNAnexus-Platform-SDK) and how to select your project workspace.
+For this application, we will be using the `dx-app-wizard` command that is included in the `dx-toolkit`. `dx-app-wizard` is an interactive prompt that creates a boilerplate project that will allow you to quickly create an application. For more on `dx-app-wizard`, refer to the DNAnexus wiki article on [Intro to Building Apps](https://documentation.dnanexus.com/developer/apps/intro-to-building-apps). Before continuing, be sure to refer to the [command line interaction page](../command-line) for a walkthrough on how to install [dx-toolkit](https://documentation.dnanexus.com/downloads#DNAnexus-Platform-SDK) and how to select your project workspace.
 
 !!!tip
 It is not necessary to use `dx-app-wizard`. All the necessary files and project directory structure can be created manually. However, `dx-app-wizard` provides a quick and easy way to get started. For more information, refer to the [Advanced App Tutorial](https://documentation.dnanexus.com/developer/apps/advanced-app-tutorial).
@@ -107,7 +103,7 @@ The `dx-fastqc-example-app.sh` file is a bash script is what will be executed wh
 Start by running the `dx-app-wizard` command from your terminal.
 
 !!!info
-This helper tool will create a **local** directory on your machine. Any code changes we make will be done *inside* this local project directory created by `dx-app-wizard`. This is because we can write our application locally, [build the application](../../guides/data/creating-a-cloud-app/#building-your-app), and then [run the application](../../guides/data/creating-a-cloud-app/#running-your-app) in the cloud.
+This helper tool will create a **local** directory on your machine. Any code changes we make will be done *inside* this local project directory created by `dx-app-wizard`. This is because we can write our application locally, [build the application](./#building-your-app), and then [run the application](./#running-your-app) in the cloud.
 
 Building the application will compile `dx-fastqc-example-app` and then upload it into the project space on the cloud. When we run an application, it will be submitted as a job to be run in the cloud. With this process, we can write the application locally and run it on our data in the cloud, without ever having to utilize personal bandwidth and compute time.
 !!!
@@ -152,7 +148,7 @@ $ Will this app need access to the parent project? [y/N]: y
 $ Choose an instance type for your app [mem1_ssd1_x4]: azure:mem1_ssd1_x4
 ```
 
-!!!Tip
+!!!tip
 Although our app doesn't need any Internet access in this example, it may be required for your project. Also be sure to check what instance type you will need in the [API Specifications](https://documentation.dnanexus.com/developer/api/running-analyses/instance-types).
 !!!
 
@@ -173,7 +169,7 @@ dx-fastqc-example-app/
 └── test/
 ```
 
-!!!Info
+!!!info
 Anything in the resources folder is unpacked into the root directory (`/`) of the virtual Linux machine that your application will run on. If we create the directory path `dx-fastqc-example-app/resources/usr/bin/`, anything in the bin folder would be unpacked into `/usr/bin/` on the Linux machine. This is handy because that path is included in the default `$PATH` environment variable.
 
 Your application's executable will use `/home/dnanexus/` as its current working directory.
@@ -484,8 +480,8 @@ If you have any questions or suggestions on how we can improve this tutorial, pl
 
 ## Similar Topics
 
-[About our Data](../requesting-data/about-our-data.md)   
-[Making a Data Request](../requesting-data/data-request.md)   
-[Working with our Data Overview](../managing-data/working-with-our-data.md)     
-[Upload/Download Data (local)](../managing-data/upload-local.md)    
-[Command Line Interaction](command-line.md)  
+[About our Data](../../requesting-data/about-our-data)   
+[Making a Data Request](../../requesting-data/making-a-data-request)   
+[Working with our Data Overview](../../managing-data/working-with-our-data)     
+[Upload/Download Data (local)](../../managing-data/upload-local)    
+[Command Line Interaction](../command-line)  
