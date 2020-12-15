@@ -21,8 +21,8 @@ There are two different experiences for doing interactive or ad-hoc analysis in 
 
 In this guide, we will briefly mention how to use Cloud Workstations and then spend the rest of the guide explaining how to use our new Interactive Node experience.
 
-[creating and running cloud apps]: ./creating-a-cloud-app.md
-[the local data upload guide]: ../managing-data/upload-local.md
+[creating and running cloud apps]: ../creating-a-cloud-app
+[the local data upload guide]: ../../managing-data/upload-local
 
 ## Cloud Workstations
 
@@ -45,7 +45,7 @@ or just `dx select` to select from a list of your projects interactively.
 Next, run `dx run app-cloud_workstation --ssh`. You can set the maximum session length for this session or continue with the default options.
 
 !!!tip
-The default node size for the cloud workstations are mem1_ssd1_x2. If you want to request a larger node size, you can specify it by adding the `--instance-type` option. Check the [advanced options section](../interactive-node/#advanced-options) at the bottom for more information.
+The default node size for the cloud workstations are mem1_ssd1_x2. If you want to request a larger node size, you can specify it by adding the `--instance-type` option. Check the [advanced options section](./#advanced-options) at the bottom for more information.
 !!!
 
 ### Setting up workspace
@@ -85,7 +85,7 @@ Cloud workstations are good for interactive work, but they require you to upload
 
 ### Setting up your Docker Hub account
 
-The workstation uses Docker images pushed to a Docker Hub repository to save your environment. To get started, go to [Docker Hub](https://hub.docker.com/) and sign in or create an account. Every Docker Hub account is given one free private repository. It is highly recommended to [use a private repository](../interactive-node/#making-a-docker-hub-repository-private) as this will be your working environment.
+The workstation uses Docker images pushed to a Docker Hub repository to save your environment. To get started, go to [Docker Hub](https://hub.docker.com/) and sign in or create an account. Every Docker Hub account is given one free private repository. It is highly recommended to [use a private repository](./#making-a-docker-hub-repository-private) as this will be your working environment.
 
 Once you have a Docker Hub account, go to your "Account Settings", then "Security" and create a new access token.
 

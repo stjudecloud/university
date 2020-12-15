@@ -14,11 +14,11 @@ If you use the initial $50 credit from creating your account and are interested 
 To get started with any St. Jude Cloud workflow, first navigate to the appropriate workflow page. Below is a complete list of the workflows we offer along with links to their corresponding tool page and documentation page.
 
 <!--* NeoepitopePred [[tool page](https://platform.stjude.cloud/workflows/neoepitopepred)] [[documentation](neoepitope.md)]-->
-* ChIP-Seq Peak Calling [[tool page](https://platform.stjude.cloud/workflows/chip-seq)] [[documentation](chipseq.md)]
-* Rapid RNA-Seq Fusion Detection [[tool page](https://platform.stjude.cloud/workflows/rapid_rna-seq)] [[documentation](rapid-rnaseq.md)]
-* WARDEN Differential Expression Analysis [[tool page](https://platform.stjude.cloud/workflows/warden)] [[documentation](warden.md)]
-* Mutational Signatures [[tool page](https://platform.stjude.cloud/workflows/mutational_signatures)] [[documentation](mutational-signatures.md)]
-* SequencErr [[tool page](https://platform.stjude.cloud/workflows/sequencerr)] [[documentation](sequencerr.md)]
+* ChIP-Seq Peak Calling [[tool page](https://platform.stjude.cloud/workflows/chip-seq)] [[documentation](../../workflow-guides/chipseq)]
+* Rapid RNA-Seq Fusion Detection [[tool page](https://platform.stjude.cloud/workflows/rapid_rna-seq)] [[documentation](../../workflow-guides/rapid-rnaseq)]
+* WARDEN Differential Expression Analysis [[tool page](https://platform.stjude.cloud/workflows/warden)] [[documentation](../../workflow-guides/warden)]
+* Mutational Signatures [[tool page](https://platform.stjude.cloud/workflows/mutational_signatures)] [[documentation](../../workflow-guides/mutational-signatures)]
+* SequencErr [[tool page](https://platform.stjude.cloud/workflows/sequencerr)] [[documentation](../../workflow-guides/sequencerr)]
 
 
 From the appropriate workflow page, click the "Start" button in the left hand pane. This creates a new DNAnexus cloud workspace (with the same name as the workflow) and imports the workflow.
@@ -28,7 +28,7 @@ From the appropriate workflow page, click the "Start" button in the left hand pa
 With subsequent runs, in place of the "Start" button will be two buttons "Launch Tool" and "View Results", meaning a cloud workspace with the workflow has already been created for you. In this case, you're good! You can move on to the next section.
 
 !!!note
-If you have not yet logged in, in place of the "Start" button will be a button the says "Log In". If you see this, simply login and try again. For a guide to creating an account go [here](../accounts-and-billing.md).
+If you have not yet logged in, in place of the "Start" button will be a button the says "Log In". If you see this, simply login and try again. For a guide to creating an account go [here](../../accounts-and-billing).
 
 If you are still unable to start the workflow,
 [contact us](https://stjude.cloud/contact).
@@ -39,7 +39,7 @@ If you are still unable to start the workflow,
 
 Now that a DNAnexus cloud workspace has been created, you will be able to upload input files to that workspace. The specific documentation for each workflow will detail what input files you will need to upload. 
 
-You can upload these files using the [the command line](../analyzing-data/command-line.md).
+You can upload these files using the [the command line](../command-line).
 
 
 ## Running the Workflow
@@ -180,7 +180,7 @@ If you have any unanswered questions about how to run one of our in-house workfl
 
 ## Similar Topics
 
-[Command Line Interaction](../analyzing-data/command-line.md)  
-[Working with our Data Overview](../managing-data/working-with-our-data.md)   
-[Upload/Download Data (local)](../managing-data/upload-local.md)  
-[Technical FAQs](../../../faq.md#how-can-i-explore-and-manipulate-data-files-stored-on-the-cloud-without-downloading-the-files-to-my-local-machine)
+[Command Line Interaction](../command-line)  
+[Working with our Data Overview](../../managing-data/working-with-our-data)   
+[Upload/Download Data (local)](../../managing-data/upload-local)  
+[Technical FAQs](../../faq/#how-can-i-explore-and-manipulate-data-files-stored-on-the-cloud-without-downloading-the-files-to-my-local-machine)

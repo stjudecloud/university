@@ -151,7 +151,7 @@ data request:
 
 ## Similar Topics
 
-[About our Data](../requesting-data/about-our-data.md)   
-[Making a Data Request](../requesting-data/data-request.md)   
-[Working with our Data Overview](../managing-data/working-with-our-data.md)   
-[Upload/Download Data (local)](../managing-data/upload-local.md)    
+[About our Data](../../requesting-data/about-our-data)   
+[Making a Data Request](../../requesting-data/making-a-data-request)   
+[Working with our Data Overview](../../managing-data/working-with-our-data)   
+[Upload/Download Data (local)](../../managing-data/upload-local)    
