@@ -1,4 +1,12 @@
 modules:
+  - title: "Overview"
+    path: /docs/overview/
+    icon: stjudecloud-logo.svg
+    chapters:
+      - title: "Overview"
+        pages:
+          - title: "Overview"
+            path: /docs/overview/
   - title: "Genomics Platform"
     path: /docs/genomics-platform/
     icon: stjudecloud-genomics-platform-logo.svg
