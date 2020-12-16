@@ -63,3 +63,11 @@ modules:
         pages:
           - title: "VisComm Test Chapter"
             path: /docs/visualization-community/getting-started/first-steps/
+  - title: "Studies"
+    path: /docs/studies/
+    icon: stjudecloud-visualization-community-logo.svg
+    chapters:
+      - title: "Sickle Cell"
+        pages: 
+          - title: "Sickle Cell"
+            path: /docs/studies/sickle-cell/
