@@ -109,7 +109,7 @@ Once you've uploaded data to your cloud workspace, click "Launch Tool" on the to
 
 ### Uploading data
 
-The RNA-Seq Expression Classification pipeline takes either a htseq-count count file or a GRCh38_no_alt aligned BAM from human RNA-Seq. You can upload your input file(s) through the command line. See [Uploading Data from your Local Computer](../../../covid-19/upload-local).
+The RNA-Seq Expression Classification pipeline takes either a htseq-count count file or a GRCh38_no_alt aligned BAM from human RNA-Seq. You can upload your input file(s) through the command line. See [Uploading Data from your Local Computer](../../managing-data/upload-local).
 
 Once you have the `dx` toolkit, to upload a sample HTSeq count file `sample.counts.txt` to the `inputs` folder of the `project-rnaseq` cloud project, you could use the following command:
 

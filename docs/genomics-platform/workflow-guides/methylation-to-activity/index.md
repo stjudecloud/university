@@ -60,17 +60,17 @@ Model weights (.h5) file: 1) H3K27ac or 2) H3K4me3
 
 ## Preparing to run M2A
 
-Before you can run one of our workflows, you must first create a workspace in DNAnexus for the run. Refer to [the general workflow guide](running-sj-workflows.md#getting-started) to learn how to create a DNAnexus workspace for each workflow run.
+Before you can run one of our workflows, you must first create a workspace in DNAnexus for the run. Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#getting-started) to learn how to create a DNAnexus workspace for each workflow run.
 
-Refer to [the general workflow guide](running-sj-workflows.md#uploading-files) to learn how to upload input files to the workspace you just created.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#uploading-files) to learn how to upload input files to the workspace you just created.
 
-Refer to [the general workflow guide](running-sj-workflows.md#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
 
 ## Analysis of Results
 
 Today, the M2A pipeline does not produce an interactive visualization. If M2A with Transfer was run, the easiest measurment of training prediction accuracy would be caluclating the Pearson's R<sup>2</sup>, or root mean square error (RMSE) between the measured and M2A predicted values. Furthermore, comparisons of sample-sample consistency with the same/similar cancer-type (as determiend by Pearson's R<sup>2</sup>) is a good start for a contextual understanding of the predictions produced by M2A.
 
-Refer to [the general workflow guide](running-sj-workflows.md#raw-results-files) to learn how to access raw results files.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#raw-results-files) to learn how to access raw results files.
 
 ## Interpreting results
 
@@ -85,6 +85,6 @@ out on [our contact form](https://hospital.stjude.org/apps/forms/fb/st-jude-clou
 
 ## Similar Topics
 
-[Running our Workflows](../analyzing-data/running-sj-workflows.md)  
-[Working with our Data Overview](../managing-data/working-with-our-data.md)   
-[Upload/Download Data (local)](../managing-data/upload-local.md)  
+[Running our Workflows](../../analyzing-data/running-sj-workflows)  
+[Working with our Data Overview](../../managing-data/working-with-our-data)   
+[Upload/Download Data (local)](../../managing-data/upload-local)  

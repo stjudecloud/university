@@ -56,6 +56,7 @@ by users.
 -   The chromosome requires a 'chr' prefix.
 -   The position requires a suffix of HG19/HG38 to indicate the human genome assembly version.
 -   Only the missense mutations/gene fusion is supported currently and the other types of mutations will not be processed.
+!!!
 
 **Mutation file example**
 
@@ -120,7 +121,7 @@ be highlighted in output file (default 500 nM). Below is an outline of internal 
 5. Produce the affinity report of each peptide.
 
 ## Creating a workspace
-Before you can run one of our workflows, you must first create a workspace in DNAnexus for the run. Refer to [the general workflow guide](running-sj-workflows.md#getting-started) to learn how to create a DNAnexus workspace for each workflow run.
+Before you can run one of our workflows, you must first create a workspace in DNAnexus for the run. Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#getting-started) to learn how to create a DNAnexus workspace for each workflow run.
 
 You can navigate to the NeoepitopePred workflow page [here](https://platform.stjude.cloud/workflows/neoepitopepred).
 
@@ -132,11 +133,11 @@ NeoepitopePred takes the following files as [input](#inputs):
   generated from whole genome sequencing, whole exome sequencing, or RNA-Seq. 
 * A file describing the mutations in a sample. 
 
-Refer to [the general workflow guide](running-sj-workflows.md#uploading-files) to learn how to upload input files to the workspace you just created.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#uploading-files) to learn how to upload input files to the workspace you just created.
 
 ## Running the Workflow
 
-Refer to [the general workflow guide](running-sj-workflows.md#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
 
 !!!caution
 This pipeline assumes HG19 coordinates in the mutation file. If the
@@ -148,11 +149,11 @@ to perform epitope affinity prediction.
 ## Analysis of Results
 Each tool in St. Jude Cloud produces a visualization that makes understanding results more accessible than working with excel spreadsheet or tab delimited files. This is the primary way we recommend you work with your results. 
 
-Refer to [the general workflow guide](running-sj-workflows.md#custom-visualizations) to learn how to access these visualizations.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#custom-visualizations) to learn how to access these visualizations.
 
 We also include the raw output files for you to dig into if the visualization is not sufficient to answer your research question.
 
-Refer to [the general workflow guide](running-sj-workflows.md#raw-results-files) to learn how to access raw results files.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#raw-results-files) to learn how to access raw results files.
 
 ### Interpreting results
 
@@ -234,9 +235,9 @@ out on [our contact form](https://hospital.stjude.org/apps/forms/fb/st-jude-clou
 
 ## Similar Topics
 
-[Running our Workflows](../analyzing-data/running-sj-workflows.md)  
-[Working with our Data Overview](../managing-data/working-with-our-data.md)   
-[Upload/Download Data (local)](../managing-data/upload-local.md)  
+[Running our Workflows](../../analyzing-data/running-sj-workflows)  
+[Working with our Data Overview](../../managing-data/working-with-our-data)   
+[Upload/Download Data (local)](../../managing-data/upload-local)   
 
 
 [^1]: Downing JR, Wilson RK, Zhang J, et al. The Pediatric Cancer Genome
