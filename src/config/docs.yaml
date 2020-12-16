@@ -71,3 +71,13 @@ modules:
         pages: 
           - title: "Sickle Cell"
             path: /docs/studies/sickle-cell/
+  - title: "Portals"
+    path: /docs/portals/
+    icon: stjudecloud-visualization-community-logo.svg
+    chapters:
+      - title: "Portals"
+        pages: 
+          - title: "Childhood Solid Tumor Network Portal"
+            path: /docs/portals/cstn/
+          - title: "Pediatric Brain Tumor Portal"
+            path: /docs/portals/pbtp/
