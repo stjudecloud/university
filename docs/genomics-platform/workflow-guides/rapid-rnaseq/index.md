@@ -119,7 +119,7 @@ particular gene fusion. The fusion point is indicated with square
 brackets `[]`.
 
 ## Creating a workspace
-Before you can run one of our workflows, you must first create a workspace in DNAnexus for the run. Refer to [the general workflow guide](running-sj-workflows.md#getting-started) to learn how to create a DNAnexus workspace for each workflow run.
+Before you can run one of our workflows, you must first create a workspace in DNAnexus for the run. Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#getting-started) to learn how to create a DNAnexus workspace for each workflow run.
 
 You can navigate to the Rapid RNA-Seq workflow page [here](https://platform.stjude.cloud/workflows/rapid_rna-seq).
 
@@ -134,22 +134,22 @@ functionality.
 
 The Rapid RNA-Seq pipeline takes as [input](#inputs) either a paired set of Gzipped FastQ files or a GRCh37-lite aligned BAM from human RNA-Seq. 
 
-Refer to [the general workflow guide](running-sj-workflows.md#uploading-files) to learn how to upload input files to the workspace you just created.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#uploading-files) to learn how to upload input files to the workspace you just created.
 
 
 ## Running the Workflow
 
-Refer to [the general workflow guide](running-sj-workflows.md#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
 
 
 ## Analysis of Results
 Each tool in St. Jude Cloud produces a visualization that makes understanding results more accessible than working with excel spreadsheet or tab delimited files. This is the primary way we recommend you work with your results. 
 
-Refer to [the general workflow guide](running-sj-workflows.md#custom-visualizations) to learn how to access these visualizations.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#custom-visualizations) to learn how to access these visualizations.
 
 We also include the raw output files for you to dig into if the visualization is not sufficient to answer your research question.
 
-Refer to [the general workflow guide](running-sj-workflows.md#raw-results-files) to learn how to access raw results files.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#raw-results-files) to learn how to access raw results files.
 
 ### Interpreting results
 
@@ -230,6 +230,6 @@ See [How can I run an analysis workflow on multiple sample files at the same tim
 
 ## Similar Topics
 
-[Running our Workflows](../analyzing-data/running-sj-workflows.md)  
-[Working with our Data Overview](../managing-data/working-with-our-data.md)   
-[Upload/Download Data (local)](../managing-data/upload-local.md)   
+[Running our Workflows](../../analyzing-data/running-sj-workflows)  
+[Working with our Data Overview](../../managing-data/working-with-our-data)   
+[Upload/Download Data (local)](../../managing-data/upload-local)    

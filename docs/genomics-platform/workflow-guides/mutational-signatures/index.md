@@ -51,7 +51,7 @@ sample name.
 
 Before you can run one of our workflows, you must first create a workspace in
 DNAnexus for the run. Refer to [the general workflow
-guide](running-sj-workflows.md#getting-started) to learn how to create a
+guide](../../analyzing-data/running-sj-workflows/#getting-started) to learn how to create a
 DNAnexus workspace for each workflow run.
 
 You can navigate to the Mutational Signatures workflow page
@@ -62,13 +62,13 @@ You can navigate to the Mutational Signatures workflow page
 Mutational Signatures requires at least one VCF to be uploaded.
 
 Refer to [the general workflow
-guide](running-sj-workflows.md#uploading-files) to learn how to upload input
+guide](../../analyzing-data/running-sj-workflows/#uploading-files) to learn how to upload input
 files to the workspace you just created.
 
 ## Running the Workflow
 
 Refer to [the general workflow
-guide](running-sj-workflows.md#running-the-workflow) to learn how to launch
+guide](../../analyzing-data/running-sj-workflows/#running-the-workflow) to learn how to launch
 the workflow, hook up input files, adjust parameters, start a run, and
 monitor run progress.
 
@@ -79,14 +79,14 @@ results more accessible than working with spreadsheets or tab-delimited
 files. This is the primary way we recommend you work with your results.
 
 Refer to [the general workflow
-guide](running-sj-workflows.md#custom-visualizations) to learn how to access
+guide](../../analyzing-data/running-sj-workflows/#custom-visualizations) to learn how to access
 these visualizations.
 
 We also include the raw output files for you to dig into if the visualization
 is not sufficient to answer your research question.
 
 Refer to [the general workflow
-guide](running-sj-workflows.md#raw-results-files) to learn how to access raw
+guide](../../analyzing-data/running-sj-workflows/#raw-results-files) to learn how to access raw
 results files.
 
 ## Interpreting results
@@ -158,9 +158,9 @@ form](https://hospital.stjude.org/apps/forms/fb/st-jude-cloud-contact/).
 
 ## Similar Topics
 
-[Running our Workflows](../analyzing-data/running-sj-workflows.md)
-[Working with our Data Overview](../managing-data/working-with-our-data.md)
-[Upload/Download Data (local)](../managing-data/upload-local.md)
+[Running our Workflows](../../analyzing-data/running-sj-workflows)  
+[Working with our Data Overview](../../managing-data/working-with-our-data)   
+[Upload/Download Data (local)](../../managing-data/upload-local)  
 
 [10.1186/s13073-018-0539-0]: https://doi.org/10.1186/s13073-018-0539-0
 [29695279]: https://www.ncbi.nlm.nih.gov/pubmed/29695279

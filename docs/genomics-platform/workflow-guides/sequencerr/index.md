@@ -97,7 +97,7 @@ Please refer to the following steps to learn how to launch the workflow, hook up
 !!!caution "For Manuscript Reviewers only" 
 Please select **_DNAnexus account_** option to log in.
     
-Follow the stepwise instructions available in the **PDF [here](../../../files/guides/tools/sequencerr/SequencErr_Instructions.pdf)** .
+Follow the stepwise instructions available in the **PDF [here](./SequencErr_Instructions.pdf)** .
 !!!
 
 General users please refer to the following instructions.
@@ -111,7 +111,7 @@ General users please refer to the following instructions.
 
 **Choose Input BAM and Index Files**
 
-Users can upload and download data files with **command line interactions** as described [here](../../../guides/genomics-platform/analyzing-data/command-line.md)
+Users can upload and download data files with **command line interactions** as described [here](../../analyzing-data/command-line)
 
 ![](./Sequencerr_BAM_5.png)
 
@@ -156,6 +156,6 @@ Follow the similar steps to choose and select the corresponding BAM index file
 
 ## Similar Topics
 
-[Running our Workflows](../analyzing-data/running-sj-workflows.md)  
-[Working with our Data Overview](../managing-data/working-with-our-data.md)   
-[Upload/Download Data (local)](../managing-data/upload-local.md)   
+[Running our Workflows](../../analyzing-data/running-sj-workflows)  
+[Working with our Data Overview](../../managing-data/working-with-our-data)   
+[Upload/Download Data (local)](../../managing-data/upload-local)    

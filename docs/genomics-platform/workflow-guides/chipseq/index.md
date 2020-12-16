@@ -51,7 +51,7 @@ file.
 the quality of experiment.
 
 ## Creating a workspace
-Before you can run one of our workflows, you must first create a workspace in DNAnexus for the run. Refer to [the general workflow guide](running-sj-workflows.md#getting-started) to learn how to create a DNAnexus workspace for each workflow run.
+Before you can run one of our workflows, you must first create a workspace in DNAnexus for the run. Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#getting-started) to learn how to create a DNAnexus workspace for each workflow run.
 
 You can navigate to the ChIP-Seq Peak Calling workflow page [here](https://platform.stjude.cloud/workflows/chip-seq).
 
@@ -59,18 +59,18 @@ You can navigate to the ChIP-Seq Peak Calling workflow page [here](https://platf
 
 The ChIP-Seq Peak Caller takes Gzipped FastQ files generated from an IP experiment as [input](#inputs). 
 
-Refer to [the general workflow guide](running-sj-workflows.md#uploading-files) to learn how to upload input files to the workspace you just created.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#uploading-files) to learn how to upload input files to the workspace you just created.
 
 ## Running the Workflow
 
-Refer to [the general workflow guide](running-sj-workflows.md#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
 
 For the ChIP-Seq workflow, you will see special preset options in the "Launch Tool" dropdown. These are explained below. 
 
 
 You'll need to decide **(1)** whether you'd like to run broad OR narrow peak
 calling and **(2)** whether you have a case sample and a control sample (preferred)
-OR just a case sample. This will determine which preset you should click in this dropdown. Note that if you are not doing a case/control run, when you get to the [hooking up inputs step](running-sj-workflows.md#hooking-up-inputs) you only need to hook up the case sample.
+OR just a case sample. This will determine which preset you should click in this dropdown. Note that if you are not doing a case/control run, when you get to the [hooking up inputs step](../../analiyzing-data/running-sj-workflows/#hooking-up-inputs) you only need to hook up the case sample.
 
 
 ### Broad vs. narrow peak calling
@@ -112,7 +112,7 @@ If your fragment size is less than 50 base pairs, please refer to the
 ### Selecting parameters
 
 The following are the parameters that can be set, a short
-description of each parameter, and an example value. How to customize parameters is covered in [the general workflow guide](running-sj-workflows.md#selecting-parameters). If you
+description of each parameter, and an example value. How to customize parameters is covered in [the general workflow guide](../../analyzing-data/running-sj-workflows/#selecting-parameters). If you
 have questions, please [contact us](https://stjude.cloud/contact).
 
 | Parameter Name | Description | Example |
@@ -141,7 +141,7 @@ the results will be put under `/Results/[OUTPUT_PREFIX]`.
 Today, the ChIP-Seq pipeline does not produce an interactive visualization. We are working on adding this! In the meantime, you can view the cross-correlation plot(s)
 as outlined in the sections below.
 
-Refer to [the general workflow guide](running-sj-workflows.md#raw-results-files) to learn how to access raw results files.
+Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#raw-results-files) to learn how to access raw results files.
 
 ChIP-Seq results will be in the `Results` folder. Select the output folder name you specified in the [parameters](#selecting-parameters) part of this workflow run.
 
@@ -182,6 +182,6 @@ the analysis with a specified fragment length.
 
 ## Similar Topics
 
-[Running our Workflows](../analyzing-data/running-sj-workflows.md)  
-[Working with our Data Overview](../managing-data/working-with-our-data.md)   
-[Upload/Download Data (local)](../managing-data/upload-local.md)   
+[Running our Workflows](../../analyzing-data/running-sj-workflows)  
+[Working with our Data Overview](../../managing-data/working-with-our-data)   
+[Upload/Download Data (local)](../../managing-data/upload-local)   
