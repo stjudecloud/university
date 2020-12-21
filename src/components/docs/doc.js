@@ -11,7 +11,7 @@ import { graphql, Link } from "gatsby"
 import Navbar from "../navbar"
 import { ContentsSidebarLeft, ActionSidebarRight } from "./sidebars"
 import SearchModal from "../search"
-import Chevron from "../../icons/chevron.svg"
+import Chevron from "../../images/icons/chevron.svg"
 
 class BaseLayout extends Component {
   static defaultProps = {
@@ -33,7 +33,7 @@ class BaseLayout extends Component {
 
   render() {
     const {
-      configYaml: { modules },
+      configYaml: { domains },
       markdownRemark,
     } = this.props.data
     const { pathname } = this.props.location
@@ -41,10 +41,18 @@ class BaseLayout extends Component {
 
     let currentModule = null
 
-    for (let i = 0; i < modules.length; i++) {
-      if (pathname.startsWith(modules[i].path)) {
-        currentModule = modules[i]
-        break
+    let longestMatchingPathPrefix = -1
+    for (let j = 0; j < domains.length; j++) {
+      const modules = domains[j].modules
+      for (let i = 0; i < modules.length; i++) {
+        if (
+          pathname.startsWith(modules[i].path) &&
+          modules[i].path.length > longestMatchingPathPrefix
+        ) {
+          currentModule = modules[i]
+          longestMatchingPathPrefix = modules[i].path.length
+          break
+        }
       }
     }
 
@@ -57,7 +65,7 @@ class BaseLayout extends Component {
       title: currentTitle,
       chapters: currentChapters,
     } = currentModule
-    const CurrentIconImported = require("../../icons/" + currentIcon)
+    const CurrentIconImported = require("../../images/icons/" + currentIcon)
 
     const flattenedChapters = []
     currentChapters.forEach(chapter => {
@@ -84,12 +92,12 @@ class BaseLayout extends Component {
       }
     }
 
-    // if (!markdownRemark.frontmatter?.title) {
-    //   console.error(
-    //     `Error! You must add a title frontmatter to ${fileAbsolutePath}. Example:\n\n---\ntitle: Making a Data Request\n---\n\nat the top of the file.`
-    //   )
-    //   throw new Error("Please see the error from the console above.")
-    // }
+    if (!markdownRemark.frontmatter?.title) {
+      console.error(
+        `Error! You must add a title frontmatter to ${fileAbsolutePath}. Example:\n\n---\ntitle: Making a Data Request\n---\n\nat the top of the file.`
+      )
+      throw new Error("Please see the error from the console above.")
+    }
 
     return (
       <div className="bg-white text-gray-500 antialiased js-focus-visible">
@@ -112,7 +120,7 @@ class BaseLayout extends Component {
           closeMobileMenu={this.closeMobileMenu}
           CurrentIconImported={CurrentIconImported}
           currentTitle={currentTitle}
-          modules={modules}
+          domains={domains}
           currentChapters={currentChapters}
           currentPathBeingViewed={pathname}
         />
@@ -123,10 +131,10 @@ class BaseLayout extends Component {
             "min-w-screen min-h-screen"
           }
         >
-          <div className="container mt-1 px-9 lg:max-w-3xl mx-auto flex items-center justify-center">
+          <div className="container mt-1 px-9 mx-auto flex items-center justify-center">
             <div className="mt-20 xl:mt-0">
               <div
-                className="content"
+                className="container content lg:max-w-3xl"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
               <div className="mt-8 flex flex-col md:flex-row justify-between">
@@ -154,7 +162,9 @@ class BaseLayout extends Component {
                     </div>
                   </Link>
                 )}
-                <div style={{ flex: "1" }}></div>
+                {(previousPage || previousPage) && (
+                  <div style={{ flex: "1" }}></div>
+                )}
                 {nextPage && (
                   <Link
                     to={nextPage.path}
@@ -200,15 +210,19 @@ export const pageQuery = graphql`
   query($slug: String!) {
     configYaml {
       id
-      modules {
-        icon
-        path
+      domains {
         title
-        chapters {
+        modules {
+          icon
+          path
           title
-          pages {
+          subtitle
+          chapters {
             title
-            path
+            pages {
+              title
+              path
+            }
           }
         }
       }

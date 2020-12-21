@@ -1,6 +1,6 @@
 import React from "react"
-import SearchIcon from "../../icons/search.svg"
-import CommandSymbol from "../../icons/cmd.svg"
+import SearchIcon from "../../images/icons/search.svg"
+import CommandSymbol from "../../images/icons/cmd.svg"
 import PropTypes from "prop-types"
 
 const SearchBlock = ({ onSearchClick = null }) => {

@@ -1,7 +1,7 @@
 import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
-import Menu from "../../icons/menu.svg"
+import Menu from "../../images/icons/menu.svg"
 import { PropTypes } from "prop-types"
 
 const MenuBlockRight = ({ enableGitHub = true, enableMenu = false }) => {

@@ -1,6 +1,5 @@
 import React from "react"
-import ChildLogo from "../../icons/stjudecloud-logo.svg"
-import { Link } from "gatsby"
+import ChildLogo from "../../images/icons/stjudecloud-child-logo.svg"
 
 const BrandBlockLeft = ({ app }) => {
   return (
@@ -15,7 +14,7 @@ const BrandBlockLeft = ({ app }) => {
           width="61"
         />
       </a>
-      <Link className="whitespace-nowrap" to="/">
+      <a className="whitespace-nowrap" href="/">
         <span
           className="hidden md:inline-block text-navy"
           style={{ paddingLeft: "10px", fontWeight: "800", fontSize: "20px" }}
@@ -30,7 +29,7 @@ const BrandBlockLeft = ({ app }) => {
             {app}
           </span>
         )}
-      </Link>
+      </a>
     </div>
   )
 }

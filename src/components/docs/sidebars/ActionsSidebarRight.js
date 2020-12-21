@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Question from "../../../icons/question.svg"
+import Question from "../../../images/icons/question.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 

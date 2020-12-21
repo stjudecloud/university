@@ -30,7 +30,7 @@ let plugins = [
     resolve: "gatsby-plugin-react-svg",
     options: {
       rule: {
-        include: /src\/icons/,
+        include: /src\/images/,
       },
     },
   },
