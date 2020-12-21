@@ -1,5 +1,5 @@
 ---
-title: Frequently Asked Questions
+title: Pecan
 ---
 
 
@@ -7,7 +7,7 @@ title: Frequently Asked Questions
 PeCan provides interactive visualizations of pediatric cancer mutations across various projects at St. Jude Children's Research Hospital and its collaborating institutions.
 
 ## Homepage 
-The [PeCan homepage](https://pecan.stjude.cloud/home) contains two main visualizations that work with each other to give a high level overview of the data being presented (SJ Cloud's [PCGP](../genomics-platform/requesting-data/about-our-data.md#pediatric-cancer-genome-project-(pcgp)) dataset along with curated datasets from other institutions such as [TARGET](https://ocg.cancer.gov/programs/target), [dkfz](https://www.dkfz.de/en/index.html), and others).
+The [PeCan homepage](https://pecan.stjude.cloud/home) contains two main visualizations that work with each other to give a high level overview of the data being presented (SJ Cloud's [PCGP](../genomics-platform/requesting-data/about-our-data/#pediatric-cancer-genome-project-(pcgp)) dataset along with curated datasets from other institutions such as [TARGET](https://ocg.cancer.gov/programs/target), [dkfz](https://www.dkfz.de/en/index.html), and others).
 
 
 ### Donut Chart
@@ -17,7 +17,7 @@ The donut chart (shown below) gives an at-a-glance disease distribution and dise
 
 You can hover over the various donut slices to glance at the number (and %) of samples being represented by that disease. The diseases are categorized in two three main root categories: 1) HM -Hematopoietic Malignancies, 2) BT -Brain Tumor, 3) ST -Solid Tumor.
 
-[Click here](../genomics-platform/requesting-data/about-our-data.md#short-disease-code-mapping) for a full mapping of disease codes.
+[Click here](../genomics-platform/requesting-data/about-our-data/#short-disease-code-mapping) for a full mapping of disease codes.
 
 ### Bubble Chart
 Any slice (at any level) of the donut chart can be clicked on to select it, and reveal a bubble chart of related genes. 
@@ -34,7 +34,7 @@ You can see the selected disease shown at the top (1). The bubbles represent the
 
 For some disease sets (like the one shown above), we have identified the most important disease pathway for the gene and have categorized them as such. This information is represented here via the use of colors. The legend at the bottom allows you to view the pathway information being shown (including the number of genes that are attached to each pathway).
 
-Hovering over a pathway in the legend will highlight all matching genes. Clicking a gene will open it's ProteinPaint view. To learn more about the software behind ProteinPaint, visit the [ProteinPaint documentation](../visualization-community/proteinpaint.md). 
+Hovering over a pathway in the legend will highlight all matching genes. Clicking a gene will open it's ProteinPaint view. To learn more about the software behind ProteinPaint, visit the [ProteinPaint documentation](../visualization-community/proteinpaint). 
 
 
 ## Requesting Raw Genomics through PeCan

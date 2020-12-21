@@ -53,7 +53,7 @@ If your account is already set up and you would like to access your Billing info
 
 ![](./create-DX-account.gif)
 
-### Billing 
+### Billing Setup
 
 1. Click on the drop down next to your user name in the far right of the DNAnexus navigation bar, and select 'Profile'.
 2. Click on 'Billing Account' from the tabs listed just under the navigation bar.

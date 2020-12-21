@@ -5,7 +5,7 @@ title: Filling Out The Extension Addendum
 
 #Filling Out The Extension Addendum
 
-The St. Jude Cloud [Data Access Agreement (DAA)](../requesting-data/glossary.md#data-access-agreement) is only valid for one year after the date it was approved. When your DAA is about to expire, you will get an automated email from notifications@stjude.cloud with the name of the DAA that is expiring and a link to the St. Jude Cloud Extension Addendum.
+The St. Jude Cloud [Data Access Agreement (DAA)](../../requesting-data/glossary/#data-access-agreement) is only valid for one year after the date it was approved. When your DAA is about to expire, you will get an automated email from notifications@stjude.cloud with the name of the DAA that is expiring and a link to the St. Jude Cloud Extension Addendum.
 
 In order to extend your DAA, you must fill out an Extension Addendum. The Extension Addendum will extend the previous agreement for an additional year. Please note that if you do not fill out an Extension Addendum, you will be expected to delete all copies of the data subject to the expiring agreement.
 
@@ -22,7 +22,7 @@ Follow the steps below to ensure that you have accurately filled out all section
 
 
 2. **Page 2**
-    * Check exactly the datasets that you were granted access to by the terms of the original DAA. *The datasets checked on the original DAA and any extensions must match.* If you would like to apply for access to additional datasets, please [make a new data request](../requesting-data/data-request.md) for the additional dataset(s).
+    * Check exactly the datasets that you were granted access to by the terms of the original DAA. *The datasets checked on the original DAA and any extensions must match.* If you would like to apply for access to additional datasets, please [make a new data request](../../requesting-data/making-a-data-request) for the additional dataset(s).
 
     * The Principal Investigator (PI) or faculty level supervisor on the project must sign and date the extension. *The PI who signed the original DAA must match the PI signing any extensions.*
 
@@ -46,5 +46,5 @@ Once you have finished filling out the Extension Addendum, you may upload the co
 
 ## Similar Topics
 
-[About our Decision Process & Terminology](../requesting-data/glossary.md)   
-[Filling Out a Data Access Agreement](../requesting-data/how-to-fill-out-DAA.md)   
+[About our Decision Process & Terminology](../../requesting-data/glossary)   
+[Filling Out a Data Access Agreement](../../requesting-data/how-to-fill-out-daa)   

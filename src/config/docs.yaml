@@ -1,57 +1,125 @@
-modules:
-  - title: "Genomics Platform"
-    path: /docs/genomics-platform/
-    icon: stjudecloud-genomics-platform-logo.svg
-    chapters:
-      - title: "Getting Started"
-        pages:
-          - title: "First Steps"
-            path: /docs/genomics-platform/getting-started/first-steps/
-          - title: "Accounts / Billing"
-            path: /docs/genomics-platform/getting-started/accounts-and-billing/
-          - title: "About Our Data"
-            path: /docs/genomics-platform/getting-started/about-our-data/
-          - title: "Requesting Data"
-            path: /docs/genomics-platform/getting-started/requesting-data/
-          - title: "Making a Data Request"
-            path: /docs/genomics-platform/getting-started/making-a-data-request/
-          - title: "Filling Out the DAA"
-            path: /docs/genomics-platform/getting-started/filling-out-the-daa/
-          - title: "Decision Making Criteria"
-            path: /docs/genomics-platform/getting-started/decision-making-criteria/
-      - title: "Managing Data"
-        pages:
-          - title: "Overview"
-            path: /docs/genomics-platform/managing-data/overview/
-          - title: "Uploading / Downloading Data"
-            path: /docs/genomics-platform/managing-data/uploading-downloading-data/
-          - title: "Renewing Your DAA"
-            path: /docs/genomics-platform/managing-data/renewing-your-daa/
-      - title: "Analyzing Data"
-        pages:
-          - title: "Command Line Interaction"
-            path: /docs/genomics-platform/analyzing-data/command-line-interaction/
-          - title: "Running Our Workflows"
-            path: /docs/genomics-platform/analyzing-data/running-our-workflows/
-          - title: "Create Your Own Workflow"
-            path: /docs/genomics-platform/analyzing-data/create-your-own-workflow
-      - title: "FAQ"
-        pages:
-          - title: "Frequently Asked Questions"
-            path: /docs/genomics-platform/faq/frequently-asked-questions/
-  - title: "PeCan"
-    path: /docs/pecan/
-    icon: stjudecloud-pecan-logo.svg
-    chapters:
-      - title: "Getting Started"
-        pages:
-          - title: "PeCan Test Chapter"
-            path: /docs/pecan/getting-started/first-steps/
-  - title: "Visualization Community"
-    path: /docs/visualization-community/
-    icon: stjudecloud-visualization-community-logo.svg
-    chapters:
-      - title: "Getting Started"
-        pages:
-          - title: "VisComm Test Chapter"
-            path: /docs/visualization-community/getting-started/first-steps/
+domains:
+  - title: "General"
+    modules:
+      - title: "St. Jude Cloud"
+        subtitle: "Guides that span across St. Jude Cloud."
+        path: /docs/
+        icon: stjudecloud-blue-circle-logo.svg
+        chapters:
+          - title:
+            pages:
+              - title: "Overview"
+                path: /docs/
+              - title: "About our Ecosystem"
+                path: /docs/ecosystem/
+              - title: Citing St. Jude Cloud
+                path: /docs/citing-stjude-cloud/
+              - title: Frequently Asked Questions
+                path: /docs/faq/
+  - title: "Apps"
+    modules:
+      - title: "Genomics Platform"
+        subtitle: "Genomics data and bioinformatics workflows."
+        path: /docs/genomics-platform/
+        icon: stjudecloud-genomics-platform-logo.svg
+        chapters:
+          - title: "Getting Started"
+            pages:
+              - title: "Accounts and Billing"
+                path: /docs/genomics-platform/accounts-and-billing/
+              - title: "About Our Data"
+                path: /docs/genomics-platform/requesting-data/about-our-data/
+              - title: "About Our Decision Process"
+                path: /docs/genomics-platform/requesting-data/glossary/
+              - title: "Making a Data Request"
+                path: /docs/genomics-platform/requesting-data/making-a-data-request/
+              - title: "Filling Out the DAA"
+                path: /docs/genomics-platform/requesting-data/how-to-fill-out-daa/
+              - title: "Frequently Asked Questions"
+                path: /docs/genomics-platform/faq/
+          - title: "Managing Data"
+            pages:
+              - title: "Overview"
+                path: /docs/genomics-platform/managing-data/working-with-our-data/
+              - title: "Upload / Download Data (Local)"
+                path: /docs/genomics-platform/managing-data/upload-local/
+              - title: "Upload / Download Data (Cluster)"
+                path: /docs/genomics-platform/managing-data/upload-cluster/
+              - title: "Renewing Your DAA"
+                path: /docs/genomics-platform/managing-data/how-to-fill-out-extension/
+          - title: "Analyzing Data"
+            pages:
+              - title: "Command Line Interaction"
+                path: /docs/genomics-platform/analyzing-data/command-line/
+              - title: "Running Our Workflows"
+                path: /docs/genomics-platform/analyzing-data/running-sj-workflows/
+              - title: "Creating a Cloud App"
+                path: /docs/genomics-platform/analyzing-data/creating-a-cloud-app/
+              - title: "Interactive Nodes"
+                path: /docs/genomics-platform/analyzing-data/interactive-node/
+              - title: "Visualizing NGS Data"
+                path: /docs/genomics-platform/analyzing-data/visualizing-ngs-data/
+          - title: "Workflow Guides"
+            pages:
+              - title: "ChIP-Seq"
+                path: /docs/genomics-platform/workflow-guides/chipseq/
+              - title: "cis-X"
+                path: /docs/genomics-platform/workflow-guides/cis-x/
+              - title: "MethylationToActivity"
+                path: /docs/genomics-platform/workflow-guides/methylation-to-activity/
+              - title: "Mutational Signatures"
+                path: /docs/genomics-platform/workflow-guides/mutational-signatures/
+              - title: "Rapid RNASeq"
+                path: /docs/genomics-platform/workflow-guides/rapid-rnaseq/
+              - title: "RNA Seq Expression Classification"
+                path: /docs/genomics-platform/workflow-guides/rnaseq-expression-classification/
+              - title: "SequencErr"
+                path: /docs/genomics-platform/workflow-guides/sequencerr/
+              - title: "WARDEN"
+                path: /docs/genomics-platform/workflow-guides/warden/
+      - title: "PeCan"
+        subtitle: "Explore the pediatric cancer knowledgebase."
+        path: /docs/pecan/
+        icon: stjudecloud-pecan-logo.svg
+        chapters:
+          - title: "Getting Started"
+            pages:
+              - title: "PeCan PIE"
+                path: /docs/pecan/pecan-pie/
+              - title: Frequently Asked Questions
+                path: /docs/pecan/faq/
+      - title: "Visualization Community"
+        subtitle: "Create and share genomic visualizations."
+        path: /docs/visualization-community/
+        icon: stjudecloud-visualization-community-logo.svg
+        chapters:
+          - title: "Getting Started"
+            pages:
+              - title: "Genomepaint"
+                path: /docs/visualization-community/genomepaint/
+              - title: "Proteinpaint"
+                path: /docs/visualization-community/proteinpaint/
+              - title: "Frequently Asked Questions"
+                path: /docs/visualization-community/faq/
+  - title: "Other"
+    modules:
+      - title: "Studies"
+        subtitle: "Discover projects who have donated their data."
+        path: /docs/studies/
+        icon: stjudecloud-blue-circle-logo.svg
+        chapters:
+          - title: "Studies"
+            pages:
+              - title: "Sickle Cell"
+                path: /docs/studies/sickle-cell/
+      # - title: "Portals"
+      #   subtitle: "Browse project-specific sites."
+      #   path: /docs/portals/
+      #   icon: stjudecloud-blue-circle-logo.svg
+      #   chapters:
+      #     - title: "Portals"
+      #       pages:
+      #         - title: "Childhood Solid Tumor Network Portal"
+      #           path: /docs/portals/cstn/
+      #         - title: "Pediatric Brain Tumor Portal"
+      #           path: /docs/portals/pbtp/

@@ -1,0 +1,8 @@
+Sample	Phenotype	Readfile1	Readfile2
+ctrl_1	control	Hela_Methanol_rep1_SRR2159403.fastq.gz	-
+ctrl_2	control	Hela_Methanol_rep2_SRR2159404.fastq.gz	-
+ctrl_3	control	Hela_Methanol_rep3_SRR2159405.fastq.gz	-
+ssa1	ssa	Hela_SSA_rep1_SRR2159406.fastq.gz	-
+ssa2	ssa	Hela_SSA_rep2_SRR2159407.fastq.gz	-
+ssa3	ssa	Hela_SSA_rep3_SRR2159408.fastq.gz	-
+#comparisons=ssa-control			
