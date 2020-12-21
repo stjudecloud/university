@@ -24,19 +24,19 @@ Please download the Schedule 1(s) (linked in table below) to find dataset specif
 
 | St. Jude Cloud Dataset             |  Reference     |
 | -------------------------------- | ----------------- |
-| Pediatric Cancer Genome Project (PCGP) dataset  | [PCGP perspectives paper](https://www.ncbi.nlm.nih.gov/pubmed/22641210) and the [relevant tumor type paper(s)](http://pecan.stjude.cloud/pcgp-explore); [<i class="material-icons material-icons-sjcloud-custom">file_download</i> PCGP Schedule 1](../../files/PCGP-Schedule1.pdf)   |
-| St. Jude Lifetime (SJLIFE) dataset                   | [SJLIFE paper](https://www.ncbi.nlm.nih.gov/pubmed/?term=29847298); [<i class="material-icons material-icons-sjcloud-custom">file_download</i> SJLIFE Schedule 1](../../files/SJLIFE-Schedule1.pdf)  |
-| Clinical Genomics (Clinical Pilot, Genomes for Kids, Real-Time Clinical Genomics) dataset | [Clinical Pilot paper](https://www.ncbi.nlm.nih.gov/pubmed/30262806); [<i class="material-icons material-icons-sjcloud-custom">file_download</i> Clinical Genomics Schedule 1](../../files/ClinGen-Schedule1.pdf) |
-| Sickle Cell Genome Project (SGP) dataset | paper in progress; [<i class="material-icons material-icons-sjcloud-custom">file_download</i> SGP Schedule 1](../../files/SGP-Schedule1.pdf) |
-| Childhood Cancer Survivor Study (CCSS) dataset | [CCSS study design paper](https://www.ncbi.nlm.nih.gov/pubmed/11920786); [<i class="material-icons material-icons-sjcloud-custom">file_download</i> CCSS Schedule 1](../../files/CCSS-Schedule1.pdf) |
-| Pan-Acute Lymphoblastic Leukemia (PanALL) dataset | [<i class="material-icons material-icons-sjcloud-custom">file_download</i> PanALL Schedule 1](../../files/PanALL-Schedule1.pdf) |
+| Pediatric Cancer Genome Project (PCGP) dataset  | [PCGP perspectives paper](https://www.ncbi.nlm.nih.gov/pubmed/22641210) and the [relevant tumor type paper(s)](http://pecan.stjude.cloud/pcgp-explore); [<i class="material-icons material-icons-sjcloud-custom">file_download</i> PCGP Schedule 1](../files/PCGP-Schedule1.pdf)   |
+| St. Jude Lifetime (SJLIFE) dataset                   | [SJLIFE paper](https://www.ncbi.nlm.nih.gov/pubmed/?term=29847298); [<i class="material-icons material-icons-sjcloud-custom">file_download</i> SJLIFE Schedule 1](../files/SJLIFE-Schedule1.pdf)  |
+| Clinical Genomics (Clinical Pilot, Genomes for Kids, Real-Time Clinical Genomics) dataset | [Clinical Pilot paper](https://www.ncbi.nlm.nih.gov/pubmed/30262806); [<i class="material-icons material-icons-sjcloud-custom">file_download</i> Clinical Genomics Schedule 1](../files/ClinGen-Schedule1.pdf) |
+| Sickle Cell Genome Project (SGP) dataset | paper in progress; [<i class="material-icons material-icons-sjcloud-custom">file_download</i> SGP Schedule 1](../files/SGP-Schedule1.pdf) |
+| Childhood Cancer Survivor Study (CCSS) dataset | [CCSS study design paper](https://www.ncbi.nlm.nih.gov/pubmed/11920786); [<i class="material-icons material-icons-sjcloud-custom">file_download</i> CCSS Schedule 1](../files/CCSS-Schedule1.pdf) |
+| Pan-Acute Lymphoblastic Leukemia (PanALL) dataset | [<i class="material-icons material-icons-sjcloud-custom">file_download</i> PanALL Schedule 1](../files/PanALL-Schedule1.pdf) |
 
 !!!note
-If you are unsure what dataset(s) the data that you have been vended belongs to, you can find this information in the sj_datasets column of the [SAMPLE_INFO.txt](../../genomics-platform/requesting-data/about-our-data/#metadata) file.
+If you are unsure what dataset(s) the data that you have been vended belongs to, you can find this information in the sj_datasets column of the [SAMPLE_INFO.txt](../genomics-platform/requesting-data/about-our-data/#metadata) file.
 !!!
 
 !!!warning
-Publishing using any of the data files _before_ the [embargo date](../../genomics-platform/requesting-data/glossary/#embargo-date) has passed is strictly prohibited as outlined in the [Data Access Agreement (DAA)](../../genomics-platform/requesting-data/glossary/#data-access-agreement).
+Publishing using any of the data files _before_ the [embargo date](../genomics-platform/requesting-data/glossary/#embargo-date) has passed is strictly prohibited as outlined in the [Data Access Agreement (DAA)](../genomics-platform/requesting-data/glossary/#data-access-agreement).
 !!!
 
 ## Resource Reference Table
