@@ -2,15 +2,23 @@
   @apply text-gray-700;
   @apply leading-7;
 
+  img {
+    @apply mt-6;
+    @apply mb-8;
+  }
+
   table {
     @apply border-collapse;
     @apply table-auto;
+    @apply w-full;
     @apply max-w-3xl;
     @apply bg-white;
     @apply relative;
     @apply border-2;
     @apply border-coolGray-200;
     @apply shadow-md;
+    @apply mb-4;
+    @apply mx-auto;
 
     thead > tr {
       @apply text-left;

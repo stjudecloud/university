@@ -61,7 +61,7 @@ domains:
                 path: /docs/genomics-platform/analyzing-data/visualizing-ngs-data/
           - title: "Workflow Guides"
             pages:
-              - title: "ChIP-Seq"
+              - title: "ChIP-Seq Peak Calling"
                 path: /docs/genomics-platform/workflow-guides/chipseq/
               - title: "cis-X"
                 path: /docs/genomics-platform/workflow-guides/cis-x/
@@ -69,13 +69,13 @@ domains:
                 path: /docs/genomics-platform/workflow-guides/methylation-to-activity/
               - title: "Mutational Signatures"
                 path: /docs/genomics-platform/workflow-guides/mutational-signatures/
-              - title: "Rapid RNASeq"
+              - title: "Rapid RNA-Seq"
                 path: /docs/genomics-platform/workflow-guides/rapid-rnaseq/
               - title: "RNA Seq Expression Classification"
                 path: /docs/genomics-platform/workflow-guides/rnaseq-expression-classification/
               - title: "SequencErr"
                 path: /docs/genomics-platform/workflow-guides/sequencerr/
-              - title: "WARDEN"
+              - title: "WARDEN Differential Gene Expression"
                 path: /docs/genomics-platform/workflow-guides/warden/
       - title: "PeCan"
         subtitle: "Explore the pediatric cancer knowledgebase."

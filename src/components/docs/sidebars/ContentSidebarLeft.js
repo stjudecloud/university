@@ -95,7 +95,7 @@ const ContentsSidebarLeft = ({
           <div className="absolute inset-x-0">
             <div className="h-screen overflow-y-scroll">
               <ScrollContainer key="content-sidebar">
-                <div className="my-2 mx-3 pb-28">
+                <div className="my-2 mx-3 pb-60">
                   {currentChapters.map(e => {
                     return (
                       <ul className="chapter">
