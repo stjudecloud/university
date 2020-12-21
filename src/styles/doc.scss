@@ -2,6 +2,50 @@
   @apply text-gray-700;
   @apply leading-7;
 
+  table {
+    @apply border-collapse;
+    @apply table-auto;
+    @apply max-w-3xl;
+    @apply bg-white;
+    @apply relative;
+    @apply border-2;
+    @apply border-coolGray-200;
+    @apply shadow-md;
+
+    thead > tr {
+      @apply text-left;
+      @apply border-2;
+      @apply border-coolGray-200;
+
+      & > th {
+        @apply bg-gray-100;
+        @apply sticky;
+        @apply top-0;
+        @apply border-b;
+        @apply border-gray-200;
+        @apply px-6;
+        @apply py-2;
+        @apply text-gray-600;
+        @apply font-bold;
+        @apply tracking-wider;
+        @apply uppercase;
+        @apply text-xs;
+      }
+    }
+
+    tbody > tr {
+      td {
+        @apply border-dashed;
+        @apply border-t;
+        @apply border-gray-200;
+        @apply px-6;
+        @apply text-gray-700;
+        @apply py-3;
+        @apply items-center;
+      }
+    }
+  }
+
   blockquote {
     background: #f9f9f9;
     border-left: 10px solid #ccc;

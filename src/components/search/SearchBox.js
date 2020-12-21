@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import PropTypes from "prop-types"
-import SearchIcon from "../../icons/search.svg"
+import SearchIcon from "../../images/icons/search.svg"
 import { connectSearchBox } from "react-instantsearch-dom"
 import { translatable } from "react-instantsearch-core"
 

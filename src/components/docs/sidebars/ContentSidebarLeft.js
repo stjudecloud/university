@@ -1,10 +1,10 @@
 import React, { useState } from "react"
 import { ScrollContainer } from "gatsby-react-router-scroll"
 import { Link } from "gatsby"
-import Chevron from "../../../icons/chevron.svg"
+import Chevron from "../../../images/icons/chevron.svg"
 import ModulePopUp from "./ModulePopUp"
-import MenuIcon from "../../../icons/menu.svg"
-import CloseIcon from "../../../icons/close.svg"
+import MenuIcon from "../../../images/icons/menu.svg"
+import CloseIcon from "../../../images/icons/close.svg"
 
 const ContentsSidebarLeft = ({
   isMobileMenuOpen,
@@ -12,7 +12,7 @@ const ContentsSidebarLeft = ({
   closeMobileMenu,
   CurrentIconImported,
   currentTitle,
-  modules,
+  domains,
   currentChapters,
   currentPathBeingViewed,
 }) => {
@@ -20,6 +20,13 @@ const ContentsSidebarLeft = ({
 
   return (
     <div>
+      <ModulePopUp
+        // show={true}
+        show={isModuleSelectorOpen}
+        domains={domains}
+        isMobileMenuShown={isMobileMenuOpen}
+        // isMobileMenuShown={true}
+      />
       <div
         className="fixed top-20 left-6 rounded-full bg-white border border-coolGray-300 p-4 shadow-lg cursor-pointer z-20"
         onClick={openMobileMenu}
@@ -83,11 +90,6 @@ const ContentsSidebarLeft = ({
                   height="16px"
                 />
               </div>
-              <ModulePopUp
-                show={isModuleSelectorOpen}
-                modules={modules}
-                isMobileMenuShown={isMobileMenuOpen}
-              />
             </div>
           </div>
           <div className="absolute inset-x-0">
