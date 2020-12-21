@@ -154,7 +154,7 @@ let plugins = [
 ]
 
 if (process.env.GATSBY_ALGOLIA_APP_ID) {
-  plugins.append({
+  plugins.push({
     resolve: `gatsby-plugin-algolia`,
     options: {
       appId: process.env.GATSBY_ALGOLIA_APP_ID,
