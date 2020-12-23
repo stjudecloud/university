@@ -10,21 +10,3 @@ mark {
   @apply px-2;
   @apply py-1;
 }
-
-/**
- * Fix direct targeting of anchor tags being hidden
- * behind the navbar
- **/
-
-:target {
-  &:before {
-    content: "";
-    display: block;
-    height: 110px;
-    margin: -110px 0 0;
-  }
-
-  & svg {
-    @apply text-opacity-100 #{!important};
-  }
-}

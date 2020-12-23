@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { ScrollContainer } from "gatsby-react-router-scroll"
 import { Link } from "gatsby"
 import Chevron from "../../../images/icons/chevron.svg"
 import ModulePopUp from "./ModulePopUp"
@@ -94,30 +93,28 @@ const ContentsSidebarLeft = ({
           </div>
           <div className="absolute inset-x-0">
             <div className="h-screen overflow-y-scroll">
-              <ScrollContainer key="content-sidebar">
-                <div className="my-2 mx-3 pb-60">
-                  {currentChapters.map(e => {
-                    return (
-                      <ul className="chapter">
-                        <li className="title">{e.title}</li>
-                        {e.pages.map(page => {
-                          return (
-                            <li
-                              className={
-                                (currentPathBeingViewed === page.path
-                                  ? "active "
-                                  : "") + "page"
-                              }
-                            >
-                              <Link to={page.path}>{page.title}</Link>
-                            </li>
-                          )
-                        })}
-                      </ul>
-                    )
-                  })}
-                </div>
-              </ScrollContainer>
+              <div className="my-2 mx-3 pb-60">
+                {currentChapters.map(e => {
+                  return (
+                    <ul className="chapter">
+                      <li className="title">{e.title}</li>
+                      {e.pages.map(page => {
+                        return (
+                          <li
+                            className={
+                              (currentPathBeingViewed === page.path
+                                ? "active "
+                                : "") + "page"
+                            }
+                          >
+                            <Link to={page.path}>{page.title}</Link>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  )
+                })}
+              </div>
             </div>
           </div>
         </div>

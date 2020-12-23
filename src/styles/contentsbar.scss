@@ -33,14 +33,6 @@
     .active {
       @apply text-purple;
       @apply font-semibold;
-
-      &:before {
-        @apply absolute;
-        font-size: 2rem;
-        line-height: 22.5px;
-        translate: -150%;
-        content: "•";
-      }
     }
   }
 }

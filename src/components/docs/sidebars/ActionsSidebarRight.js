@@ -3,15 +3,25 @@ import PropTypes from "prop-types"
 import Question from "../../../images/icons/question.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
+import { toast } from "react-toastify"
 
 function askAQuestion() {
-  let mailto = "mailto:support@stjude.cloud"
-  mailto += "?subject=Question about St. Jude Cloud docs"
-  mailto +=
-    "&body=Hello%2C%0A%0AI%27ve%20got%20a%20question%20about%20the%20St.%20Jude%20Cloud%20docs.Specifically,%20this%20page%0A%0A%20%20%20%20%20%20"
-  mailto += encodeURI(window.location)
-  mailto += "%0A%0A%5BYOUR%20QUESTION%20HERE%5D.%0A%0AThanks%21"
-  window.location.href = mailto
+  if (window.Intercom) {
+    window.Intercom("showNewMessage")
+  } else {
+    toast.error(
+      "Looks like our chat isn't enabled in this environment! Please email us at support@stjude.cloud with this error.",
+      {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      }
+    )
+  }
 }
 
 function editOnGitHub(fileAbsolutePath) {
@@ -38,7 +48,7 @@ const ActionSidebarRight = ({ fileAbsolutePath }) => {
           Actions
         </div>
         <button
-          className="flex justify-center w-3/5 rounded bg-coolGray-800 text-white font-semibold px-4 py-2 my-2"
+          className="flex justify-center w-3/5 rounded bg-coolGray-800 text-white font-semibold px-4 py-2 my-2 disabled:opacity-50"
           onClick={askAQuestion}
         >
           <Question className="mr-2" />

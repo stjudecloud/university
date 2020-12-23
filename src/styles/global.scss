@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "~react-toastify/dist/ReactToastify.css";
 @import "./base.scss";
 
 @import "./admonitions.scss";

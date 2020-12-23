@@ -61,13 +61,14 @@ let plugins = [
         {
           resolve: `gatsby-remark-autolink-headers`,
           options: {
+            offsetY: 85,
             icon: `<svg height="512pt" viewBox="-31 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg"><path d="m30 316c-16.570312 0-30 13.429688-30 30 0 16.566406 13.429688 30 30 30h59l-14 106c0 16.566406 13.429688 30 30 30s30-13.433594 30-30l14-106h120l-14 106c0 16.566406 13.429688 30 30 30s30-13.433594 30-30l14-106h61c16.570312 0 30-13.433594 30-30 0-16.570312-13.429688-30-30-30h-53l16-120h67c16.570312 0 30-13.433594 30-30 0-16.570312-13.429688-30-30-30h-59l14-106c0-16.570312-13.429688-30-30-30s-30 13.429688-30 30l-14 106h-120l14-106c0-16.570312-13.429688-30-30-30s-30 13.429688-30 30l-14 106h-61c-16.570312 0-30 13.429688-30 30 0 16.566406 13.429688 30 30 30h53l-16 120zm143-120h120l-16 120h-120zm0 0"/></svg>`,
           },
         },
         {
           resolve: `gatsby-remark-copy-linked-files`,
           options: {
-            ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
+            ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`, `md`],
           },
         },
         {
@@ -114,7 +115,15 @@ let plugins = [
             icons: "svg",
           },
         },
-        `gatsby-remark-check-links`,
+        `gatsby-plugin-catch-links`,
+        {
+          resolve: "gatsby-remark-external-links",
+          options: {
+            target: "_blank",
+            rel: "noopener",
+          },
+        },
+        `gatsby-remark-smartypants`,
       ],
     },
   },
@@ -152,6 +161,18 @@ let plugins = [
     },
   },
 ]
+
+if (process.env.INTERCOM_APP_ID) {
+  console.log(`Loading Intercom with app id: "${process.env.INTERCOM_APP_ID}"`)
+  plugins.push({
+    resolve: "gatsby-plugin-intercom-spa",
+    options: {
+      app_id: process.env.INTERCOM_APP_ID,
+      include_in_development: true,
+      delay_timeout: 500,
+    },
+  })
+}
 
 if (process.env.GATSBY_ALGOLIA_APP_ID) {
   plugins.push({

@@ -13,6 +13,8 @@ import { ContentsSidebarLeft, ActionSidebarRight } from "./sidebars"
 import SearchModal from "../search"
 import Chevron from "../../images/icons/chevron.svg"
 
+import { ToastContainer } from "react-toastify"
+
 class BaseLayout extends Component {
   static defaultProps = {
     searchModal: null,
@@ -101,6 +103,7 @@ class BaseLayout extends Component {
 
     return (
       <div className="bg-white text-gray-500 antialiased js-focus-visible">
+        <ToastContainer />
         <SearchModal
           ref={element => (this.searchModal = element)}
           algoliaIndex="docs"
