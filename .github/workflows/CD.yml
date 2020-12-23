@@ -34,6 +34,7 @@ jobs:
       - name: Run Build
         run: |
           npm install
+          npm ls
           npm run build
         env:
           ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
