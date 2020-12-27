@@ -51,6 +51,7 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
   "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
     "prettier": "2.1.2",
     "semantic-release": "^17.3.0"
   },
