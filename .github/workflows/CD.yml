@@ -47,3 +47,38 @@ jobs:
           BRANCH: gh-pages
           FOLDER: public
           CLEAN: true
+  semantic-release:
+    name: "Release"
+    if: github.ref == 'refs/heads/master'
+    needs: [deploy]
+    runs-on: ubuntu-latest
+    env:
+      GIT_AUTHOR_NAME: ${{ github.event.pusher.name }}
+      GIT_AUTHOR_EMAIL: ${{ github.event.pusher.email }}
+      GIT_COMMITTER_NAME: St. Jude Cloud
+      GIT_COMMITTER_EMAIL: support@stjude.cloud
+    steps:
+      - name: Setup Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "15.x"
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Cache node modules
+        uses: actions/cache@v2
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}
+      - name: Install Node Dependencies
+        run: npm install
+      - name: Build and Publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          npx semantic-release

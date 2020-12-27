@@ -2,7 +2,7 @@
   "name": "stjudecloud-university",
   "private": true,
   "description": "St. Jude Cloud educational application.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Clay McLeod <clay.mcleod@STJUDE.org>",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
@@ -51,7 +51,8 @@
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
   "devDependencies": {
-    "prettier": "2.1.2"
+    "prettier": "2.1.2",
+    "semantic-release": "^17.3.0"
   },
   "keywords": [
     "stjudecloud"
