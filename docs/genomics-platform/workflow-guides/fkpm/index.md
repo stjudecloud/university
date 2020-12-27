@@ -68,7 +68,7 @@ Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/
 
 Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
 
-*!!!caution
+*!!!warning
 any cautionary notes specific to running this workflow*
 !!!
 

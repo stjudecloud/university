@@ -52,7 +52,7 @@ by users.
 | Gene1 | SampleA | chr10 | 106150600 | missense | R663H | NM_00101 | A | T |
 | Gene2 | SampleA | chr2 | 32330151 | missense | N329N | NM_00102 | T | G |
 
-!!!example "Notes on preparing the above file"
+!!!example Notes on preparing the above file
 -   The chromosome requires a 'chr' prefix.
 -   The position requires a suffix of HG19/HG38 to indicate the human genome assembly version.
 -   Only the missense mutations/gene fusion is supported currently and the other types of mutations will not be processed.
@@ -139,7 +139,7 @@ Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/
 
 Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
 
-!!!caution
+!!!warning
 This pipeline assumes HG19 coordinates in the mutation file. If the
 coordinates are based on HG38, the coordinates will lifted over to HG19
 to perform epitope affinity prediction.

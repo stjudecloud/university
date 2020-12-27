@@ -44,6 +44,17 @@
   }
 }
 
+.admonition-bug {
+  @apply border-red-600;
+  @apply bg-red-400;
+  @apply bg-opacity-25;
+
+  .admonition-icon > svg {
+    @apply text-red-600;
+    @apply fill-current;
+  }
+}
+
 .admonition-warning {
   @apply border-orange-600;
   @apply bg-orange-400;

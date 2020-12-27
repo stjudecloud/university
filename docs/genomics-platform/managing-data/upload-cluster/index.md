@@ -144,7 +144,7 @@ For example, with a DNAnexus project named `flagstat` and a file named
 $ ua --do-not-compress --project flagstat sample.1.bam
 ```
 
-!!!question "Why is `--do-not-compress` always set?"
+!!!question Why is `--do-not-compress` always set?
 Upload Agent uses an unfortunate default where uncompressed files are
 automatically gzipped. For example, uploading the text file
 `samplesheet.txt` results in the file `samplesheet.txt.gz` on DNAnexus.
@@ -175,7 +175,7 @@ $ bsub \
     <src>
 ```
 
-!!!question "Where does the 2882 MiB resource requirement come from?"
+!!!question Where does the 2882 MiB resource requirement come from?
 There is a [note in the source code of Upload Agent][ua-main-mem] that
 gives an estimate of how much memory is used for a transfer:
 

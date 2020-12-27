@@ -142,7 +142,7 @@ The Sickle Cell Genome Project (SGP) is a collaboration between St. Jude Childre
 **[CCSS](https://stjude.cloud/studies/clinical-genomics) is a germline-only dataset consisting of whole genome sequencing of childhood cancer survivors.**
 CCSS is a multi-institutional, multi-disciplinary, NCI-funded collaborative resource established to evaluate long-term outcomes among survivors of childhood cancer. It is a retrospective cohort consisting of >24,000 five-year survivors of childhood cancer who were diagnosed between 1970-1999 at one of 31 participating centers in the U.S. and Canada. The primary purpose of this sequencing of CCSS participants is to identify all inherited genome sequence and structural variants influencing the development of childhood cancer and occurrence of long-term adverse outcomes associated with cancer and cancer-related therapy. 
 
-!!!warning "CCSS: Potential Bacterial Contamination"
+!!!warning CCSS: Potential Bacterial Contamination
 
 Samples for the Childhood Cancer Survivorship Study were collected by sending out Buccal swab kits to enrolled participants and having them complete the kits at home. This mechanism of collecting saliva and buccal cells for sequencing is highly desirable because of its non-invasive nature and ease of execution. However, collection of samples in this manner also has higher probability of contamination from external sources (as compared to, say, samples collected using blood). We have observed some samples in this cohort which suffer from bacterial contamination. To address this issue, we have taken the following steps:
 

@@ -50,7 +50,7 @@ The final product for the excel spreadsheet will look like the screenshot below.
 Each row in the spreadsheet (except for the last row, which we will talk 
 about in the next section) corresponds to a sample with one or more FastQ files. You should fill in these rows based on your data and the guidelines below:
 
-!!!example "Guidelines"
+!!!example Guidelines
 * The sample name should be unique and should only contain letters,
 numbers and underscores.
 * The condition/phenotype column associates similar samples together.
@@ -157,7 +157,7 @@ Click the `FASTQ_FILES` input field and select **all** FastQ files. Next, click 
 We now need to configure the parameters for the pipeline, such as reference genome and sequencing method. You can access all of the available parameters 
 by clicking on the `WARDEN WORKFLOW GENERATOR` substep. For the general workflow instructions refer [here](../../analyzing-data/running-sj-workflows#selecting-parameters)
 
-!!!example "Parameter setup steps"
+!!!example Parameter setup steps
 1. In the `Output Folder` field, select a folder to output to. You can
 structure your experiments however you like (e.g. `/My_Outputs`)
 2. In the `analysisName` field, enter a prefix for all of the output files. This can be any value you want to use to remember this run. **Be sure to use underscores

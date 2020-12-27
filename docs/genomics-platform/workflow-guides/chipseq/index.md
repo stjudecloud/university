@@ -123,7 +123,7 @@ have questions, please [contact us](https://stjude.cloud/contact).
 | Remove blacklist peaks | Whether or not to remove known problem areas | True |
 | Fragment length | Hardcoded fragment length of your reads. 'NA' for auto-detect. | NA |
 
-!!!caution
+!!!warning
 Please be aware of the following stumbling points when setting parameters:
 
 * Do not use spaces anywhere in your input file names, your output

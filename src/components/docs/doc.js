@@ -165,9 +165,7 @@ class BaseLayout extends Component {
                     </div>
                   </Link>
                 )}
-                {(previousPage || previousPage) && (
-                  <div style={{ flex: "1" }}></div>
-                )}
+                {previousPage && nextPage && <div style={{ flex: "1" }}></div>}
                 {nextPage && (
                   <Link
                     to={nextPage.path}

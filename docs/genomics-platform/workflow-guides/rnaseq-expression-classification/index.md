@@ -24,7 +24,7 @@ with a counts file or a BAM file.
 | BAM file | Aligned reads file from human RNA-Seq | Sample.bam |
 | Counts file | htseq-count output feature counts file from human RNA-Seq | Sample.counts.txt |
 
-!!!caution
+!!!warning
 If you provide counts data to the counts-based pipeline, 
 it **must** be aligned to `GRCh38_no_alt`.
 Running a sample aligned to any other reference genome is not supported. Maybe more
@@ -76,7 +76,7 @@ A t-Distributed Stochastic Neighbor Embedding (t-SNE) visualization is produced 
 
 ### Getting Started
 
-!!!caution
+!!!warning
 If you provide counts data to the counts-based pipeline,
 it **must** be aligned to `GRCh38_no_alt`.
 Running a sample aligned to any other reference genome is not supported. Maybe more
@@ -99,7 +99,7 @@ Reference data can also be retrieved through the [Genomics Platform Data Browser
 
 These must then be provided to the workflow through the `reference_counts` parameter. By default, all reference files will be used by the app, but this can be restricted to one of the three tumor types [Blood, Brain, Solid] through the app settings.
 
-!!!caution
+!!!warning
 The RNA-Seq Expression Classification tool does not allow the same sample name to be included more than once. If data from multiple projects is requested through St. Jude Cloud Genomics Platform, a sample may be included more than once. We offer an opinionated deduplication method at https://github.com/stjudecloud/utilities. 
 !!!
 
@@ -208,7 +208,7 @@ for batch effect based on strandedness of the RNA-Seq sample, library type, read
 
 There are a few known cautions with the RNA-Seq Expression Classification workflow.
 
-!!!caution "Data must fit well defined values"
+!!!warning Data must fit well defined values
 The RNA-Seq Expression Classification pipeline reference data is based on GRCh38 aligned, Gencode v31 annotated samples from fresh, frozen tissue samples. It has not been evaluated for samples that do not meet this criteria.
 
 The RNA-Seq Expression Classification pipeline reference data uses sequencing data from fresh, frozen

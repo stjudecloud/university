@@ -1,0 +1,11 @@
+{
+  "name": "gatsby-check-slugs",
+  "version": "1.0.0",
+  "description": "Checks for broken links in the St. Jude Cloud documentation",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Clay McLeod <clay.mcleod@STJUDE.org> (https://stjude.cloud/)",
+  "license": "ISC"
+}
