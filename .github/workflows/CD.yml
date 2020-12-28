@@ -101,7 +101,7 @@ jobs:
   deploy:
     name: "Deploy to Netlify 🚀"
     if: github.ref == 'refs/heads/master'
-    needs: [build]
+    needs: [build, semantic-release]
     runs-on: ubuntu-latest
     env:
       CI: true
