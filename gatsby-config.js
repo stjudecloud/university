@@ -78,6 +78,8 @@ let plugins = [
             // the content container as this plugin uses this as the
             // base for generating different widths of each image.
             maxWidth: 1180,
+            withWebp: true,
+            loading: 'eager'
           },
         },
         {
