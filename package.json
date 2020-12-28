@@ -73,7 +73,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "postinstall": "husky install"
+    "postinstall": "[ $NODE_ENV != 'production' ] && husky install || exit 0"
   },
   "repository": {
     "type": "git",
