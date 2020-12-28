@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/stjudecloud/university/compare/v1.0.3...v1.0.4) (2020-12-28)
+
+
+### Bug Fixes
+
+* **svg:** fixes SVG rendering of background elements ([b49c559](https://github.com/stjudecloud/university/commit/b49c5596c04728aa68059d5cab0746fa153d082b))
+
 ## [1.0.3](https://github.com/stjudecloud/university/compare/v1.0.2...v1.0.3) (2020-12-28)
 
 
