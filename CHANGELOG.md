@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/stjudecloud/university/compare/v1.0.0...v1.0.1) (2020-12-28)
+
+
+### Performance Improvements
+
+* better image loading using WebP ([dc2d42e](https://github.com/stjudecloud/university/commit/dc2d42e23092dd6a46b45cf931f551c9ad8ac5e2))
+
 # 1.0.0 (2020-12-28)
 
 
