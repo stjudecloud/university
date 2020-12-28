@@ -106,6 +106,10 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: gatsby-public-folder
+          path: public/
+      - name: Display structure of downloaded files
+        run: ls -R
+        working-directory: public/
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.1
         with:
