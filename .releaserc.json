@@ -5,7 +5,7 @@
       {
         "preset": "conventionalcommits",
         "releaseRules": [
-          { "type": "docs", "scope": "README", "release": "patch" }
+          { "type": "docs", "release": "patch" }
         ],
         "presetConfig": {
           "types": [
