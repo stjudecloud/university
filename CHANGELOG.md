@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/stjudecloud/university/compare/v1.0.2...v1.0.3) (2020-12-28)
+
+
+### Bug Fixes
+
+* **scroll:** fixes scrolling to location hashes ([53174f6](https://github.com/stjudecloud/university/commit/53174f663f9fc55c928df9089556fc36eb2fa22c))
+
 ## [1.0.2](https://github.com/stjudecloud/university/compare/v1.0.1...v1.0.2) (2020-12-28)
 
 ## [1.0.1](https://github.com/stjudecloud/university/compare/v1.0.0...v1.0.1) (2020-12-28)
