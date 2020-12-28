@@ -11,7 +11,7 @@ env:
 
 jobs:
   build:
-    name: "Gatsby Build"
+    name: "Gatsby Build 🧰"
     runs-on: ubuntu-latest
     env:
       CI: true
@@ -62,7 +62,7 @@ jobs:
           if-no-files-found: error
           retention-days: 3
   semantic-release:
-    name: "Semantic Release"
+    name: "Semantic Release 🗂"
     if: github.ref == 'refs/heads/master'
     needs: [build]
     runs-on: ubuntu-latest
@@ -99,7 +99,7 @@ jobs:
         run: |
           npx semantic-release
   deploy:
-    name: "Deploy to Netlify"
+    name: "Deploy to Netlify 🚀"
     if: github.ref == 'refs/heads/master'
     needs: [build]
     runs-on: ubuntu-latest
