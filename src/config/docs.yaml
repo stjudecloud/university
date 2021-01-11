@@ -27,8 +27,6 @@ domains:
             pages:
               - title: "Accounts and Billing"
                 path: /docs/genomics-platform/accounts-and-billing/
-              - title: "About Our Data"
-                path: /docs/genomics-platform/requesting-data/about-our-data/
               - title: "About Our Decision Process"
                 path: /docs/genomics-platform/requesting-data/glossary/
               - title: "Making a Data Request"
@@ -37,6 +35,14 @@ domains:
                 path: /docs/genomics-platform/requesting-data/how-to-fill-out-daa/
               - title: "Frequently Asked Questions"
                 path: /docs/genomics-platform/faq/
+          - title: "About Our Data"
+            pages: 
+              - title: "File Formats and Sequencing Information"
+                path: /docs/genomics-platform/about-our-data/file-formats-and-sequencing/
+              - title: "Data Access Units and Datasets"
+                path: /docs/genomics-platform/about-our-data/dau-and-datasets/
+              - title: "Metadata and Clinical Information"
+                path: /docs/genomics-platform/about-our-data/metadata-and-clinical/
           - title: "Managing Data"
             pages:
               - title: "Overview"
