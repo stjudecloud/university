@@ -45,6 +45,8 @@ domains:
                 path: /docs/genomics-platform/managing-data/upload-local/
               - title: "Upload / Download Data (Cluster)"
                 path: /docs/genomics-platform/managing-data/upload-cluster/
+              - title: "Upload / Download Data (DNAnexus)"
+                path: /docs/genomics-platform/managing-data/upload-dnanexus/
               - title: "Renewing Your DAA"
                 path: /docs/genomics-platform/managing-data/how-to-fill-out-extension/
           - title: "Analyzing Data"
