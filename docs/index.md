@@ -2,6 +2,10 @@
 title: Overview
 ---
 
+!!!info
+On January 6, 2021, an article about the St. Jude Cloud ecosystem was published in Cancer Discovery Journal, you can download the article here: [St. Jude Cloud - a Pediatric Cancer Genomic Data Sharing Ecosystem](https://cancerdiscovery.aacrjournals.org/content/early/2021/01/08/2159-8290.CD-20-1230). 
+!!!
+
 # St. Jude Cloud Documentation
 
 Welcome to the St. Jude Cloud documentation! Here, you will find authoritative guides for accessing St. Jude Cloud data, creating and running analysis workflows on the cloud, and exploring curated data from numerous published studies by St. Jude and our collaborating institutions.To learn more about our ecosystem, read this [guide](../ecosystem). 

@@ -27,16 +27,20 @@ domains:
             pages:
               - title: "Accounts and Billing"
                 path: /docs/genomics-platform/accounts-and-billing/
-              - title: "About Our Data"
-                path: /docs/genomics-platform/requesting-data/about-our-data/
-              - title: "About Our Decision Process"
-                path: /docs/genomics-platform/requesting-data/glossary/
               - title: "Making a Data Request"
                 path: /docs/genomics-platform/requesting-data/making-a-data-request/
               - title: "Filling Out the DAA"
                 path: /docs/genomics-platform/requesting-data/how-to-fill-out-daa/
               - title: "Frequently Asked Questions"
                 path: /docs/genomics-platform/faq/
+          - title: "About Our Data"
+            pages: 
+              - title: "File Formats and Sequencing Information"
+                path: /docs/genomics-platform/about-our-data/file-formats-and-sequencing/
+              - title: "Data Access Units and Datasets"
+                path: /docs/genomics-platform/about-our-data/dau-and-datasets/
+              - title: "Metadata and Clinical Information"
+                path: /docs/genomics-platform/about-our-data/metadata-and-clinical/
           - title: "Managing Data"
             pages:
               - title: "Overview"
@@ -45,6 +49,8 @@ domains:
                 path: /docs/genomics-platform/managing-data/upload-local/
               - title: "Upload / Download Data (Cluster)"
                 path: /docs/genomics-platform/managing-data/upload-cluster/
+              - title: "Upload / Download Data (DNAnexus)"
+                path: /docs/genomics-platform/managing-data/upload-dnanexus/
               - title: "Renewing Your DAA"
                 path: /docs/genomics-platform/managing-data/how-to-fill-out-extension/
           - title: "Analyzing Data"
@@ -95,12 +101,84 @@ domains:
         chapters:
           - title: "Getting Started"
             pages:
-              - title: "Genomepaint"
-                path: /docs/visualization-community/genomepaint/
               - title: "Proteinpaint"
                 path: /docs/visualization-community/proteinpaint/
               - title: "Frequently Asked Questions"
                 path: /docs/visualization-community/faq/
+          - title: "ProteinPaint"
+            pages: 
+              - title: "Introduction"
+                path: /docs/visualization-community/proteinpaint/introduction/
+              - title: "Getting Started"
+                path: /docs/visualization-community/proteinpaint/user-guide/getting-started/
+              - title: "Loading Datasets"
+                path: /docs/visualization-community/proteinpaint/user-guide/loading-datasets/
+              - title: "Viewing SNV/Indel Mutations"
+                path: /docs/visualization-community/proteinpaint/user-guide/view-mutation-details/
+              - title: "Viewing Gene Fusions"
+                path: /docs/visualization-community/proteinpaint/user-guide/exploring-gene-fusions/
+              - title: "Viewing Expression Data"
+                path: /docs/visualization-community/proteinpaint/user-guide/exploring-gene-expression/
+              - title: "Filtering Mutations"
+                path: /docs/visualization-community/proteinpaint/user-guide/filtering-mutations/
+              - title: "Exporting Figures and Data"
+                path: /docs/visualization-community/proteinpaint/user-guide/exporting-figures-and-data/
+              - title: "Using the Gene Table"
+                path: /docs/visualization-community/proteinpaint/user-guide/using-the-gene-table/
+              - title: "Using the Sample Table"
+                path: /docs/visualization-community/proteinpaint/user-guide/using-the-sample-table/
+              - title: "Using the Heatmap"
+                path: /docs/visualization-community/proteinpaint/user-guide/using-the-heatmap/
+              - title: "Using Disease Pie Charts"
+                path: /docs/visualization-community/proteinpaint/user-guide/using-disease-pie-charts/
+              - title: "Stratifying Mutations by Cancer Subtype"
+                path: /docs/visualization-community/proteinpaint/user-guide/stratify-mutations-by-cancer-subtype/
+              - title: "SNV and Indel"
+                path: /docs/visualization-community/proteinpaint/file-formats/snv-and-indel/
+              - title: "SV and fusion transcript"
+                path: /docs/visualization-community/proteinpaint/file-formats/sv-and-fusion/
+              - title: "Copy Number Variants"
+                path: /docs/visualization-community/proteinpaint/file-formats/cnv
+              - title: "Internal Tandem Duplications"
+                path: /docs/visualization-community/proteinpaint/file-formats/itd/
+              - title: "Intragenic deletion"
+                path: /docs/visualization-community/proteinpaint/file-formats/intragenic-deletion/
+              - title: "Truncation, N-loss, or C-loss"
+                path: /docs/visualization-community/proteinpaint/file-formats/truncation/
+              - title: "JSON-BED"
+                path: /docs/visualization-community/proteinpaint/file-formats/json-bed/
+              - title: "Splice Junction"
+                path: /docs/visualization-community/proteinpaint/file-formats/splice-junction/
+              - title: "Profile-Gene-Value"
+                path: /docs/visualization-community/proteinpaint/file-formats/pgv/
+              - title: "Bampile"
+                path: /docs/visualization-community/proteinpaint/file-formats/bampile/
+              - title: "Add Custom Protein Domains"
+                path: /docs/visualization-community/proteinpaint/advanced-guides/add-custom-protein-domains/
+              - title: "Using Custom Tracks"
+                path: /docs/visualization-community/proteinpaint/advanced-guides/using-custom-tracks/
+              - title: "Visualize Your Mutation Data"
+                path: /docs/visualization-community/proteinpaint/advanced-guides/visualize-custom-mutations/
+              - title: "Loading SNV/Indel Mutations from a File"
+                path: /docs/visualization-community/proteinpaint/advanced-guides/loading-snv-indel-data-from-a-file/
+              - title: "Uploaded Mutation Data User Interface"
+                path: /docs/visualization-community/proteinpaint/advanced-guides/uploaded-mutation-data-user-interface/
+              - title: "Loading a TCGA MAF File"
+                path: /docs/visualization-community/proteinpaint/advanced-guides/loading-tcga-maf-file/
+              - title: "Using a VCF File"
+                path: /docs/visualization-community/proteinpaint/advanced-guides/using-a-vcf-file/
+              - title: "Embedding ProteinPaint"
+                path: /docs/visualization-community/proteinpaint/developers-guide/embedding-proteinpaint/
+              - title: "URL Parameters"
+                path: /docs/visualization-community/proteinpaint/developers-guide/url-parameters/
+              - title: "Organizing Data into a Study View"
+                path: /docs/visualization-community/proteinpaint/developers-guide/organizing-data-into-a-study-view/
+          - title: "Genomepaint"
+            pages: 
+                - title: "Genomepaint"
+                  path: /docs/visualization-community/genomepaint/
+                - title: "GenomePaint User Guide"
+                  path: /docs/visualization-community/genomepaint/user-guide/
   - title: "Other"
     modules:
       - title: "Studies"
