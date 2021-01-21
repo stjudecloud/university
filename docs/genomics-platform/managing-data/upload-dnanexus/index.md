@@ -30,8 +30,14 @@ Finally, click on “Download Files” in the following menu.
 
 ![](./download-dnanexus-2.png)
 
-Alternatively, click on the “Get URL” to create a URL link which can be used to download the data. 
+### Creating a URL Download Link
 
-Warning: This link can be shared with others to allow them access to the data, but the link does not require additional authentication to use. Use caution when sharing and remember that downloading St. Jude Cloud data is only allowed if the appropriate section of the Data Access Agreement has been submitted and approved.
+!!!warning 
+The generated link can be shared with others to let them download the data, but the link does not require additional authentication to use. Use caution when sharing and remember that downloading St. Jude Cloud data is only allowed if the appropriate section of the [Data Access Agreement](../../requesting-data/how-to-fill-out-daa#downloading-data) has been submitted and approved.
+!!!
+
+Within DNAnexus you can create a URL link which will allow others to download the selected data. 
+
+To do this, follow the same steps outlined above, but rather than the download button, click on “Get URL” instead. The link will be generated and appear above. The link generated will be active for 24 hours and can easily be copy/pasted to share with others.
 
 ![](./download-dnanexus-3.png)
