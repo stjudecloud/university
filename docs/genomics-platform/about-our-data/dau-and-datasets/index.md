@@ -2,6 +2,10 @@
 title: Data Access Units and Datasets
 ---
 
+# Dataset
+A St. Jude Cloud Dataset is a grouping of data which has been curated by St. Jude and can correspond to a study, project, or specific disease. They are available for free to researchers and access to a dataset can be requested from the data browser. However, access is not granted at the dataset level, but rather the Data Access Unit. A single dataset may belong to only one DAU, or it could belong in multiple if it contains data came from different groups. 
+
+An approved Data Access Request grants access to a particular Data Access Unit which includes specific datasets that can be selected from the Data Browser. An approved DAR would give access not only to the data selected at the time, but also any additional data that is included in the DAUs which were approved. Only the data initially selected will be vended to a project folder upon approval but returning to the data browser and selecting additional data which falls under the approved DAUs will not require another Data Access Request.
 
 # Data Access Unit
 
@@ -76,3 +80,57 @@ With any questions on the nature or implications of this warning, please contact
 
 ### Pan-Acute Lymphoblastic Leukemia (PanALL)
 PanALL comprises cases of B-progenitor and T-lineage ALL encompassing the spectrum of ALL subtypes across the age continuum. Samples sequenced were obtained from multiple sites, centers and cooperative groups including St. Jude Children’s Research Hospital, The Children’s Oncology Group, The Alliance – Cancer and Leukemia Group B, the Eastern Cooperative Oncology Group, The Southwestern Oncology group, MD Anderson Cancer Center, City of Hope National Medical Center, Princess Margaret Cancer Center, Northern Italy Leukemia Group, and UKALL.
+
+## List of Datasets
+We currently have the ten [Datasets](#dataset) listed below. Additional information can also be seen including which [Data Access Units (DAU)](#data-access-unit) the dataset belongs to, tissue type, sequencing type, number of samples, additional links, and a brief description.
+
+### Cicero Benchmark 
+**DAU**: PCGP and Clinical Genomics | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: RNA-Seq | **Samples**: 124
+
+Cicero Benchmrk...
+
+### Childhood Cancer Survivor Study (CCSS)
+**DAU**: CCSS | **Tissue Type**: Germline | **Sequencing Type**: WGS | **Samples**: 2912 | **[Additional Information About CCSS](https://ccss.stjude.org/)**
+
+The Childhood Cancer Survivor Study (CCSS) was established to study long term outcomes of childhood cancer and therapies. The dataset contains germline data from individuals who survived 5 or more years after diagnosis.
+
+### Childhood Solid Tumor Network (CSTN)
+**DAU**: PCGP and Clinical Genomics | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: WGS, WES, RNA-Seq | **Samples**: 143 | **[Additional Information About CSTN](https://www.stjude.org/research/resources-data/childhood-solid-tumor-network.html)**
+
+The Childhood Solid Tumor Network (CSTN) is a St. Jude Children's Research Hospital initiative to disseminate its childhood solid tumor resources and data. The raw datasets from this initiative are made available via St. Jude Cloud. 
+
+### Clinical Pilot 
+**DAU**: PCGP and Clinical Genomics | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: WGS, WES, RNA-Seq | **Samples**: 155 | **[Additional Information About Clinical Genomics](https://www.stjude.cloud/studies/clinical-genomics)**
+
+The Clinical Pilot project was a retrospective study that evaluated the accuracy and demonstrated the feasibility of three-platform sequencing in a CAP/CLIA setting. The findings of this project were published in [Nature Communications](https://pubmed.ncbi.nlm.nih.gov/30262806/)
+
+### Genome 4 Kids (G4K) 
+**DAU**: Clinical Genomics | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: WGS, WES, RNA-Seq | **Samples**: 571 | **[Additional Information About Clinical Genomics](https://www.stjude.cloud/studies/clinical-genomics)**
+
+The goal of the Genomes 4 Kids (G4K) prospective study was to determine whether the three-platform sequencing protocol laid out in the Clinical Pilot project could generate results on a clinical timeline in practice and to evaluate the prevalence of actionable findings. The study concluded with just over 300 patients, and the publication is currently in review.
+
+### Pan-Acute Lymphoblastic Leukemia (PanALL)
+**DAU**: PanALL | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: RNA-Seq | **Samples**: 735
+
+PanALL comprises cases of B-progenitor and T-lineage ALL encompassing the spectrum of ALL subtypes across the age continuum. Samples sequenced were obtained from multiple sites, centers and cooperative groups.
+
+### Pediatric Cancer Genome Project (PCGP)
+**DAU**: PCGP and Clinical Genomics | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: WGS, WES, RNA-Seq | **Samples**: 3031 | **[Additional Information About PCGP](https://stjude.cloud/studies/pediatric-cancer-genome-project)**
+
+The Pediatric Cancer Genome Project is a collaboration between St. Jude Children's Research Hospital and the McDonnell Genome Institute at Washington University School of Medicine that sequenced the genomes of over 600 pediatric cancer patients.
+
+### Real-time Clinical Genomics (RTCG) 
+**DAU**: Clinical Genomics | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: WGS, WES, RNA-Seq | **Samples**: 2,371 | **[Additional Information About Clinical Genomics](https://www.stjude.cloud/studies/clinical-genomics)**
+
+Real-time Clinical Genomics (RTCG) is a [first of its kind initiative](https://www.stjude.org/media-resources/news-releases/2019-medicine-science-news/st-jude-cloud-to-provide-access-to-real-time-clinical-genome-sequencing-data.html), whereby St. Jude began releasing data from the clinical NGS service consented for research use to St. Jude Cloud in monthly batches to give researchers access to valuable data as quickly as possible.
+
+### Sickle Cell Genome Project (SGP)
+**DAU**: SGP | **Tissue Type**: Germline | **Sequencing Type**: WGS | **Samples**: 807 | **[Additional Information About SGP](https://sickle-cell.stjude.cloud/)**
+
+The Sickle Cell Genome Project (SGP) is a collaboration between St. Jude Children’s Research Hospital and Baylor College of Medicine focused on identifying genetic modifiers that contribute to various health complications in SCD patients. Whole genome sequencing data is currently available for more than 800 patients.
+
+### St. Jude LIFE (SJLIFE) 
+**DAU**: SJLIFE | **Tissue Type**: Germline | **Sequencing Type**: WGS, WES | **Samples**: 4838 | **[Additional Information About SJLIFE](https://sjlife.stjude.org/)**
+
+St. Jude LIFE is a study which brings childhood cancer survivors back to St. Jude for regular health screenings throughout their life. The dataset consists of germline data from over 4000 survivors of childhood cancer.
+
