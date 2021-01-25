@@ -2,7 +2,7 @@
 title: Overview
 ---
 
-!!!info
+!!!info Announcing the St. Jude Cloud Paper
 On January 6, 2021, an article about the St. Jude Cloud ecosystem was published in Cancer Discovery Journal, you can download the article here: [St. Jude Cloud - a Pediatric Cancer Genomic Data Sharing Ecosystem](https://cancerdiscovery.aacrjournals.org/content/early/2021/01/08/2159-8290.CD-20-1230). 
 !!!
 
@@ -56,7 +56,9 @@ St. Jude shares a number of end-to-end analysis workflows as part of the Genomic
 * [WARDEN Differential Expression Analysis](https://platform.stjude.cloud/workflows/warden)
 * [Mutational Signatures](https://platform.stjude.cloud/workflows/mutational_signatures)
 * [SequencErr](https://platform.stjude.cloud/workflows/sequencerr)
-* M2A (coming soon)
+* [MethylationToActivity (M2A)](https://platform.stjude.cloud/workflows/methylation-to-activity)
+* [RNA-Seq Expression Classification](https://platform.stjude.cloud/workflows/rnaseq-expression-classification)
+* [cis-X](https://platform.stjude.cloud/workflows/cis-x)
 
 ## Contact Us
 

@@ -45,15 +45,19 @@ Publishing using any of the data files _before_ the [embargo date](../genomics-p
 
 | St. Jude Cloud Resource        | Reference                                                                                                |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| St. Jude Cloud Manuscript                    | [St. Jude Cloud paper](https://cancerdiscovery.aacrjournals.org/content/early/2021/01/08/2159-8290.CD-20-1230)                                            |
 | ProteinPaint                   | [ProteinPaint paper](https://www.nature.com/articles/ng.3466)                                            |
-| GenomePaint                    | paper in progress                                                                                        |
+| GenomePaint                    | [GenomePaint paper](https://www.cell.com/cancer-cell/fulltext/S1535-6108(20)30659-0)                                                                                       |
 | PeCan Pie                      | [PeCan Pie paper](https://genome.cshlp.org/content/29/9/1555.full)                                       |
 | ChIP-Seq Peak Calling          | unpublished                                                                                              |
 | Rapid RNA-Seq Fusion Detection | paper in progress                                                                                        |
 | WARDEN                         | unpublished                                                                                              |
-| Mutational Signatures          | [Mutational Patterns paper](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-018-0539-0) |
+| Mutational Signatures          | [Mutational Patterns paper](https://www.nature.com/articles/s41586-020-1943-3) |
 | cis-x                          | paper in progress                                                                                        |
 | XenoCP                         | paper in progress                                                                                        |
+| MethylationToActivity                         |  [MethylationToActivity paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02220-y)                                                                                        |
+| RNA-Seq Expression Classification                        |  [CICERO paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02043-x)                                                                     |
+| SequencErr                       |  paper in progress                                                                      |
 
 <!-- NeoepitopePred | [NeoepitopePred paper](https://www.ncbi.nlm.nih.gov/pubmed/28854978) -->
 
