@@ -7,7 +7,7 @@ title: MethylationToActivity
 |                       |                                            |
 | --------------------- | ------------------------------------------ |
 | **Authors**           | Justin Williams, Beisi Xu, Daniel Putnam, Andrew Thrasher, Xiang Chen      |
-| **Publication**       | In submission: "MethylationToActivity: a deep-learning framework that reveals promoter activity landscapes from DNA methylomes in individual tumors"                        |
+| **Publication**       | [MethylationToActivity: a deep-learning framework that reveals promoter activity landscapes from DNA methylomes in individual tumors](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02220-y)                        |
 | **Technical Support** | [Contact Us](https://stjude.cloud/contact) |
 
 ## Overview

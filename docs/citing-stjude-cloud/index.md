@@ -57,7 +57,7 @@ Publishing using any of the data files _before_ the [embargo date](../genomics-p
 | XenoCP                         | paper in progress                                                                                        |
 | MethylationToActivity                         |  [MethylationToActivity paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02220-y)                                                                                        |
 | RNA-Seq Expression Classification                        |  [CICERO paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02043-x)                                                                     |
-| SequencErr                       |  paper in progress                                                                      |
+| SequencErr                       |  [SequencErr paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02254-2)                                                                      |
 
 <!-- NeoepitopePred | [NeoepitopePred paper](https://www.ncbi.nlm.nih.gov/pubmed/28854978) -->
 
