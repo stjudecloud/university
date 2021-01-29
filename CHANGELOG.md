@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/stjudecloud/university/compare/v1.1.0...v1.1.1) (2021-01-29)
+
+
+### Bug Fixes
+
+* **navbar:** fixes redirection behavior to match omnibar ([72d0cf5](https://github.com/stjudecloud/university/commit/72d0cf55ec6a1355cd03c7fc232cf9194ca345ad))
+
 # [1.1.0](https://github.com/stjudecloud/university/compare/v1.0.4...v1.1.0) (2021-01-29)
 
 
