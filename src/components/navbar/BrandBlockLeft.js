@@ -9,14 +9,14 @@ const BrandBlockLeft = ({ app }) => {
         className="flex items-center cursor-pointer"
       >
         <ChildLogo
-          className="fill-current text-navy border-navy border-r"
+          className="fill-current text-black border-black border-r"
           height="40"
           width="61"
         />
       </a>
       <a className="whitespace-nowrap" href="/">
         <span
-          className="hidden md:inline-block text-navy"
+          className="hidden md:inline-block text-black"
           style={{ paddingLeft: "10px", fontWeight: "800", fontSize: "20px" }}
         >
           St. Jude Cloud
