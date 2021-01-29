@@ -1,3 +1,15 @@
+# [1.1.0](https://github.com/stjudecloud/university/compare/v1.0.4...v1.1.0) (2021-01-29)
+
+
+### Bug Fixes
+
+* fixes rendering of home page redirect on production build ([1f08d12](https://github.com/stjudecloud/university/commit/1f08d126f99e9d6fb77b110c6315bd89c4b1472f))
+
+
+### Features
+
+* redirects homepage to /docs/ ([45cd7be](https://github.com/stjudecloud/university/commit/45cd7be65efeef81bcf86e543e377e33be82be8a))
+
 ## [1.0.4](https://github.com/stjudecloud/university/compare/v1.0.3...v1.0.4) (2020-12-28)
 
 
