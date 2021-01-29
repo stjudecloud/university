@@ -41,3 +41,4 @@ Within DNAnexus you can create a URL link which will allow others to download th
 To do this, follow the same steps outlined above, but rather than the download button, click on “Get URL” instead. The link will be generated and appear above. The link generated will be active for 24 hours and can easily be copy/pasted to share with others.
 
 ![](./download-dnanexus-3.png)
+

@@ -37,7 +37,7 @@ domains:
             pages: 
               - title: "File Formats and Sequencing Information"
                 path: /docs/genomics-platform/about-our-data/file-formats-and-sequencing/
-              - title: "Data Access Units and Datasets"
+              - title: "Data Sets and Data Access Units"
                 path: /docs/genomics-platform/about-our-data/dau-and-datasets/
               - title: "Metadata and Clinical Information"
                 path: /docs/genomics-platform/about-our-data/metadata-and-clinical/

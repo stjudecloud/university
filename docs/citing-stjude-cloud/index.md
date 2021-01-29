@@ -4,21 +4,32 @@ title: Citing St. Jude Cloud
 
 # Citing St. Jude Cloud
 
-The St. Jude Cloud manuscript is currently under review. Until further notice, when St. Jude Cloud or data accessed therein is used in your work, please ensure that you:
+If you have used St. Jude Cloud and/or accessed data therein for your work, please adhere to the following guidelines when publishing your work:
 
-1. Cite the St. Jude Cloud manuscript preprint on BioRxiv:
+1. Cite the [St. Jude Cloud manuscript published in Cancer Discovery](https://cancerdiscovery.aacrjournals.org/content/early/2021/01/08/2159-8290.CD-20-1230):
 
-    [St. Jude Cloud - a Pediatric Cancer Genomic Data Sharing Ecosystem](https://www.biorxiv.org/content/10.1101/2020.08.24.264614v1)
+    >Clay McLeod, Alexander M Gout, Xin Zhou, Andrew Thrasher, Delaram Rahbarinia, Samuel Warren Brady, Michael Macias, Kirby Birch, David Finkelstein, Jobin Sunny, Rahul Mudunuri, Brent A. Orr, Madison Treadway, Bob Davidson, Tracy K. Ard, Arthur Chiao, Andrew Swistak, Stephanie Wiggins, Scott Foy, Jian Wang, Edgar Sioson, Shuoguo Wang, J Robert Michael, Yu Liu, Xiaotu Ma, Aman Patel, Michael N Edmonson, Mark R Wilkinson, Andrew M Frantz, Ti-Cheng Chang, Liqing Tian, Shaohua Lei, S. M. Ashiqul Islam, Christopher Meyer, Naina Thangaraj, Pamella Tater, Vijay Kandali, Singer Ma, Tuan Nguyen, Omar Abdulgafoor Serang, Irina McGuire, Nedra Robison, Darrell Gentry, Xing Tang, Lance E Palmer, Gang Wu, Ed Suh, Leigh Tanner, James McMurry, Matthew Lear, Alberto S. Pappo, Zhaoming Wang, Carmen L. Wilson, Yong Cheng, Soheil Meshinchi, Ludmil B. Alexandrov, Mitchell J Weiss, Gregory T. Armstrong, Leslie L. Robison, Yutaka Yasui, Kim E. Nichols, David W. Ellison, Chaitanya Bangur, Charles G. Mullighan, Suzanne J. Baker, Michael A. Dyer, Geralyn Miller, Scott Newman, Michael Rusch, Richard Daly, Keith Perry, James R. Downing and Jinghui Zhang. St. Jude Cloud-a Pediatric Cancer Genomic Data Sharing Ecosystem. Cancer Discov January 8 2021 DOI: 10.1158/2159-8290.CD-20-1230
+
+!!!note
+Citation manager formats can be accessed [here](https://cancerdiscovery.aacrjournals.org/content/early/2021/01/08/2159-8290.CD-20-1230) via the "Citation Tools" link
+!!!
 
 2. Cite the relevant paper for each dataset and/or resource that you used in your study (see ‘Dataset’ and ‘Resource’ reference tables below)
 
-3. State in the **Results** and/or **Methods** section that the relevant data and/or resource was obtained from St. Jude Cloud. Example statement:
+3. State in the **Results** and/or **Methods** section that the relevant data and/or resource was obtained from St. Jude Cloud.
    
-> Whole genome sequencing data for relapse tumor samples from 345 pediatric patients were obtained from St. Jude Cloud.
+
+>Whole genome sequencing data for relapse tumor samples from 345 pediatric patients were obtained from St. Jude Cloud [1].
+>>[1] McLeod, Gout, et al., St. Jude Cloud-a Pediatric Cancer Genomic Data Sharing Ecosystem. Cancer Discov January 8 2021 DOI: 10.1158/2159-8290.CD-20-1230 (or chosen citation format etc.)
+
 
 4. State in the **Data availability** section of the manuscript that data and/or resource can be accessed via St. Jude Cloud. Example statement:
+
    
-> Whole genome sequencing data for pediatric relapse tumor samples used for analysis in this study were obtained from St. Jude Cloud (https://www.stjude.cloud) – a publicly accessible pediatric genomic data resource requiring approval for controlled data access.
+>Whole genome sequencing data for pediatric relapse tumor samples used for analysis in this study were obtained from St. Jude Cloud[1] (https://www.stjude.cloud)
+>>[1] McLeod, Gout, et al., St. Jude Cloud-a Pediatric Cancer Genomic Data Sharing Ecosystem. Cancer Discov January 8 2021 DOI: 10.1158/2159-8290.CD-20-1230
+(or chosen citation format etc.)
+
 
 ## Dataset Reference Table
 
@@ -45,15 +56,19 @@ Publishing using any of the data files _before_ the [embargo date](../genomics-p
 
 | St. Jude Cloud Resource        | Reference                                                                                                |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------- |
+| St. Jude Cloud Manuscript                    | [St. Jude Cloud paper](https://cancerdiscovery.aacrjournals.org/content/early/2021/01/08/2159-8290.CD-20-1230)                                            |
 | ProteinPaint                   | [ProteinPaint paper](https://www.nature.com/articles/ng.3466)                                            |
-| GenomePaint                    | paper in progress                                                                                        |
+| GenomePaint                    | [GenomePaint paper](https://www.cell.com/cancer-cell/fulltext/S1535-6108(20)30659-0)                                                                                       |
 | PeCan Pie                      | [PeCan Pie paper](https://genome.cshlp.org/content/29/9/1555.full)                                       |
 | ChIP-Seq Peak Calling          | unpublished                                                                                              |
 | Rapid RNA-Seq Fusion Detection | paper in progress                                                                                        |
 | WARDEN                         | unpublished                                                                                              |
-| Mutational Signatures          | [Mutational Patterns paper](https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-018-0539-0) |
+| Mutational Signatures          | [Mutational Patterns paper](https://www.nature.com/articles/s41586-020-1943-3) |
 | cis-x                          | paper in progress                                                                                        |
 | XenoCP                         | paper in progress                                                                                        |
+| MethylationToActivity                         |  [MethylationToActivity paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02220-y)                                                                                        |
+| RNA-Seq Expression Classification                        |  [CICERO paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02043-x)                                                                     |
+| SequencErr                       |  [SequencErr paper](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02254-2)                                                                      |
 
 <!-- NeoepitopePred | [NeoepitopePred paper](https://www.ncbi.nlm.nih.gov/pubmed/28854978) -->
 
