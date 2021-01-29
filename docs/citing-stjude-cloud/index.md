@@ -4,21 +4,32 @@ title: Citing St. Jude Cloud
 
 # Citing St. Jude Cloud
 
-The St. Jude Cloud manuscript is currently under review. Until further notice, when St. Jude Cloud or data accessed therein is used in your work, please ensure that you:
+If you have used St. Jude Cloud and/or accessed data therein for your work, please adhere to the following guidelines when publishing your work:
 
-1. Cite the St. Jude Cloud manuscript preprint on BioRxiv:
+1. Cite the [St. Jude Cloud manuscript published in Cancer Discovery](https://cancerdiscovery.aacrjournals.org/content/early/2021/01/08/2159-8290.CD-20-1230):
 
-    [St. Jude Cloud - a Pediatric Cancer Genomic Data Sharing Ecosystem](https://www.biorxiv.org/content/10.1101/2020.08.24.264614v1)
+    >Clay McLeod, Alexander M Gout, Xin Zhou, Andrew Thrasher, Delaram Rahbarinia, Samuel Warren Brady, Michael Macias, Kirby Birch, David Finkelstein, Jobin Sunny, Rahul Mudunuri, Brent A. Orr, Madison Treadway, Bob Davidson, Tracy K. Ard, Arthur Chiao, Andrew Swistak, Stephanie Wiggins, Scott Foy, Jian Wang, Edgar Sioson, Shuoguo Wang, J Robert Michael, Yu Liu, Xiaotu Ma, Aman Patel, Michael N Edmonson, Mark R Wilkinson, Andrew M Frantz, Ti-Cheng Chang, Liqing Tian, Shaohua Lei, S. M. Ashiqul Islam, Christopher Meyer, Naina Thangaraj, Pamella Tater, Vijay Kandali, Singer Ma, Tuan Nguyen, Omar Abdulgafoor Serang, Irina McGuire, Nedra Robison, Darrell Gentry, Xing Tang, Lance E Palmer, Gang Wu, Ed Suh, Leigh Tanner, James McMurry, Matthew Lear, Alberto S. Pappo, Zhaoming Wang, Carmen L. Wilson, Yong Cheng, Soheil Meshinchi, Ludmil B. Alexandrov, Mitchell J Weiss, Gregory T. Armstrong, Leslie L. Robison, Yutaka Yasui, Kim E. Nichols, David W. Ellison, Chaitanya Bangur, Charles G. Mullighan, Suzanne J. Baker, Michael A. Dyer, Geralyn Miller, Scott Newman, Michael Rusch, Richard Daly, Keith Perry, James R. Downing and Jinghui Zhang. St. Jude Cloud-a Pediatric Cancer Genomic Data Sharing Ecosystem. Cancer Discov January 8 2021 DOI: 10.1158/2159-8290.CD-20-1230
+
+!!!note
+Citation manager formats can be accessed [here](https://cancerdiscovery.aacrjournals.org/content/early/2021/01/08/2159-8290.CD-20-1230) via the "Citation Tools" link
+!!!
 
 2. Cite the relevant paper for each dataset and/or resource that you used in your study (see ‘Dataset’ and ‘Resource’ reference tables below)
 
-3. State in the **Results** and/or **Methods** section that the relevant data and/or resource was obtained from St. Jude Cloud. Example statement:
+3. State in the **Results** and/or **Methods** section that the relevant data and/or resource was obtained from St. Jude Cloud.
    
-> Whole genome sequencing data for relapse tumor samples from 345 pediatric patients were obtained from St. Jude Cloud.
+
+>Whole genome sequencing data for relapse tumor samples from 345 pediatric patients were obtained from St. Jude Cloud [1].
+>>[1] McLeod, Gout, et al., St. Jude Cloud-a Pediatric Cancer Genomic Data Sharing Ecosystem. Cancer Discov January 8 2021 DOI: 10.1158/2159-8290.CD-20-1230 (or chosen citation format etc.)
+
 
 4. State in the **Data availability** section of the manuscript that data and/or resource can be accessed via St. Jude Cloud. Example statement:
+
    
-> Whole genome sequencing data for pediatric relapse tumor samples used for analysis in this study were obtained from St. Jude Cloud (https://www.stjude.cloud) – a publicly accessible pediatric genomic data resource requiring approval for controlled data access.
+>Whole genome sequencing data for pediatric relapse tumor samples used for analysis in this study were obtained from St. Jude Cloud[1] (https://www.stjude.cloud)
+>>[1] McLeod, Gout, et al., St. Jude Cloud-a Pediatric Cancer Genomic Data Sharing Ecosystem. Cancer Discov January 8 2021 DOI: 10.1158/2159-8290.CD-20-1230
+(or chosen citation format etc.)
+
 
 ## Dataset Reference Table
 
