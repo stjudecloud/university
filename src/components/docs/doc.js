@@ -110,6 +110,7 @@ class BaseLayout extends Component {
         />
         <Navbar
           app={"Docs"}
+          homeUrl={"/docs/"}
           includeSearch={true}
           onSearchClick={event => {
             event.preventDefault()
