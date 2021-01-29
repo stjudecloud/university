@@ -59,7 +59,9 @@ const HomePage = () => {
   const logo = data.logo.childImageSharp.fixed
 
   if (redirectToDocs) {
-    navigate('/docs/')
+    if (typeof window !== "undefined") {
+      navigate("/docs/")
+    }
     return null
   } else {
     return (
