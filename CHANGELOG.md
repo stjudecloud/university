@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/stjudecloud/university/compare/v1.1.1...v1.1.2) (2021-01-30)
+
+
+### Bug Fixes
+
+* **buttons:** changes action buttons to St. Jude Cloud style ([6107ecd](https://github.com/stjudecloud/university/commit/6107ecdeb688f94e855531d8b3e42b04066762eb))
+
 ## [1.1.1](https://github.com/stjudecloud/university/compare/v1.1.0...v1.1.1) (2021-01-29)
 
 
