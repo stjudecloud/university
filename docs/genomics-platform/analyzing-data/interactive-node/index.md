@@ -247,7 +247,7 @@ dx run app-cwic -icredentials=<DX_PROJECT_NAME_WITH_CREDS>:creds.txt --instance-
 
 This is useful when you want to run some non-interactive jobs that have different memory or storage requirements.
 
-If you have any questions or suggestions on how we can improve this guide, please [file an issue](https://github.com/stjudecloud/docs/issues), contact us at [https://stjude.cloud/contact](https://stjude.cloud/contact), or email us at [support@stjude.cloud](mailto:support@stjude.cloud).
+If you have any questions or suggestions on how we can improve this guide, please [file an issue](https://github.com/stjudecloud/university/issues), contact us at [https://stjude.cloud/contact](https://stjude.cloud/contact), or email us at [support@stjude.cloud](mailto:support@stjude.cloud).
 
 ### Making a Docker Hub repository private
 

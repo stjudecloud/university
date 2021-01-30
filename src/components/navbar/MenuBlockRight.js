@@ -15,8 +15,8 @@ const MenuBlockRight = ({ enableGitHub = true, enableMenu = false }) => {
       >
         {enableGitHub && (
           <a
-            href="https://github.com/stjudecloud/docs"
-            className="text-navy cursor-pointer"
+            href="https://github.com/stjudecloud/university"
+            className="text-black cursor-pointer"
             style={{ paddingRight: "10px" }}
           >
             <FontAwesomeIcon

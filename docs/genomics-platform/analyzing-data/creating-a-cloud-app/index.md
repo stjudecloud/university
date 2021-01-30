@@ -476,7 +476,7 @@ Again, if we run the `dx ls` command, we can verify that two new files titled "f
 
 If you have made it this far, you have likely wrapped your first genomic analysis tool for use in the cloud. For your reference, we have included the final FastQC application at the [St. Jude App Tutorial Repository](https://github.com/stjudecloud/cloud-app-tutorial).
 
-If you have any questions or suggestions on how we can improve this tutorial, please [file an issue](https://github.com/stjudecloud/docs/issues), contact us at [https://stjude.cloud/contact](https://stjude.cloud/contact), or email us at [support@stjude.cloud](mailto:support@stjude.cloud).
+If you have any questions or suggestions on how we can improve this tutorial, please [file an issue](https://github.com/stjudecloud/university/issues), contact us at [https://stjude.cloud/contact](https://stjude.cloud/contact), or email us at [support@stjude.cloud](mailto:support@stjude.cloud).
 
 ## Similar Topics
 
