@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/stjudecloud/university/compare/v1.1.4...v1.2.0) (2021-01-30)
+
+
+### Features
+
+* **colors:** updates the colors and style of search to come closer to St. Jude Cloud brand ([1e7575a](https://github.com/stjudecloud/university/commit/1e7575ab7f4408d8d26ccc8c18d1f46e6044df97))
+
 ## [1.1.4](https://github.com/stjudecloud/university/compare/v1.1.3...v1.1.4) (2021-01-30)
 
 
