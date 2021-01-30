@@ -4,6 +4,7 @@ import Question from "../../../images/icons/question.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { toast } from "react-toastify"
+import Button from "../../buttons/Button"
 
 function askAQuestion() {
   if (window.Intercom) {
@@ -47,24 +48,27 @@ const ActionSidebarRight = ({ fileAbsolutePath }) => {
         <div className="uppercase w-full text-center text-coolGray-400 pb-4">
           Actions
         </div>
-        <button
-          className="flex justify-center w-3/5 rounded bg-coolGray-800 text-white font-semibold px-4 py-2 my-2 disabled:opacity-50"
+        <Button
+          className="leading-8"
+          style={{ backgroundColor: "#1874dc" }}
           onClick={askAQuestion}
         >
-          <Question className="mr-2" />
-          <span>Ask a Question</span>
-        </button>
-        <button
-          className="flex justify-center w-3/5 rounded bg-coolGray-800 text-white font-semibold px-4 py-2 my-2"
+          <Question className="mr-2 leading-8" />
+          Ask a Question
+        </Button>
+
+        <Button
+          className="leading-8"
+          style={{ backgroundColor: "#2b2b2b" }}
           onClick={editOnGitHub(fileAbsolutePath)}
         >
           <FontAwesomeIcon
-            className="fill-current mr-2"
+            className="fill-current mr-2 leading-8"
             icon={faGithub}
             style={{ width: "27px", height: "27px" }}
           />
-          <span>Edit on GitHub</span>
-        </button>
+          Edit on GitHub
+        </Button>
       </div>
     </div>
   )
