@@ -92,7 +92,7 @@ const HomePage = () => {
           <div className="mb-20">
             <div className="mb-20 select-none">
               <h1 className="text-5xl font-bold">St. Jude Cloud</h1>
-              <h1 className="mt-6 text-purple text-6xl font-bold">
+              <h1 className="mt-6 text-accent text-6xl font-bold">
                 University
               </h1>
               <p className="mt-10 text-coolGray-500 text-xl">
@@ -105,7 +105,7 @@ const HomePage = () => {
             <div>
               <Link
                 to="/docs/"
-                className="flex flex-row justify-between w-full cursor-pointer border-2 hover:border-purple text-black hover:text-purple transition duration-200 call-to-action-btn"
+                className="flex flex-row justify-between w-full cursor-pointer border-2 hover:border-accent text-black hover:text-accent transition duration-200 call-to-action-btn"
               >
                 <div className="flex items-center">
                   <DocsLogo width="130px" />

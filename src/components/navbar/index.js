@@ -11,10 +11,10 @@ const Navbar = ({
   onSearchClick = null,
 }) => (
   <nav
-    className="sticky top-0 z-40 bg-white border-b shadow-sm border-solid border-coolGray-100 flex items-center justify-between w-full p-2 leading-4"
+    className="sticky top-0 z-40 bg-secondary border-b shadow-sm border-solid border-coolGray-100 flex items-center justify-between w-full p-2 leading-4"
     style={{ height: "65px" }}
   >
-    <BrandBlockLeft app={app} homeUrl={homeUrl}/>
+    <BrandBlockLeft app={app} homeUrl={homeUrl} />
     {includeSearch && <SearchBlock onSearchClick={onSearchClick} />}
     <MenuBlockRight />
   </nav>

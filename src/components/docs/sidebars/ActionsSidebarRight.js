@@ -48,11 +48,7 @@ const ActionSidebarRight = ({ fileAbsolutePath }) => {
         <div className="uppercase w-full text-center text-coolGray-400 pb-4">
           Actions
         </div>
-        <Button
-          className="leading-8"
-          style={{ backgroundColor: "#1874dc" }}
-          onClick={askAQuestion}
-        >
+        <Button className="leading-8 bg-secondary" onClick={askAQuestion}>
           <Question className="mr-2 leading-8" />
           Ask a Question
         </Button>

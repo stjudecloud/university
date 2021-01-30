@@ -145,7 +145,7 @@ class BaseLayout extends Component {
                 {previousPage && (
                   <Link
                     to={previousPage.path}
-                    className="border border-coolGray-200 hover:border-purple text-black hover:text-purple py-4 px-8 shadow-xl mb-6 md:mb-0 transition duration-300"
+                    className="border border-coolGray-200 hover:border-accent text-black hover:text-accent py-4 px-8 shadow-xl mb-6 md:mb-0 transition duration-300"
                     style={{ flex: "5" }}
                   >
                     <div className="flex justify-between items-center">
@@ -170,7 +170,7 @@ class BaseLayout extends Component {
                 {nextPage && (
                   <Link
                     to={nextPage.path}
-                    className="border border-coolGray-200 hover:border-purple text-black hover:text-purple py-4 px-8 shadow-xl transition duration-300"
+                    className="border border-coolGray-200 hover:border-accent text-black hover:text-accent py-4 px-8 shadow-xl transition duration-300"
                     style={{ flex: "5" }}
                   >
                     <div className="flex justify-between items-center">

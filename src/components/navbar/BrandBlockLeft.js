@@ -11,14 +11,14 @@ const BrandBlockLeft = ({ app, homeUrl }) => {
         to="https://stjude.cloud"
       >
         <ChildLogo
-          className="fill-current text-black border-black border-r"
+          className="fill-current text-white border-white border-r"
           height="40"
           width="61"
         />
       </Link>
       <Link className="whitespace-nowrap" to="https://stjude.cloud">
         <span
-          className="hidden md:inline-block text-black"
+          className="hidden md:inline-block text-white"
           style={{ paddingLeft: "10px", fontWeight: "800", fontSize: "20px" }}
         >
           St. Jude Cloud
@@ -27,7 +27,7 @@ const BrandBlockLeft = ({ app, homeUrl }) => {
       {app && (
         <Link className="whitespace-nowrap" to={homeUrl}>
           <span
-            className="text-navy text-opacity-60"
+            className="text-white text-opacity-60"
             style={{ paddingLeft: "8px", fontSize: "20px" }}
           >
             {app}

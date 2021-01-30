@@ -85,7 +85,7 @@
   }
 
   a {
-    @apply text-purple;
+    @apply text-accent;
 
     &:hover {
       @apply underline;
@@ -141,7 +141,7 @@
     svg {
       visibility: visible;
       @apply fill-current;
-      @apply text-purple;
+      @apply text-accent;
       @apply text-opacity-80;
       height: 55%;
       max-height: 25px;

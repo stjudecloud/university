@@ -8,7 +8,7 @@ const MenuBlockRight = ({ enableGitHub = true, enableMenu = false }) => {
   return (
     <div className="flex flex-1 items-center justify-end">
       <div
-        className="flex items-center justify-center text-black fill-current"
+        className="flex items-center justify-center text-white fill-current"
         height="40px"
         width="40px"
         style={{ marginRight: "10px" }}
@@ -16,7 +16,7 @@ const MenuBlockRight = ({ enableGitHub = true, enableMenu = false }) => {
         {enableGitHub && (
           <a
             href="https://github.com/stjudecloud/university"
-            className="text-black cursor-pointer"
+            className="text-white cursor-pointer"
             style={{ paddingRight: "10px" }}
           >
             <FontAwesomeIcon
@@ -28,7 +28,7 @@ const MenuBlockRight = ({ enableGitHub = true, enableMenu = false }) => {
       </div>
       {enableMenu && (
         <div
-          className="flex items-center justify-center text-black fill-current"
+          className="flex items-center justify-center text-white fill-current"
           height="40px"
           width="40px"
           style={{ marginRight: "10px" }}
