@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/stjudecloud/university/compare/v1.1.3...v1.1.4) (2021-01-30)
+
+
+### Bug Fixes
+
+* **navbar:** update all elements block right to be black ([e84e571](https://github.com/stjudecloud/university/commit/e84e57110013535fcba15dc949eb04483fa4884f))
+
 ## [1.1.3](https://github.com/stjudecloud/university/compare/v1.1.2...v1.1.3) (2021-01-30)
 
 
