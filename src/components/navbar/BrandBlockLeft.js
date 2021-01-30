@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 import ChildLogo from "../../images/icons/stjudecloud-child-logo.svg"
 
 const BrandBlockLeft = ({ app, homeUrl }) => {
@@ -40,7 +40,7 @@ const BrandBlockLeft = ({ app, homeUrl }) => {
 
 BrandBlockLeft.propTypes = {
   app: PropTypes.string.isRequired,
-  homeUrl: PropTypes.string.isRequired
+  homeUrl: PropTypes.string.isRequired,
 }
 
 export default BrandBlockLeft

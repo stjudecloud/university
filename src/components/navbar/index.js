@@ -2,7 +2,7 @@ import React from "react"
 import BrandBlockLeft from "./BrandBlockLeft"
 import SearchBlock from "./SearchBlock"
 import MenuBlockRight from "./MenuBlockRight"
-import { PropTypes } from 'prop-types';
+import { PropTypes } from "prop-types"
 
 const Navbar = ({
   app = null,
@@ -24,7 +24,7 @@ Navbar.propTypes = {
   app: PropTypes.string.isRequired,
   homeUrl: PropTypes.string.isRequired,
   includeSearch: PropTypes.bool,
-  onSearchClick: PropTypes.func
+  onSearchClick: PropTypes.func,
 }
 
 export default Navbar
