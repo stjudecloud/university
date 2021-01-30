@@ -8,7 +8,7 @@ const MenuBlockRight = ({ enableGitHub = true, enableMenu = false }) => {
   return (
     <div className="flex flex-1 items-center justify-end">
       <div
-        className="flex items-center justify-center text-navy fill-current"
+        className="flex items-center justify-center text-black fill-current"
         height="40px"
         width="40px"
         style={{ marginRight: "10px" }}
@@ -28,7 +28,7 @@ const MenuBlockRight = ({ enableGitHub = true, enableMenu = false }) => {
       </div>
       {enableMenu && (
         <div
-          className="flex items-center justify-center text-navy fill-current"
+          className="flex items-center justify-center text-black fill-current"
           height="40px"
           width="40px"
           style={{ marginRight: "10px" }}
