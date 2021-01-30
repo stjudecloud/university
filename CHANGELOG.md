@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/stjudecloud/university/compare/v1.1.2...v1.1.3) (2021-01-30)
+
+
+### Bug Fixes
+
+* **navbar:** changes GitHub icon to black, updates references to GitHub repo ([4541241](https://github.com/stjudecloud/university/commit/454124171f9494794d0240227774d27e537464fa))
+
 ## [1.1.2](https://github.com/stjudecloud/university/compare/v1.1.1...v1.1.2) (2021-01-30)
 
 
