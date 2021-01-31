@@ -14,6 +14,7 @@ import SearchModal from "../search"
 
 import { ToastContainer } from "react-toastify"
 import DocFooterNavigation from "./footer"
+import SEO from "../seo"
 
 class BaseLayout extends Component {
   static defaultProps = {
@@ -39,7 +40,12 @@ class BaseLayout extends Component {
       markdownRemark,
     } = this.props.data
     const { pathname } = this.props.location
-    const { html, fileAbsolutePath } = markdownRemark
+    const {
+      html,
+      excerpt,
+      frontmatter: { title },
+      fileAbsolutePath,
+    } = markdownRemark
 
     let currentModule = null
 
@@ -103,6 +109,7 @@ class BaseLayout extends Component {
 
     return (
       <div className="bg-white text-gray-500 antialiased js-focus-visible">
+        <SEO title={title} description={excerpt} />
         <ToastContainer />
         <SearchModal
           ref={element => (this.searchModal = element)}
@@ -202,6 +209,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
       }
+      excerpt(pruneLength: 200)
     }
   }
 `
