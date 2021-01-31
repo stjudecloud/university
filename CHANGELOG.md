@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/stjudecloud/university/compare/v1.3.1...v1.3.2) (2021-01-31)
+
+
+### Bug Fixes
+
+* **seo:** fixes SEO added to all documentation pages ([9fd932e](https://github.com/stjudecloud/university/commit/9fd932e91a255e13b30bfb123e91d06d25614e3b))
+
 ## [1.3.1](https://github.com/stjudecloud/university/compare/v1.3.0...v1.3.1) (2021-01-31)
 
 
