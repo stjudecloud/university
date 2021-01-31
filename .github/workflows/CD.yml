@@ -44,13 +44,15 @@ jobs:
         run: |
           npx semantic-release
           git tag --points-at HEAD > VERSION
-      - name: Upload version file
+      - name: Upload Version File
         uses: actions/upload-artifact@v2
         with:
           name: version-file
-          path: VERSION
+          path: ./VERSION
           if-no-files-found: error
           retention-days: 3
+      - name: Print Version Number
+        run: cat ./VERSION
   build:
     name: "Gatsby Build 🧰"
     runs-on: ubuntu-latest
@@ -88,10 +90,11 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: version-file
-          path: VERSION
+          path: ./VERSION
       - name: Run Build
         run: |
-          export GATSBY_DOCS_VERSION=$(cat VERSION)
+          export GATSBY_DOCS_VERSION=$(cat ./VERSION)
+          echo "Building site for version $VERSION"
           npm install
           npm run build
         env:
