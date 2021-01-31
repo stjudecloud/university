@@ -90,13 +90,10 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: version-file
-          path: ./VERSION
+          path: .
       - name: Run Build
         run: |
-          echo "Building site for version $VERSION"
           npm install
-          ls -R
-          ls -R ARTIFACT
           GATSBY_DOCS_VERSION=$(cat ./VERSION) GATSBY_DOCS_HASH=$(git rev-parse --short "$GITHUB_SHA") npm run build
         env:
           GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
@@ -105,7 +102,7 @@ jobs:
           GATSBY_ALGOLIA_APP_ID: ${{ secrets.GATSBY_ALGOLIA_APP_ID }}
           GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
           INTERCOM_APP_ID: ${{ secrets.INTERCOM_APP_ID }}
-      - name: Upload built site
+      - name: Upload Built Site
         uses: actions/upload-artifact@v2
         with:
           name: gatsby-public-folder
