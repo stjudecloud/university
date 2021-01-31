@@ -10,61 +10,9 @@ env:
   NODE_VERSION: 15.x
 
 jobs:
-  build:
-    name: "Gatsby Build 🧰"
-    runs-on: ubuntu-latest
-    env:
-      CI: true
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2.3.4
-      - name: Set Up Node ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v1.4.4
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Cache Gatsby folder
-        uses: actions/cache@v2
-        with:
-          path: .cache
-          key: ${{ runner.os }}-cache-gatsby
-          restore-keys: |
-            ${{ runner.os }}-cache-gatsby
-      - name: Cache Public folder
-        uses: actions/cache@v2
-        with:
-          path: public/
-          key: ${{ runner.os }}-public-gatsby
-          restore-keys: |
-            ${{ runner.os }}-public-gatsby
-      - name: Run Build
-        run: |
-          npm install
-          npm run build
-        env:
-          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
-          NODE_ENV: production
-          ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
-          GATSBY_ALGOLIA_APP_ID: ${{ secrets.GATSBY_ALGOLIA_APP_ID }}
-          GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
-          INTERCOM_APP_ID: ${{ secrets.INTERCOM_APP_ID }}
-      - name: Upload built site
-        uses: actions/upload-artifact@v2
-        with:
-          name: gatsby-public-folder
-          path: public/
-          if-no-files-found: error
-          retention-days: 3
   semantic-release:
     name: "Semantic Release 🗂"
     if: github.ref == 'refs/heads/master'
-    needs: [build]
     runs-on: ubuntu-latest
     env:
       CI: true
@@ -95,6 +43,72 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx semantic-release
+          git tag --points-at HEAD > VERSION
+      - name: Upload version file
+        uses: actions/upload-artifact@v2
+        with:
+          name: version-file
+          path: VERSION
+          if-no-files-found: error
+          retention-days: 3
+  build:
+    name: "Gatsby Build 🧰"
+    runs-on: ubuntu-latest
+    needs: [semantic-release]
+    env:
+      CI: true
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2.3.4
+      - name: Set Up Node ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v1.4.4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Cache Gatsby folder
+        uses: actions/cache@v2
+        with:
+          path: .cache
+          key: ${{ runner.os }}-cache-gatsby
+          restore-keys: |
+            ${{ runner.os }}-cache-gatsby
+      - name: Cache Public folder
+        uses: actions/cache@v2
+        with:
+          path: public/
+          key: ${{ runner.os }}-public-gatsby
+          restore-keys: |
+            ${{ runner.os }}-public-gatsby
+      - uses: actions/download-artifact@v2
+        with:
+          name: version-file
+          path: VERSION
+      - name: Run Build
+        run: |
+          export GATSBY_DOCS_VERSION=$(cat VERSION)
+          npm install
+          npm run build
+        env:
+          GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
+          NODE_ENV: production
+          ALGOLIA_ADMIN_KEY: ${{ secrets.ALGOLIA_ADMIN_KEY }}
+          GATSBY_ALGOLIA_APP_ID: ${{ secrets.GATSBY_ALGOLIA_APP_ID }}
+          GATSBY_ALGOLIA_SEARCH_KEY: ${{ secrets.GATSBY_ALGOLIA_SEARCH_KEY }}
+          GATSBY_DOCS_HASH: ${{ github.event.head_commit.message }}
+          INTERCOM_APP_ID: ${{ secrets.INTERCOM_APP_ID }}
+      - name: Upload built site
+        uses: actions/upload-artifact@v2
+        with:
+          name: gatsby-public-folder
+          path: public/
+          if-no-files-found: error
+          retention-days: 3
   deploy:
     name: "Deploy to Netlify 🚀"
     if: github.ref == 'refs/heads/master'
@@ -113,7 +127,7 @@ jobs:
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.1
         with:
-          publish-dir: './public'
+          publish-dir: "./public"
           production-branch: master
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: "Deploy from GitHub Actions"
