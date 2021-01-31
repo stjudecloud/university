@@ -83,12 +83,10 @@ class BaseLayout extends Component {
     })
 
     let previousPage = null
-    let currentPage = null
     let nextPage = null
 
     for (let i = 0; i < flattenedChapters.length; i++) {
       if (flattenedChapters[i].path == pathname) {
-        currentPage = flattenedChapters[i]
         if (i > 0) {
           previousPage = flattenedChapters[i - 1]
         }
