@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/stjudecloud/university/compare/v1.2.0...v1.2.1) (2021-01-31)
+
+
+### Bug Fixes
+
+* **content:** fixes content overlap for widths between 1265 and 1500px ([e21969c](https://github.com/stjudecloud/university/commit/e21969cee3024e8b29a04e712e87b9aa094bea7b))
+
 # [1.2.0](https://github.com/stjudecloud/university/compare/v1.1.4...v1.2.0) (2021-01-30)
 
 
