@@ -11,9 +11,9 @@ import { graphql, Link } from "gatsby"
 import Navbar from "../navbar"
 import { ContentsSidebarLeft, ActionSidebarRight } from "./sidebars"
 import SearchModal from "../search"
-import Chevron from "../../images/icons/chevron.svg"
 
 import { ToastContainer } from "react-toastify"
+import DocFooterNavigation from "./footer"
 
 class BaseLayout extends Component {
   static defaultProps = {
@@ -141,54 +141,10 @@ class BaseLayout extends Component {
                 className="container content xl:max-w-xl 2xl:max-w-3xl"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
-              <div className="mt-8 flex flex-col md:flex-row justify-between">
-                {previousPage && (
-                  <Link
-                    to={previousPage.path}
-                    className="border border-coolGray-200 hover:border-accent text-black hover:text-accent py-4 px-8 shadow-xl mb-6 md:mb-0 transition duration-300"
-                    style={{ flex: "5" }}
-                  >
-                    <div className="flex justify-between items-center">
-                      <Chevron
-                        style={{ transform: "rotate(180deg)" }}
-                        className="flex-0 ml-2 fill-current text-inherit"
-                        width="16px"
-                        height="16px"
-                      />
-                      <div className="flex flex-col justify-end flex-1 text-right">
-                        <span className="text-gray-400 text-sm">
-                          {previousPage.chapter}
-                        </span>
-                        <span className="text-inherit">
-                          {previousPage.title}
-                        </span>
-                      </div>
-                    </div>
-                  </Link>
-                )}
-                {previousPage && nextPage && <div style={{ flex: "1" }}></div>}
-                {nextPage && (
-                  <Link
-                    to={nextPage.path}
-                    className="border border-coolGray-200 hover:border-accent text-black hover:text-accent py-4 px-8 shadow-xl transition duration-300"
-                    style={{ flex: "5" }}
-                  >
-                    <div className="flex justify-between items-center">
-                      <div className="flex flex-col justify-end flex-1 text-left">
-                        <span className="text-gray-400 text-sm">
-                          {nextPage.chapter}
-                        </span>
-                        <span className="text-inherit">{nextPage.title}</span>
-                      </div>
-                      <Chevron
-                        className="flex-0 ml-2 fill-current text-inherit"
-                        width="16px"
-                        height="16px"
-                      />
-                    </div>
-                  </Link>
-                )}
-              </div>
+              <DocFooterNavigation
+                previousPage={previousPage}
+                nextPage={nextPage}
+              />
             </div>
           </div>
         </main>
