@@ -43,7 +43,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npx semantic-release
-          git tag --points-at HEAD > VERSION
+          git describe --tags --abbrev=0 > ./VERSION
       - name: Upload Version File
         uses: actions/upload-artifact@v2
         with:
