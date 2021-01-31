@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/stjudecloud/university/compare/v1.2.1...v1.3.0) (2021-01-31)
+
+
+### Features
+
+* shows version in the navbar and hash in the footer ([ce2e1f7](https://github.com/stjudecloud/university/commit/ce2e1f7be0402567260b608975b51689aa2a0306))
+
 ## [1.2.1](https://github.com/stjudecloud/university/compare/v1.2.0...v1.2.1) (2021-01-31)
 
 
