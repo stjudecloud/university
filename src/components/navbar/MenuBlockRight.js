@@ -3,8 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import Menu from "../../images/icons/menu.svg"
 import { PropTypes } from "prop-types"
+import { Link } from "gatsby"
 
 const MenuBlockRight = ({ enableGitHub = true, enableMenu = false }) => {
+  const docsVersion = process.env.GATSBY_DOCS_VERSION
+
   return (
     <div className="flex flex-1 items-center justify-end">
       <div
@@ -14,16 +17,28 @@ const MenuBlockRight = ({ enableGitHub = true, enableMenu = false }) => {
         style={{ marginRight: "10px" }}
       >
         {enableGitHub && (
-          <a
-            href="https://github.com/stjudecloud/university"
-            className="text-white cursor-pointer"
-            style={{ paddingRight: "10px" }}
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              style={{ width: "35px", height: "35px" }}
-            />
-          </a>
+          <div className="flex items-between">
+            <a
+              href="https://github.com/stjudecloud/university"
+              className="text-white cursor-pointer"
+              style={{ paddingRight: "10px" }}
+            >
+              <FontAwesomeIcon
+                icon={faGithub}
+                style={{ width: "35px", height: "35px" }}
+                className="hover:opacity-80"
+              />
+              {docsVersion && (
+                <div className="flex items-center text-xs font-bold mt-0.5 hover:opacity-80">
+                  <Link
+                    to={`https://github.com/stjudecloud/university/releases/tag/${docsVersion}`}
+                  >
+                    {docsVersion}
+                  </Link>
+                </div>
+              )}
+            </a>
+          </div>
         )}
       </div>
       {enableMenu && (
