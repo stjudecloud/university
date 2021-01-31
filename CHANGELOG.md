@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/stjudecloud/university/compare/v1.3.0...v1.3.1) (2021-01-31)
+
+
+### Bug Fixes
+
+* fixes linking of version within the navbar ([61b663b](https://github.com/stjudecloud/university/commit/61b663b21a52e1ae33769d2e3818eaea6dc80136))
+
 # [1.3.0](https://github.com/stjudecloud/university/compare/v1.2.1...v1.3.0) (2021-01-31)
 
 
