@@ -73,7 +73,7 @@ class BaseLayout extends Component {
       title: currentTitle,
       chapters: currentChapters,
     } = currentModule
-    const CurrentIconImported = require("../../images/icons/" + currentIcon)
+    const currentIconImported = require("../../images/icons/" + currentIcon)
 
     const flattenedChapters = []
     currentChapters.forEach(chapter => {
@@ -127,7 +127,7 @@ class BaseLayout extends Component {
           isMobileMenuOpen={this.state.isMobileMenuOpen}
           openMobileMenu={this.openMobileMenu}
           closeMobileMenu={this.closeMobileMenu}
-          CurrentIconImported={CurrentIconImported}
+          CurrentIconImported={currentIconImported}
           currentTitle={currentTitle}
           domains={domains}
           currentChapters={currentChapters}

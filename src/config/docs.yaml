@@ -34,7 +34,7 @@ domains:
               - title: "Frequently Asked Questions"
                 path: /docs/genomics-platform/faq/
           - title: "About Our Data"
-            pages: 
+            pages:
               - title: "File Formats and Sequencing Information"
                 path: /docs/genomics-platform/about-our-data/file-formats-and-sequencing/
               - title: "Data Sets and Data Access Units"
@@ -106,7 +106,8 @@ domains:
               - title: "Frequently Asked Questions"
                 path: /docs/visualization-community/faq/
           - title: "ProteinPaint"
-            pages: 
+            collapsable: true
+            pages:
               - title: "Introduction"
                 path: /docs/visualization-community/proteinpaint/introduction/
               - title: "Getting Started"
@@ -174,11 +175,11 @@ domains:
               - title: "Organizing Data into a Study View"
                 path: /docs/visualization-community/proteinpaint/developers-guide/organizing-data-into-a-study-view/
           - title: "Genomepaint"
-            pages: 
-                - title: "Genomepaint"
-                  path: /docs/visualization-community/genomepaint/
-                - title: "GenomePaint User Guide"
-                  path: /docs/visualization-community/genomepaint/user-guide/
+            pages:
+              - title: "Genomepaint"
+                path: /docs/visualization-community/genomepaint/
+              - title: "GenomePaint User Guide"
+                path: /docs/visualization-community/genomepaint/user-guide/
   - title: "Other"
     modules:
       - title: "Studies"
