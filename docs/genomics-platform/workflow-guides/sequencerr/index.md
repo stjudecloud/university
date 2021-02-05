@@ -2,19 +2,13 @@
 title: Sequencerr
 ---
 
-## Measuring and suppressing sequencer errors in next generation sequencing
+## Measuring and suppressing sequencer errors in next-generation sequencing data
 
-
-!!!note
-**To manuscript reviewers:** to ensure anonymous review, we have asked the editor to send you accounts so that you do not need to create your own account to keep your test run anonymous. Please contact the editor if you do not receive the account information.
-!!!
-
-
-|                       |                                                                                                                                                                                                                                                    |
-| --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Authors**           | Eric M Davis, Yu Sun, Yanling Liu, Pandurang Kolekar, Ying Shao, Karol Szlachta, Heather L Mulder, Dongren Ren, Stephen V Rice, Zhaoming Wang, Joy Nakitandwe, Alex Gout, Leslie L Robison, Stanley Pounds, Jefferey Klco, John Easton, Xiaotu Ma* |
-| **Publication**       | [SequencErr: measuring and suppressing sequencer errors in next-generation sequencing data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02254-2)                                                                                                                                                                                                                                       |
-| **Technical Support** | [Contact Us](https://stjude.cloud/contact)                                                                                                                                                                                                         |
+|                       |                                                                                                                                                                                                                                                                                 |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Authors**           | Eric M Davis, Yu Sun, Yanling Liu, Pandurang Kolekar, Ying Shao, Karol Szlachta, Heather L Mulder, Dongren Ren, Stephen V Rice, Zhaoming Wang, Joy Nakitandwe, Alex Gout, Bridget Shaner, Salina Hall, Leslie L Robison, Stanley Pounds, Jefferey Klco, John Easton, Xiaotu Ma* |
+| **Publication**       | Davis, E.M. _et al._ SequencErr: measuring and suppressing sequencer errors in next-generation sequencing data. **_Genome Biol_** 22(1):37 (2021). doi: [10.1186/s13059-020-02254-2](https://doi.org/10.1186/s13059-020-02254-2)                                                |
+| **Technical Support** | [Contact Us](https://stjude.cloud/contact)                                                                                                                                                                                                                                      |
 
 ## Overview
 
@@ -25,10 +19,10 @@ By sequencing a common DNA library on different sequencers, we demonstrate that 
 
 ## Inputs
 
-| Name           | Type       | Description                                     | Example          |
-| -------------- | ---------- | ----------------------------------------------- | ---------------- |
-| BAM file       | Input file | Binary version of the SAM file format (`*.bam`) | Sample.bam       |
-| BAM index file | Input file | Index file for the BAM file (`*.bai`)           | Sample.bam.bai   |
+| Name           | Type       | Description                                     | Example        |
+| -------------- | ---------- | ----------------------------------------------- | -------------- |
+| BAM file       | Input file | Binary version of the SAM file format (`*.bam`) | Sample.bam     |
+| BAM index file | Input file | Index file for the BAM file (`*.bai`)           | Sample.bam.bai |
 
 ## Outputs
 
@@ -94,13 +88,7 @@ Please refer to the following steps to learn how to launch the workflow, hook up
 
 ![](./Sequencerr_log_in_1.png)
 
-!!!warning For Manuscript Reviewers only
-Please select **_DNAnexus account_** option to log in.
-    
-Follow the stepwise instructions available in the **PDF [here](./SequencErr_Instructions.pdf)** .
-!!!
-
-General users please refer to the following instructions.
+Please refer to the following instructions.
 
 ![](./Sequencerr_log_in_2.png)
 
