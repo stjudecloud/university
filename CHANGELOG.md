@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/stjudecloud/university/compare/v1.3.3...v1.3.4) (2021-02-05)
+
+
+### Bug Fixes
+
+* **search:** fixes the search by prefix docs paths ([5079535](https://github.com/stjudecloud/university/commit/507953539a30375a620652f049b390e999ed439c))
+
 ## [1.3.3](https://github.com/stjudecloud/university/compare/v1.3.2...v1.3.3) (2021-02-02)
 
 ## [1.3.2](https://github.com/stjudecloud/university/compare/v1.3.1...v1.3.2) (2021-01-31)
