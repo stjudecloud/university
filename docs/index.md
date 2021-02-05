@@ -4,7 +4,7 @@ title: Overview
 
 # St. Jude Cloud Documentation
 
-Welcome to the St. Jude Cloud documentation! Here, you will find authoritative guides for accessing St. Jude Cloud data, creating and running analysis workflows on the cloud, and exploring curated data from numerous published studies by St. Jude and our collaborating institutions.To learn more about our ecosystem, read this [guide](../ecosystem). 
+Welcome to the St. Jude Cloud documentation! Here, you will find authoritative guides for accessing St. Jude Cloud data, creating and running analysis workflows on the cloud, and exploring curated data from numerous published studies by St. Jude and our collaborating institutions.To learn more about our ecosystem, read this [guide](./ecosystem).
 
 Sign up [here](https://hospital.stjude.org/apps/forms/fb/st-jude-cloud-subscribe/) to receive email notifications when we add new datasets, analysis pipelines, or other exciting features.
 
