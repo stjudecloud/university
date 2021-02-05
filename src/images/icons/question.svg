@@ -7,16 +7,8 @@
   xmlns="http://www.w3.org/2000/svg"
   xmlns:xlink="http://www.w3.org/1999/xlink"
 >
-  <title>chat</title>
-  <g
-    id="Documentation"
-    stroke="none"
-    stroke-width="1"
-    fill="none"
-    fill-rule="evenodd"
-  >
+  <g stroke="none" stroke-width="1">
     <g
-      id="Light-Theme"
       transform="translate(-1214.000000, -190.000000)"
       fill="#FFFFFF"
       fill-rule="nonzero"

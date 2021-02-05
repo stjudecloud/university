@@ -1,17 +1,18 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Question from "../../../images/icons/question.svg"
+import Tour from "../../../images/icons/tour.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { toast } from "react-toastify"
 import Button from "../../buttons/Button"
 
-function askAQuestion() {
-  if (window.Intercom) {
-    window.Intercom("showNewMessage")
+function callIntercom(action, args = null) {
+  if (window && window.Intercom) {
+    window.Intercom(action, args)
   } else {
     toast.error(
-      "Looks like our chat isn't enabled in this environment! Please email us at support@stjude.cloud with this error.",
+      "Looks like Intercom isn't enabled in this environment! Please email us at support@stjude.cloud with this error so we can fix it!",
       {
         position: "top-center",
         autoClose: 5000,
@@ -23,6 +24,14 @@ function askAQuestion() {
       }
     )
   }
+}
+
+function askAQuestion() {
+  callIntercom("showNewMessage")
+}
+
+function playTour() {
+  callIntercom("startTour", 203573)
 }
 
 function editOnGitHub(fileAbsolutePath) {
@@ -48,18 +57,34 @@ const ActionSidebarRight = ({ fileAbsolutePath }) => {
         <div className="uppercase w-full text-center text-coolGray-400 pb-4">
           Actions
         </div>
-        <Button className="leading-8 bg-secondary" onClick={askAQuestion}>
-          <Question className="mr-2 leading-8" />
+        <Button
+          className="leading-8"
+          style={{ backgroundColor: "#1874DC" }}
+          hoveredStyle={{ backgroundColor: "#549cec" }}
+          onClick={askAQuestion}
+        >
+          <Question className="mx-2 leading-8" />
           Ask a Question
         </Button>
 
         <Button
           className="leading-8"
-          style={{ backgroundColor: "#2b2b2b" }}
+          style={{ backgroundColor: "#1874DC" }}
+          hoveredStyle={{ backgroundColor: "#549cec" }}
+          onClick={playTour}
+        >
+          <Tour className="mx-2 leading-8" style={{ fill: "white" }} />
+          Start the Tour
+        </Button>
+
+        <Button
+          className="leading-8"
+          style={{ backgroundColor: "#444444" }}
+          hoveredStyle={{ backgroundColor: "#2b2b2b" }}
           onClick={editOnGitHub(fileAbsolutePath)}
         >
           <FontAwesomeIcon
-            className="fill-current mr-2 leading-8"
+            className="fill-current mx-2 leading-8"
             icon={faGithub}
             style={{ width: "27px", height: "27px" }}
           />
