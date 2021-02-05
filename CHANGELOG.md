@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/stjudecloud/university/compare/v1.4.1...v1.5.0) (2021-02-05)
+
+
+### Features
+
+* **tour:** adds tour button, adds support for action button hover states ([ef368d7](https://github.com/stjudecloud/university/commit/ef368d7a7c84842d1927c5d8f57ce19064d457fc))
+
 ## [1.4.1](https://github.com/stjudecloud/university/compare/v1.4.0...v1.4.1) (2021-02-05)
 
 # [1.4.0](https://github.com/stjudecloud/university/compare/v1.3.4...v1.4.0) (2021-02-05)
