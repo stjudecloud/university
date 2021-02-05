@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/stjudecloud/university/compare/v1.3.4...v1.4.0) (2021-02-05)
+
+
+### Features
+
+* **github:** moves GitHub link to the footer and out the navbar ([2e2225f](https://github.com/stjudecloud/university/commit/2e2225f8c19f8de5d7693e206f89d7cdf211d5b0))
+
 ## [1.3.4](https://github.com/stjudecloud/university/compare/v1.3.3...v1.3.4) (2021-02-05)
 
 
