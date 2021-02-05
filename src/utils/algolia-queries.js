@@ -20,14 +20,23 @@ const pageQuery = `{
     }
   }
 }`
-function pageToAlgoliaRecord({ node: { id, frontmatter, fields, ...rest } }) {
+
+function pageToAlgoliaRecord({
+  node: {
+    id,
+    frontmatter,
+    fields: { slug },
+    ...rest
+  },
+}) {
   return {
     objectID: id,
     ...frontmatter,
-    ...fields,
+    slug: "/docs" + slug,
     ...rest,
   }
 }
+
 const queries = [
   {
     query: pageQuery,
@@ -36,4 +45,5 @@ const queries = [
     settings: { attributesToSnippet: [`excerpt:20`] },
   },
 ]
+
 module.exports = queries
