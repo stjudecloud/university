@@ -5,7 +5,7 @@ import Menu from "../../images/icons/menu.svg"
 import { PropTypes } from "prop-types"
 import { Link } from "gatsby"
 
-const MenuBlockRight = ({ enableGitHub = true, enableMenu = false }) => {
+const MenuBlockRight = ({ enableGitHub = false, enableMenu = false }) => {
   const docsVersion = process.env.GATSBY_DOCS_VERSION
 
   return (

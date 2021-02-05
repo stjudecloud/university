@@ -155,22 +155,39 @@ class BaseLayout extends Component {
         </main>
         <footer className="my-10 flex flex-col items-center justify-center">
           <div>
-            © {new Date().getFullYear()} St. Jude Children's Research Hospital.
+            Built from our{` `}
+            <Link to={`https://github.com/stjudecloud/university`}>
+              GitHub repo
+            </Link>
+            {process.env.GATSBY_DOCS_VERSION && (
+              <span>
+                {` `}at{` `}
+                <Link
+                  to={`https://github.com/stjudecloud/university/releases/tag/${process.env.GATSBY_DOCS_VERSION}`}
+                >
+                  {process.env.GATSBY_DOCS_VERSION}
+                </Link>
+              </span>
+            )}
+            {process.env.GATSBY_DOCS_HASH && (
+              <span>
+                {` `}(
+                <Link
+                  to={`https://github.com/stjudecloud/university/commit/${process.env.GATSBY_DOCS_HASH}`}
+                >
+                  {process.env.GATSBY_DOCS_HASH}
+                </Link>
+                )
+              </span>
+            )}
+            .
           </div>
-          {process.env.GATSBY_DOCS_HASH && (
-            <div>
-              {` `}Built from{` `}
-              <Link
-                to={`https://github.com/stjudecloud/university/commit/${process.env.GATSBY_DOCS_HASH}`}
-              >
-                {process.env.GATSBY_DOCS_HASH}
-              </Link>
-              .
-            </div>
-          )}
           <div>
             Questions?{" "}
-            <a href="mailto:support@stjude.cloud">support@stjude.cloud</a>
+            <a href="mailto:support@stjude.cloud">support@stjude.cloud</a>.
+          </div>
+          <div>
+            © {new Date().getFullYear()} St. Jude Children's Research Hospital.
           </div>
         </footer>
       </div>
