@@ -210,6 +210,7 @@ export const pageQuery = graphql`
           subtitle
           chapters {
             title
+            collapsable
             pages {
               title
               path

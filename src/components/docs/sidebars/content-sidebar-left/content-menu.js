@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import CloseIcon from "../../../../images/icons/close.svg"
 import Chevron from "../../../../images/icons/chevron.svg"
+import ChapterMenuItem from "./chapter"
 
 const ContentsMenu = ({
   isMobileMenuOpen,
@@ -71,27 +72,13 @@ const ContentsMenu = ({
         <div className="absolute inset-x-0">
           <div className="h-screen overflow-y-scroll">
             <div className="my-2 mx-3 pb-60">
-              {currentChapters.map(e => {
-                return (
-                  <ul className="chapter" key={e.title}>
-                    <li className="title">{e.title}</li>
-                    {e.pages.map(page => {
-                      return (
-                        <li
-                          key={page.path}
-                          className={
-                            (currentPathBeingViewed === page.path
-                              ? "active "
-                              : "") + "page"
-                          }
-                        >
-                          <Link to={page.path}>{page.title}</Link>
-                        </li>
-                      )
-                    })}
-                  </ul>
-                )
-              })}
+              {currentChapters.map(e => (
+                <ChapterMenuItem
+                  key={e.title}
+                  chapter={e}
+                  currentPathBeingViewed={currentPathBeingViewed}
+                />
+              ))}
             </div>
           </div>
         </div>

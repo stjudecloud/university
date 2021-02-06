@@ -175,6 +175,7 @@ domains:
               - title: "Organizing Data into a Study View"
                 path: /docs/visualization-community/proteinpaint/developers-guide/organizing-data-into-a-study-view/
           - title: "Genomepaint"
+            collapsable: true
             pages:
               - title: "Genomepaint"
                 path: /docs/visualization-community/genomepaint/

@@ -20,8 +20,14 @@
       &.title {
         @apply uppercase;
         @apply font-semibold;
-        @apply cursor-default;
         @apply select-none;
+        @apply flex;
+        @apply items-center;
+
+        .collapsable-menu-chevron {
+          @apply mx-1;
+          @apply fill-current;
+        }
       }
 
       &.page {
