@@ -38,13 +38,13 @@ The **Embargo Date** specifies the date that a publishing embargo on the file in
 
 **Current Embargo Dates**
 
-| Data Access Unit                | Embargo Date                  |
-| ------------------------------- | ----------------------------- |
-| Pediatric Cancer Genome Project | July 23, 2018                 |
-| St. Jude LIFE                   | January 15, 2019              |
-| Clinical Genomics               | Rolling based on release date |
-| Sickle Cell Genome Project      | September 1, 2019             |
-| Childhood Cancer Survivor Study | November 1, 2019              |
+| Data Access Unit                 | Embargo Date                  |
+| -------------------------------- | ----------------------------- |
+| Pediatric Cancer Genome Project  | July 23, 2018                 |
+| St. Jude LIFE                    | January 15, 2019              |
+| Clinical Genomics                | Rolling based on release date |
+| Sickle Cell Genome Project       | September 1, 2019             |
+| Childhood Cancer Survivor Study  | November 1, 2019              |
 | Pan-Acute Lymphoblastic Leukemia | January 14, 2019              |
 
 ## List of DAUs

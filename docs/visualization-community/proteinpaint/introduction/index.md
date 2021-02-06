@@ -2,7 +2,7 @@
 title: Introduction
 ---
 
-[ProteinPaint][viz-community-proteinpaint] is the flagship protein-based visualization tool created at St. Jude Children's Research Hospital. You can use it to examine the domains of genes, known isoforms of a given gene, hotspot mutations for single nucleotide variations (SNVs), insertions and deletions (Indels), and structural variations (SVs) in both pediatric and adult cancers, and RNA-seq expression of a given protein in different tumour types. 
+[ProteinPaint][viz-community-proteinpaint] is the flagship protein-based visualization tool created at St. Jude Children's Research Hospital. You can use it to examine the domains of genes, known isoforms of a given gene, hotspot mutations for single nucleotide variations (SNVs), insertions and deletions (Indels), and structural variations (SVs) in both pediatric and adult cancers, and RNA-Seq expression of a given protein in different tumour types. 
 
 There are two primary ways you can use ProteinPaint. You can use ProteinPaint to explore mutations our curated pediatric and adult cohorts using [PeCan][pecan] (ex: [TP53][pecan-tp53]). If you'd like to create and publish to the community your own visualizations with ProteinPaint, you can do so with the [Visualization Community][viz-community] (**still in development, available soon!**).
 

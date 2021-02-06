@@ -499,11 +499,11 @@ supported classes.
 | S          | SILENT         |
 | D          | PROTEINDEL     |
 | I          | PROTEININS     |
-| P          | SPLICE_REGION |
+| P          | SPLICE_REGION  |
 | L          | SPLICE         |
 | Intron     | INTRON         |
-| Utr3       | UTR_3         |
-| Utr5       | UTR_5         |
+| Utr3       | UTR_3          |
+| Utr5       | UTR_5          |
 | X          | NONSTANDARD    |
 | noncoding  | NONCODING      |
 | snv        | SNV            |

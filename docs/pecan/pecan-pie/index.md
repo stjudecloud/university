@@ -5,11 +5,11 @@ title: Pecan Pie
 
 # Pecan PIE
 
-|                       |                                                                                                                          |
-|-----------------------|--------------------------------------------------------------------------------------------------------------------------|
-| **Authors**           | Michael Edmonson, Aman Patel                                                                                             |
+|                       |                                                                                          |
+| --------------------- | ---------------------------------------------------------------------------------------- |
+| **Authors**           | Michael Edmonson, Aman Patel                                                             |
 | **Publication**       | [Edmonson et al., Genome Research 2019](https://genome.cshlp.org/content/29/9/1555.full) |
-| **Technical Support** | [Contact Us](https://stjude.cloud/contact)                                                                               |
+| **Technical Support** | [Contact Us](https://stjude.cloud/contact)                                               |
 
 Pecan PIE (the **Pe**diatric **Can**cer Variant **P**athogenicity
 **I**nformation **E**xchange) is a cloud-based variant classification
@@ -118,11 +118,11 @@ variant.
 
 The variants in the results can be filtered by:
 
-| Filter | Meaning |
-|--|--|
-| Class | Predicted effect of variant on protein coding, e.g. missense, nonsense, etc. |
-| Somatic medal | Medal assigned to the variant by the somatic classifier. |
-| Germline medal | Medal assigned to the variant by the germline classifier.</td> |
+| Filter                   | Meaning                                                                                                                                                     |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Class                    | Predicted effect of variant on protein coding, e.g. missense, nonsense, etc.                                                                                |
+| Somatic medal            | Medal assigned to the variant by the somatic classifier.                                                                                                    |
+| Germline medal           | Medal assigned to the variant by the germline classifier.</td>                                                                                              |
 | Committee Classification | If the variant has been reviewed by the St. Jude germline variant review committee, the result will appear in this column, otherwise it will be blank.</td> |
 
 The "search" box lets you filter the results by gene and/or amino acid
@@ -251,10 +251,10 @@ This section of the guide is only relevant to power users!
 Two DNAnexus cloud application pipelines were created during the
 development of Pecan PIE:
 
-| Name | Corresponding DNAnexus App | Description |
-|--|--|--|
-| VEP+ | [app-stjude_vep_plus](https://platform.dnanexus.com/app/stjude_vep_plus) | A cloud installation of [VEP](https://www.ensembl.org/vep)</a> with improved logic for splice variant calls. Converts an input VCF of variants to annotated, tab-delimited format. |
-| Medal Ceremony | [app-stjude_medal_ceremony](https://platform.dnanexus.com/app/stjude_medal_ceremony) | Additional annotation and automated variant classification. Requires a special input format which is produced by VEP+. |
+| Name           | Corresponding DNAnexus App                                                           | Description                                                                                                                                                                        |
+| -------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| VEP+           | [app-stjude_vep_plus](https://platform.dnanexus.com/app/stjude_vep_plus)             | A cloud installation of [VEP](https://www.ensembl.org/vep)</a> with improved logic for splice variant calls. Converts an input VCF of variants to annotated, tab-delimited format. |
+| Medal Ceremony | [app-stjude_medal_ceremony](https://platform.dnanexus.com/app/stjude_medal_ceremony) | Additional annotation and automated variant classification. Requires a special input format which is produced by VEP+.                                                             |
 
 ### Permissions
 

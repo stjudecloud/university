@@ -16,30 +16,30 @@ The image below shows an example ProteinPaint of the gene [TP53](https://pecan.s
 
 The list below summarizes all classes of mutations used by ProteinPaint.
 
-| Mutation Class | Description                                |
-| ------------------ | --------------------------------------------------------- |
-| MISSENSE	| a substitution variant in the coding region resulting in altered protein coding | 
-| FRAMESHIFT	| an insertion or deletion variant that alters the protein coding frame| 
-| NONSENSE	| a variant altering protein coding to produce a premature stopgain or stoploss.|
-| PROTEINDEL	| a deletion resulting in a loss of one or more codons from the product, but not altering the protein coding frame |
-|PROTEININS	| an insertion introducing one or more codons into the product, but not altering the protein coding frame|
-| SPLICE	| a variant near an exon edge that may affect splicing functionality |
-| SILENT	| a substitution variant in the coding region that does not alter protein coding |
-| SPLICE_REGION	| a variant in an intron within 10 nt of an exon boundary |
-| UTR_5	| a variant in the 5' untranslated region |
-| UTR_3	| a variant in the 3' untranslated region |
-| EXON	| a variant in the exon of a non-coding RNA |
-| INTRON	| an intronic variant |
+| Mutation Class | Description                                                                                                      |
+| -------------- | ---------------------------------------------------------------------------------------------------------------- |
+| MISSENSE       | a substitution variant in the coding region resulting in altered protein coding                                  |
+| FRAMESHIFT     | an insertion or deletion variant that alters the protein coding frame                                            |
+| NONSENSE       | a variant altering protein coding to produce a premature stopgain or stoploss.                                   |
+| PROTEINDEL     | a deletion resulting in a loss of one or more codons from the product, but not altering the protein coding frame |
+| PROTEININS     | an insertion introducing one or more codons into the product, but not altering the protein coding frame          |
+| SPLICE         | a variant near an exon edge that may affect splicing functionality                                               |
+| SILENT         | a substitution variant in the coding region that does not alter protein coding                                   |
+| SPLICE_REGION  | a variant in an intron within 10 nt of an exon boundary                                                          |
+| UTR_5          | a variant in the 5' untranslated region                                                                          |
+| UTR_3          | a variant in the 3' untranslated region                                                                          |
+| EXON           | a variant in the exon of a non-coding RNA                                                                        |
+| INTRON         | an intronic variant                                                                                              |
 
 ## Glossary of Origins
 
 The list below summarizes all origins of mutations used by ProteinPaint.
 
-| Mutation Origin | Description                                |
-| ------------------ | --------------------------------------------------------- |
-| Germline	|a variant found in a normal sample of a cancer patient. |
-| Somatic	| a variant found only in a tumor sample. |
-| Relapse	| a variant that arose in recurrence tumor. |
+| Mutation Origin | Description                                             |
+| --------------- | ------------------------------------------------------- |
+| Germline        | a variant found in a normal sample of a cancer patient. |
+| Somatic         | a variant found only in a tumor sample.                 |
+| Relapse         | a variant that arose in recurrence tumor.               |
 
 ## Advanced Customizations
 
