@@ -1,3 +1,11 @@
+## [1.5.1](https://github.com/stjudecloud/university/compare/v1.5.0...v1.5.1) (2021-02-06)
+
+
+### Bug Fixes
+
+* FKPM -> FPKM ([8ace981](https://github.com/stjudecloud/university/commit/8ace98131a95597d0868316d2e921bfa767a1770))
+* typos ([c6e4f5f](https://github.com/stjudecloud/university/commit/c6e4f5fdb9a0d51cf2753fc1ce12b350a3f80f16))
+
 # [1.5.0](https://github.com/stjudecloud/university/compare/v1.4.1...v1.5.0) (2021-02-05)
 
 
