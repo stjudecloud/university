@@ -26,7 +26,7 @@ const ContentsSidebarLeft = ({
   )
 
   return (
-    <>
+    <div id="table-of-contents">
       <ModulePopUp
         show={isModuleSelectorMousedOver}
         isMobileMenuShown={isMobileMenuOpen}
@@ -51,7 +51,7 @@ const ContentsSidebarLeft = ({
         currentPathBeingViewed={currentPathBeingViewed}
         setIsModuleSelectorMousedOver={setIsModuleSelectorMousedOver}
       />
-    </>
+    </div>
   )
 }
 
