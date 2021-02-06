@@ -1,9 +1,7 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-import Chevron from "../../../../images/icons/chevron.svg"
-import ModulePopUp from "../ModulePopUp"
+import ModulePopUp from "./modules-popup-menu"
 import MenuIcon from "../../../../images/icons/menu.svg"
-import CloseIcon from "../../../../images/icons/close.svg"
 import ContentsMenu from "./content-menu"
 import { PropTypes } from "prop-types"
 
@@ -13,30 +11,29 @@ import { PropTypes } from "prop-types"
  * @param {*} props
  * @return {*}
  */
-const ContentsSidebarLeft = props => {
-  const {
-    isMobileMenuOpen,
-    openMobileMenu,
-    closeMobileMenu,
-    currentIconImported,
-    currentTitle,
-    domains,
-    currentChapters,
-    currentPathBeingViewed,
-  } = props
+const ContentsSidebarLeft = ({
+  isMobileMenuOpen,
+  openMobileMenu,
+  closeMobileMenu,
+  currentIconImported,
+  currentTitle,
+  domains,
+  currentChapters,
+  currentPathBeingViewed,
+}) => {
   const [isModuleSelectorMousedOver, setIsModuleSelectorMousedOver] = useState(
     false
   )
 
   return (
-    <div>
+    <>
       <ModulePopUp
         show={isModuleSelectorMousedOver}
-        domains={domains}
         isMobileMenuShown={isMobileMenuOpen}
+        domains={domains}
       />
       <div
-        className="fixed top-20 left-6 rounded-full bg-white border border-coolGray-300 p-4 shadow-lg cursor-pointer z-20"
+        className="visible xl:invisible fixed top-20 left-6 rounded-full bg-white border border-coolGray-300 p-4 shadow-lg cursor-pointer z-20"
         onClick={openMobileMenu}
         show={!isMobileMenuOpen}
       >
@@ -48,13 +45,13 @@ const ContentsSidebarLeft = props => {
       </div>
       <ContentsMenu
         closeMobileMenu={closeMobileMenu}
-        currentIconImported={currentIconImported}
+        CurrentIconImported={currentIconImported}
         currentTitle={currentTitle}
         currentChapters={currentChapters}
         currentPathBeingViewed={currentPathBeingViewed}
         setIsModuleSelectorMousedOver={setIsModuleSelectorMousedOver}
       />
-    </div>
+    </>
   )
 }
 

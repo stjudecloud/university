@@ -1,14 +1,26 @@
 import React from "react"
+import { Link } from "gatsby"
+import CloseIcon from "../../../../images/icons/close.svg"
+import Chevron from "../../../../images/icons/chevron.svg"
 
-const ContentsMenu = ({ isMobileMenuOpen = false }) => {
+const ContentsMenu = ({
+  isMobileMenuOpen,
+  closeMobileMenu,
+  CurrentIconImported,
+  currentTitle,
+  currentChapters,
+  currentPathBeingViewed,
+  setIsModuleSelectorMousedOver,
+}) => {
   return (
     <div
+      id="contents-sidebar-left"
       className={
         (isMobileMenuOpen ? "" : "invisible ") +
         "xl:visible z-30 contents-sidebar fixed bg-coolGray-50 min-h-screen border-r border-coolGray-100 border-solid w-full xl:w-320"
       }
     >
-      <div className="absolute inset-0">
+      <div id="mobile-menu-button" className="absolute inset-0">
         <div
           className="xl:hidden pointer-cursor my-4 mx-4"
           onClick={closeMobileMenu}
@@ -21,18 +33,18 @@ const ContentsMenu = ({ isMobileMenuOpen = false }) => {
           <span className="ml-2">Close</span>
         </div>
         <div
-          id="module"
+          id="module-selector"
           className="h-28"
           role="link"
           tabIndex={0}
           onMouseEnter={() => {
-            if (!isMobileMenuOpen) setIsModuleSelectorOpen(true)
+            if (!isMobileMenuOpen) setIsModuleSelectorMousedOver(true)
           }}
           onMouseLeave={() => {
-            if (!isMobileMenuOpen) setIsModuleSelectorOpen(false)
+            if (!isMobileMenuOpen) setIsModuleSelectorMousedOver(false)
           }}
           onClick={() => {
-            setIsModuleSelectorOpen(true)
+            setIsModuleSelectorMousedOver(true)
           }}
         >
           <div className="flex w-full items-center justify-center bg-coolGray-100 hover:bg-coolGray-200 h-28 px-4 cursor-pointer border-b border-coolGray-200">

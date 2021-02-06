@@ -1,2 +1,2 @@
-export { default as ActionSidebarRight } from "./ActionsSidebarRight"
-export { default as ContentsSidebarLeft } from "./content-sidebar-left.js/index"
+export { default as ActionSidebarRight } from "./actions-sidebar-right"
+export { default as ContentsSidebarLeft } from "./content-sidebar-left"

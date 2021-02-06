@@ -127,7 +127,7 @@ class BaseLayout extends Component {
           isMobileMenuOpen={this.state.isMobileMenuOpen}
           openMobileMenu={this.openMobileMenu}
           closeMobileMenu={this.closeMobileMenu}
-          CurrentIconImported={currentIconImported}
+          currentIconImported={currentIconImported}
           currentTitle={currentTitle}
           domains={domains}
           currentChapters={currentChapters}

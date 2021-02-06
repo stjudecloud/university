@@ -1,22 +1,22 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import { Transition } from "@headlessui/react"
+import { PropTypes } from "prop-types"
 
-const ModulePopUp = ({ show, domains, isMobileMenuShown }) => {
-  const [isInPopup, setIsInPopup] = useState(false)
+const ModulePopUp = ({ show, isMobileMenuShown, domains }) => {
+  const [mouseInsidePopup, setMouseInsidePopup] = useState(false)
 
   return (
     <div
+      id="module-popup-main"
       className="fixed top-0 z-50"
       style={
         !isMobileMenuShown ? { left: "320px", top: "65px" } : { top: "110px" }
       }
-      role="button"
-      tabIndex={0}
       onMouseEnter={() => {
-        if (show) setIsInPopup(true)
+        if (show) setMouseInsidePopup(true)
       }}
-      onMouseLeave={() => setIsInPopup(false)}
+      onMouseLeave={() => setMouseInsidePopup(false)}
     >
       <Transition
         className="lg:m-4 p-2 border border-coolGray-100 rounded-lg bg-white whitespace-nowrap shadow-md z-50"
@@ -28,7 +28,7 @@ const ModulePopUp = ({ show, domains, isMobileMenuShown }) => {
               }
             : { width: "100%" }
         }
-        show={isInPopup || show}
+        show={mouseInsidePopup || show}
         enter="transition-opacity duration-75"
         enterFrom="opacity-0"
         enterTo="opacity-100"
@@ -39,13 +39,18 @@ const ModulePopUp = ({ show, domains, isMobileMenuShown }) => {
         <div className="flex flex-col lg:flex-row w-screen max-w-5xl h-full px-6">
           {domains.map(domain => {
             return (
-              <div className="flex-1 pb-6 w-full" style={{ minWidth: "280px" }}>
+              <div
+                key={domain.title}
+                className="flex-1 pb-6 w-full"
+                style={{ minWidth: "280px" }}
+              >
                 <div className="uppercase text-coolGray-800 font-bold my-4">
                   {domain.title}
                 </div>
                 {domain.modules.map(module => {
                   const { icon, path, title, subtitle } = module
-                  const IconImported = require("../../../images/icons/" + icon)
+                  const IconImported = require("../../../../images/icons/" +
+                    icon)
                   return (
                     <Link
                       key={path}
@@ -81,6 +86,27 @@ const ModulePopUp = ({ show, domains, isMobileMenuShown }) => {
       </Transition>
     </div>
   )
+}
+
+ModulePopUp.propTypes = {
+  /**
+   * Whether or not to render the domains pop-up menu.
+   */
+  show: PropTypes.bool,
+  /**
+   * Whether not we are currently on a mobile screen size.
+   */
+  isMobileMenuShown: PropTypes.bool,
+  /**
+   * The domains to render as part of this pop-up menu.
+   */
+  domains: PropTypes.any,
+}
+
+ModulePopUp.defaultProps = {
+  show: false,
+  isMobileMenuShown: false,
+  domains: [],
 }
 
 export default ModulePopUp
