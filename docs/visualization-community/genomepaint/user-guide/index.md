@@ -280,13 +280,13 @@ ITD is represented as magenta bars over gene coding regions.
 ### Gene expression
 
 A subset of the pediatric tumors have gene expression profiled by
-RNA-seq. GenomePaint supports displaying following aspects of gene
+RNA-Seq. GenomePaint supports displaying following aspects of gene
 expression data:
 
 -   Gene expression rank based on FPKM values
 -   Allele-specific expression status (ASE)
 -   Outlier high expression status
--   RNA-seq coverage and splice junctions (in Sample View)
+-   RNA-Seq coverage and splice junctions (in Sample View)
 
 #### Expression rank
 
@@ -561,9 +561,9 @@ guide, as it doesn't account for assay availability.
 
 The track legend shows two DNA assay types for these alterations: SNP6
 and "amplicon sequencing". In addition there are also fusion events from
-RNA-seq. Thus, to compute the percentage of T-ALLs with TAL1 locus
+RNA-Seq. Thus, to compute the percentage of T-ALLs with TAL1 locus
 alteration, one needs the total number of T-ALLs with either SNP6,
-amplicon sequencing, or RNA-seq. To get the actual total number, click
+amplicon sequencing, or RNA-Seq. To get the actual total number, click
 the "HM, TALL" label on the left and select "Assay summary" option.
 
 <img src="./media/image31.png" style="width:1.31747in;height:2.01042in" />
@@ -581,7 +581,7 @@ number of samples are always printed out for each box.
 
 The sample columns are sorted by their presence of each assay type, by
 the order of assays from top to bottom. In the T-ALL case, the samples
-are first sorted by RNA-seq, with 267 that have RNA-seq and 86 without
+are first sorted by RNA-Seq, with 267 that have RNA-Seq and 86 without
 (number not printed). Next, WES availability is sorted separately for
 the box and blank from the first row, resulting in two boxes and two
 blanks. Next, the SNP6 availability is sorted separately in each box and
@@ -593,7 +593,7 @@ samples. Better than a Venn diagram, this assay availability map
 solidifies a comprehensible view with as many as 6 assay types.
 
 As the order of assay types is important for the map, users can adjust
-the row order by dragging a label up or down. As below, the RNA-seq,
+the row order by dragging a label up or down. As below, the RNA-Seq,
 SNP6, and Capture-seq rows are moved to the top, yielding a total of 337
 samples (267+70) for the samples with TAL1 locus alterations.
 
@@ -738,7 +738,7 @@ available to us. Following is a typical example:
 
 <img src="./media/image61.png" style="width:7.1in;height:2.23611in" />
 
-In the above example, it shows coverage of WGS and RNA-seq of tumor, and
+In the above example, it shows coverage of WGS and RNA-Seq of tumor, and
 the allelic-imbalance from the tumor-normal paired WGS results.
 
 [Learn more about the allelic-imbalance track](https://docs.google.com/document/d/1dZIOoLLbQE-kmZ31Ia_5cud30d9UeRodP4hRCSw3HII/edit?usp=sharing).

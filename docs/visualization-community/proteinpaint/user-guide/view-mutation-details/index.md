@@ -78,7 +78,7 @@ their full names:
 ![](./media/image10.png)
 
 In Pediatric data set, mutant allele fraction (MAF) information is
-available for the DNA of tumor and normal genomes, and for tumor RNA-seq
+available for the DNA of tumor and normal genomes, and for tumor RNA-Seq
 of selected samples. This information is displayed in graphical forms of
 "percentage bars". Hover over a bar to see the fraction value and read
 counts:
