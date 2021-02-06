@@ -58,6 +58,7 @@ const ActionSidebarRight = ({ fileAbsolutePath }) => {
           Actions
         </div>
         <Button
+          id="questions-action-button"
           className="leading-8"
           style={{ backgroundColor: "#1874DC" }}
           hoveredStyle={{ backgroundColor: "#549cec" }}
@@ -68,6 +69,7 @@ const ActionSidebarRight = ({ fileAbsolutePath }) => {
         </Button>
 
         <Button
+          id="tour-action-button"
           className="leading-8"
           style={{ backgroundColor: "#1874DC" }}
           hoveredStyle={{ backgroundColor: "#549cec" }}
@@ -78,6 +80,7 @@ const ActionSidebarRight = ({ fileAbsolutePath }) => {
         </Button>
 
         <Button
+          id="github-action-button"
           className="leading-8"
           style={{ backgroundColor: "#444444" }}
           hoveredStyle={{ backgroundColor: "#2b2b2b" }}
