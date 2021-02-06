@@ -13,7 +13,7 @@ title: Sequencerr
 |                       |                                                                                                                                                                                                                                                    |
 | --------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Authors**           | Eric M Davis, Yu Sun, Yanling Liu, Pandurang Kolekar, Ying Shao, Karol Szlachta, Heather L Mulder, Dongren Ren, Stephen V Rice, Zhaoming Wang, Joy Nakitandwe, Alex Gout, Leslie L Robison, Stanley Pounds, Jefferey Klco, John Easton, Xiaotu Ma* |
-| **Publication**       | [SequencErr: measuring and suppressing sequencer errors in next-generation sequencing data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02254-2)                                                                                                                                                                                                                                       |
+| **Publication**       | [SequencErr: measuring and suppressing sequencer errors in next-generation sequencing data](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02254-2)                                                                           |
 | **Technical Support** | [Contact Us](https://stjude.cloud/contact)                                                                                                                                                                                                         |
 
 ## Overview
@@ -25,10 +25,10 @@ By sequencing a common DNA library on different sequencers, we demonstrate that 
 
 ## Inputs
 
-| Name           | Type       | Description                                     | Example          |
-| -------------- | ---------- | ----------------------------------------------- | ---------------- |
-| BAM file       | Input file | Binary version of the SAM file format (`*.bam`) | Sample.bam       |
-| BAM index file | Input file | Index file for the BAM file (`*.bai`)           | Sample.bam.bai   |
+| Name           | Type       | Description                                     | Example        |
+| -------------- | ---------- | ----------------------------------------------- | -------------- |
+| BAM file       | Input file | Binary version of the SAM file format (`*.bam`) | Sample.bam     |
+| BAM index file | Input file | Index file for the BAM file (`*.bai`)           | Sample.bam.bai |
 
 ## Outputs
 

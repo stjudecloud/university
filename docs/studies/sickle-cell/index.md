@@ -12,25 +12,25 @@ Upon launching the browser, you will see an image similar to the one shown here.
 
 A description of the elements of the browser are as follows:
 
-|#   |      Description      |  
-|----------|-------------|
-| 1| Navigation tools and track selector. ([See Navigation Buttons section](#navigation-buttons))  | 
-|2|    DNase hypersensitivity tracks.  By default, four epigenetic tracks are shown.  These are DNAse hypersensitivity tracks for Hematopoeitic stem cells (HSC), T Cells, Monocytes, and B Cells.  Additional tracks can be viewed by selecting the ‘Tracks’ button (See Adding/Removing Tracks section below)  |  
-|3 | RefSeq genes.  Gene models from the RefSeq database are displayed in this tracks. | 
-|4 |-log10 of the p-value of the association of each variants with pain rate in individuals with Sickle Cell Disease.  The analysis has only been performed around the  KIAA1109/Tenr/IL2/IL21 region.   Each dot on the track represents a genomic variant (Single Nucleotide Variant (SNV) or small insertion/deletion (INDEL)).  The Y-axis for the track represents the -log10 of the p-value.  The higher the value, the more statistically significant the association between the variant and pain rate is.  Clicking on a variant will open op a window that gives further details about the variant.  (See Figure 3). | 
-|5 | -log10 of the p-value of the association of each variants with age of first vaso-occlusive crisis in individuals with Sickle Cell Disease.  See (4) above for more information on this type of track. | 
-|6| Filters: Filters allow variants within tracks to be filtered by numerous citeria.  [See Filter description](#filters)|
+| #   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| --- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Navigation tools and track selector. ([See Navigation Buttons section](#navigation-buttons))                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| 2   | DNase hypersensitivity tracks.  By default, four epigenetic tracks are shown.  These are DNAse hypersensitivity tracks for Hematopoeitic stem cells (HSC), T Cells, Monocytes, and B Cells.  Additional tracks can be viewed by selecting the ‘Tracks’ button (See Adding/Removing Tracks section below)                                                                                                                                                                                                                                                                                                                   |
+| 3   | RefSeq genes.  Gene models from the RefSeq database are displayed in this tracks.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 4   | -log10 of the p-value of the association of each variants with pain rate in individuals with Sickle Cell Disease.  The analysis has only been performed around the  KIAA1109/Tenr/IL2/IL21 region.   Each dot on the track represents a genomic variant (Single Nucleotide Variant (SNV) or small insertion/deletion (INDEL)).  The Y-axis for the track represents the -log10 of the p-value.  The higher the value, the more statistically significant the association between the variant and pain rate is.  Clicking on a variant will open op a window that gives further details about the variant.  (See Figure 3). |
+| 5   | -log10 of the p-value of the association of each variants with age of first vaso-occlusive crisis in individuals with Sickle Cell Disease.  See (4) above for more information on this type of track.                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| 6   | Filters: Filters allow variants within tracks to be filtered by numerous citeria.  [See Filter description](#filters)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
 
 ### Navigation buttons
 ![](./NavigationButtons.png)
 
-|#   |      Description      |  
-|----------|-------------|
-| a|Location/Locus entry field.  One can enter genomic coordinates in the form of chromosome:start-end (for example chr1:12345-9876), or a gene name or a SNP rs ID. | 
-|b|   Browser zoom in and out |  
-|c | Tracks: Add or hide tracks (See section below on adding/hiding tracks) | 
-|d |More:  Save svg image of browser, get DNA sequence or highlight regions of the browser. | 
+| #   | Description                                                                                                                                                      |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| a   | Location/Locus entry field.  One can enter genomic coordinates in the form of chromosome:start-end (for example chr1:12345-9876), or a gene name or a SNP rs ID. |
+| b   | Browser zoom in and out                                                                                                                                          |
+| c   | Tracks: Add or hide tracks (See section below on adding/hiding tracks)                                                                                           |
+| d   | More:  Save svg image of browser, get DNA sequence or highlight regions of the browser.                                                                          |
 
 
 
@@ -38,12 +38,12 @@ A description of the elements of the browser are as follows:
 
 ![](./Filters.png)
 
-|#   |      Description      |  
-|----------|-------------|
-| a| Filters for pain rate p-value track | 
-|b|  Filters for age of first vaso-occlusive crisis (VOC) p-value |  
-|c | The highlighted filter shows which value is  used for the Y-axis on the browser track.  The value can be changed. | 
-|d | A highlighted value within a filter shows which filter value is set.  The number next to the filter represents the number of individuals that meet the filter criteria.| 
+| #   | Description                                                                                                                                                             |
+| --- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| a   | Filters for pain rate p-value track                                                                                                                                     |
+| b   | Filters for age of first vaso-occlusive crisis (VOC) p-value                                                                                                            |
+| c   | The highlighted filter shows which value is  used for the Y-axis on the browser track.  The value can be changed.                                                       |
+| d   | A highlighted value within a filter shows which filter value is set.  The number next to the filter represents the number of individuals that meet the filter criteria. |
 
 
 ### Getting Started
@@ -95,26 +95,26 @@ When the Variants and Phenotype Viewer is launched, the user will be presented w
 ![](./PhenoVariantAnnotated.png)
 The different elements of the view are as follows.
 
-|#   |      Description      |  
-|----------|-------------|
-| 1| Settings and sort buttons.  In addition a link to this help document. | 
-|2|  Legend for different tracks in the viewer |  
-|3 | Phenotypic data displayed with an individual represented in each column | 
-|4 | Genotypic data displayed with an individual represented in each column | 
+| #   | Description                                                             |
+| --- | ----------------------------------------------------------------------- |
+| 1   | Settings and sort buttons.  In addition a link to this help document.   |
+| 2   | Legend for different tracks in the viewer                               |
+| 3   | Phenotypic data displayed with an individual represented in each column |
+| 4   | Genotypic data displayed with an individual represented in each column  |
 
 ### Labels
 [See glossary for further details](#glossary)
 
-|#   |      Description      |  
-|----------|-------------|
-| Hb | Hemoglobin | 
-|HbF| [Fetal Hemoglobin](#hbf) |  
-|HbA2 | Variant of hemoglobin that contains two alpha subunits and two delta subunits | 
-|MCV | Mean corpuscular  volume. This is the average size of red blood cells | 
-|PainRate |Number of hospitalizations per year over a two year period. | 
-|Sickle cell genotype | (SS_Genotype in legend.  Whether patient is SS or SB0 | 
-|Alpha deletion | Whether the individual has an alpha globin deletion (het=1 deleted allele, homo=2 deleted alleles) |
-|rs###### | Several variants that we have found to be associated with pain in Sickle Cell Disease|
+| #                    | Description                                                                                        |
+| -------------------- | -------------------------------------------------------------------------------------------------- |
+| Hb                   | Hemoglobin                                                                                         |
+| HbF                  | [Fetal Hemoglobin](#hbf)                                                                           |
+| HbA2                 | Variant of hemoglobin that contains two alpha subunits and two delta subunits                      |
+| MCV                  | Mean corpuscular  volume. This is the average size of red blood cells                              |
+| PainRate             | Number of hospitalizations per year over a two year period.                                        |
+| Sickle cell genotype | (SS_Genotype in legend.  Whether patient is SS or SB0                                              |
+| Alpha deletion       | Whether the individual has an alpha globin deletion (het=1 deleted allele, homo=2 deleted alleles) |
+| rs######             | Several variants that we have found to be associated with pain in Sickle Cell Disease              |
 
 ### Getting Started
 

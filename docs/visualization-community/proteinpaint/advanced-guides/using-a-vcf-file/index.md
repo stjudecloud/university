@@ -123,43 +123,43 @@ Required CSQ sub-fields:
 
     -   If any above fields are available, will use the value as the label of the variant
 
-| **VEP notation**                       | **ProteinPaint notation** | **Note**                  |
-| -------------------------------------- | ------------------------- | ------------------------- |
-| transcript_ablation                   | deletion, intragenic      | Not yet supported.        |
-| splice_acceptor_variant              | splice                    |                           |
-| splice_donor_variant                 | splice                    |                           |
-| stop_gained                           | nonsense                  |                           |
-| frameshift_variant                    | frameshift                |                           |
-| stop_lost                             | nonsense                  |                           |
-| start_lost                            | nonsense                  |                           |
-| transcript_amplification              | nonstandard               | Not yet supported.        |
-| inframe_insertion                     | proteinins                |                           |
-| inframe_deletion                      | proteindel                |                           |
-| missense_variant                      | missense                  |
-| protein_altering_variant             | nonsense                  | Not explicitly supported  |
-| splice_region_variant                | splice_region            |                           |
-| incomplete_terminal_codon_variant   | nonsense                  |                           |
-| stop_retained_variant                | silent                    | Not explicitly supported. |
-| synonymous_variant                    | silent                    |                           |
-| coding_sequence_variant              | nonstandard               | Not explicitly supported. |
-| mature_miRNA_variant                 | exon                      | Not yet supported.        |
-| 5_prime_UTR_variant                 | utr_5                    |                           |
-| 3_prime_UTR_variant                 | utr_3                    |                           |
+| **VEP notation**                   | **ProteinPaint notation** | **Note**                  |
+| ---------------------------------- | ------------------------- | ------------------------- |
+| transcript_ablation                | deletion, intragenic      | Not yet supported.        |
+| splice_acceptor_variant            | splice                    |                           |
+| splice_donor_variant               | splice                    |                           |
+| stop_gained                        | nonsense                  |                           |
+| frameshift_variant                 | frameshift                |                           |
+| stop_lost                          | nonsense                  |                           |
+| start_lost                         | nonsense                  |                           |
+| transcript_amplification           | nonstandard               | Not yet supported.        |
+| inframe_insertion                  | proteinins                |                           |
+| inframe_deletion                   | proteindel                |                           |
+| missense_variant                   | missense                  |
+| protein_altering_variant           | nonsense                  | Not explicitly supported  |
+| splice_region_variant              | splice_region             |                           |
+| incomplete_terminal_codon_variant  | nonsense                  |                           |
+| stop_retained_variant              | silent                    | Not explicitly supported. |
+| synonymous_variant                 | silent                    |                           |
+| coding_sequence_variant            | nonstandard               | Not explicitly supported. |
+| mature_miRNA_variant               | exon                      | Not yet supported.        |
+| 5_prime_UTR_variant                | utr_5                     |                           |
+| 3_prime_UTR_variant                | utr_3                     |                           |
 | non_coding_transcript_exon_variant | exon                      |                           |
-| intron_variant                        | intron                    |                           |
-| NMD_transcript_variant               | silent                    | Not equivalent.           |
-| non_coding_transcript_variant       | exon                      |                           |
-| upstream_gene_variant                | noncoding                 | Not explicitly supported. |
-| downstream_gene_variant              | noncoding                 | Not explicitly supported. |
-| TFBS_ablation                         | noncoding                 | Not yet supported.        |
-| TFBS_amplification                    | noncoding                 | Not yet supported.        |
-| TF_binding_site_variant             | noncoding                 | Not yet supported.        |
-| regulatory_region_ablation           | noncoding                 | Not yet supported.        |
-| regulatory_region_amplification      | noncoding                 | Not yet supported.        |
-| feature_elongation                    | noncoding                 | Not yet supported.        |
-| regulatory_region_variant            | noncoding                 | Not yet supported.        |
-| feature_truncation                    | noncoding                 | Not yet supported.        |
-| intergenic_variant                    | noncoding                 | Not yet supported.        |
+| intron_variant                     | intron                    |                           |
+| NMD_transcript_variant             | silent                    | Not equivalent.           |
+| non_coding_transcript_variant      | exon                      |                           |
+| upstream_gene_variant              | noncoding                 | Not explicitly supported. |
+| downstream_gene_variant            | noncoding                 | Not explicitly supported. |
+| TFBS_ablation                      | noncoding                 | Not yet supported.        |
+| TFBS_amplification                 | noncoding                 | Not yet supported.        |
+| TF_binding_site_variant            | noncoding                 | Not yet supported.        |
+| regulatory_region_ablation         | noncoding                 | Not yet supported.        |
+| regulatory_region_amplification    | noncoding                 | Not yet supported.        |
+| feature_elongation                 | noncoding                 | Not yet supported.        |
+| regulatory_region_variant          | noncoding                 | Not yet supported.        |
+| feature_truncation                 | noncoding                 | Not yet supported.        |
+| intergenic_variant                 | noncoding                 | Not yet supported.        |
 
 ### ANN format
 
@@ -783,8 +783,8 @@ For a complex INFO field such as:
 Through configuration, contents of such INFO field for a variant can be
 displayed as a table:
 
-| CIViC Entity Type | CIViC Entity ID | CIViC Entity URL                                                                                 | CIViC Entity Source                                                           | CIViC Entity Variant Origin | CIViC Entity Status |
-| ----------------- | --------------- | ------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------- | --------------------------- | ------------------- |
+| CIViC Entity Type | CIViC Entity ID | CIViC Entity URL                                                                                | CIViC Entity Source                                              | CIViC Entity Variant Origin | CIViC Entity Status |
+| ----------------- | --------------- | ----------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | --------------------------- | ------------------- |
 | evidence          | 3766            | [https://civicdb.org/links/evidence/3766]{.underline}](https://civicdb.org/links/evidence/3766) | PUBMED [[22621641](https://www.ncbi.nlm.nih.gov/pubmed/22621641) | Somatic                     | submitted           |
 | evidence          | 7485            | [https://civicdb.org/links/evidence/7485]{.underline}](https://civicdb.org/links/evidence/7485) | PUBMED [[31151904](https://www.ncbi.nlm.nih.gov/pubmed/31151904) | Somatic                     | submitted           |
 | evidence          | 7077            | [https://civicdb.org/links/evidence/7077]{.underline}](https://civicdb.org/links/evidence/7077) | PUBMED [[25527633](https://www.ncbi.nlm.nih.gov/pubmed/25527633) | Somatic                     | submitted           |
@@ -830,14 +830,14 @@ cases when the given sub-fields are duplicated across all items.
 A "vertical" two-column table will be displayed, with a row for each
 sub-field.
 
-|                  |                                |
-| ---------------- | ------------------------------ |
-| > Allele         | > T                            |
+|                  |                               |
+| ---------------- | ----------------------------- |
+| > Allele         | > T                           |
 | > Consequence    | > missense_variant            |
-| > SYMBOL         | > BRAF                         |
-| > Entrez Gene ID | > 673                          |
-| > Feature_type  | > transcript                   |
-| > Feature        | > ENST00000288602.6            |
+| > SYMBOL         | > BRAF                        |
+| > Entrez Gene ID | > 673                         |
+| > Feature_type   | > transcript                  |
+| > Feature        | > ENST00000288602.6           |
 | > HGVSc          | > ENST00000288602.6:c.1799T>A |
 
 ##### `.hide:true`
