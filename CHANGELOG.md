@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/stjudecloud/university/compare/v1.5.1...v1.6.0) (2021-02-06)
+
+
+### Features
+
+* **menu:** adds collapsable drop-downs ([#11](https://github.com/stjudecloud/university/issues/11)) ([2f330e4](https://github.com/stjudecloud/university/commit/2f330e4e86955638704719924cc6f45d4ca73b53))
+
 ## [1.5.1](https://github.com/stjudecloud/university/compare/v1.5.0...v1.5.1) (2021-02-06)
 
 
