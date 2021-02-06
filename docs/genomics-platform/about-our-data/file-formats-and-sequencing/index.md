@@ -9,7 +9,7 @@ St. Jude Cloud hosts both raw genomic data files and processed results files:
 
 | File Type      | Short Description                                                                                                  | Details                             |
 | -------------- | ------------------------------------------------------------------------------------------------------------------ | ----------------------------------- |
-| BAM            | HG38 aligned BAM files produced by [Microsoft Genomics Service][msgen] (DNA-Seq) or STAR 2-pass mapping (RNA-Seq). | [Click here](#bam-files)            |
+| BAM            | hg38 aligned BAM files produced by [Microsoft Genomics Service][msgen] (DNA-Seq) or STAR 2-pass mapping (RNA-Seq). | [Click here](#bam-files)            |
 | gVCF           | [Genomic VCF][gvcf-spec] files produced by [Microsoft Genomics Service][msgen].                                    | [Click here](#gvcf-files)           |
 | Somatic VCF    | Curated list of somatic variants produced by the St. Jude somatic variant analysis pipeline.                       | [Click here](#somatic-vcf-files)    |
 | CNV            | List of somatic copy number alterations produced by St. Jude CONSERTING pipeline.                                  | [Click here](#cnv-files)            |
@@ -26,14 +26,14 @@ We provide gVCF files produced by the [Microsoft Genomics Service][msgen]. gVCF 
 
 ## Somatic VCF files
 
-Somatic VCF files contain HG38 based SNV/Indel variant calls from the St. Jude somatic variant analysis pipeline as follows. Broadly speaking:
+Somatic VCF files contain hg38 based SNV/Indel variant calls from the St. Jude somatic variant analysis pipeline as follows. Broadly speaking:
 
-1. Reads were aligned to HG19 using [bwa backtrack][bwa] (`bwa aln` + `bwa sampe`) using default parameters.
+1. Reads were aligned to hg19 using [bwa backtrack][bwa] (`bwa aln` + `bwa sampe`) using default parameters.
 2. Post processing of aligned reads was performed using [Picard][picard] `CleanSam` and `MarkDuplicates`.
 3. Variants were called using the [Bambino][bambino-paper] variant caller (you can download Bambino [here][bambino-download] or by navigating to the [Zhang Lab page][bambino-program] where the  "Bambino package" is listed as a dependency under the CONSERTING section).
 4. Variants were post-processed using an in-house post-processing pipeline that cleans and annotates variants. This pipeline is not currently publicly available.
 5. Variants were manually reviewed by analysts and published with [the relevant Pediatric Cancer Genome Project (PCGP) paper][pcgp-landing-page].
-6. Post-publication, variants were lifted over to HG38 (the original HG19 coordinates are stored in the `HG19` INFO field.).
+6. Post-publication, variants were lifted over to hg38 (the original hg19 coordinates are stored in the `hg19` INFO field.).
 
 !!!note
 **Our Somatic VCF files were designed specifically for St. Jude Cloud visualization purposes. Variants in these files were manually curated from analyses across multiple sequencing types including WGS and WES.**  
@@ -88,11 +88,11 @@ Feature counts are text files that contain counts of reads aligned to genomic fe
 # Sequencing Information 
 
 ## Whole Genome and Whole Exome
-Whole Genome Sequence (WGS) and Whole Exome Sequence (WES) BAM files were produced by the [Microsoft Genomics Service][msgen] aligned to HG38 (GRCh38 no alt analysis set). For more information about how Microsoft Genomics produces BAM files or any other questions regarding data generation, please refer to [the official Microsoft Genomics whitepaper][msgen-whitepaper].
+Whole Genome Sequence (WGS) and Whole Exome Sequence (WES) BAM files were produced by the [Microsoft Genomics Service][msgen] aligned to hg38 (GRCh38 no alt analysis set). For more information about how Microsoft Genomics produces BAM files or any other questions regarding data generation, please refer to [the official Microsoft Genomics whitepaper][msgen-whitepaper].
 
 ## RNA-Seq
 
-RNA-Seq BAM files are mapped to HG38. For alignment, `STAR` v2.7.1a 2-pass mapping is used. Below is the `STAR` command used during alignment. For more information about any of the parameters used, please refer to the [STAR manual][star-manual] for v2.7.1a. The complete RNA-Seq WDL pipeline is available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/workflows/rnaseq/rnaseq-standard.wdl). The STAR alignment parameters are also available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/tools/star.wdl). 
+RNA-Seq BAM files are mapped to hg38. For alignment, `STAR` v2.7.1a 2-pass mapping is used. Below is the `STAR` command used during alignment. For more information about any of the parameters used, please refer to the [STAR manual][star-manual] for v2.7.1a. The complete RNA-Seq WDL pipeline is available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/workflows/rnaseq/rnaseq-standard.wdl). The STAR alignment parameters are also available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/tools/star.wdl). 
 
 ```bash
     STAR \
