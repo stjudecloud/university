@@ -280,7 +280,7 @@ ITD is represented as magenta bars over gene coding regions.
 ### Gene expression
 
 A subset of the pediatric tumors have gene expression profiled by
-RNA-Seq. GenomePaint supports displaying following aspects of gene
+RNA-Seq. GenomePaint supports displaying the following aspects of gene
 expression data:
 
 -   Gene expression rank based on FPKM values
@@ -579,7 +579,7 @@ counts (RNA and WES being the most abundant). Inside the matrix, a gray
 box indicates a set of samples having a particular assay type. The
 number of samples are always printed out for each box.
 
-The sample columns are sorted by their presence of each assay type, by
+The sample columns are sorted by the presence of each assay type, by
 the order of assays from top to bottom. In the T-ALL case, the samples
 are first sorted by RNA-Seq, with 267 that have RNA-Seq and 86 without
 (number not printed). Next, WES availability is sorted separately for
