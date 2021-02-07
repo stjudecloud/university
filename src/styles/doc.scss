@@ -138,6 +138,12 @@
     @apply justify-end;
     @apply h-full;
 
+    &.before {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
+
     svg {
       visibility: visible;
       @apply fill-current;
