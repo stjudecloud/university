@@ -1,3 +1,10 @@
+## [1.7.1](https://github.com/stjudecloud/university/compare/v1.7.0...v1.7.1) (2021-02-07)
+
+
+### Bug Fixes
+
+* **mobile-menu:** fixes rendering of menu on mobile devices ([c2b1dee](https://github.com/stjudecloud/university/commit/c2b1deec36517368f4095ed072b40a43ea360861))
+
 # [1.7.0](https://github.com/stjudecloud/university/compare/v1.6.0...v1.7.0) (2021-02-07)
 
 
