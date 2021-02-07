@@ -3,7 +3,7 @@ title: File Formats and Sequencing Information
 ---
 
 
-# File Formats
+## File Formats
 
 St. Jude Cloud hosts both raw genomic data files and processed results files:
 
@@ -16,15 +16,15 @@ St. Jude Cloud hosts both raw genomic data files and processed results files:
 | Feature Counts | Curated list of read counts mapped to each gene produced by [HTSeq](https://htseq.readthedocs.io/en/master/)       | [Click here](#feature-counts-files) |
 
 
-## BAM files
+### BAM files
 
 In St. Jude Cloud, we store aligned sequence reads in BAM file format for whole genome sequencing, whole exome sequencing, and RNA-Seq. For more information on SAM/BAM files, please refer to the [SAM/BAM specification][bam-spec]. For research samples, we require the standard 30X coverage for whole genome and 100X for whole exome sequencing. For clinical samples, we require higher coverage, 45X, for whole genome sequencing due to tumor purity issues found in clinical tumor specimens. For RNA-Seq, since only a subset of genes are expressed in a specific tissue, we require 30% of the exons to have 20X coverage in order to ensure that at least 30% of the expressed genes have sufficient coverage.
 
-## gVCF files
+### gVCF files
 
 We provide gVCF files produced by the [Microsoft Genomics Service][msgen]. gVCF files are derived from the BAM files produced above as called by [GATK's haplotype caller][gatk-haplotype-caller]. Today, we defer to [the official specification document][gvcf-spec] from the Broad Institute, as well as [this discussion][gvcf-diff-from-vcf] on the difference between VCF and gVCF files. For more information about how Microsoft Genomics produces gVCF files or any other questions regarding data generation, please refer to [the official Microsoft Genomics whitepaper][msgen-whitepaper].
 
-## Somatic VCF files
+### Somatic VCF files
 
 Somatic VCF files contain hg38 based SNV/Indel variant calls from the St. Jude somatic variant analysis pipeline as follows. Broadly speaking:
 
@@ -41,7 +41,7 @@ For more information on variants for each of the individuals, please refer to th
 !!!
 
 
-## CNV files
+### CNV files
 
 CNV files contain copy number alteration (CNA) analysis results for paired tumor-normal WGS samples. Files are produced by running paired tumor-normal BAM files through the [CONSERTING][conserting] pipeline which identifies CNA through iterative analysis of (i) local segmentation by read depth within boundaries identified by structural variation (SV) breakpoints followed by (ii) segment merging and local SV analysis. [CREST][crest] was used to identify local SV breakpoints. CNV files contain the following information:
 
@@ -78,19 +78,19 @@ CNV files contain copy number alteration (CNA) analysis results for paired tumor
 [star-manual]: https://github.com/alexdobin/STAR/blob/a22ad18600c827841e3fcd74118e9baac75669f4/doc/STARmanual.pdf
 [ercc]: https://www.thermofisher.com/order/catalog/product/4456740
 
-## Feature Counts files
+### Feature Counts files
 
 Feature counts are text files that contain counts of reads aligned to genomic features. St. Jude Cloud feature files are generated using HTSeq. The detailed command is documented in our [RNA-Seq V2 RFC][rnaseq-rfc]. The files contain a count of the number of reads overlapping each genomic feature, in this case, genes as specified in [GENCODE V31][gencode]. St. Jude Cloud uses the gene name as feature key. The files are tab-delimited text and contain the feature key and read count for that feature. 
 
 [rnaseq-rfc]: https://stjudecloud.github.io/rfcs/0001-rnaseq-workflow-v2.0.0.html#specification
 [gencode]: https://www.gencodegenes.org/human/release_31.html
 
-# Sequencing Information 
+## Sequencing Information 
 
-## Whole Genome and Whole Exome
+### Whole Genome and Whole Exome
 Whole Genome Sequence (WGS) and Whole Exome Sequence (WES) BAM files were produced by the [Microsoft Genomics Service][msgen] aligned to hg38 (GRCh38 no alt analysis set). For more information about how Microsoft Genomics produces BAM files or any other questions regarding data generation, please refer to [the official Microsoft Genomics whitepaper][msgen-whitepaper].
 
-## RNA-Seq
+### RNA-Seq
 
 RNA-Seq BAM files are mapped to hg38. For alignment, `STAR` v2.7.1a 2-pass mapping is used. Below is the `STAR` command used during alignment. For more information about any of the parameters used, please refer to the [STAR manual][star-manual] for v2.7.1a. The complete RNA-Seq WDL pipeline is available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/workflows/rnaseq/rnaseq-standard.wdl). The STAR alignment parameters are also available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/tools/star.wdl). 
 

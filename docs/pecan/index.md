@@ -1,9 +1,7 @@
 ---
-title: Pecan
+title: PeCan
 ---
 
-
-# PeCan 
 PeCan provides interactive visualizations of pediatric cancer mutations across various projects at St. Jude Children's Research Hospital and its collaborating institutions.
 
 ## Homepage 

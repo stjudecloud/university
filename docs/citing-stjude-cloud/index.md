@@ -2,8 +2,6 @@
 title: Citing St. Jude Cloud
 ---
 
-# Citing St. Jude Cloud
-
 If you have used St. Jude Cloud and/or accessed data therein for your work, please adhere to the following guidelines when publishing your work:
 
 1. Cite the [St. Jude Cloud manuscript published in Cancer Discovery](https://cancerdiscovery.aacrjournals.org/content/early/2021/01/08/2159-8290.CD-20-1230):

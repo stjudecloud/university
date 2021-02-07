@@ -145,7 +145,7 @@ None yet! If you have any questions not covered here, feel free to reach out
 on [our contact
 form](https://hospital.stjude.org/apps/forms/fb/st-jude-cloud-contact/).
 
-# References
+## References
 
   * Alexandrov, L.B., Kim, J., Haradhvala, N.J. _et al_. The repertoire of
     mutational signatures in human cancer. _Nature_ **578**, 94–101 (2020).

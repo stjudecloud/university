@@ -3,11 +3,11 @@ title: Metadata and Clinical Information
 ---
 
 
-# Metadata 
+## Metadata 
 
 Each data request includes a text file called `SAMPLE_INFO.txt` that provides a number of file level properties (sample identifiers, clinical attributes, etc).
 
-## Standard Metadata
+### Standard Metadata
 
  Below are the set of tags which *may* exist for any given file in St. Jude Cloud. All optional metadata will have `sj_` prepended to their tag name.
 
@@ -27,7 +27,7 @@ Each data request includes a text file called `SAMPLE_INFO.txt` that provides a 
 | sj_dataset_accession | If present, the permanent accession number assigned in St. Jude Cloud.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | sj_embargo_date      | The [embargo date](../glossary/#embargo-date), which specifies the first date which the files can be used in a publication.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
-## Clinical and Phenotypic Information
+### Clinical and Phenotypic Information
 
 Also included is a set of phenotypic information queried from the physician or research team's records at the time of sample submission to St. Jude Cloud. These are all considered to be *optional*, as the level of information gathered for each sample varies. If empty, the physician or research team did not indicate a value for the field. All basic clinical or phenotypic information will have `attr_` prepended to their tag name.
 
@@ -40,7 +40,7 @@ Also included is a set of phenotypic information queried from the physician or r
 | attr_sex                   | Self-reported sex.                                                                                                                                     |
 | attr_oncotree_disease_code | The disease code (assigned at the time of genomic sequencing) as specified by [Oncotree Version 2019-03-01][oncotree_2019_03_01].                      |
 
-## Diagnosis Codes
+### Diagnosis Codes
 
 !!!note
 During the release of the St. Jude Cloud paper, we undertook a massive effort to curate and harmonize diagnosis values within St. Jude Cloud. We provide two values for diagnosis, and you should select carefully which value you use based on your use case:

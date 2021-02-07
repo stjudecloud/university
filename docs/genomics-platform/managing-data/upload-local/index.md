@@ -1,8 +1,6 @@
 ---
-title: Upload Data (Local)
+title: Uploading Data from your Local Computer
 ---
-
-# Uploading Data from your Local Computer
 
 !!!warning
 Uploading to DNAnexus from your laptop should not be done over the VPN — ensure you are disconnected before continuing with this guide!
