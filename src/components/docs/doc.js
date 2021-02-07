@@ -144,7 +144,7 @@ class BaseLayout extends Component {
           }
         >
           <div className="container mt-1 px-9 mx-auto flex items-center justify-center">
-            <div className="mt-20 xl:mt-0">
+            <div>
               <DocsHeader
                 title={title}
                 contributors={contributors}
