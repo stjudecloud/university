@@ -1,3 +1,10 @@
+## [1.7.2](https://github.com/stjudecloud/university/compare/v1.7.1...v1.7.2) (2021-02-07)
+
+
+### Bug Fixes
+
+* fixes typo in side menu rendering code ([1a2166b](https://github.com/stjudecloud/university/commit/1a2166b793a710360f7fd57744a7fefbbf3b73de))
+
 ## [1.7.1](https://github.com/stjudecloud/university/compare/v1.7.0...v1.7.1) (2021-02-07)
 
 
