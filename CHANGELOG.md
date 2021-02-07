@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/stjudecloud/university/compare/v1.6.0...v1.7.0) (2021-02-07)
+
+
+### Features
+
+* **header:** adds contributors and time to read to each doc header ([d5c1498](https://github.com/stjudecloud/university/commit/d5c1498e1cd115cb34f48e3c8612bfd751683c18))
+
 # [1.6.0](https://github.com/stjudecloud/university/compare/v1.5.1...v1.6.0) (2021-02-06)
 
 
