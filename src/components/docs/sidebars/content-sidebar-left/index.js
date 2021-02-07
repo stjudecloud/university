@@ -44,8 +44,12 @@ const ContentsSidebarLeft = ({
         />
       </div>
       <ContentsMenu
-        closeMobileMenu={closeMobileMenu}
+        closeMobileMenu={() => {
+          setIsModuleSelectorMousedOver(false)
+          closeMobileMenu()
+        }}
         CurrentIconImported={currentIconImported}
+        isMobileMenuOpen={isMobileMenuOpen}
         currentTitle={currentTitle}
         currentChapters={currentChapters}
         currentPathBeingViewed={currentPathBeingViewed}
