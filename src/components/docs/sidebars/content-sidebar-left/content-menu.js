@@ -71,7 +71,7 @@ const ContentsMenu = ({
         </div>
         <div className="absolute inset-x-0">
           <div className="h-screen overflow-y-scroll">
-            <div className="my-2 mx-3 pb-60">
+            <div id="table-of-contents" className="my-2 mx-3 pb-60">
               {currentChapters.map(e => (
                 <ChapterMenuItem
                   key={e.title}
