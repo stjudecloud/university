@@ -17,10 +17,8 @@ const ContentsMenu = ({
     <div
       id="contents-sidebar-left"
       className={
-        !isMobileMenuOpen
-          ? "invisible "
-          : "visible " +
-            "xl:visible z-30 contents-sidebar fixed bg-coolGray-50 min-h-screen border-r border-coolGray-100 border-solid w-full xl:w-320"
+        (!isMobileMenuOpen ? "invisible " : "visible ") +
+        "xl:visible z-30 contents-sidebar fixed bg-coolGray-50 min-h-screen border-r border-coolGray-100 border-solid w-full xl:w-320"
       }
     >
       <div id="mobile-menu" className="absolute inset-0 cursor-pointer">
