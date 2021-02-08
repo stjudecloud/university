@@ -76,6 +76,22 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
 
     if (process.env.GITHUB_TOKEN) {
       await registerGithubFields(relativeFilepath, node, createNodeField)
+    } else {
+      console.log(
+        "No GITHUB_TOKEN was passed in, so any information pulled from \n" +
+          "a GitHub API request (e.g. contributors and commits) will not \n" +
+          "be included in this build!"
+      )
+      createNodeField({
+        node,
+        name: `commits`,
+        value: null,
+      })
+      createNodeField({
+        node,
+        name: `contributors`,
+        value: null,
+      })
     }
   }
 }

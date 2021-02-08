@@ -1,4 +1,5 @@
 import React from "react"
+import { PropTypes } from "prop-types"
 
 const ContributorsBlock = ({ contributors }) => {
   return (
@@ -23,6 +24,14 @@ const ContributorsBlock = ({ contributors }) => {
       ))}
     </div>
   )
+}
+
+ContributorsBlock.propTypes = {
+  contributors: PropTypes.any.isRequired,
+}
+
+ContributorsBlock.defaultProps = {
+  contributors: [],
 }
 
 export default ContributorsBlock

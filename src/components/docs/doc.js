@@ -145,14 +145,19 @@ class BaseLayout extends Component {
           }
         >
           <div className="container mt-1 px-9 mx-auto flex items-center justify-center">
-            <div>
+            <div className="container content xl:max-w-xl 2xl:max-w-3xl">
               <DocsHeader
                 title={title}
+                commits={commits}
                 contributors={contributors}
                 timeToRead={timeToRead}
               />
-              <DocsBody html={html} commits={commits} />
-              <DocsFooter previousPage={previousPage} nextPage={nextPage} />
+              <DocsBody html={html} />
+              <DocsFooter
+                previousPage={previousPage}
+                nextPage={nextPage}
+                commits={commits}
+              />
             </div>
           </div>
         </main>

@@ -38,9 +38,11 @@ const getContributors = (commits = []) => {
   }
 
   // returns a sorted list with the highest committer first.
-  return contributorsAsArray.sort((a, b) => {
-    return b.commits - a.commits
-  })
+  return contributorsAsArray
+    .sort((a, b) => {
+      return b.commits - a.commits
+    })
+    .filter(c => c !== undefined)
 }
 
 /**
@@ -66,7 +68,7 @@ const getCommits = commits => {
       },
     })
   }
-  return results
+  return results.filter(c => c !== undefined)
 }
 
 module.exports.registerGithubFields = async function (

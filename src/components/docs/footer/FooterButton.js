@@ -1,23 +1,23 @@
 import React from "react"
 import { Link } from "gatsby"
 import Chevron from "../../../images/icons/chevron.svg"
+import PropTypes from "prop-types"
 
-const FooterButton = ({ page, forward = true, flexSize = 5 }) => {
+const FooterButton = ({ page, forward, flexSize }) => {
   if (page === null) {
     return <div style={{ flex: flexSize }} />
   }
 
   return (
-    <Link
-      to={page.path}
-      className="flex items-center border border-coolGray-200 rounded-full hover:border-secondary text-black hover:text-secondary py-4 px-8 shadow-xl mb-6 md:mb-0 transition duration-300"
-      style={{ flex: flexSize }}
-    >
-      <div className="flex justify-between items-center w-full h-full">
+    <Link to={page.path} className="footer-button" style={{ flex: flexSize }}>
+      <div
+        className="flex justify-between items-center w-full h-full text-black"
+        style={{ color: "inherit" }}
+      >
         {!forward && (
           <Chevron
-            style={{ transform: "rotate(180deg)" }}
-            className="flex-0 fill-current text-inherit"
+            style={{ transform: "rotate(180deg)", color: "inherit" }}
+            className="flex-0 fill-current"
             width="16px"
             height="16px"
           />
@@ -30,7 +30,7 @@ const FooterButton = ({ page, forward = true, flexSize = 5 }) => {
           <span className="text-gray-400 text-sm whitespace-nowrap">
             {page.chapter}
           </span>
-          <span className="text-inherit">{page.title}</span>
+          <span>{page.title}</span>
         </div>
         {forward && (
           <Chevron
@@ -42,6 +42,18 @@ const FooterButton = ({ page, forward = true, flexSize = 5 }) => {
       </div>
     </Link>
   )
+}
+
+FooterButton.propTypes = {
+  page: PropTypes.any.isRequired,
+  forward: PropTypes.bool,
+  flexSize: PropTypes.number,
+}
+
+FooterButton.defaultProps = {
+  page: null,
+  forward: true,
+  flexSize: 5,
 }
 
 export default FooterButton
