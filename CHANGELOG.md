@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/stjudecloud/university/compare/v1.7.4...v1.8.0) (2021-02-08)
+
+
+### Features
+
+* adds page history to each doc ([6eab0ac](https://github.com/stjudecloud/university/commit/6eab0ac0359c5e1dbfdd105de6c9a374730d15fa))
+
 ## [1.7.4](https://github.com/stjudecloud/university/compare/v1.7.3...v1.7.4) (2021-02-08)
 
 ## [1.7.3](https://github.com/stjudecloud/university/compare/v1.7.2...v1.7.3) (2021-02-08)
