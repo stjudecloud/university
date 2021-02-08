@@ -11,7 +11,7 @@ import getFileContributors from './src/utils/github';
 const path = require(`path`)
 const { slash } = require(`gatsby-core-utils`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
-const { getFileContributors } = require(`./src/utils/github`)
+const { registerGithubFields } = require(`./src/utils/github`)
 
 /**
  * Borrowed from https://github.com/gatsbyjs/gatsby/blob/master/packages/gatsby-source-filesystem/src/create-file-path.js#L4-L27
@@ -75,12 +75,7 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
     })
 
     if (process.env.GITHUB_TOKEN) {
-      const contributors = await getFileContributors(relativeFilepath)
-      createNodeField({
-        node,
-        name: `contributors`,
-        value: contributors,
-      })
+      await registerGithubFields(relativeFilepath, node, createNodeField)
     }
   }
 }

@@ -8,7 +8,9 @@ const ContributorsBlock = ({ contributors }) => {
           key={e.login}
           alt={`Avatar for ${e.login}`}
           title={e.login}
-          href={e.profile_url}
+          href={e.url}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             src={e.avatar_url}

@@ -13,9 +13,10 @@ import { ContentsSidebarLeft, ActionSidebarRight } from "./sidebars"
 import SearchModal from "../search"
 
 import { ToastContainer } from "react-toastify"
-import DocFooterNavigation from "./footer"
+import DocsFooter from "./footer"
 import SEO from "../seo"
 import DocsHeader from "./header"
+import DocsBody from "./body/index"
 
 class BaseLayout extends Component {
   static defaultProps = {
@@ -45,7 +46,7 @@ class BaseLayout extends Component {
       html,
       excerpt,
       frontmatter: { title },
-      fields: { contributors },
+      fields: { commits, contributors },
       fileAbsolutePath,
       timeToRead,
     } = markdownRemark
@@ -150,14 +151,8 @@ class BaseLayout extends Component {
                 contributors={contributors}
                 timeToRead={timeToRead}
               />
-              <div
-                className="container content xl:max-w-xl 2xl:max-w-3xl"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
-              <DocFooterNavigation
-                previousPage={previousPage}
-                nextPage={nextPage}
-              />
+              <DocsBody html={html} commits={commits} />
+              <DocsFooter previousPage={previousPage} nextPage={nextPage} />
             </div>
           </div>
         </main>
@@ -234,10 +229,25 @@ export const pageQuery = graphql`
         title
       }
       fields {
+        commits {
+          date
+          committer {
+            avatar_url
+            login
+            url
+          }
+          author {
+            avatar_url
+            login
+            url
+          }
+          message
+          url
+        }
         contributors {
           avatar_url
           login
-          profile_url
+          url
           commits
         }
         relativeFilepath

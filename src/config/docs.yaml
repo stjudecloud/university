@@ -101,7 +101,7 @@ domains:
         chapters:
           - title: "Getting Started"
             pages:
-              - title: "Proteinpaint"
+              - title: "ProteinPaint"
                 path: /docs/visualization-community/proteinpaint/
               - title: "Frequently Asked Questions"
                 path: /docs/visualization-community/faq/
@@ -174,10 +174,10 @@ domains:
                 path: /docs/visualization-community/proteinpaint/developers-guide/url-parameters/
               - title: "Organizing Data into a Study View"
                 path: /docs/visualization-community/proteinpaint/developers-guide/organizing-data-into-a-study-view/
-          - title: "Genomepaint"
+          - title: "GenomePaint"
             collapsable: true
             pages:
-              - title: "Genomepaint"
+              - title: "GenomePaint"
                 path: /docs/visualization-community/genomepaint/
               - title: "GenomePaint User Guide"
                 path: /docs/visualization-community/genomepaint/user-guide/

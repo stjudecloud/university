@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import FooterButton from "./FooterButton"
 
-const DocFooterNavigation = ({ previousPage = null, nextPage = null }) => {
+const DocsFooter = ({ previousPage = null, nextPage = null }) => {
   return (
     <div className="mt-8 flex flex-col md:flex-row justify-between">
       <FooterButton page={previousPage} forward={false} />
@@ -12,4 +12,4 @@ const DocFooterNavigation = ({ previousPage = null, nextPage = null }) => {
   )
 }
 
-export default DocFooterNavigation
+export default DocsFooter
