@@ -2,14 +2,15 @@
 title: Data Sets and Data Access Units
 ---
 
-# Data Set
+## Data Set
+
 A St. Jude Cloud Data Set is a grouping of data which has been curated by St. Jude and can correspond to a study, project, or specific disease. They are available for free to researchers and access to a Data Set can be requested from the data browser. However, access is not granted at the Data Set level, but rather the Data Access Unit. A single Data Set may belong to only one DAU, or it could belong in multiple if it contains data came from different groups. 
 
 An approved Data Access Request grants access to a particular Data Access Unit which includes specific Data Sets that can be selected from the Data Browser. An approved DAR would give access not only to the data selected at the time, but also any additional data that is included in the DAUs which were approved. Only the data initially selected will be vended to a project folder upon approval but returning to the data browser and selecting additional data which falls under the approved DAUs will not require another Data Access Request. 
 
 See [the  list of Data Sets.](#list-of-data-sets)
 
-# Data Access Unit
+## Data Access Unit
 
 A St. Jude Cloud **Data Access Unit (DAU)** is a grouping of data that typically corresponds to a project, study, or Data Set generated at the same time at the same institution. Each DAU has its own governing body of researchers, the [Data Access Committee](#data-access-committee), who preside over the data and who may grant or deny access. Each Data Access Committee is responsible for only one DAU and has its own protocols for approving access to their DAU. Please [contact us](mailto:support@stjude.cloud) if you have questions about committee approval protocols. We currently have 6 DAUs: Pediatric Cancer Genome Project (PCGP), St. Jude Lifetime Cohort Study (SJLIFE), Genomes for Kids (G4K) and Clinical Genomics, Sickle Cell Genome Project (SGP), Childhood Cancer Survivor Study (CCSS), and Pan-Acute Lymphoblastic Leukemia (PanALL). See below for a brief description of each DAU. For a more detailed description please see the respective [Schedule 1(s)](../../../citing-stjude-cloud#Data Set-reference-table).
 

@@ -32,7 +32,7 @@ function pageToAlgoliaRecord({
   return {
     objectID: id,
     ...frontmatter,
-    slug: "/docs" + slug,
+    slug,
     ...rest,
   }
 }

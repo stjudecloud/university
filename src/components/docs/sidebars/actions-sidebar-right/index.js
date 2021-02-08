@@ -1,14 +1,17 @@
 import React from "react"
 import PropTypes from "prop-types"
-import Question from "../../../images/icons/question.svg"
-import Tour from "../../../images/icons/tour.svg"
+import Question from "../../../../images/icons/question.svg"
+import Tour from "../../../../images/icons/tour.svg"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { toast } from "react-toastify"
-import Button from "../../buttons/Button"
+import Button from "../../../buttons/Button"
 
 function callIntercom(action, args = null) {
-  if (window && window.Intercom) {
+  // both of these are checked against as the first boolean in the conditional
+  // eslint-disable-next-line no-undef
+  if (typeof window !== "undefined" && window.Intercom) {
+    // eslint-disable-next-line no-undef
     window.Intercom(action, args)
   } else {
     toast.error(
@@ -35,6 +38,22 @@ function playTour() {
 }
 
 function editOnGitHub(fileAbsolutePath) {
+  if (typeof window === "undefined") {
+    toast.error(
+      "Looks like Intercom isn't enabled in this environment! Please email us at support@stjude.cloud with this error so we can fix it!",
+      {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+      }
+    )
+    return
+  }
+
   const token = "/docs/"
   if (!fileAbsolutePath.includes(token)) {
     throw new Error(`File path not in docs?`)
@@ -46,6 +65,8 @@ function editOnGitHub(fileAbsolutePath) {
     let url =
       "https://github.com/stjudecloud/university/edit/master/docs/" +
       relativeFilePath
+    // Handled cases where window is not defined at the beginning of this function
+    // eslint-disable-next-line no-undef
     window.open(url)
   }
 }

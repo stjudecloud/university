@@ -2,8 +2,6 @@
 title: Visualizing NGS Data
 ---
 
-# Visualizing NGS Data
-
 In the future, we will release an **alpha version** of the GenomePaint visualization tool on St. Jude Cloud. In the meantime, the best way to visualize NGS data on St. Jude Cloud is using IGV. You can use the desktop or web browser versions of IGV.
 
 ## Desktop IGV

@@ -2,8 +2,6 @@
 title: RNA-Seq Expression Classification
 ---
 
-# RNA-Seq Expression Classification
-
 ## Overview
 
 St. Jude Cloud provides functionality for generating RNA-Seq Expression Classification plots. This tool allows plotting of RNA-Seq data by running through the St. Jude Cloud normalization [pipeline](https://stjudecloud.github.io/rfcs/0001-rnaseq-workflow-v2.0.html). The generated count data is then compared to a reference set of data from a cohort of St. Jude samples and a plot is produced.

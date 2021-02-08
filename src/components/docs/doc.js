@@ -15,6 +15,7 @@ import SearchModal from "../search"
 import { ToastContainer } from "react-toastify"
 import DocFooterNavigation from "./footer"
 import SEO from "../seo"
+import DocsHeader from "./header"
 
 class BaseLayout extends Component {
   static defaultProps = {
@@ -44,9 +45,11 @@ class BaseLayout extends Component {
       html,
       excerpt,
       frontmatter: { title },
+      fields: { contributors },
       fileAbsolutePath,
+      timeToRead,
     } = markdownRemark
-
+    contributors.forEach(e => console.log(e.login))
     let currentModule = null
 
     let longestMatchingPathPrefix = -1
@@ -73,7 +76,7 @@ class BaseLayout extends Component {
       title: currentTitle,
       chapters: currentChapters,
     } = currentModule
-    const CurrentIconImported = require("../../images/icons/" + currentIcon)
+    const currentIconImported = require("../../images/icons/" + currentIcon)
 
     const flattenedChapters = []
     currentChapters.forEach(chapter => {
@@ -127,7 +130,7 @@ class BaseLayout extends Component {
           isMobileMenuOpen={this.state.isMobileMenuOpen}
           openMobileMenu={this.openMobileMenu}
           closeMobileMenu={this.closeMobileMenu}
-          CurrentIconImported={CurrentIconImported}
+          currentIconImported={currentIconImported}
           currentTitle={currentTitle}
           domains={domains}
           currentChapters={currentChapters}
@@ -141,7 +144,12 @@ class BaseLayout extends Component {
           }
         >
           <div className="container mt-1 px-9 mx-auto flex items-center justify-center">
-            <div className="mt-20 xl:mt-0">
+            <div>
+              <DocsHeader
+                title={title}
+                contributors={contributors}
+                timeToRead={timeToRead}
+              />
               <div
                 className="container content xl:max-w-xl 2xl:max-w-3xl"
                 dangerouslySetInnerHTML={{ __html: html }}
@@ -210,6 +218,7 @@ export const pageQuery = graphql`
           subtitle
           chapters {
             title
+            collapsable
             pages {
               title
               path
@@ -224,7 +233,18 @@ export const pageQuery = graphql`
       frontmatter {
         title
       }
+      fields {
+        contributors {
+          avatar_url
+          login
+          profile_url
+          commits
+        }
+        relativeFilepath
+        slug
+      }
       excerpt(pruneLength: 200)
+      timeToRead
     }
   }
 `

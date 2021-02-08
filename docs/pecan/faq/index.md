@@ -2,8 +2,6 @@
 title: Frequently Asked Questions
 ---
 
-# Frequently Asked Questions
-
 ```toc
 from-heading: 2
 ```

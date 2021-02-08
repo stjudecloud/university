@@ -2,8 +2,6 @@
 title: ProteinPaint
 ---
 
-# ProteinPaint
-
 [ProteinPaint](https://pecan.stjude.cloud/proteinpaint) is a web application for simultaneously visualizing genetic lesions (including sequence mutations and gene fusions) and RNA expression in pediatric cancers. You can find the ProteinPaint [paper here](https://www.nature.com/articles/ng.3466). 
 
 ## Overview

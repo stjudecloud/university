@@ -6,6 +6,7 @@ import PropTypes from "prop-types"
 const SearchBlock = ({ onSearchClick = null }) => {
   return (
     <div
+      id="search-bar"
       onClick={onSearchClick}
       role="button"
       tabIndex={0}

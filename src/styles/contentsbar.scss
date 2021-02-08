@@ -9,7 +9,7 @@
     }
     li {
       @apply pt-2;
-      @apply pl-7;
+      @apply pl-4;
       @apply text-coolGray-600;
 
       &:not(.title):hover {
@@ -20,13 +20,18 @@
       &.title {
         @apply uppercase;
         @apply font-semibold;
-        @apply cursor-default;
         @apply select-none;
+        @apply flex;
+        @apply items-center;
+
+        .collapsable-menu-chevron {
+          @apply mx-1;
+          @apply fill-current;
+        }
       }
 
       &.page {
         @apply ml-2;
-        @apply whitespace-nowrap;
       }
     }
 
