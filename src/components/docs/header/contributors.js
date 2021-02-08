@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types"
 
 const ContributorsBlock = ({ contributors }) => {
   return (
-    <div className="flex">
+    <div className="flex mt-3">
       {contributors.map(e => (
         <a
           key={e.login}

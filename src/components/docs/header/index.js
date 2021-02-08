@@ -20,17 +20,18 @@ const DocsHeader = ({ title, timeToRead, contributors, commits }) => {
   return (
     <div id="docs-header" className="content mt-20 xl:mt-16 mb-8">
       <h1 style={{ marginBottom: "5px" }}>{title}</h1>
-      <div className="flex italic" style={{ marginBottom: "15px" }}>
+      <span className="italic">
         {latestCommit && (
-          <span>
+          <>
+            {" "}
             Last updated: {moment(latestCommitDate).fromNow()} (
             <Link to="#page-history">view history</Link>)
-          </span>
+          </>
         )}
-        <span>
-          {latestCommit && <span>{`, `}</span>} Time to read: {timeToRead} mins
-        </span>
-      </div>
+        <>
+          {latestCommit && <>{`, `}</>} Time to read: {timeToRead} mins
+        </>
+      </span>
       {contributors && <ContributorsBlock contributors={contributors} />}
     </div>
   )
