@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/stjudecloud/university/compare/v1.8.0...v1.8.1) (2021-02-08)
+
+
+### Bug Fixes
+
+* fixes rendering of "Last updated/time to read" in doc pages ([9277b65](https://github.com/stjudecloud/university/commit/9277b65d68227327f9a13fc3981c082c5aea3031))
+
 # [1.8.0](https://github.com/stjudecloud/university/compare/v1.7.4...v1.8.0) (2021-02-08)
 
 
