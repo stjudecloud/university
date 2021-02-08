@@ -1,14 +1,12 @@
 ---
-title: MethylationToActivity
+title: MethylationToActivity (M2A)
 ---
 
-# MethylationToActivity (M2A)
-
-|                       |                                            |
-| --------------------- | ------------------------------------------ |
-| **Authors**           | Justin Williams, Beisi Xu, Daniel Putnam, Andrew Thrasher, Xiang Chen      |
-| **Publication**       | [MethylationToActivity: a deep-learning framework that reveals promoter activity landscapes from DNA methylomes in individual tumors](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02220-y)                        |
-| **Technical Support** | [Contact Us](https://stjude.cloud/contact) |
+|                       |                                                                                                                                                                                                                    |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Authors**           | Justin Williams, Beisi Xu, Daniel Putnam, Andrew Thrasher, Xiang Chen                                                                                                                                              |
+| **Publication**       | [MethylationToActivity: a deep-learning framework that reveals promoter activity landscapes from DNA methylomes in individual tumors](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-020-02220-y) |
+| **Technical Support** | [Contact Us](https://stjude.cloud/contact)                                                                                                                                                                         |
 
 ## Overview
 
@@ -16,12 +14,12 @@ MethylationToActivity (M2A) is a machine learning framework using convolutional 
 
 ## Inputs 
 
-| Name | Type | Description | Example |
-|--|--|--|--|
-| Sample HM bigwig file (only if using M2A with Transfer)   | Input file |  HM ChIP-seq experiment bigwig track. | SampleName_H3K27ac.bw OR SampleName_H3K4me3.bw|
-| Sample HM control (Input) bigwig (only if using M2A with Transfer) | Input file | ChIP-seq Experiment control (Input) bigwig track.  | SampleName_Input.bw |
-| WGBS data file | Input file | M-values by chromosome and position (non-standard format, see below). | *.txt (tab-delimited)|
-| Promoter region definition file (*provided, or user defined*) | Input file |  File describing promoter regions to be predicted. Provided regions include both hg19 and GRCh38 definitions (non-standard format, see below). | *.txt (tab-delimited) |
+| Name                                                               | Type       | Description                                                                                                                                   | Example                                        |
+| ------------------------------------------------------------------ | ---------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- |
+| Sample HM bigwig file (only if using M2A with Transfer)            | Input file | HM ChIP-seq experiment bigwig track.                                                                                                          | SampleName_H3K27ac.bw OR SampleName_H3K4me3.bw |
+| Sample HM control (Input) bigwig (only if using M2A with Transfer) | Input file | ChIP-seq Experiment control (Input) bigwig track.                                                                                             | SampleName_Input.bw                            |
+| WGBS data file                                                     | Input file | M-values by chromosome and position (non-standard format, see below).                                                                         | *.txt (tab-delimited)                          |
+| Promoter region definition file (*provided, or user defined*)      | Input file | File describing promoter regions to be predicted. Provided regions include both hg19 and GRCh38 definitions (non-standard format, see below). | *.txt (tab-delimited)                          |
 
 !!!Note App-provided model inputs:
 Model weights (.h5) file: 1) H3K27ac or 2) H3K4me3 
@@ -31,32 +29,32 @@ Model weights (.h5) file: 1) H3K27ac or 2) H3K4me3
 
 #### Promoter region definition file (if user defined):
 
-|Column      | Description                                   |
-|------------|-----------------------------------------------|
-|EnsmblID_T  | Ensemble transcript ID (unique)               |
-|EnsmblID_G  | Ensemble gene ID (not unique)                 |      
-|Gene        | human readable gene name (abbrev, not unique) |
-|Strand      | +, -                                          |
-|Chr         | chr1, chr2, ... chr22, etc.                   |
-|Start       | Beginning of transcript definition            | 
-|End         | End of transcript definition                  |
-|RStart      | TSS - 1000bp                                  |
-|REnd        | TSS + 1000bp                                  |
+| Column     | Description                                   |
+| ---------- | --------------------------------------------- |
+| EnsmblID_T | Ensemble transcript ID (unique)               |
+| EnsmblID_G | Ensemble gene ID (not unique)                 |
+| Gene       | human readable gene name (abbrev, not unique) |
+| Strand     | +, -                                          |
+| Chr        | chr1, chr2, ... chr22, etc.                   |
+| Start      | Beginning of transcript definition            |
+| End        | End of transcript definition                  |
+| RStart     | TSS - 1000bp                                  |
+| REnd       | TSS + 1000bp                                  |
 
 #### WGBS data file:
 
-|Column      | Description                                                            |
-|------------|------------------------------------------------------------------------|
-|chrom       | chromosome ID, e.g. 1,2,3 ...22                                        |
-|pos         | position of 5' cytosine of a CpG on the positive strand                |      
-|mval        | caluclated mvalue of a given CpG, typically M-value=log2(Beta/1-Beta)  |
+| Column | Description                                                           |
+| ------ | --------------------------------------------------------------------- |
+| chrom  | chromosome ID, e.g. 1,2,3 ...22                                       |
+| pos    | position of 5' cytosine of a CpG on the positive strand               |
+| mval   | caluclated mvalue of a given CpG, typically M-value=log2(Beta/1-Beta) |
 
 ## Outputs
 
-| Name | Description |
-|--|--|
+| Name             | Description                                                                                                                    |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | Predictions file | The promoter region definition file with an additional Predicted_log2_ChipDivInput_"YOUR HM MARK HERE" column (tab-delimited). |
-| Transfer model |  The updated weights to the HM model (a .hdf5 file; *only* if using M2A with Transfer)|
+| Transfer model   | The updated weights to the HM model (a .hdf5 file; *only* if using M2A with Transfer)                                          |
 
 ## Preparing to run M2A
 

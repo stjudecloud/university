@@ -1,3 +1,41 @@
+## [1.7.3](https://github.com/stjudecloud/university/compare/v1.7.2...v1.7.3) (2021-02-08)
+
+## [1.7.2](https://github.com/stjudecloud/university/compare/v1.7.1...v1.7.2) (2021-02-07)
+
+
+### Bug Fixes
+
+* fixes typo in side menu rendering code ([1a2166b](https://github.com/stjudecloud/university/commit/1a2166b793a710360f7fd57744a7fefbbf3b73de))
+
+## [1.7.1](https://github.com/stjudecloud/university/compare/v1.7.0...v1.7.1) (2021-02-07)
+
+
+### Bug Fixes
+
+* **mobile-menu:** fixes rendering of menu on mobile devices ([c2b1dee](https://github.com/stjudecloud/university/commit/c2b1deec36517368f4095ed072b40a43ea360861))
+
+# [1.7.0](https://github.com/stjudecloud/university/compare/v1.6.0...v1.7.0) (2021-02-07)
+
+
+### Features
+
+* **header:** adds contributors and time to read to each doc header ([d5c1498](https://github.com/stjudecloud/university/commit/d5c1498e1cd115cb34f48e3c8612bfd751683c18))
+
+# [1.6.0](https://github.com/stjudecloud/university/compare/v1.5.1...v1.6.0) (2021-02-06)
+
+
+### Features
+
+* **menu:** adds collapsable drop-downs ([#11](https://github.com/stjudecloud/university/issues/11)) ([2f330e4](https://github.com/stjudecloud/university/commit/2f330e4e86955638704719924cc6f45d4ca73b53))
+
+## [1.5.1](https://github.com/stjudecloud/university/compare/v1.5.0...v1.5.1) (2021-02-06)
+
+
+### Bug Fixes
+
+* FKPM -> FPKM ([8ace981](https://github.com/stjudecloud/university/commit/8ace98131a95597d0868316d2e921bfa767a1770))
+* typos ([c6e4f5f](https://github.com/stjudecloud/university/commit/c6e4f5fdb9a0d51cf2753fc1ce12b350a3f80f16))
+
 # [1.5.0](https://github.com/stjudecloud/university/compare/v1.4.1...v1.5.0) (2021-02-05)
 
 

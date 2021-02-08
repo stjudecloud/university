@@ -2,8 +2,6 @@
 title: Filling Out The Data Access Agreement
 ---
 
-# Filling Out The Data Access Agreement 
-
 The [Data Access Agreement (DAA)](../glossary/#data-access-agreement) is a legal document used by St. Jude Cloud to verify the identity and intent of those requesting to access St. Jude Children’s Research Hospital’s genomics data. The document binds you and your institution in agreement to protect, use and share the data appropriately. 
 
 Upon selection of your desired data, you will be prompted to complete a Data Access Agreement if you have not already been approved for access to the selected datasets. In order to simplify the data access request process, an [electronic data access agreement](#the-electronic-data-access-agreement-process) is available for US residents only.

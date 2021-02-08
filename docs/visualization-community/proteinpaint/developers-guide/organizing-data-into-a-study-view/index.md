@@ -839,7 +839,7 @@ formats, the generic bed is the positional format.
 
 In the cohort definition, you have to first declare what the tracks are
 about, then the type/format of the track. The first layer is assay type,
-like RNA-seq, or it can be anything with a name. We will refer to it as
+like RNA-Seq, or it can be anything with a name. We will refer to it as
 "assay type".
 
 Assay types are predefined, allowed values are (case-sensitive):
@@ -892,7 +892,7 @@ config.
 
 ### Track: bedGraph
 
-!!!example bedGraph track example for RNA-seq
+!!!example bedGraph track example for RNA-Seq
 !!!
 
     ```javascript
@@ -919,7 +919,7 @@ config.
 
 ### Track: bigWig
 
-!!!example bigWig example for RNA-seq
+!!!example bigWig example for RNA-Seq
 !!!
 
 
@@ -986,7 +986,7 @@ Overlaying of two numerical tracks, noted by "track1" and "track2".
     },
     ```
 
-### Track: junction (RNA-seq junction reads)
+### Track: junction (RNA-Seq junction reads)
 
 !!!example **junction** example, along with a "browserview" trigger for displaying
 !!!

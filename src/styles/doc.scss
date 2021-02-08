@@ -102,6 +102,10 @@
     @apply my-5;
   }
 
+  li p {
+    @apply my-0;
+  }
+
   h1 {
     @apply text-4xl;
     @apply text-black;
@@ -137,6 +141,12 @@
     @apply items-end;
     @apply justify-end;
     @apply h-full;
+
+    &.before {
+      @media (max-width: 767px) {
+        display: none;
+      }
+    }
 
     svg {
       visibility: visible;

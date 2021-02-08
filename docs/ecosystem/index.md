@@ -2,8 +2,6 @@
 title: About our Ecosystem
 ---
 
-# About our Ecosystem
-
 ## Overview
 
 The St. Jude Cloud ecosystem has been designed with three main entry points, called Research Domains, to guide users along a path of content that will be most relevant to their research interests. Cards for these top-level Research Domains (Pediatric Cancer, Cancer Survivorship, and Non-Cancerous Diseases) are the first selections you will be presented with on [our homepage](https://stjude.cloud). 

@@ -2,9 +2,6 @@
 title: Studies
 ---
 
-
-# Studies
-
 [Study pages](https://stjude.cloud/studies.html) discuss how St. Jude has generated and used a particular dataset. St. Jude Cloud currently hosts datasets from the following studies:
 
 * [Pediatric Cancer Genome Project (PCGP)](https://stjude.cloud/studies/pediatric-cancer-genome-project)

@@ -3,8 +3,6 @@ title: Frequently Asked Questions
 ---
 
 
-# Frequently Asked Questions
-
 !!!info
 
 This page contains information about site-wide St. Jude Cloud frequently asked questions. For more detailed information, we highly recommend that you also visit the dedicated frequently asked questions page for the application you are using.

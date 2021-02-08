@@ -1,8 +1,7 @@
 ---
-title: Upload Data (Cluster)
+title: Uploading Data from St. Jude HPC to DNAnexus
 ---
 
-# Uploading Data from St. Jude HPC to DNAnexus
 
 This guide describes how to upload data from St. Jude's research computing
 cluster to DNAnexus. It covers logging in to the HPC, creating an interactive

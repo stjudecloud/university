@@ -3,8 +3,6 @@ title: Accounts and Billing
 ---
 
 
-# Accounts and Billing
-
 St. Jude Cloud is built on top of [DNAnexus](https://www.dnanexus.com/), a data-analysis and management platform that specializes in the field of bioinformatics. All of our account management is shared between St. Jude Cloud and DNAnexus. In other words, if you have a DNAnexus account, you automatically have a St. Jude Cloud account, and vice versa. 
 
 Each new user receives a $50 credit upon creation of their St. Jude Cloud account with DNAnexus (see the [note](#billing-setup) in the Billing Setup section). If you use this initial credit and are interested in additional funding, please reach out to support@stjude.cloud as additional collaboration funds may be available.

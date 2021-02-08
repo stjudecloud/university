@@ -2,8 +2,6 @@
 title: Creating a Cloud Application
 ---
 
-# Creating a Cloud Application
-
 This guide will take you through the process of writing an application for working with and manipulating the St. Jude data you've requested. By creating your own application, you will be able to wrap genomic tools and packages from external sources, as well as any tool or application you might have written yourself.
 
 !!!tip

@@ -3,8 +3,6 @@ title: Command Line Interaction
 ---
 
 
-# Command Line Interaction
-
 Before you begin interacting with St. Jude Cloud Platform from the
 command line, you'll need to understand some details on the underlying
 architecture of the platform. The St. Jude Cloud Platform is built on

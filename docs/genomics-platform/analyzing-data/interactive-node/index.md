@@ -1,8 +1,6 @@
 ---
-title: Interactive Nodes
+title: Interactive Nodes in the Cloud
 ---
-
-# Interactive Nodes in the Cloud
 
 Apart from [creating and running cloud apps], you can request an interactive node in the cloud to use for iterative development. This can be particularly useful if you want to run some quick analyses on the cloud, want to run tools without creating an app, or want to submit jobs similar to `bsub` on the local St. Jude HPC.
 

@@ -19,10 +19,10 @@ of Whole Genomes] (PCAWG) project.
 
 ## Inputs
 
-| Name                           | Type           | Description                                                               | Example               |
-|--------------------------------|----------------|---------------------------------------------------------------------------|-----------------------|
-| [VCF(s)]                       | Array of files | One or more VCF sources. The files can be either uncompressed or gzipped. | [`*.vcf`, `*.vcf.gz`] |
-| Genome build                   | String         | The genome build used as reference. [default: "GRCh38"]                   | GRCh38                |
+| Name         | Type           | Description                                                               | Example               |
+| ------------ | -------------- | ------------------------------------------------------------------------- | --------------------- |
+| [VCF(s)]     | Array of files | One or more VCF sources. The files can be either uncompressed or gzipped. | [`*.vcf`, `*.vcf.gz`] |
+| Genome build | String         | The genome build used as reference. [default: "GRCh38"]                   | GRCh38                |
 
 [VCF(s)]: #vcfs
 
@@ -40,7 +40,7 @@ sample name.
 ## Outputs
 
 | Name                                 | Type | Description                                                                  |
-|--------------------------------------|------|------------------------------------------------------------------------------|
+| ------------------------------------ | ---- | ---------------------------------------------------------------------------- |
 | [Raw signature activities]           | File | A tab-delimited file of the raw results with signature activities per sample |
 | [Signature activities visualization] | File | HTML file for interactive plotting                                           |
 
@@ -105,9 +105,9 @@ samples are omitted.
 <h5>Example</h5>
 
 
-| Samples           | SJMEL001001_D1 | … | SJNBL001_D |
-|-------------------|---------------:|:-:|-----------:|
-| Signature Subs-01 |            233 | … |         13 |
+| Samples           | SJMEL001001_D1 |   …   | SJNBL001_D |
+| ----------------- | -------------: | :---: | ---------: |
+| Signature Subs-01 |            233 |   …   |         13 |
 
 
 ### Signature activities visualization
@@ -145,7 +145,7 @@ None yet! If you have any questions not covered here, feel free to reach out
 on [our contact
 form](https://hospital.stjude.org/apps/forms/fb/st-jude-cloud-contact/).
 
-# References
+## References
 
   * Alexandrov, L.B., Kim, J., Haradhvala, N.J. _et al_. The repertoire of
     mutational signatures in human cancer. _Nature_ **578**, 94–101 (2020).
