@@ -164,4 +164,31 @@
       }
     }
   }
+
+  #docs-footer-nav {
+    @apply mt-8;
+    @apply flex;
+    @apply flex-col;
+    @apply md:flex-row;
+    @apply justify-between;
+
+    .footer-button {
+      @apply flex;
+      @apply items-center;
+      @apply border;
+      @apply border-coolGray-200;
+      @apply rounded-full;
+      @apply hover:border-secondary;
+      @apply text-black;
+      @apply hover:text-secondary;
+      @apply py-4;
+      @apply px-8;
+      @apply shadow-xl;
+      @apply mb-6;
+      @apply md:mb-0;
+      @apply transition;
+      @apply duration-300;
+      @apply hover:no-underline;
+    }
+  }
 }

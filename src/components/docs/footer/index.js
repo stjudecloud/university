@@ -1,15 +1,31 @@
 import React from "react"
-import { Link } from "gatsby"
 import FooterButton from "./FooterButton"
+import PageHistory from "./PageHistory"
+import PropTypes from "prop-types"
 
-const DocFooterNavigation = ({ previousPage = null, nextPage = null }) => {
+const DocsFooter = ({ previousPage, nextPage, commits }) => {
   return (
-    <div className="mt-8 flex flex-col md:flex-row justify-between">
-      <FooterButton page={previousPage} forward={false} />
-      <div style={{ flex: "1" }}></div>
-      <FooterButton page={nextPage} forward={true} />
+    <div id="docs-footer">
+      <div id="docs-footer-nav">
+        <FooterButton page={previousPage} forward={false} />
+        <div style={{ flex: "1" }}></div>
+        <FooterButton page={nextPage} forward={true} />
+      </div>
+      <div>{commits && <PageHistory commits={commits} />}</div>
     </div>
   )
 }
 
-export default DocFooterNavigation
+DocsFooter.propTypes = {
+  previousPage: PropTypes.any,
+  nextPage: PropTypes.any,
+  commits: PropTypes.any,
+}
+
+DocsFooter.propTypes = {
+  previousPage: null,
+  nextPage: null,
+  commits: [],
+}
+
+export default DocsFooter

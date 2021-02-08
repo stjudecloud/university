@@ -1,16 +1,53 @@
 import React from "react"
+import moment from "moment"
 import ContributorsBlock from "./contributors"
+import { Link } from "gatsby"
+import PropTypes from "prop-types"
 
-const DocsHeader = ({ title, contributors, timeToRead }) => {
+const DocsHeader = ({ title, timeToRead, contributors, commits }) => {
+  let latestCommit = null
+  let latestCommitDate = null
+  for (let i = 0; i < commits.length; i++) {
+    const commit = commits[i]
+    if (!commit.date) continue
+    const currentCommitDate = moment(commit.date)
+    if (!latestCommit || latestCommitDate < currentCommitDate) {
+      latestCommit = commit
+      latestCommitDate = currentCommitDate
+    }
+  }
+
   return (
-    <div className="content mt-20 xl:mt-16 mb-8">
+    <div id="docs-header" className="content mt-20 xl:mt-16 mb-8">
       <h1 style={{ marginBottom: "5px" }}>{title}</h1>
-      <div style={{ marginBottom: "15px" }}>
-        <i>Time to Read: {timeToRead} mins</i>
+      <div className="flex italic" style={{ marginBottom: "15px" }}>
+        {latestCommit && (
+          <span>
+            Last updated: {moment(latestCommitDate).fromNow()} (
+            <Link to="#page-history">view history</Link>)
+          </span>
+        )}
+        <span>
+          {latestCommit && <span>{`, `}</span>} Time to read: {timeToRead} mins
+        </span>
       </div>
-      <ContributorsBlock contributors={contributors} />
+      {contributors && <ContributorsBlock contributors={contributors} />}
     </div>
   )
+}
+
+DocsHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  timeToRead: PropTypes.number.isRequired,
+  contributors: PropTypes.any,
+  commits: PropTypes.any,
+}
+
+DocsHeader.defaultProps = {
+  title: null,
+  contributors: [],
+  timeToRead: -1,
+  commits: [],
 }
 
 export default DocsHeader

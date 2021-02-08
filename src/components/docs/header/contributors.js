@@ -1,4 +1,5 @@
 import React from "react"
+import { PropTypes } from "prop-types"
 
 const ContributorsBlock = ({ contributors }) => {
   return (
@@ -8,7 +9,9 @@ const ContributorsBlock = ({ contributors }) => {
           key={e.login}
           alt={`Avatar for ${e.login}`}
           title={e.login}
-          href={e.profile_url}
+          href={e.url}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <img
             src={e.avatar_url}
@@ -21,6 +24,14 @@ const ContributorsBlock = ({ contributors }) => {
       ))}
     </div>
   )
+}
+
+ContributorsBlock.propTypes = {
+  contributors: PropTypes.any.isRequired,
+}
+
+ContributorsBlock.defaultProps = {
+  contributors: [],
 }
 
 export default ContributorsBlock
