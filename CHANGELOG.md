@@ -1,3 +1,10 @@
+## [1.8.2](https://github.com/stjudecloud/university/compare/v1.8.1...v1.8.2) (2021-02-10)
+
+
+### Bug Fixes
+
+* **navbar:** fixes navbar scrolling when Intercom banner exists ([d8e2d89](https://github.com/stjudecloud/university/commit/d8e2d893df5ae121851cad553bae0a05edfb7728))
+
 ## [1.8.1](https://github.com/stjudecloud/university/compare/v1.8.0...v1.8.1) (2021-02-08)
 
 
