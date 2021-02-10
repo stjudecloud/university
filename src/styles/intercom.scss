@@ -1,0 +1,34 @@
+/**
+ * This is a shim to compensate for the way that Intercom (intercom.com) banners
+ * work. It's a decently complicated reason for doing it this way, but here are
+ * the high points to any future developers who need to alter this code:
+ *
+ *  - Intercom currently implements their banners as a separate <iframe />
+ *    element outside of the React DOM tree. Their code takes the top-level
+ *    <body> element, adds a margin-top of 50 pixels, and changes the height 
+ *    to calc(100% - 50px). 
+ *  - Our navbar, which is currently has `position: sticky` and `top: 0`
+ *    efficiently moves down when the margin-top is applied via the above
+ *    mechanism, but if you try to scroll down, the navbar gets hidden behind
+ *    the banner (because the top = 0px, which is relative to the viewport
+ *    scroll position). 
+ *    Changing to `top: 50px` solves this problem, but that attribute only needs
+ *    to be set when the banner is shown.
+ *  - One way that would have been nice to solve this problem is by
+ *    computationally deriving what the top attribute should be in React. But
+ *    alas, as I said above, the banner is in an embedded iframe and isn't
+ *    accessible from within the React DOM. Any solutions to try to dig into
+ *    that iframe, add listeners from menu popin and popout were way to hacky. 
+ *  - Instead, I opted for this just as hacky but way easier to implement css
+ *    selector. In short, Intercom _always_ applies a margin top of 50px and a
+ *    height of `calc(100% - 50px)` when showing a banner. Since using `calc` on
+ *    a body element is exceedingly rare, I made the assumption that I could
+ *    just write a CSS selector to target anytime `calc` was included in the
+ *    `style` element of the body. If the style element contains that, then the
+ *    assumption is that the banner is visible, and we manually apply a top
+ *    position of 50px. Once the banner is closed, `calc` will be removed from
+ *    the style element, and this css rule will no longer fire. Hope that makes sense!
+ **/
+body[style*="calc"] nav {
+  top: 50px !important;
+}
