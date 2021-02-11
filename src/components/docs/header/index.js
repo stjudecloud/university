@@ -7,13 +7,16 @@ import PropTypes from "prop-types"
 const DocsHeader = ({ title, timeToRead, contributors, commits }) => {
   let latestCommit = null
   let latestCommitDate = null
-  for (let i = 0; i < commits.length; i++) {
-    const commit = commits[i]
-    if (!commit.date) continue
-    const currentCommitDate = moment(commit.date)
-    if (!latestCommit || latestCommitDate < currentCommitDate) {
-      latestCommit = commit
-      latestCommitDate = currentCommitDate
+
+  if (commits) {
+    for (let i = 0; i < commits.length; i++) {
+      const commit = commits[i]
+      if (!commit.date) continue
+      const currentCommitDate = moment(commit.date)
+      if (!latestCommit || latestCommitDate < currentCommitDate) {
+        latestCommit = commit
+        latestCommitDate = currentCommitDate
+      }
     }
   }
 

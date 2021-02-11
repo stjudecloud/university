@@ -77,11 +77,6 @@ exports.onCreateNode = async ({ node, getNode, actions }) => {
     if (process.env.GITHUB_TOKEN) {
       await registerGithubFields(relativeFilepath, node, createNodeField)
     } else {
-      console.log(
-        "No GITHUB_TOKEN was passed in, so any information pulled from \n" +
-          "a GitHub API request (e.g. contributors and commits) will not \n" +
-          "be included in this build!"
-      )
       createNodeField({
         node,
         name: `commits`,
@@ -132,4 +127,48 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+}
+
+exports.createSchemaCustomization = ({ actions, reporter }) => {
+  const { createTypes } = actions
+
+  if (!process.env?.GITHUB_TOKEN) {
+    reporter.warn(
+      "No GITHUB_TOKEN was passed in, so any information pulled from \n" +
+        "a GitHub API request (e.g. contributors and commits) will not \n" +
+        "be included in this build! If you're developing locally, you can ignore \n" +
+        "this. If you see this in a production build, however, the lack \n" +
+        "of the GITHUB_TOKEN env variable means contributors and commit history \n" +
+        "embedded within each doc page will be missing."
+    )
+  }
+
+  const typeDefs = `
+    type MarkdownRemark implements Node {
+      fields: Fields
+    }
+
+    type Fields {
+      relativeFilepath: String!
+      slug: String!
+      commits: [Commit!]
+      contributors: [Contributor!]
+    }
+
+    type Contributor {
+      login: String!
+      avatar_url: String!
+      url: String!
+      commits: Int
+    }
+
+    type Commit {
+      url: String!
+      message: String!
+      date: String!
+      author: Contributor!
+      committer: Contributor!
+    }
+  `
+  createTypes(typeDefs)
 }

@@ -50,7 +50,6 @@ class BaseLayout extends Component {
       fileAbsolutePath,
       timeToRead,
     } = markdownRemark
-    contributors.forEach(e => console.log(e.login))
     let currentModule = null
 
     let longestMatchingPathPrefix = -1
