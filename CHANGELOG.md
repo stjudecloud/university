@@ -1,3 +1,10 @@
+## [1.8.3](https://github.com/stjudecloud/university/compare/v1.8.2...v1.8.3) (2021-02-11)
+
+
+### Bug Fixes
+
+* fixes rendering of development site without GITHUB_TOKEN env variable ([d8f6535](https://github.com/stjudecloud/university/commit/d8f653550f02eea9b29b35f734dc5c2587855340))
+
 ## [1.8.2](https://github.com/stjudecloud/university/compare/v1.8.1...v1.8.2) (2021-02-10)
 
 
