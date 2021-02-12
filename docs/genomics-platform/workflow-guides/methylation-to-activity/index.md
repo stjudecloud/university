@@ -47,7 +47,7 @@ Model weights (.h5) file: 1) H3K27ac or 2) H3K4me3
 | ------ | --------------------------------------------------------------------- |
 | chrom  | chromosome ID, e.g. 1,2,3 ...22                                       |
 | pos    | position of 5' cytosine of a CpG on the positive strand               |
-| mval   | caluclated mvalue of a given CpG, typically M-value=log2(Beta/1-Beta) |
+| mval   | calculated mvalue of a given CpG, typically M-value=log2(Beta/1-Beta) |
 
 ## Outputs
 
