@@ -1,5 +1,12 @@
 const fetch = require("node-fetch")
 
+// List of Github users we don't want to be shown
+// in the "contributors" section of the docs.
+
+const BLACKLISTED_LOGINS = [
+  "web-flow", // # https://github.com/web-flow
+]
+
 const getContributors = (commits = []) => {
   let contributors = {}
 
@@ -42,12 +49,9 @@ const getContributors = (commits = []) => {
     .sort((a, b) => {
       return b.commits - a.commits
     })
-    .filter(c => c !== undefined)
+    .filter(c => c !== undefined && BLACKLISTED_LOGINS.indexOf(c.login) === -1)
 }
 
-/**
- * For now, we'll just pass along the same commits we get back from the API.
- */
 const getCommits = commits => {
   let results = []
   for (let i = 0; i < commits.length; i++) {
