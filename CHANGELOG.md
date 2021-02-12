@@ -1,3 +1,10 @@
+## [1.9.1](https://github.com/stjudecloud/university/compare/v1.9.0...v1.9.1) (2021-02-12)
+
+
+### Bug Fixes
+
+* **contributors:** blacklists contributors from automated accounts ([6c57ec5](https://github.com/stjudecloud/university/commit/6c57ec542bc83303be91a8ab135b56dfc5f6d297))
+
 # [1.9.0](https://github.com/stjudecloud/university/compare/v1.8.3...v1.9.0) (2021-02-12)
 
 
