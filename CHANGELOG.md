@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/stjudecloud/university/compare/v1.8.3...v1.9.0) (2021-02-12)
+
+
+### Features
+
+* **analytics:** adds Google Analytics to production build ([6a6b1fe](https://github.com/stjudecloud/university/commit/6a6b1fef4bc7093ed28f56a942b7b7db8e11aaa3))
+
 ## [1.8.3](https://github.com/stjudecloud/university/compare/v1.8.2...v1.8.3) (2021-02-11)
 
 
