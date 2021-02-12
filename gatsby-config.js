@@ -186,6 +186,22 @@ if (process.env.GATSBY_ALGOLIA_APP_ID) {
   })
 }
 
+if (process.env.NODE_ENV === "production") {
+  const trackingId = "UA-107924368-1"
+  console.log(`Adding Google Analytics with ID ${trackingId}`)
+  console.log(`because NODE_ENV === 'production'.`)
+  plugins.push({
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId,
+      anonymize: true,
+      respectDNT: true,
+    },
+  })
+} else {
+  console.log(`Skipping Google Analytics because NODE_ENV !== 'production'.`)
+}
+
 module.exports = {
   siteMetadata: {
     title: `St. Jude Cloud University`,
