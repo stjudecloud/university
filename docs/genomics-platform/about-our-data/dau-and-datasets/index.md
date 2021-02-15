@@ -49,7 +49,7 @@ The **Embargo Date** specifies the date that a publishing embargo on the file in
 | Pan-Acute Lymphoblastic Leukemia | January 14, 2019              |
 
 ## List of DAUs
-We currently have the six [Data Access Units (DAU)](#data-access-unit) listed below. [Basic clinical data](../metadata-and-clinical#clinical-and-phenotypic-information) is available for relevant subjects in each DAU. Click on the name below to navigate directly to that DAU's [Study page](../../studies/) for more detailed information.
+We currently have the six [Data Access Units (DAU)](#data-access-unit) listed below. [Basic clinical data](../metadata-and-clinical#clinical-and-phenotypic-information) is available for relevant subjects in each DAU. Click on the name below to navigate directly to that DAU's [Study page](../../../studies/) for more detailed information.
 
 #### [Childhood Cancer Survivor Study (CCSS)](https://stjude.cloud/studies/clinical-genomics)
 
