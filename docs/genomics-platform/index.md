@@ -1,5 +1,5 @@
 ---
-title: St. Jude Cloud Genomics Platform
+title: Genomics Platform
 ---
 
 Genomics Platform is an app that allows you to browse, request, host, and analyze raw next-generation sequencing data. This app is a collaboration between [St. Jude Children's Research Hospital](https://www.stjude.org/), [Microsoft Azure](https://azure.microsoft.com/en-us/), and [DNAnexus](https://www.dnanexus.com/). 
