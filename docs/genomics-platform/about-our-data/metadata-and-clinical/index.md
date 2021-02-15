@@ -259,6 +259,6 @@ The `SAMPLE_INFO.txt` file that comes with your data request will contain the li
 
 ## Similar Topics
 
-[About our Decision Process & Terminology](../glossary)  
-[Making a Data Request](../making-a-data-request)  
+[About our Decision Process & Terminology](../../requesting-data/glossary)  
+[Making a Data Request](../../requesting-data/making-a-data-request)  
 [Managing Data Overview](../../managing-data/working-with-our-data)  

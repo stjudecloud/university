@@ -78,7 +78,6 @@ Once all signatures have been collected, your data access request will be submit
 
 ### Similar Topics
 
-[Studies](../about-our-data/#data-access-units) 
 [Making a Data Request](../making-a-data-request)  
 [Renewing your Data Access](../../managing-data/how-to-fill-out-extension)  
 [Managing Data Overview](../../managing-data/working-with-our-data)

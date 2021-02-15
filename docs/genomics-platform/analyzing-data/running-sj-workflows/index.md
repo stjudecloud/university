@@ -185,4 +185,3 @@ If you have any unanswered questions about how to run one of our in-house workfl
 [Command Line Interaction](../command-line)  
 [Working with our Data Overview](../../managing-data/working-with-our-data)   
 [Upload/Download Data (local)](../../managing-data/upload-local)  
-[Technical FAQs](../../faq/#how-can-i-explore-and-manipulate-data-files-stored-on-the-cloud-without-downloading-the-files-to-my-local-machine)

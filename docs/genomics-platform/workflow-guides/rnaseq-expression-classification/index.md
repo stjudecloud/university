@@ -230,4 +230,4 @@ If you have any questions not covered here, feel free to reach out on [our conta
 
 ## Submit batch jobs on the command line
 
-See [How can I run an analysis workflow on multiple sample files at the same time?](https://www.stjude.cloud/docs/faq/#how-can-i-run-an-analysis-workflow-on-multiple-sample-files-at-the-same-time)
+See [How can I run an analysis workflow on multiple sample files at the same time?](../../faq/#how-can-i-run-an-analysis-workflow-on-multiple-sample-files-at-the-same-time)

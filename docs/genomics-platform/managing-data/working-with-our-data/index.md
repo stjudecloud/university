@@ -50,6 +50,6 @@ There are two primary ways you can interact with data vended to you in St. Jude 
 
 ## Similar Topics
 
-[About our Data](../../requesting-data/about-our-data)   
+[About our Data](../../about-our-data/dau-and-datasets)   
 [Making a Data Request](../../requesting-data/making-a-data-request)  
 [Upload/Download Data (local)](../upload-local)  
