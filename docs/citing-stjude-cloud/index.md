@@ -43,7 +43,7 @@ Please download the Schedule 1(s) (linked in table below) to find dataset specif
 | Pan-Acute Lymphoblastic Leukemia (PanALL) dataset                                         | [<i class="material-icons material-icons-sjcloud-custom">file_download</i> PanALL Schedule 1](../files/PanALL-Schedule1.pdf)                                                                                                                                                     |
 
 !!!note
-If you are unsure what dataset(s) the data that you have been vended belongs to, you can find this information in the sj_datasets column of the [SAMPLE_INFO.txt](../genomics-platform/requesting-data/about-our-data/#metadata) file.
+If you are unsure what dataset(s) the data that you have been vended belongs to, you can find this information in the sj_datasets column of the [SAMPLE_INFO.txt](../genomics-platform/about-our-data/metadata-and-clinical/) file.
 !!!
 
 !!!warning
