@@ -38,7 +38,7 @@ project_space/
 └── SAMPLE_INFO.txt
 ```
 
-The `SAMPLE_INFO.txt` file provides all the [metadata](../../requesting-data/about-our-data/#metadata) associated with the request, and the restricted folder contains all the data for which you were approved separated by file type. 
+The `SAMPLE_INFO.txt` file provides all the [metadata](../../about-our-data/metadata-and-clinical#metadata) associated with the request, and the restricted folder contains all the data for which you were approved separated by file type. 
 
 
 ## Using Your Data

@@ -70,7 +70,7 @@ For the ChIP-Seq workflow, you will see special preset options in the "Launch To
 
 You'll need to decide **(1)** whether you'd like to run broad OR narrow peak
 calling and **(2)** whether you have a case sample and a control sample (preferred)
-OR just a case sample. This will determine which preset you should click in this dropdown. Note that if you are not doing a case/control run, when you get to the [hooking up inputs step](../../analiyzing-data/running-sj-workflows/#hooking-up-inputs) you only need to hook up the case sample.
+OR just a case sample. This will determine which preset you should click in this dropdown. Note that if you are not doing a case/control run, when you get to the [hooking up inputs step](../../analyzing-data/running-sj-workflows/#hooking-up-inputs) you only need to hook up the case sample.
 
 
 ### Broad vs. narrow peak calling
