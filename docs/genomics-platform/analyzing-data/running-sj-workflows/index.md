@@ -3,7 +3,7 @@ title: Running Our Workflows
 ---
 
 
-In this guide, we will explain generally how to run, from end-to-end, any of our in house analysis workflows from within the DNAnexus cloud ecosystem. The [DNAnexus](https://www.dnanexus.com/) genomic ecosystem is the backbone for the computation and storage in St. Jude Cloud. If you'd like, you can read an introduction to the DNAnexus ecosystem [here](https://documentation.dnanexus.com/). If you haven't already, follow [this guide](../requesting-data/data-request.md) to request access to St. Jude data in this secure cloud ecosystem. 
+In this guide, we will explain generally how to run, from end-to-end, any of our in house analysis workflows from within the DNAnexus cloud ecosystem. The [DNAnexus](https://www.dnanexus.com/) genomic ecosystem is the backbone for the computation and storage in St. Jude Cloud. If you'd like, you can read an introduction to the DNAnexus ecosystem [here](https://documentation.dnanexus.com/). If you haven't already, follow [this guide](../../requesting-data/making-a-data-request) to request access to St. Jude data in this secure cloud ecosystem. 
 
 !!!note
 If you use the initial $50 credit from creating your account and are interested in additional funding, please reach out to support@stjude.cloud as additional collaboration funds may be available.
@@ -185,4 +185,3 @@ If you have any unanswered questions about how to run one of our in-house workfl
 [Command Line Interaction](../command-line)  
 [Working with our Data Overview](../../managing-data/working-with-our-data)   
 [Upload/Download Data (local)](../../managing-data/upload-local)  
-[Technical FAQs](../../faq/#how-can-i-explore-and-manipulate-data-files-stored-on-the-cloud-without-downloading-the-files-to-my-local-machine)

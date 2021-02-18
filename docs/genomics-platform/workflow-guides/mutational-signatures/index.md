@@ -31,7 +31,7 @@ of Whole Genomes] (PCAWG) project.
 Mutational Signatures only requires VCFs as inputs. All other inputs are
 optional.
 
-<h4 id="VCF(s)">VCF(s)</h4>
+#### VCF(s)
 
 _VCF(s)_ is a list of VCF inputs. The inputs are expected to be single-sample
 and uncompressed or gzipped. The basename of the filename is used as the

@@ -226,7 +226,7 @@ out on [our contact form](https://hospital.stjude.org/apps/forms/fb/st-jude-clou
 
 ## Submit batch jobs on command line
 
-See [How can I run an analysis workflow on multiple sample files at the same time?](https://www.stjude.cloud/docs/faq/#how-can-i-run-an-analysis-workflow-on-multiple-sample-files-at-the-same-time)
+See [How can I run an analysis workflow on multiple sample files at the same time?](../../faq/#how-can-i-run-an-analysis-workflow-on-multiple-sample-files-at-the-same-time)
 
 ## Similar Topics
 

@@ -33,10 +33,10 @@ Somatic VCF files available on St. Jude Cloud have been generated when possible 
 4. If RNA-Sequencing was performed on a tumor sample, we assessed the presence of any WGS/WES called variants within a [StrongARM][strong-arm] aligned RNA-Seq BAM file.\*
 5. In some Clinical Pilot cohort study cases, validation by custom capture was performed, in which case the read counts of that experiment were reported.\*
 6. Variants were post-processed using an in-house post-processing pipeline that cleans and annotates variants. This pipeline is not currently publicly available.\*
-7. Depending on the cohort, either all variants were manually reviewed by analysts (PCGP cohort) or a subset comprising all coding variants were manually reviewed (Clinical Pilot and G4K). This resulted in the assignment of a validation status for each variant [(see below)](#variant-validation-status).
+7. Depending on the cohort, either all variants were manually reviewed by analysts (PCGP cohort) or a subset comprising all coding variants were manually reviewed (Clinical Pilot and G4K). This resulted in the assignment of a validation status for each variant [(see below)](#sample-variant-validation-and-filtering).
 8. Variant filtering:
     * For patient samples where a complete set of variants have been manually curated and reported as part of an existing publication, the published set of variants was considered the complete set of variants for that patient tumor sample, and used to populate the associated somatic VCF file. This includes samples belonging to the Clinical Pilot cohort study and some of the PCGP cohort studies.
-    * For currently unpublished patient tumor samples, we filtered variants based on metrics derived from the in-house post-processing pipeline and the input of analysts [(see below)](#variant-validation-status). This includes the patient samples in the G4K study, along with some unpublished PCGP and Clinical Pilot cohort study samples.
+    * For currently unpublished patient tumor samples, we filtered variants based on metrics derived from the in-house post-processing pipeline and the input of analysts [(see below)](#sample-variant-validation-and-filtering). This includes the patient samples in the G4K study, along with some unpublished PCGP and Clinical Pilot cohort study samples.
 9. Variants were converted from our in-house formats to VCF format.
 10. Variant coordinates were lifted over to GRCh38_no_alt using [Picard][picard] `LiftoverVcf`.
 11. Variants were normalized using [`vt normalize`][vt].

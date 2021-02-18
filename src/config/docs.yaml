@@ -37,10 +37,10 @@ domains:
           - title: "About Our Data"
             collapsable: true
             pages:
-              - title: "File Formats and Sequencing Information"
-                path: /docs/genomics-platform/about-our-data/file-formats-and-sequencing/
               - title: "Data Sets and Data Access Units"
                 path: /docs/genomics-platform/about-our-data/dau-and-datasets/
+              - title: "File Formats and Sequencing Information"
+                path: /docs/genomics-platform/about-our-data/file-formats-and-sequencing/
               - title: "Metadata and Clinical Information"
                 path: /docs/genomics-platform/about-our-data/metadata-and-clinical/
           - title: "Managing Data"

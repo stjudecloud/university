@@ -38,7 +38,7 @@ project_space/
 └── SAMPLE_INFO.txt
 ```
 
-The `SAMPLE_INFO.txt` file provides all the [metadata](../../requesting-data/about-our-data/#metadata) associated with the request, and the restricted folder contains all the data for which you were approved separated by file type. 
+The `SAMPLE_INFO.txt` file provides all the [metadata](../../about-our-data/metadata-and-clinical#metadata) associated with the request, and the restricted folder contains all the data for which you were approved separated by file type. 
 
 
 ## Using Your Data
@@ -50,6 +50,6 @@ There are two primary ways you can interact with data vended to you in St. Jude 
 
 ## Similar Topics
 
-[About our Data](../../requesting-data/about-our-data)   
+[About our Data](../../about-our-data/dau-and-datasets)   
 [Making a Data Request](../../requesting-data/making-a-data-request)  
 [Upload/Download Data (local)](../upload-local)  

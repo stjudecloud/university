@@ -12,7 +12,7 @@ See [the  list of Data Sets.](#list-of-data-sets)
 
 ## Data Access Unit
 
-A St. Jude Cloud **Data Access Unit (DAU)** is a grouping of data that typically corresponds to a project, study, or Data Set generated at the same time at the same institution. Each DAU has its own governing body of researchers, the [Data Access Committee](#data-access-committee), who preside over the data and who may grant or deny access. Each Data Access Committee is responsible for only one DAU and has its own protocols for approving access to their DAU. Please [contact us](mailto:support@stjude.cloud) if you have questions about committee approval protocols. We currently have 6 DAUs: Pediatric Cancer Genome Project (PCGP), St. Jude Lifetime Cohort Study (SJLIFE), Genomes for Kids (G4K) and Clinical Genomics, Sickle Cell Genome Project (SGP), Childhood Cancer Survivor Study (CCSS), and Pan-Acute Lymphoblastic Leukemia (PanALL). See below for a brief description of each DAU. For a more detailed description please see the respective [Schedule 1(s)](../../../citing-stjude-cloud#Data Set-reference-table).
+A St. Jude Cloud **Data Access Unit (DAU)** is a grouping of data that typically corresponds to a project, study, or Data Set generated at the same time at the same institution. Each DAU has its own governing body of researchers, the [Data Access Committee](#data-access-committee), who preside over the data and who may grant or deny access. Each Data Access Committee is responsible for only one DAU and has its own protocols for approving access to their DAU. Please [contact us](mailto:support@stjude.cloud) if you have questions about committee approval protocols. We currently have 6 DAUs: Pediatric Cancer Genome Project (PCGP), St. Jude Lifetime Cohort Study (SJLIFE), Genomes for Kids (G4K) and Clinical Genomics, Sickle Cell Genome Project (SGP), Childhood Cancer Survivor Study (CCSS), and Pan-Acute Lymphoblastic Leukemia (PanALL). See below for a brief description of each DAU. For a more detailed description please see the respective [Schedule 1(s)](../../../citing-stjude-cloud#dataset-reference-table).
 
 See [the list of Data Access Units.](#list-of-daus)
 
@@ -49,33 +49,59 @@ The **Embargo Date** specifies the date that a publishing embargo on the file in
 | Pan-Acute Lymphoblastic Leukemia | January 14, 2019              |
 
 ## List of DAUs
-We currently have the six [Data Access Units (DAU)](#data-access-unit) listed below. [Basic clinical data](../metadata-and-clinical#clinical-and-phenotypic-information) is available for relevant subjects in each DAU. Click on the name below to navigate directly to that DAU's [Study page](../../studies/) for more detailed information.
+We currently have the six [Data Access Units (DAU)](#data-access-unit) listed below. [Basic clinical data](../metadata-and-clinical#clinical-and-phenotypic-information) is available for relevant subjects in each DAU. Click on the name below to navigate directly to that DAU's [Study page](../../../studies/) for more detailed information. The [Data Sets](#data-set) included in each DAU are listed below, note that some Data Sets are a part of multiple DAU's.
 
 #### [Childhood Cancer Survivor Study (CCSS)](https://stjude.cloud/studies/clinical-genomics)
+CCSS consists of germline-only whole genome sequencing samples of childhood cancer survivors. The following data set(s) are included within CCSS:
 
-#### [Clinical Genomics (Clinical Pilot, G4K, and RTCG)](https://stjude.cloud/studies/clinical-genomics)
+- [Childhood Cancer Survivor Study (CCSS)](#childhood-cancer-survivor-study)
+
+#### [Clinical Genomics](https://stjude.cloud/studies/clinical-genomics)
+Clinical Genomics contains paired-tumor normal whole genome, whole exome, and RNA sequencing data focused on identifying variants that influence the development and behavior of childhood tumors. The following data set(s) are included within Clinical Genomics:
+
+- [Childhood Solid Tumor Network (CSTN)](#childhood-solid-tumor-network)
+- [Cicero Benchmark](#cicero-benchmark)
+- [Clinical Pilot](#clinical-pilot)
+- [Genome 4 Kids (G4K)](#genome-4-kids)
+- [Real-Time Clinical Genomics (RTCG)](#real-time-clinical-genomics)
 
 #### Pan-Acute Lymphoblastic Leukemia (PanALL)
+PanALL contains tumor-only RNA-Seq data focused on the spectrum of ALL subtypes from a variety of contributing sources. The following data set(s) are included within PanALL:
+
+- [Pan-Acute Lymphoblastic Leukemia (PanALL)](#pan-acute-lymphoblastic-leukemia)
 
 #### [Pediatric Cancer Genome Project (PCGP)](https://stjude.cloud/studies/pediatric-cancer-genome-project)
+PCGP contains paired-tumor normal whole genome, whole exome, and RNA sequencing data focused on discovering the genetic origins of pediatric cancer. The following data set(s) are included within PCGP:
+
+- [Childhood Solid Tumor Network (CSTN)](#childhood-solid-tumor-network)
+- [Cicero Benchmark](#cicero-benchmark)
+- [Clinical Pilot](#clinical-pilot)
+- [Pan-Acute Lymphoblastic Leukemia (PanALL)](#pan-acute-lymphoblastic-leukemia)
+- [Pediatric Cancer Genome Project (PCGP)](#pediatric-cancer-genome-project)
 
 #### [Sickle Cell Genome Project (SGP)](https://sickle-cell.stjude.cloud/)
+SGP contains germline-only whole genome sequencing data of Sickle Cell Disease patients from birth to young adulthood. The following data set(s) are included within SGP:
 
-#### [St. Jude Lifetime (SJLIFE)](https://sjlife.stjude.org/)
+- [Sickle Cell Genome Project (SGP)](#sickle-cell-genome-project)
+
+#### [St. Jude Life (SJLIFE)](https://sjlife.stjude.org/)
+SJLIFE contains germline-only whole genome and whole exome sequencing data focused on studying the long-term adverse outcomes associated with cancer and cancer-related therapy. The following data set(s) are included within SJLIFE:
+
+- [St. Jude Life (SJLIFE)](#st-jude-life)
 
 ## List of Data Sets
-We currently have the ten [Data Sets](#Data Set) listed below. Additional information can also be seen including which [Data Access Units (DAU)](#data-access-unit) the Data Set belongs to, tissue type, sequencing type, number of samples, additional links, and a brief description.
+We currently have the ten [Data Sets](#data-set) listed below. Additional information can also be seen including which [Data Access Units (DAU)](#data-access-unit) the Data Set belongs to, tissue type, sequencing type, number of samples, additional links, and a brief description.
 
-### Childhood Cancer Survivor Study (CCSS)
+### Childhood Cancer Survivor Study
 **DAU**: CCSS | **Tissue Type**: Germline Only | **Sequencing Type**: WGS | **Samples**: 2912 | **[Additional Information About CCSS](https://ccss.stjude.org/)**
 
-CCSS is a germline-only Data Set consisting of whole genome sequencing of childhood cancer survivors. CCSS is a multi-institutional, multi-disciplinary, NCI-funded collaborative resource established to evaluate long-term outcomes among survivors of childhood cancer. It is a retrospective cohort consisting of >24,000 five-year survivors of childhood cancer who were diagnosed between 1970-1999 at one of 31 participating centers in the U.S. and Canada. The primary purpose of this sequencing of CCSS participants is to identify all inherited genome sequence and structural variants influencing the development of childhood cancer and occurrence of long-term adverse outcomes associated with cancer and cancer-related therapy. 
+Childhood Cancer Survivor Study (CCSS) is a germline-only Data Set consisting of whole genome sequencing of childhood cancer survivors. CCSS is a multi-institutional, multi-disciplinary, NCI-funded collaborative resource established to evaluate long-term outcomes among survivors of childhood cancer. It is a retrospective cohort consisting of >24,000 five-year survivors of childhood cancer who were diagnosed between 1970-1999 at one of 31 participating centers in the U.S. and Canada. The primary purpose of this sequencing of CCSS participants is to identify all inherited genome sequence and structural variants influencing the development of childhood cancer and occurrence of long-term adverse outcomes associated with cancer and cancer-related therapy. 
 
 !!!warning CCSS: Potential Bacterial Contamination
 
 Samples for the Childhood Cancer Survivorship Study were collected by sending out Buccal swab kits to enrolled participants and having them complete the kits at home. This mechanism of collecting saliva and buccal cells for sequencing is highly desirable because of its non-invasive nature and ease of execution. However, collection of samples in this manner also has higher probability of contamination from external sources (as compared to, say, samples collected using blood). We have observed some samples in this cohort which suffer from bacterial contamination. To address this issue, we have taken the following steps:
 
-1. We have estimated the bacterial contamination rate and annotated each of the samples in the CCSS cohort. For each sample, you will find the estimated contamination rate in the `Description` field of the `SAMPLE_INFO.txt` file that is vended with your data (and as a property on the DNAnexus file). For information on this field, see the [Metadata specification](#metadata).
+1. We have estimated the bacterial contamination rate and annotated each of the samples in the CCSS cohort. For each sample, you will find the estimated contamination rate in the `Description` field of the `SAMPLE_INFO.txt` file that is vended with your data (and as a property on the DNAnexus file). For information on this field, see the [Metadata specification](../metadata-and-clinical#metadata).
 2. Using this estimated contamination rate, we have removed 82 samples which exhibited large rates of bacterial contamination.
 3. For the remaining samples, we have provided the `BAM` file as aligned with `bwa mem` with default parameters. We have observed that there are instances of reads originating from bacterial contamination that are erroneously mapped to the human genome and display a *very* low mapping quality. Please be advised that we have kept these reads as they were aligned and have not yet made any attempt to unmap these reads. Any analysis you perform on these samples will need to take this into account!
 4. Last, we will be working over the coming months to unmap the reads originating from bacterial contamination and release updated `BAM` files along with the associated `gVCF` files from Microsoft Genomics Service.
@@ -83,7 +109,7 @@ Samples for the Childhood Cancer Survivorship Study were collected by sending ou
 With any questions on the nature or implications of this warning, please contact us at [support@stjude.cloud](mailto:support@stjude.cloud).
 !!!
 
-### Childhood Solid Tumor Network (CSTN)
+### Childhood Solid Tumor Network
 **DAU**: PCGP and Clinical Genomics | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: WGS, WES, RNA-Seq | **Samples**: 143 | **[Additional Information About CSTN](https://www.stjude.org/research/resources-data/childhood-solid-tumor-network.html)**
 
 The Childhood Solid Tumor Network (CSTN) is a St. Jude Children's Research Hospital initiative to disseminate its childhood solid tumor resources and data. The raw Data Sets from this initiative are made available via St. Jude Cloud. 
@@ -98,32 +124,32 @@ The CICERO Data Set contains the samples which were selected for use in the [CIC
 
 The Clinical Pilot project was a retrospective study that evaluated the accuracy and demonstrated the feasibility of three-platform sequencing in a CAP/CLIA setting. The findings of this project were published in [Nature Communications](https://pubmed.ncbi.nlm.nih.gov/30262806/)
 
-### Genome 4 Kids (G4K) 
+### Genome 4 Kids 
 **DAU**: Clinical Genomics | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: WGS, WES, RNA-Seq | **Samples**: 571 | **[Additional Information About Clinical Genomics](https://www.stjude.cloud/studies/clinical-genomics)**
 
 The goal of the Genomes 4 Kids (G4K) prospective study was to determine whether the three-platform sequencing protocol laid out in the Clinical Pilot project could generate results on a clinical timeline in practice and to evaluate the prevalence of actionable findings. The study concluded with just over 300 patients, and the publication is currently in review.
 
-### Pan-Acute Lymphoblastic Leukemia (PanALL)
+### Pan-Acute Lymphoblastic Leukemia
 **DAU**: PanALL | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: RNA-Seq | **Samples**: 735
 
-PanALL comprises cases of B-progenitor and T-lineage ALL encompassing the spectrum of ALL subtypes across the age continuum. Samples sequenced were obtained from multiple sites, centers and cooperative groups including St. Jude Children’s Research Hospital, The Children’s Oncology Group, The Alliance – Cancer and Leukemia Group B, the Eastern Cooperative Oncology Group, The Southwestern Oncology group, MD Anderson Cancer Center, City of Hope National Medical Center, Princess Margaret Cancer Center, Northern Italy Leukemia Group, and UKALL.
+Pan-Acute Lymphoblastic Leukemia (PanALL) comprises cases of B-progenitor and T-lineage ALL encompassing the spectrum of ALL subtypes across the age continuum. Samples sequenced were obtained from multiple sites, centers and cooperative groups including St. Jude Children’s Research Hospital, The Children’s Oncology Group, The Alliance – Cancer and Leukemia Group B, the Eastern Cooperative Oncology Group, The Southwestern Oncology group, MD Anderson Cancer Center, City of Hope National Medical Center, Princess Margaret Cancer Center, Northern Italy Leukemia Group, and UKALL.
 
-### Pediatric Cancer Genome Project (PCGP)
-**DAU**: PCGP and Clinical Genomics | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: WGS, WES, RNA-Seq | **Samples**: 3031 | **[Additional Information About PCGP](https://stjude.cloud/studies/pediatric-cancer-genome-project)**
+### Pediatric Cancer Genome Project
+**DAU**: PCGP | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: WGS, WES, RNA-Seq | **Samples**: 3031 | **[Additional Information About PCGP](https://stjude.cloud/studies/pediatric-cancer-genome-project)**
 
-The Pediatric Cancer Genome Project is a collaboration between St. Jude Children's Research Hospital and the McDonnell Genome Institute at Washington University School of Medicine that sequenced the genomes of over 600 pediatric cancer patients.
+The Pediatric Cancer Genome Project (PCGP) is a collaboration between St. Jude Children's Research Hospital and the McDonnell Genome Institute at Washington University School of Medicine that sequenced the genomes of over 600 pediatric cancer patients.
 
-### Real-time Clinical Genomics (RTCG) 
+### Real-time Clinical Genomics 
 **DAU**: Clinical Genomics | **Tissue Type**: Paired Tumor-Normal | **Sequencing Type**: WGS, WES, RNA-Seq | **Samples**: 2,371 | **[Additional Information About Clinical Genomics](https://www.stjude.cloud/studies/clinical-genomics)**
 
 Real-time Clinical Genomics (RTCG) is a [first of its kind initiative](https://www.stjude.org/media-resources/news-releases/2019-medicine-science-news/st-jude-cloud-to-provide-access-to-real-time-clinical-genome-sequencing-data.html), whereby St. Jude began releasing data from the clinical NGS service consented for research use to St. Jude Cloud in monthly batches to give researchers access to valuable data as quickly as possible.
 
-### Sickle Cell Genome Project (SGP)
+### Sickle Cell Genome Project
 **DAU**: SGP | **Tissue Type**: Germline Only | **Sequencing Type**: WGS | **Samples**: 807 | **[Additional Information About SGP](https://sickle-cell.stjude.cloud/)**
 
 SGP is a germline-only Data Set of Sickle Cell Disease (SCD) patients from birth to young adulthood.The Sickle Cell Genome Project (SGP) is a collaboration between St. Jude Children’s Research Hospital and Baylor College of Medicine focused on identifying genetic modifiers that contribute to various health complications in SCD patients. Additional objectives include, but are not limited to, developing accurate methods to characterize germline structural variants in highly homologous globin locus and blood typing.
 
-### St. Jude LIFE (SJLIFE) 
+### St. Jude Life 
 **DAU**: SJLIFE | **Tissue Type**: Germline Only | **Sequencing Type**: WGS, WES | **Samples**: 4838 | **[Additional Information About SJLIFE](https://sjlife.stjude.org/)**
 
 St. Jude Lifetime (SJLIFE) is a longevity study from St. Jude Children's Research Hospital that aims to identify all inherited genome sequence and structural variants influencing the development of childhood cancer and occurrence of long-term adverse outcomes associated with cancer and cancer-related therapy. This cohort contains unpaired germline samples and does not contain tumor samples. 

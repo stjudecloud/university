@@ -21,13 +21,13 @@ MethylationToActivity (M2A) is a machine learning framework using convolutional 
 | WGBS data file                                                     | Input file | M-values by chromosome and position (non-standard format, see below).                                                                         | *.txt (tab-delimited)                          |
 | Promoter region definition file (*provided, or user defined*)      | Input file | File describing promoter regions to be predicted. Provided regions include both hg19 and GRCh38 definitions (non-standard format, see below). | *.txt (tab-delimited)                          |
 
-!!!Note App-provided model inputs:
+!!!note App-provided model inputs:
 Model weights (.h5) file: 1) H3K27ac or 2) H3K4me3 
 !!!
 
-### Input file configuration
+## Input file configuration
 
-#### Promoter region definition file (if user defined):
+### Promoter region definition file (if user defined):
 
 | Column     | Description                                   |
 | ---------- | --------------------------------------------- |
@@ -41,7 +41,7 @@ Model weights (.h5) file: 1) H3K27ac or 2) H3K4me3
 | RStart     | TSS - 1000bp                                  |
 | REnd       | TSS + 1000bp                                  |
 
-#### WGBS data file:
+### WGBS data file:
 
 | Column | Description                                                           |
 | ------ | --------------------------------------------------------------------- |

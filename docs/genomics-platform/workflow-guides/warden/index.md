@@ -291,7 +291,7 @@ Several files on DNAnexus allow the data to be viewed in the Protein
 Paint viewer. (Note: We plan to have links downloaded in the future to
 allow the viewing of these files off of DNAnexus.)
 
-**LIMMA differential expression viewer**
+#### LIMMA differential expression viewer
 
 Within LIMMA/VIEWERS directory (note if no comparisons meet the 3 sample
 condition, the LIMMA folder will not exist), there will be a viewer file
@@ -306,13 +306,13 @@ these genes will show up on the plots.
 
 ![](./ma_volcano.png)
 
-**Simple differential expression viewer**
+#### Simple differential expression viewer
 
 There will also be a viewer for the simple differential expression
 analysis in SIMPLE\_DIFEX/VIEWERS. The P-value for the results have all
 been set to 1, so the volcano plot will not be relevant.
 
-**bigWig viewer**
+#### bigWig viewer
 
 In the BIGWIG\_VIEWER directory there will be a bigwigViewer file.
 Select this file and then 'Launch viewer'. A graph of coverage for the
@@ -510,7 +510,7 @@ BED graph files used to generate bigWig files are here.
 -----------------
 #### FastQC
 
-See [Quality Control Results (FastQC)](#quality-control-results-FastQc)
+See [Quality Control Results (FastQC)](#quality-control-results-fastqc)
 
 -----------------
 #### HTSEQ
@@ -559,7 +559,7 @@ These files are used internally by the pipeline.
 **SIMPLE_DIFEX**
 
 **mdsPlot.normCPM.png** and **simpleDEPlot.png** are described in
-[Initial analysis of results](#initial-analysis-of-results)
+[Interpreting Primary Results](#interpreting-primary-results)
 
 **simpleDE.txt** are describe in [Differential expression
 results](#differential-expression-results)
