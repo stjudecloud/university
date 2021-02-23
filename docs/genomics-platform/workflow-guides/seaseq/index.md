@@ -127,7 +127,7 @@ different output directories in more detail.
 
 ### Reads Alignment and Filtering
 
-Reads are stingently mapped to reference genome using [Bowtie] 
+Reads are stringently mapped to reference genome using [Bowtie] 
 `bowtie -l readlength -p 20 -k 2 -m 2 --best -S`. 
 
 Mapped BAMs are further processed by removal of duplicate reads using [SAMTools] 
