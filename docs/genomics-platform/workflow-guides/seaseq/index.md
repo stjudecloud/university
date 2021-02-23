@@ -4,7 +4,7 @@ title: SEASEQ
 
 ## Overview
 
-**Single-End Analysis SEQuencing pipeline** (abbreviated as **SEASEQ**) is a comprehensive automated computational pipeline. It leverages field-standard, open-source tools for processing and analyzing 
+**Single-End Analysis SEQuencing pipeline** (abbreviated as **SEASEQ**) is a comprehensive automated computational pipeline that leverages field-standard, open-source tools for processing and analyzing 
 for all ChIP-Seq/CUT&RUN data analysis.
 
 SEASEQ performs extensive analyses from the raw output of the experiment, including alignment, peak calling, motif analysis, read coverage profiling, clustered peak (e.g. super-enhancer) identification, and quality assessment metrics, as well as automatic interfacing with data in [GEO]/[SRA]. The easy-to-use and versatile format of SEASEQ makes it a reliable and efficient resource for ensuring high quality ChIP-Seq analysis.
