@@ -172,7 +172,7 @@ The motifs are identified using the peak regions and 100bp window around peak su
 ### Reads Coverage Profiling
 
 Read density profiling of major genomic regions such as promoters and gene body using [BamToGFF].
-We generate coverage graphs and heatmaps plots with additional custom R scripts for further customization.
+We generate coverage graphs and heatmap plots with additional custom R scripts for further customization.
 
 ### Peaks Annotation
 
