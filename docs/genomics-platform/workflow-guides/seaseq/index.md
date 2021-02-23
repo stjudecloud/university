@@ -152,7 +152,7 @@ overlapping gene information.
 ### Peaks Display
 
 Coverage graphical files are generated in different visualization formats; 
-[WIG], [bigWig] and [TDF] formats, and normalized for display on 
+[WIG], [bigWig], and [TDF] formats, and normalized for display on 
 multiple genomic browsers.
 
 Parameter specified to generate coverage files: `macs14 --space=50 --shiftsize=200 -w -S`.
