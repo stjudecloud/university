@@ -18,7 +18,7 @@ SEASEQ performs extensive analyses from the raw output of the experiment, includ
 |   Name                        |   Type                | Description                                                 |  Example            |
 |-------------------------------|-----------------------|-------------------------------------------------------------|---------------------|
 |   FASTQ files                 |   Array of files      |   One or more FASTQ files. The files should be gzipped.     |   [`*.gz`]          |
-|   SRA identifiers (SRR)       |   Array of strings    |   One of more SRRs.                                         |   [`SRR12345678`]   |
+|   SRA identifiers (SRR)       |   Array of strings    |   One or more SRA run accession each containing a SRR prefix.                                         |   [`SRR12345678`]   |
 |   Genome Reference            |   File                |   The genome reference.                                     |   [`*.fa`]          |
 |   Genome Bowtie indexes       |   Array of files      |   The genome bowtie v1 indexes. Should be six index files.  |   [`*.ebwt`]        |
 |   Gene Annotation             |   File                |   The gene annotation.                                      |   [`*.gtf`]         |
