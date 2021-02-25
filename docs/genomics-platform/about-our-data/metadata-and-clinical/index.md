@@ -1,9 +1,11 @@
 ---
 title: Metadata and Clinical Information
+redirect_from:
+  - /docs/guides/data/metadata/
 ---
 
 
-## Metadata 
+## Metadata
 
 Each data request includes a text file called `SAMPLE_INFO.txt` that provides a number of file level properties (sample identifiers, clinical attributes, etc).
 
@@ -44,7 +46,7 @@ Also included is a set of phenotypic information queried from the physician or r
 
 !!!note
 During the release of the St. Jude Cloud paper, we undertook a massive effort to curate and harmonize diagnosis values within St. Jude Cloud. We provide two values for diagnosis, and you should select carefully which value you use based on your use case:
-    
+
 1. `sj_diseases`, which, since August 18, 2020, represents the harmonized diagnosis value curated by scientists on the St. Jude Cloud team (before that time it represented the diagnosis known at time of sequencing).
 2. `attr_diagnosis`, which contains the unharmonized diagnosis value directly as it was submitted to us from the lab or PI.
 
@@ -259,6 +261,6 @@ The `SAMPLE_INFO.txt` file that comes with your data request will contain the li
 
 ## Similar Topics
 
-[About our Decision Process & Terminology](../../requesting-data/glossary)  
-[Making a Data Request](../../requesting-data/making-a-data-request)  
-[Managing Data Overview](../../managing-data/working-with-our-data)  
+[About our Decision Process & Terminology](../../requesting-data/glossary)
+[Making a Data Request](../../requesting-data/making-a-data-request)
+[Managing Data Overview](../../managing-data/working-with-our-data)
