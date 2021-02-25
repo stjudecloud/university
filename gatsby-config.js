@@ -161,6 +161,8 @@ let plugins = [
     },
   },
   `gatsby-check-slugs`,
+  `gatsby-redirect-from`,
+  'gatsby-plugin-meta-redirect' // gatsby-plugin-meta-redirect must be last entry
 ]
 
 if (process.env.INTERCOM_APP_ID) {
