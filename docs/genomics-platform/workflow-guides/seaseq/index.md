@@ -233,11 +233,11 @@ None yet!
 
 # Similar Topics
 
-[Running our Workflows](../analyzing-data/running-sj-workflows.md)
+[Running our Workflows](../../analyzing-data/running-sj-workflows.md)
 
-[Working with our Data Overview](../managing-data/working-with-our-data.md)
+[Working with our Data Overview](../../managing-data/working-with-our-data.md)
 
-[Upload/Download Data (local)](../managing-data/upload-local.md)
+[Upload/Download Data (local)](../../managing-data/upload-local.md)
 
 [SRR10259398]: https://www.pnas.org/content/117/28/16516
 [RefSeq]: https://ftp.ncbi.nlm.nih.gov/refseq/
