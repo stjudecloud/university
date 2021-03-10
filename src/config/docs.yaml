@@ -84,6 +84,8 @@ domains:
                 path: /docs/genomics-platform/workflow-guides/rapid-rnaseq/
               - title: "RNA Seq Expression Classification"
                 path: /docs/genomics-platform/workflow-guides/rnaseq-expression-classification/
+              - title: "SEAseq"
+                path: /docs/genomics-platform/workflow-guides/seaseq/
               - title: "SequencErr"
                 path: /docs/genomics-platform/workflow-guides/sequencerr/
               - title: "WARDEN Differential Gene Expression"
