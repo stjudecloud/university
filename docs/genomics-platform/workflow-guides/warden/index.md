@@ -153,7 +153,7 @@ Click the `FASTQ_FILES`, `BAM_FILES`, or `COUNT_FILES` input field and select **
 TODO this needs work: We now need to configure the parameters for the pipeline, such as reference genome and sequencing method. You can access all of the available parameters
 by clicking on the `WARDEN WORKFLOW GENERATOR` substep. For the general workflow instructions refer [here](../../analyzing-data/running-sj-workflows#selecting-parameters)
 
-!!! example "Parameter setup steps"
+!!!example Parameter setup steps
 
 1. In the `Output Folder` field, select a folder to output to. You can
 structure your experiments however you like (e.g. `/My_Outputs`). If left blank, a directory with a random name will be created in order to avoid cluttering your workspace.
@@ -213,7 +213,7 @@ allow the viewing of these files off of DNAnexus.)
 ##### LIMMA differential expression viewer
 
 Within the root directory, there will be a viewer file
-for each valid comparison (`limma.<*contrast*>.viewer`). Simply select
+for each valid comparison (`limma.<contrast>.viewer`). Simply select
 the file and press 'Launch viewer'. A viewer will pop
 up showing both the MA plot and Volcano plot. By moving the mouse over a
 circle, the circle will highlight and the corresponding gene on the other
@@ -237,7 +237,7 @@ Y-axis.
 ##### Simple differential expression viewer
 
 There will also be a viewer for the simple differential expression
-analysis in the root directory (`simple_DE.<*contrast*>.viewer`). The P-value for the results have all
+analysis in the root directory (`simple_DE.<contrast>.viewer`). The P-value for the results have all
 been set to 1, so the volcano plot will not be relevant. Static versions of the plots will be in the `DIFFERENTIAL_EXPRESSION/` directory.
 
 ##### bigwig viewer
@@ -270,7 +270,7 @@ In addition to viewing the MA and volcano plots through the visualization tool, 
 
 #### Differential expression results
 
-Other useful differential expression results will be created. This includes tabular output from the differential expression analysis. For each comparison with three or more samples per condition, `results.limma.<*contrast*>.txt` will be produced. `results.simple_DE.<*contrast>.txt` will be created for all comparisons, regardless of sample size. These can be found in the `DIFFERENTIAL_EXPRESSION/` directory.
+Other useful differential expression results will be created. This includes tabular output from the differential expression analysis. For each comparison with three or more samples per condition, `results.limma.<contrast>.txt` will be produced. `results.simple_DE.<*contrast>.txt` will be created for all comparisons, regardless of sample size. These can be found in the `DIFFERENTIAL_EXPRESSION/` directory.
 
 #### GSEA.input.<*contrast*>.txt and GSEA.tStat.<*contrast*>.txt
 
@@ -283,7 +283,7 @@ bigwig files will be optionally generated (via the "runCoverage" option) for use
 <http://software.broadinstitute.org/software/igv/>). For each sample,
 multiple bigwig files may be found. For all types of sequencing
 strandedness, there will be bigwig files labeled,
-`*.sortedcoverage_file.bed.bw` where '*' is the sample name. For
+`*.sortedcoverage_file.bed.bw` where '\*' is the sample name. For
 stranded data there will also be `*.sortedPoscoverage_file.bed.bw` and
 `*.sortedNegcoverage_file.bed.bw` which contains coverage information
 for the positive and negative strand of the genome.
@@ -304,7 +304,7 @@ file can give some basic statistics on the quality of the data.
 
 There may be up to 3 BAM files generated per sample that contain mapping
 information for all reads. The first is labeled
-`*.Aligned.bam` where '*' is the sample name. The
+`*.Aligned.bam` where '\*' is the sample name. The
 BAM file is sorted by coordinates and will have duplicates marked (by default, but duplicate marking can be disabled with the `mark_duplicates` option). This is always generated and can be found in the `STAR/` directory.
 If `generate_name_sorted_BAM` is enabled, then there will also be `*.Aligned.name_sorted.bam` in the `STAR/` directory.
 The third file is optionally generated, `*.Aligned.to_transcriptome.bam`, and contains reads mapped
@@ -324,7 +324,7 @@ and the chimeric BAMs and chimeric junction files will be in the `STAR/CHIMERIC/
 #### FPKM and count files (per sample)
 
 Per sample files containing FPKM and raw count values for each gene can
-be found in `*.fpkm.txt`, `*.fpkm.log2.txt`, and `*.htseq_counts.txt` where '*' is
+be found in `*.fpkm.txt`, `*.fpkm.log2.txt`, and `*.htseq_counts.txt` where '\*' is
 the sample name. Counts files will be in the `HTSEQ/` directory, and FPKM files will be in `HTSEQ/FPKM/`.
 
 ### Additional Outputs
