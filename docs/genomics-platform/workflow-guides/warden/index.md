@@ -212,6 +212,8 @@ Several files on DNAnexus allow the data to be viewed in the Protein
 Paint viewer. (Note: We plan to have links downloaded in the future to
 allow the viewing of these files off of DNAnexus.)
 
+At the time of writing, there are two user interfaces for DNAnexus you can toggle between, a "Classic Version" and a "New version". Our ProteinPaint "viewer shortcuts" don't properly launch from the new user interface. To launch these, please switch to the "Classic Version" of the user interface.
+
 ##### LIMMA differential expression viewer
 
 Within the root directory, there will be a viewer file
