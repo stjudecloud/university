@@ -78,8 +78,8 @@ Each row in the spreadsheet (except for the last row, which we will talk about i
 
 !!!example Guidelines
 
-* The sample name should be unique and should only contain letters, numbers, underscores and periods.
-* The condition/phenotype column associates similar samples together. The values should contain only letters, numbers, underscores, and periods.
+* The sample name should be unique and should only contain letters, numbers, and underscores. They should start with a letter. WARDEN will attempt to correct malformed names.
+* The condition/phenotype column associates similar samples together. The values should contain only letters, numbers, and underscores. They should start with a letter. WARDEN will attempt to correct malformed names.
 * If using WARDEN (FastQ):
   * The third column should contain forward reads (e.g. `*.R1.fastq.gz` or `*_1.fastq.gz`).
   * The fourth column will contain reads in reverse orientation to the FastQ in column three (e.g. `*.R2.fastq.gz` or `*_2.fastq.gz`).
