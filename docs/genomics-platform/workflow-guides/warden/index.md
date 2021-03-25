@@ -163,11 +163,12 @@ This information can be determined from the sequencing or source
 of the data. If you don't know what to put here, select "Unstranded".
 3. Select the `Genome` pulldown menu. Choose the appropriate box.
 4. Options under "Advanced: Run Control" can be enabled or disabled, though `generate_name_sorted_BAM`, `generate_transcriptome_BAM`, `run_FastQC`, and `run_coverage` are disabled by default to reduce run time and costs.
-5. The LIMMA parameters can be left alone for most analyses. If you are
+5. `STAR_subsample_n_reads` can be used to reduce runtime and run costs. The default of 100,000,000 reads will map the entirety of many samples and is a sufficient of number of reads for differential expression analysis. Setting this value to "0" or "-1" will disable subsampling, and map the entirety of all input FastQs. With sufficiently large FastQs, this can take a long time and cost a significant amount of money. Large FastQs also occaisonally cause errors in the STAR step. If those are encountered, we recommend re-enabling subsampling or increasing the size of the `star_instance`. **Warning:** a larger STAR instance will incur larger costs.
+6. The LIMMA parameters can be left alone for most analyses. If you are
 an advanced LIMMA user, you can change the various settings exposed.
-6. If you are interested in a feature besides genes, you should change the `feature_type` and `id_attribute` HTSeq-count parameters. Note that changing from the defaults will disable FPKM calculations. The other options should only be changed by advanced users of HTSeq-count.
-7. Similarly STAR parameters should only be changed by advanced users familiar with the STAR aligner.
-8. When all parameters have been set, you're ready to run WARDEN!
+7. If you are interested in a feature besides genes, you should change the `feature_type` and `id_attribute` HTSeq-count parameters. Note that changing from the defaults will disable FPKM calculations. The other options should only be changed by advanced users of HTSeq-count.
+8. Similarly STAR parameters should only be changed by advanced users familiar with the STAR aligner.
+9. When all parameters have been set, you're ready to run WARDEN!
 !!!
 
 ![](./parameters-warden-3.gif)
