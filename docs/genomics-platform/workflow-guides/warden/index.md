@@ -80,11 +80,11 @@ Each row in the spreadsheet (except for the last row, which we will talk about i
 
 * The sample name should be unique and should only contain letters, numbers, and underscores. They should start with a letter. WARDEN will attempt to correct malformed names.
 * The condition/phenotype column associates similar samples together. The values should contain only letters, numbers, and underscores. They should start with a letter. WARDEN will attempt to correct malformed names.
-* If using WARDEN (FastQ):
+* If using WARDEN [FastQ]:
   * The third column should contain forward reads (e.g. `*.R1.fastq.gz` or `*_1.fastq.gz`).
   * The fourth column will contain reads in reverse orientation to the FastQ in column three (e.g. `*.R2.fastq.gz` or `*_2.fastq.gz`).
-  * For single end reads a single dash ('-') should be entered in the fourth column.
-* If using WARDEN (BAM) or WARDEN (Counts):
+  * For single end reads a single dash (`-`) should be entered in the fourth column.
+* If using WARDEN [BAM] or WARDEN [Counts]:
   * The third column should contain the name of the sample's BAM or counts file.
   * The fourth column is ignored and can be safely deleted or left blank.
 
@@ -339,9 +339,9 @@ the sample name. Counts files will be in the `HTSEQ/` directory, and FPKM files 
 
 ## Rerunning analysis
 
-If you complete a WARDEN run from FastQs or BAM files and wish to change some of the final differential expresssion parameters, we recommend you use the count files already generated as input to the "WARDEN (HTSeq-counts)" app. This should save you sigfnificant amounts of time and money.
+If you complete a WARDEN run from FastQs or BAM files and wish to change some of the final differential expresssion parameters, we recommend you use the count files already generated as input to the "WARDEN [Counts]" app. This should save you sigfnificant amounts of time and money.
 
-Similarly, if you started with FastQs and wish to rerun with different parameters to HTSeq-Count, we recommend using the previously generated BAM files as input to the "WARDEN (BAM)" app.
+Similarly, if you started with FastQs and wish to rerun with different parameters to HTSeq-Count, we recommend using the previously generated BAM files as input to the "WARDEN [BAM]" app.
 
 BAM files and count files are output as soon as they are created (as opposed to only appearing after a successful analysis), so if you find WARDEN has failed for any reason at a later stage, you should be able to use the already output BAMs or count files to skip rerunning the stages which completed successfully.
 
