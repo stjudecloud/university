@@ -274,7 +274,7 @@ In addition to viewing the MA and volcano plots through the visualization tool, 
 
 #### Differential expression results
 
-Other useful differential expression results will be created. This includes tabular output from the differential expression analysis. For each comparison with three or more samples per condition, `results.limma.<contrast>.txt` will be produced. `results.simple_DE.<*contrast>.txt` will be created for all comparisons, regardless of sample size. These can be found in the `DIFFERENTIAL_EXPRESSION/` directory.
+Other useful differential expression results will be created. This includes tabular output from the differential expression analysis. For each comparison with three or more samples per condition, `results.limma.<contrast>.txt` will be produced. `results.simple_DE.<*contrast>.txt` will be created for all comparisons, regardless of sample size. You can find a counts matrix normalized by Counts Per Million (CPM) in the file `CPM_normalized_values.txt`. All of these will be located in the `DIFFERENTIAL_EXPRESSION/` directory.
 
 #### GSEA.input.<*contrast*>.txt and GSEA.tStat.<*contrast*>.txt
 
