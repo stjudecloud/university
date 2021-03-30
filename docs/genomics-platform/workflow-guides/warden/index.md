@@ -167,7 +167,7 @@ of the data. If you don't know what to put here, select "Unstranded".
 6. The LIMMA parameters can be left alone for most analyses. If you are
 an advanced LIMMA user, you can change the various settings exposed.
 7. If you are interested in a feature besides genes, you should change the `feature_type` and `id_attribute` HTSeq-count parameters. Note that changing from the defaults will disable FPKM calculations. The other options should only be changed by advanced users of HTSeq-count.
-8. Similarly STAR parameters should only be changed by advanced users familiar with the STAR aligner.
+8. Similarly STAR parameters should only be changed by advanced users familiar with the STAR aligner. You can read the STAR v2.5.3a manual [here](https://github.com/alexdobin/STAR/blob/2.5.3a/doc/STARmanual.pdf).
 9. When all parameters have been set, you're ready to run WARDEN!
 !!!
 
