@@ -150,8 +150,9 @@ First, in the `Execution Output Folder` field, select a folder to output results
 
 Next, you'll need to hook up the FastQ files, BAM files, or count files (depending on which entrypoint you wish to use) and sample sheet you uploaded in [the upload data section](#uploading-input-files). Click the `FASTQ_FILES`, `BAM_FILES`, or `COUNT_FILES` input field and select **all** input files listed in your sample sheet. Next, click the `sample_list` input field and select the corresponding sample sheet.
 
-Then select the `sequence_strandedness` drop down menu and choose the appropriate option. This information can be determined from the sequencing or source
-of the data. If you don't know what to put here, select "Unstranded".
+If running "WARDEN \[FastQ\]" or "WARDEN \[BAM\]", select the `sequence_strandedness` drop down menu and choose the appropriate option. This information can be determined from the sequencing or source of the data. If you don't know what to put here, select "Unstranded".
+
+If running "WARDEN \[BAM\]", select the `sort_order` drop down menu and choose the method with which your BAM files are sorted, either `name` or `position`. Unsorted BAM files are not supported by WARDEN.
 
 Finally, select the `Genome` pulldown menu, choose the appropriate option, and WARDEN is ready to be run! Continue reading to learn about the available advanced options.
 
