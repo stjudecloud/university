@@ -154,7 +154,9 @@ If running "WARDEN \[FastQ\]" or "WARDEN \[BAM\]", select the `sequence_stranded
 
 If running "WARDEN \[BAM\]", select the `sort_order` drop down menu and choose the method with which your BAM files are sorted, either `name` or `position`. Unsorted BAM files are not supported by WARDEN.
 
-Finally, select the `Genome` pulldown menu, choose the appropriate option, and WARDEN is ready to be run! Continue reading to learn about the available advanced options.
+Finally, select the `Genome` pulldown menu, choose the appropriate option, and WARDEN is ready to be run! For "WARDEN \[FastQ\]", `Genome` determines which genome STAR will map your FastQs to. For "WARDEN \[BAM\]" and "WARDEN \[Counts\]", `Genome` should be which genome your BAM files or counts files were previously aligned to.
+
+Continue reading to learn about the available advanced options.
 
 ![](./warden-inputs.gif)
 
