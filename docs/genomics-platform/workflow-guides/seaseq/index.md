@@ -200,7 +200,7 @@ results for each metric in addition to a cross-metric summary score (between -2 
 thresholds where possible. 
 
 The metrics are color flagged for easy visualization of overall performance in HTML format as shown for [SRR10259398].
-![SRR10259398-QC](SRR10259398%20QC.png)
+![SRR10259398-QC](SRR10259398-QC.png)
 
 SEAseq metrics calculated to infer quality are:
 | Quality Metric                                	| Definition	                              	                              	                              	                                                     |
