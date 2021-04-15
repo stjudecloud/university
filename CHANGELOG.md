@@ -1,3 +1,24 @@
+# [1.10.0](https://github.com/stjudecloud/university/compare/v1.9.2...v1.10.0) (2021-04-15)
+
+
+### Bug Fixes
+
+* bad formatting ([af450bd](https://github.com/stjudecloud/university/commit/af450bd9ad302b191310312ef5f2cdd15e803256))
+* consistently name the apps ([72e52b3](https://github.com/stjudecloud/university/commit/72e52b3db7709b854a58d1a2ca95eba672a0cd1d))
+* update naming conventions ([ba8970e](https://github.com/stjudecloud/university/commit/ba8970ef58282f52f983eb279c597125ab084768))
+
+
+### Features
+
+* add another link to the STAR manual ([21775e6](https://github.com/stjudecloud/university/commit/21775e6131a64909d41f5412bda740ebcfcb659e))
+* describe `CPM_normalized_values.txt` file ([9b8d0c7](https://github.com/stjudecloud/university/commit/9b8d0c7457b68260105cdf9bd19bcf5a9b7bb753))
+* explain `STAR_subsample_n_reads` ([d81b57e](https://github.com/stjudecloud/university/commit/d81b57e65dad814fe706dff24d7ba7f181fbb5bf))
+* in output table, link to section describing each output ([aa5e956](https://github.com/stjudecloud/university/commit/aa5e956e88f8048e1f3c36916771d1015e348361))
+* incorporate Lance's feedback ([295fdfb](https://github.com/stjudecloud/university/commit/295fdfbf1927ac47561ffad74b192d31fda9df8a))
+* new gif and other edits ([6190da2](https://github.com/stjudecloud/university/commit/6190da2f2eed118c9f1b8c43d66700d9ce721f9b))
+* talk about feature count file format requirements ([2e114ab](https://github.com/stjudecloud/university/commit/2e114aba52240f31e1a2c4ed879d9891e6715f48))
+* warn about viewer shortcuts not working in new UI ([79def64](https://github.com/stjudecloud/university/commit/79def649c5da86dd19283796a177e0cca9d332f0))
+
 ## [1.9.2](https://github.com/stjudecloud/university/compare/v1.9.1...v1.9.2) (2021-02-26)
 
 ## [1.9.1](https://github.com/stjudecloud/university/compare/v1.9.0...v1.9.1) (2021-02-12)
