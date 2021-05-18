@@ -87,7 +87,7 @@ fill out a new DAA (including the [Data Download Permission
 section](../requesting-data/how-to-fill-out-daa/#the-data-access-agreement)
 for any data sets you want to download.
 
-## Is there another mechanism for downloading the data besides using the dx command line tool?
+## Is there another mechanism for downloading the data besides using the `dx` command line tool?
 
 For an out of the box solution, the `dx` download command is the canonical way to download files from St. Jude Cloud Genomics Platform. If you are downloading large amounts of files, you may also try the [DNAnexus Download Agent](https://documentation.dnanexus.com/downloads#download-agent), which at times has been reported to be more performant and/or reliable.
 
