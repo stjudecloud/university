@@ -42,7 +42,7 @@ Please download the Schedule 1(s) (linked in table below) to find dataset specif
 | Real-Time Clinical Genomics (RTCG) | No publication yet | [Clinical Genomics Schedule 1](../files/ClinGen-Schedule1.pdf) |
 | Sickle Cell Genome Project (SGP) | Paper In Progress | [SGP Schedule 1](../files/SGP-Schedule1.pdf) |
 | Childhood Cancer Survivor Study (CCSS)  | [CCSS study design paper](https://www.ncbi.nlm.nih.gov/pubmed/11920786) | [CCSS Schedule 1](../files/CCSS-Schedule1.pdf) |
-| Pan-Acute Lymphoblastic Leukemia (PanALL) | Paper In Progress | [PanALL Schedule 1](../files/PanALL-Schedule1.pdf) |
+| Pan-Acute Lymphoblastic Leukemia (PanALL) | Paper In Progress | [PanALL Schedule 1](../files/PanALL-Schedule.pdf) |
 | Pediatric therapy-related Myeloid Neoplasms (tMN) | [tMN paper](https://pubmed.ncbi.nlm.nih.gov/33579957/) | [tMN Schedule 1](../files/tMN-Schedule1.pdf) |
 
 !!!note
