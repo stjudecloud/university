@@ -1,3 +1,5 @@
+## [1.10.4](https://github.com/stjudecloud/university/compare/v1.10.3...v1.10.4) (2021-07-21)
+
 ## [1.10.3](https://github.com/stjudecloud/university/compare/v1.10.2...v1.10.3) (2021-07-19)
 
 ## [1.10.2](https://github.com/stjudecloud/university/compare/v1.10.1...v1.10.2) (2021-07-07)
