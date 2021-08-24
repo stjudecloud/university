@@ -15,30 +15,35 @@ SEAseq analyses include alignment, peak calling, motif analysis, read coverage p
 
 ## Inputs
 
-|   Name                    |   Type                | Description                                                 |  Example            |
-|---------------------------|-----------------------|-------------------------------------------------------------|---------------------|
-|   FASTQ files             |   Array of files      |   One or more FASTQ files. The files should be gzipped.     |   [`*.gz`]          |
-|   SRA run accession (SRR) |   Array of strings    |   One or more SRR.                                          |   [`SRR12345678`]   |
-|   Genome Reference        |   File                |   The genome reference in FASTA format.                     |   [`*.fa`]          |
-|   Genome Bowtie indexes   |   Array of files      |   The genome bowtie v1 indexes. Should be six index files.  |   [`*.ebwt`]        |
-|   Gene Annotation         |   File                |   A gene position database file.                            |   [`*.gtf`]         |
-|   Blacklists              |   File                |   [UHS]/[DER]/[DAC] or custom blacklist regions file.       |   [`*/bed`]         |
-|   [Motif databases]       |   Array of files      |   One or more position weight matrix databases.             |   [`*.meme`]        |
+|   Name                                               |   Type                | Description                                                                    |  Example                         |
+|------------------------------------------------------|-----------------------|--------------------------------------------------------------------------------|----------------------------------|
+|   Sample FASTQ files                                 |   Array of files      |   One or more Sample FASTQ files. The files are recommended to be gzipped.     |   [`*.gz`]                       |
+|   Sample SRA run accession identifiers (SRR)         |   Array of strings    |   One or more Sample SRR.                                                      |   [`SRR12345678`]                |
+|   Input/Control FASTQ files                          |   Array of files      |   One or more Input/Control FASTQ files. Files are recommended to be gzipped.  |   [`*.gz`]                       |
+|   Input/Control SRA run accession identifiers (SRR)  |   Array of strings    |   One or more Input/Control SRR.                                               |   [`SRR12345679`]                |
+|   Genome Reference                                   |   File                |   The genome reference in FASTA format.                                        |   [`*.fa`]                       |
+|   Genome Bowtie indexes                              |   Array of files      |   The genome bowtie v1 indexes. Should be six index files.                     |   [`*.ebwt`]                     |
+|   Gene Annotation                                    |   File                |   A gene position database file.                                               |   [`*.gtf`, `*.gff`, `*.gff3`]   |
+|   Blacklists                                         |   File                |   [UHS]/[DER]/[DAC] or custom blacklist regions file.                          |   [`*.bed`]                      |
+|   [Motif databases]                                  |   Array of files      |   One or more position weight matrix databases.                                |   [`*.meme`]                     |
 
 ### Input configuration
 
-SEASEQ supports FASTQ files and SRA identifiers (SRRs) as Sample Input. A combination of both is also supported. 
+SEASEQ supports FASTQ files and SRA identifiers (SRRs) as Samples Input. A combination of both is also supported.
 
-SEASEQ requires the sample input, genome reference, gene annotation and motif database files.
+SEASEQ requires the Samples Input, Genome Reference, and the Gene Annotation files be provided.
+
+The Input/Control FASTQ files or SRA ids (SRR) for coverage correction are optional.
 Bowtie genomic indexes and region-based blacklists are optional.
 
-A gene position database file can be obtained from [RefSeq] or [GENCODE].
+SEASEQ supports Genome Reference and Gene Annotation (or Gene position database) files from
+most genome repositories, such as [UCSC], [ENSEMBL], [RefSeq] or [GENCODE].
 
 [Motif databases]: https://meme-suite.org/meme/db/motifs
 
 ## Outputs
 
-SEAseq provides multiple outputs from the different analysis offerings. 
+SEAseq provides multiple outputs from the different analysis offerings.
 Outputs are grouped into subdirectories:
 
 | Name                  | Type    | Description                                                                            |
@@ -60,18 +65,19 @@ Outputs are grouped into subdirectories:
 [QC]: #qc-metrics
 
 ## Workflow Steps
+
 1. If provided, SRRs are downloaded as FASTQs using the [SRA Toolkit].
-3. Sequencing FASTQs are aligned to the reference genome using [Bowtie].
-4. Mapped reads are further processed by removal of redundant reads and blacklisted regions. 
-5. Read density profiling in relevant genomic regions such as promoters and gene body using [BamToGFF].
-6. Normalized and unnormalized coverage files for display are generated for external browsers such as [GenomePaint], [UCSC genome browser] and [IGV]. 
-7. Identification of enriched regions for two binding profiles:
+2. Sequencing FASTQs are aligned to the reference genome using [Bowtie].
+3. Mapped reads are further processed by removal of redundant reads and blacklisted regions.
+4. Read density profiling in relevant genomic regions such as promoters and gene body using [BamToGFF].
+5. Normalized and unnormalized coverage files for display are generated for external browsers such as [GenomePaint], [UCSC genome browser] and [IGV].
+6. Identification of enriched regions for two binding profiles:
     * For factors that bind shorter regions, e.g. many sequence-specific transcription factors such as CTCF using [MACS].
     * For broad regions of enrichment, e.g. some histone modifications such as H3K27Ac using [SICER].
-8. Identification of stitched clusters of enriched regions and separates exceptionally large regions, e.g. super-enhancers from typical enhancers, using [ROSE].
-9. Motif discovery and enrichment using tools from the [MEME Suite].
-10. Annotation of peaks in genic regions.
-11. Assessment of quality by calculating relevant metrics including those recommmended by the [ENCODE consortium]. More information is provided [here](#qc-metrics).
+7. Identification of stitched clusters of enriched regions and separates exceptionally large regions, e.g. super-enhancers from typical enhancers, using [ROSE].
+8. Motif discovery and enrichment using tools from the [MEME Suite].
+9. Annotation of peaks in genic regions.
+10. Assessment of quality by calculating relevant metrics including those recommmended by the [ENCODE consortium]. More information is provided [here](#qc-metrics).
 
 ## Creating a workspace
 
@@ -204,23 +210,25 @@ The metrics are color flagged for easy visualization of overall performance in H
 
 SEAseq metrics calculated to infer quality are:
 
-|  Quality Metric                             	|   Definition	                     |
-|------------------------------------------------|--------------------------------------------------|
-| Aligned Percent                                 | Percentage of mapped reads.                                |
-| Base Quality	                                  | Per-base sequence quality.                                 |
-| Estimated Fragment Width                      	| Average fragment size of the peak distribution.            |
-| Estimated Tag Length	                          | Sequencing read length.                                    |
-| FRiP	                                          | The fraction of reads within peaks regions.                |
-| Linear Stitched Peaks (Enhancers)             	| Total number of clustered enriched regions.                |
-| Non-Redundant Fraction (NRF)	                  | Fraction of uniquely mapped reads.                         |
-| Normalized Strand-correlation Coefficient (NSC)	| To determine signal-to-noise ratio using strand cross-correlation. The ratio of the maximum cross-correlation value divided by the background cross-correction.                             |
-| Sequence Diversity                             	| Sequence overrepresentation.  If reads/sequences are overrepresented in the library.                                                                                                       |
-| PCR Bottleneck Coefficient (PBC)              	| It is a measure of library complexity determined by the fraction of genomic locations with exactly one unique read versus those covered by at least one unique reads.	                     |
-| Peaks	                                          | Total number of enriched regions.                          |
-| Raw reads                                     	| Total number of sequencing reads.                          |
-| Relative Strand-correlation Coefficient (RSC)	  | A strand cross-correlation ratio between the fragment-length cross-correlation and the read-length peak.                                                                 	  |
-| SE-like enriched regions (Super Enhancers)	    | Total number of SE-like clustered enriched                 |
-| Overall Quality                                	| Cross-metric average score.                                |
+| Quality Metric	                                 | Definition	                                                                                                                                                            |
+|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Aligned Percent                                  | Percentage of mapped reads.                                                                                                                                            |
+| Base Quality	                                   | Per-base sequence quality.                                                                                                                                             |
+| Estimated Fragment Width                         | Average fragment size of the peak distribution.	                                                                                                                      |
+| Estimated Tag Length	                           | Sequencing read length.                                                                                                                                                |
+| FRiP	                                           | The fraction of reads within peaks regions.                                                                                                                            |
+| Linear Stitched Peaks (Enhancers)                | Total number of clustered enriched regions.                                                                                                                            |
+| Non-Redundant Fraction (NRF)                     | Fraction of uniquely mapped reads.                                                                                                                                     |
+| Normalized Peaks                                 | Peaks identified with Input/Control correction (applicable when Control is provided).                                                                                  |
+| Normalized Strand-correlation Coefficient (NSC)	 | To determine signal-to-noise ratio using strand cross-correlation. The ratio of the maximum cross-correlation value divided by the background cross-correction.        |
+| Sequence Diversity	                             | Sequence overrepresentation.  If reads/sequences are overrepresented in the library.                                                                                   |
+| PCR Bottleneck Coefficient (PBC)	               | It is a measure of library complexity determined by the fraction of genomic locations with exactly one unique read versus those covered by at least one unique reads.	|
+| Peaks                                            | Total number of enriched regions.                                                                                                                                      |
+| Raw Reads	                                       | Total number of sequencing reads.                                                                                                                                      |
+| Read Length                                      | Average FASTQ read length (applicable when multiple FASTQs are provided).                                                                                              |
+| Relative Strand-correlation Coefficient (RSC)	   | A strand cross-correlation ratio between the fragment-length cross-correlation and the read-length peak.                                                               |
+| SE-like enriched regions (Super Enhancers)	     | Total number of SE-like clustered enriched regions.                                                                                                                    |
+| Overall Quality	                                 | Cross-metric average score.                                                                                                                                            |
 
 ## Frequently asked questions
 
@@ -241,6 +249,8 @@ None yet!
 [SRR10259398]: https://www.pnas.org/content/117/28/16516
 [RefSeq]: https://ftp.ncbi.nlm.nih.gov/refseq/
 [GENCODE]: https://www.gencodegenes.org/
+[UCSC]: https://hgdownload.soe.ucsc.edu/
+[ENSEMBL]: https://useast.ensembl.org/
 [UHS]: https://sites.google.com/site/anshulkundaje/projects/blacklists
 [DER]: https://genome.ucsc.edu/cgi-bin/hgFileUi?db=hg19&g=wgEncodeMapability
 [DAC]: https://genome.ucsc.edu/cgi-bin/hgFileUi?db=hg19&g=wgEncodeMapability
@@ -257,9 +267,9 @@ None yet!
 [ROSE]: http://younglab.wi.mit.edu/super_enhancer_code.html
 [MEME Suite]: https://doi.org/10.1093/nar/gkv416
 [ENCODE consortium]: https://doi.org/10.1101/gr.136184.111
-[WIG]: https://genome.ucsc.edu/goldenPath/help/wiggle.html 
+[WIG]: https://genome.ucsc.edu/goldenPath/help/wiggle.html
 [bigWig]: https://genome.ucsc.edu/goldenpath/help/bigWig.html
-[TDF]: https://software.broadinstitute.org/software/igv/TDF 
+[TDF]: https://software.broadinstitute.org/software/igv/TDF
 [AME]: https://meme-suite.org/meme/tools/ame
 [MEME-ChIP]: https://meme-suite.org/meme/tools/meme-chip
 [seaseq]: https://github.com/stjude/seaseq
