@@ -176,11 +176,9 @@ The density matrix files are then used to generate coverage graphs and heatmap p
 a custom R script that will also be provided in the results directory 
 `/BAM_Density/densityplots.R` for further customization if needed.
 
-Below is an example of the read coverage profiles in promoters and gene body for [SRR10259398].
+Below is an example of the average read coverage across all promoters and gene body regions for [SRR10259398].
 
-![SRR10259398-bam_promoters](SRR10259398-promoters.png)
-
-![SRR10259398-bam_entiregene](SRR10259398-entiregene.png)
+![SRR10259398-bam_densityplots](SRR10259398-density.png)
 
 ### Peaks Annotation
 
