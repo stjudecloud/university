@@ -157,7 +157,7 @@ exports.createSchemaCustomization = ({ actions, reporter }) => {
 
     type Contributor {
       login: String!
-      avatar_url: String!
+      avatar_url: String
       url: String!
       commits: Int
     }
