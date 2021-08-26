@@ -1,3 +1,10 @@
+## [1.10.6](https://github.com/stjudecloud/university/compare/v1.10.5...v1.10.6) (2021-08-26)
+
+
+### Bug Fixes
+
+* Not requiring avatar_url to be present ([#35](https://github.com/stjudecloud/university/issues/35)) ([b7741b6](https://github.com/stjudecloud/university/commit/b7741b6e5e6fad6bfaf11f300257718f4878a70c))
+
 ## [1.10.5](https://github.com/stjudecloud/university/compare/v1.10.4...v1.10.5) (2021-08-25)
 
 ## [1.10.4](https://github.com/stjudecloud/university/compare/v1.10.3...v1.10.4) (2021-07-21)
