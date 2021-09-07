@@ -18,7 +18,7 @@ The account creation and login process is slightly different if you are an inter
 ## St. Jude Employees
 ### Create An Account
 
-Go to the [St. Jude Employee login page](https://auth.stjude.org/SecureAuth61/) and log in with your current St. Jude credentials.
+Go to the [St. Jude Employee login page](https://cloud.stjude.org/) and log in with your current St. Jude credentials.
 
 !!!note
 If you are unable to log in at this link, and you know you have been on St. Jude Cloud before, you may have already set up a DNAnexus account through the DNANexus log in page using your St. Jude email address. To continue using this account, you will need to log in through the [DNAnexus log in page](https://platform.dnanexus.com/login?client_id=sjcloudplatform). You can request that your accounts be merged by contacting [DNAnexus support](mailto:support@dnanexus.com).   
