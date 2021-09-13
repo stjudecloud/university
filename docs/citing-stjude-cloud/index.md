@@ -33,20 +33,20 @@ Citation manager formats can be accessed [here](https://cancerdiscovery.aacrjour
 
 Please download the Schedule 1(s) (linked in table below) to find dataset specific wording of acknowledgement(s).
 
-| St. Jude Cloud Dataset | Publication(s) | Citation Info |
-| --- | --- | --- |
-| Pediatric Cancer Genome Project (PCGP) <img width=200/>| [PCGP perspectives paper](https://www.ncbi.nlm.nih.gov/pubmed/22641210) and the [relevant tumor type paper(s)](http://pecan.stjude.cloud/pcgp-explore) | [PCGP Schedule 1](../files/PCGP-Schedule1.pdf) <img width=200/>|
-| St. Jude Lifetime (SJLIFE) | [SJLIFE paper](https://www.ncbi.nlm.nih.gov/pubmed/?term=29847298) | [SJLIFE Schedule 1](../files/SJLIFE-Schedule1.pdf) |
-| Clinical Pilot | [Clinical Pilot paper](https://www.ncbi.nlm.nih.gov/pubmed/30262806) | [Clinical Genomics Schedule 1](../files/ClinGen-Schedule1.pdf) |
-| Genomes for Kids (G4K) | Paper In Progress | [Clinical Genomics Schedule 1](../files/ClinGen-Schedule1.pdf) |
-| Real-Time Clinical Genomics (RTCG) | No publication yet | [Clinical Genomics Schedule 1](../files/ClinGen-Schedule1.pdf) |
-| Sickle Cell Genome Project (SGP) | Paper In Progress | [SGP Schedule 1](../files/SGP-Schedule1.pdf) |
-| Childhood Cancer Survivor Study (CCSS)  | [CCSS study design paper](https://www.ncbi.nlm.nih.gov/pubmed/11920786) | [CCSS Schedule 1](../files/CCSS-Schedule1.pdf) |
-| Pan-Acute Lymphoblastic Leukemia (PanALL) | Paper In Progress | [PanALL Schedule 1](../files/PanALL-Schedule1.pdf) |
-| Pediatric therapy-related Myeloid Neoplasms (tMN) | [tMN paper](https://pubmed.ncbi.nlm.nih.gov/33579957/) | [tMN Schedule 1](../files/tMN-Schedule1.pdf) |
+| St. Jude Cloud Dataset                                  | Publication(s)                                                                                                                                         | Citation Info                                                   |
+| ------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------- |
+| Pediatric Cancer Genome Project (PCGP) <img width=200/> | [PCGP perspectives paper](https://www.ncbi.nlm.nih.gov/pubmed/22641210) and the [relevant tumor type paper(s)](http://pecan.stjude.cloud/pcgp-explore) | [PCGP Schedule 1](../files/PCGP-Schedule1.pdf) <img width=200/> |
+| St. Jude Lifetime (SJLIFE)                              | [SJLIFE paper](https://www.ncbi.nlm.nih.gov/pubmed/?term=29847298)                                                                                     | [SJLIFE Schedule 1](../files/SJLIFE-Schedule1.pdf)              |
+| Clinical Pilot                                          | [Clinical Pilot paper](https://www.ncbi.nlm.nih.gov/pubmed/30262806)                                                                                   | [Clinical Genomics Schedule 1](../files/ClinGen-Schedule1.pdf)  |
+| Genomes for Kids (G4K)                                  | Paper In Progress                                                                                                                                      | [Clinical Genomics Schedule 1](../files/ClinGen-Schedule1.pdf)  |
+| Real-Time Clinical Genomics (RTCG)                      | No publication yet                                                                                                                                     | [Clinical Genomics Schedule 1](../files/ClinGen-Schedule1.pdf)  |
+| Sickle Cell Genome Project (SGP)                        | Paper In Progress                                                                                                                                      | [SGP Schedule 1](../files/SGP-Schedule1.pdf)                    |
+| Childhood Cancer Survivor Study (CCSS)                  | [CCSS study design paper](https://www.ncbi.nlm.nih.gov/pubmed/11920786)                                                                                | [CCSS Schedule 1](../files/CCSS-Schedule1.pdf)                  |
+| Pan-Acute Lymphoblastic Leukemia (PanALL)               | Paper In Progress                                                                                                                                      | [PanALL Schedule 1](../files/PanALL-Schedule1.pdf)              |
+| Pediatric therapy-related Myeloid Neoplasms (tMN)       | [tMN paper](https://pubmed.ncbi.nlm.nih.gov/33579957/)                                                                                                 | [tMN Schedule 1](../files/tMN-Schedule1.pdf)                    |
 
 !!!note
-If you are unsure what dataset(s) the data that you have been vended belongs to, you can find this information in the sj_datasets column of the [SAMPLE_INFO.txt](../genomics-platform/about-our-data/metadata-and-clinical/) file.
+If you are unsure what dataset(s) the data that you have been vended belongs to, you can find this information in the `sj_datasets` column of the [SAMPLE_INFO.txt](../genomics-platform/about-our-data/metadata-and-clinical/) file.
 !!!
 
 !!!warning
