@@ -40,6 +40,7 @@ The RNA-Seq Expression Classification pipeline produces the following outputs:
 | Interactive expression plot (.html) | Visualization of RNA-Seq data                                    | all              |
 | Aligned BAM (.bam)                  | BAM file produced by our RNA-Seq pipeline for the input samples. | Realignment      |
 | Feature read counts (.txt)          | Read counts for the Gencode features.                            | Realignment      |
+| Gene list (.txt)                    | List of genes used in analysis (if a fixed list not specified)   | all              |
 
 ### Workflow Steps
 
@@ -172,6 +173,18 @@ Additionally, a parameter selecting the tissue type to compare against can be se
 If running the realignment workflow, the input file should be specified as a BAM to realign. HTSeq will run on the realigned BAM and the result will be passed into the t-SNE app for plotting against the reference data. The reference data should be specified in the `reference_counts` parameter as an array of HTSeq count files. The BAM will be specified to the RNA-Seq V2 stage as `input_bam`. The BAM should have properties set as described above. These will automatically be applied to the new HTSeq count file.
 
 ![](./rnaseq-expression-workflow-realignment-options-new-ui.png)
+
+### Optional settings
+
+An optional gene list can be specified as an input. This is a single column text file with gene names. If this option is specified, the list will override the default selection of the top 1000 most differentially expressed genes.
+
+By default, all tumor types (blood, brain, and solid) will be included in the analysis. It is also possible to run each of the three types separately by selecting the appropriate tumor type. 
+
+The tool supports both Fresh/Frozen and FFPE inputs. By default, only Fresh/Frozen samples from the reference cohort will be included. This setting can be changed to run only FFPE or Fresh/Frozen + FFPE samples.
+
+It is also possible to return intermediate files from the workflow. If desired, 'original_matrix' is the matrix of counts after covariates and additional metadata has been removed,  'variance_stabilized' is the matrix after running varianceStabilizingTransformation, 'batch_corrected' is the matrix after ComBat batch correction, 'tsne_output' is the matrix after Rtsne has been run and 'matrix' is the original file input to the R script for plotting.
+
+The expression workflow can optionally include PDX samples from the reference cohort as well as a [selection of PDX models from Dana Farber Cancer Insitute](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5177991/). The inclusion of PDX samples can facilitate selection of mouse models for followup functional experimentation.
 
 ### Starting the workflow
 
