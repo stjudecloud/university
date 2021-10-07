@@ -112,6 +112,11 @@ domains:
                 path: /docs/visualization-community/proteinpaint/
               - title: "Frequently Asked Questions"
                 path: /docs/visualization-community/faq/
+          - title: "HOW TO"
+            collapsable: true
+            pages:
+              - title: "Upload VCF"
+                path: /docs/visualization-community/howto/uploadvcf/
           - title: "ProteinPaint"
             collapsable: true
             pages:
