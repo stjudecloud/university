@@ -108,22 +108,21 @@ domains:
         chapters:
           - title: "Getting Started"
             pages:
-              - title: "ProteinPaint"
-                path: /docs/visualization-community/proteinpaint/
-              - title: "Frequently Asked Questions"
+              - title: "What is Visualization Community?"
+                path: /docs/visualization-community/
+              - title: "What is ProteinPaint & GenomePaint?"
+                path: /docs/visualization-community/proteinpaintandgenomepaint/
+              - title: "Data Types"
+                path: /docs/visualization-community/supporteddatatypes/
+              - title: "FAQ"
                 path: /docs/visualization-community/faq/
-          - title: "HOW TO"
-            collapsable: true
-            pages:
-              - title: "Upload VCF"
-                path: /docs/visualization-community/howto/uploadvcf/
-          - title: "ProteinPaint"
+          - title: "ProteinPaint Guide"
             collapsable: true
             pages:
               - title: "Introduction"
                 path: /docs/visualization-community/proteinpaint/introduction/
-              - title: "Getting Started"
-                path: /docs/visualization-community/proteinpaint/user-guide/getting-started/
+              - title: "Feature Overview"
+                path: /docs/visualization-community/proteinpaint/user-guide/gfeature-overview/
               - title: "Loading Datasets"
                 path: /docs/visualization-community/proteinpaint/user-guide/loading-datasets/
               - title: "Viewing SNV/Indel Mutations"
@@ -170,8 +169,6 @@ domains:
                 path: /docs/visualization-community/proteinpaint/advanced-guides/add-custom-protein-domains/
               - title: "Using Custom Tracks"
                 path: /docs/visualization-community/proteinpaint/advanced-guides/using-custom-tracks/
-              - title: "Visualize Your Mutation Data"
-                path: /docs/visualization-community/proteinpaint/advanced-guides/visualize-custom-mutations/
               - title: "Loading SNV/Indel Mutations from a File"
                 path: /docs/visualization-community/proteinpaint/advanced-guides/loading-snv-indel-data-from-a-file/
               - title: "Uploaded Mutation Data User Interface"
@@ -186,13 +183,18 @@ domains:
                 path: /docs/visualization-community/proteinpaint/developers-guide/url-parameters/
               - title: "Organizing Data into a Study View"
                 path: /docs/visualization-community/proteinpaint/developers-guide/organizing-data-into-a-study-view/
-          - title: "GenomePaint"
+          - title: "GenomePaint Guide"
             collapsable: true
             pages:
               - title: "GenomePaint"
                 path: /docs/visualization-community/genomepaint/
               - title: "GenomePaint User Guide"
                 path: /docs/visualization-community/genomepaint/user-guide/
+          - title: "Visualize Your Data"
+            collapsable: true
+            pages:
+              - title: "VCF"
+                path: /docs/visualization-community/howto/
   - title: "Other"
     modules:
       - title: "Studies"
