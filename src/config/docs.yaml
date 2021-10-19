@@ -195,6 +195,8 @@ domains:
             pages:
               - title: "VCF"
                 path: /docs/visualization-community/howto/vcf/
+              - title: "BAM"
+                path: /docs/visualization-community/howto/vcf/bam/
   - title: "Other"
     modules:
       - title: "Studies"

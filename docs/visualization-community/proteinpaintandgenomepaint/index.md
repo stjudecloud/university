@@ -1,7 +1,7 @@
 ---
 title: ProteinPaint & GenomePaint
 ---
-Do you have genomic or epigenomic datasets that need to be curated into visualizations but have no idea how? 
+Do you have genomic or epigenomic datasets that need to be curated into dynamic visualizations but have no idea what tools or programming is needed to develop them? 
 
 ## Overview of ProteinPaint
 [ProteinPaint](https://pecan.stjude.cloud/proteinpaint) is the flagship protein-based visualization tool created at St. Jude. You can use it to examine the domains of genes, known isoforms of a given gene, hotspot mutations for single nucleotide variations (SNVs), insertions and deletions (Indels), and structual variations (SVs) in both pediatric and adult cancers, and RNA-Seq expression of a given protein in different tumour types. To find out more, see the [documentation](./proteinpaint) or read the ProteinPaint [paper](https://www.nature.com/articles/ng.3466). 

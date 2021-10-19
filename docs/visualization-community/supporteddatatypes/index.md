@@ -23,5 +23,4 @@ These data types listed below are supported by ProteinPaint and GenomePaint
 * ASE
 * JSON BED
 * Scatterplot
-* Study View
-* aicheck
+

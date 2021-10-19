@@ -1,9 +1,9 @@
 ---
 title: Visualization Community
 ---
-Are you stumped and needing guidance to find which visualizations to use to share in a meeting, publication, or webinar? Is generating dynamic visualizations challenging for you, or maybe you need to find an effortless tool to create a quick visualization? 
+Are you stumped and needing guidance to find which visualizations to use based on your datasets? Do you want an intuitive tool to create fast, cutting-edge visualizations for your research purposes? 
 
-St. Jude Cloud's [Visualization Community application](https://viz.stjude.cloud/) is developed to solve all these issues and more. 
+St. Jude Cloud's [Visualization Community application](https://viz.stjude.cloud/) is a safe enviornment that provides you with easy navigation to visualizing data sets that may be applicable to your research needs or where you can share your own data for others to view. Once you find the visualization you need, you can easily re-create it utilizing innovative tools and then displaying the data dynamically.
 
 ## Purpose
 * By utilizing St. Jude's visualization tools [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/), we allow world class genomic or epigenomic visualizations to be easily developed, accessed, and/or shared globally.
