@@ -194,7 +194,7 @@ domains:
             collapsable: true
             pages:
               - title: "VCF"
-                path: /docs/visualization-community/howto/
+                path: /docs/visualization-community/howto/vcf/
   - title: "Other"
     modules:
       - title: "Studies"
