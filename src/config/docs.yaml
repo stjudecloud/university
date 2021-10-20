@@ -108,9 +108,13 @@ domains:
         chapters:
           - title: "Getting Started"
             pages:
-              - title: "ProteinPaint"
-                path: /docs/visualization-community/proteinpaint/
-              - title: "Frequently Asked Questions"
+              - title: "What is Visualizaton Community"
+                path: /docs/visualization-community/
+              - title: "What is ProteinPaint and GenomePaint"
+                path: /docs/visualization-community/whatis
+              - title: "Data Types"
+                path: /docs/visualization-community/datatypes/
+              - title: "FAQ"
                 path: /docs/visualization-community/faq/
           - title: "ProteinPaint"
             collapsable: true
