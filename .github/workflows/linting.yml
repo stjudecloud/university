@@ -1,0 +1,13 @@
+name: Linting
+
+on: pull_request    
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - name: Run mdl 
+        uses: actionshub/markdownlint@main
+        with:
+          path: docs
