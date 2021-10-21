@@ -4,6 +4,8 @@ title: Visualization Community
 
 St. Jude Cloud's [Visualization Community](https://viz.stjude.cloud/) is a safe environment where you can navigate published research visualizations and learn to use ProteinPaint/GenomePaint to create and share your own visualizations. Once you find the visualization you need, you can easily re-create it utilizing innovative tools and then display the data dynamically for a streamlined experience.
 
+![](./vizhome.gif)
+
 ## Purpose
 * By utilizing St. Jude's visualization tools [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/), we allow world class genomic or epigenomic visualizations to be easily developed, accessed, and/or shared globally.
 
@@ -21,12 +23,12 @@ St. Jude Cloud's [Visualization Community](https://viz.stjude.cloud/) is a safe 
 
 
 <p align="center">
-    <a style="font-weight: bold" >Coming Soon!</a></p>
-<p align="center"> 
-    <a style="font-weight: light" >A new Visualize Your Data chapter</p>
-<p align="center"> 
-    <a style="font-weight: light" >Tutorials describing how to generate visuals per data type</p>
-<p align="center"> 
-    <a style="font-weight: light" >Updates to ProteinPaint and GenomePaint Guides</p>
-<p align="center"> 
-    <a style="font-weight: light" >Creating custom visualization tools within the community team</a></p>
+    <a style="font-weight: bold" >Coming Soon!</a> 
+<p align="center">
+</a>A new Visualize Your Data chapter</p> 
+<p align="center">
+</a> Tutorials describing how to generate visuals per data type</p>
+<p align="center">
+</a> Updates to ProteinPaint and GenomePaint Guides</p>
+<p align="center">
+</a> Creating custom visualization tools within the community team</a></p>
