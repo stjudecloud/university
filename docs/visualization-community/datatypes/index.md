@@ -15,7 +15,7 @@ Below is a highlight of supported data types visualized by ProteinPaint and Geno
 | MA+ VolcanPlot             | ![](./mavb-square.png)            |
 | Hi-C                       | ![](./hic-square.png)             |
 | Lollipop                   | ![](./lollipop-square.png)        |
-| FusionEditor               | ![](./fuusion-editor-square.png)  |
+| FusionEditor               | ![](./fusion-editor-square.png)   |
 | Expression Rank            | ![](./exprank-square.png)         |
 | VCF                        | ![](./vcf-square.png)             |
 | Splice junction            | ![](./junction-square.png)        |
