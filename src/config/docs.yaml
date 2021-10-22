@@ -110,8 +110,8 @@ domains:
             pages:
               - title: "What is Visualizaton Community"
                 path: /docs/visualization-community/
-              - title: "What is ProteinPaint and GenomePaint"
-                path: /docs/visualization-community/whatis
+              - title: "What are ProteinPaint and GenomePaint"
+                path: /docs/visualization-community/whatare
               - title: "Data Types"
                 path: /docs/visualization-community/datatypes/
               - title: "FAQ"
