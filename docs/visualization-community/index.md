@@ -23,7 +23,7 @@ St. Jude Cloud's [Visualization Community](https://viz.stjude.cloud/) is a safe 
 
 
 <p align="center">
-    <a style="font-weight: bold" >Coming Soon!</a> 
+    <a style="font-size: larger" >Coming Soon!</a> 
 <p align="center">
 </a>A new Visualize Your Data chapter</p> 
 <p align="center">
@@ -31,4 +31,5 @@ St. Jude Cloud's [Visualization Community](https://viz.stjude.cloud/) is a safe 
 <p align="center">
 </a> Updates to ProteinPaint and GenomePaint Guides</p>
 <p align="center">
-</a> Creating custom visualization tools within the community team</a></p>
+</a> Creating custom visualizations within your Vizualization Community account</a></p>
+
