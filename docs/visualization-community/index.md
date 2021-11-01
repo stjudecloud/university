@@ -17,7 +17,7 @@ St. Jude Cloud's [Visualization Community](https://viz.stjude.cloud/) is a safe 
 * Collaborate with others ***by exploring and sharing visualizations within a community or team***
 
 ## Support
-* [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/) is developed & supported by [Xin Xhaos's group](https://www.stjude.org/directory/z/xin-zhou.html)
+* [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/) is developed & supported by [Xin Zhou's group](https://www.stjude.org/directory/z/xin-zhou.html)
 
 * Visualization Community is developed by the St. Jude Cloud team to facilitate scientific research using St. Jude-developed visualization tools. For more information, please read the [paper](https://cancerdiscovery.aacrjournals.org/content/11/5/1082) or contact us at support@stjude.cloud. If you're wishing to cite Visualizaiton Community, please see this [page](https://university.stjude.cloud/docs/citing-stjude-cloud/).
 
