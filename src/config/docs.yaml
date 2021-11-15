@@ -192,17 +192,17 @@ domains:
                 path: /docs/visualization-community/genomepaint/
               - title: "GenomePaint User Guide"
                 path: /docs/visualization-community/genomepaint/user-guide/
-          - title: "Visualize Your Data"
-            collapsable: true
-            pages:
-              - title: "Vcf"
-                path: /docs/visualization-community/vcf/
-              - title: "Bam"
-                path: /docs/visualization-community/bam/
-              - title: "BigWig"
-                path: /docs/visualization-community/bigwig/
-              - title: "BigWig Stranded"
-                path: /docs/visualization-community/bigwigstranded/
+         # - title: "Visualize Your Data"
+         #   collapsable: true
+         #   pages:
+         #     - title: "Vcf"
+         #       path: /docs/visualization-community/vcf/
+         #     - title: "Bam"
+         #       path: /docs/visualization-community/bam/
+         #     - title: "BigWig"
+         #       path: /docs/visualization-community/bigwig/
+         #     - title: "BigWig Stranded"
+         #       path: /docs/visualization-community/bigwigstranded/
   - title: "Other"
     modules:
       - title: "Studies"
