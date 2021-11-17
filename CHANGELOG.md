@@ -1,3 +1,10 @@
+## [1.10.11](https://github.com/stjudecloud/university/compare/v1.10.10...v1.10.11) (2021-11-17)
+
+
+### Bug Fixes
+
+* attempting to fix deployment ([11989a2](https://github.com/stjudecloud/university/commit/11989a2a8f2e0401029fe37f632d5a7e405ae6cc))
+
 ## [1.10.10](https://github.com/stjudecloud/university/compare/v1.10.9...v1.10.10) (2021-11-16)
 
 ## [1.10.9](https://github.com/stjudecloud/university/compare/v1.10.8...v1.10.9) (2021-09-14)
