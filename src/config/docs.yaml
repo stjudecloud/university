@@ -191,8 +191,7 @@ domains:
               - title: "GenomePaint"
                 path: /docs/visualization-community/genomepaint/
               - title: "GenomePaint User Guide"
-                path: /docs/visualization-community/genomepaint/user-guide/
-                
+                path: /docs/visualization-community/genomepaint/user-guide/      
         # - title: "Visualize Your Data"
         #    collapsable: true
         #    pages:
@@ -203,18 +202,18 @@ domains:
         #      - title: "BigWig"
         #        path: /docs/visualization-community/bigwig/
         #      - title: "BigWig Stranded"
-         #       path: /docs/visualization-community/bigwigstranded/
-  - title: "Other"
-    modules:
-      - title: "Studies"
-        subtitle: "Discover projects who have donated their data."
-        path: /docs/studies/
-        icon: stjudecloud-blue-circle-logo.svg
-        chapters:
-          - title: "Studies"
-            pages:
-              - title: "Sickle Cell"
-                path: /docs/studies/sickle-cell/
+        #        path: /docs/visualization-community/bigwigstranded/
+          #- title: "Other"
+           #  modules:
+          #- title: "Studies"
+           #  subtitle: "Discover projects who have donated their data."
+           #     path: /docs/studies/
+           #    icon: stjudecloud-blue-circle-logo.svg
+        #chapters:
+          #- title: "Studies"
+           # pages:
+             # - title: "Sickle Cell"
+             #   path: /docs/studies/sickle-cell/
       # - title: "Portals"
       #   subtitle: "Browse project-specific sites."
       #   path: /docs/portals/
