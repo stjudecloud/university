@@ -1,3 +1,10 @@
+## [1.10.15](https://github.com/stjudecloud/university/compare/v1.10.14...v1.10.15) (2021-11-18)
+
+
+### Bug Fixes
+
+* cicd changes reversed, added npm install node-sass ([3c83185](https://github.com/stjudecloud/university/commit/3c831851fa9fe0580670df64c03753c1d3f596f1))
+
 ## [1.10.14](https://github.com/stjudecloud/university/compare/v1.10.13...v1.10.14) (2021-11-18)
 
 
