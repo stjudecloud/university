@@ -1,3 +1,10 @@
+## [1.10.12](https://github.com/stjudecloud/university/compare/v1.10.11...v1.10.12) (2021-11-18)
+
+
+### Bug Fixes
+
+* github actions all caches disabled ([2c5b93a](https://github.com/stjudecloud/university/commit/2c5b93a4eb97def4bb1cf6eed9d417dcb322790a))
+
 ## [1.10.11](https://github.com/stjudecloud/university/compare/v1.10.10...v1.10.11) (2021-11-17)
 
 
