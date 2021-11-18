@@ -1,3 +1,5 @@
+## [1.10.13](https://github.com/stjudecloud/university/compare/v1.10.12...v1.10.13) (2021-11-18)
+
 ## [1.10.12](https://github.com/stjudecloud/university/compare/v1.10.11...v1.10.12) (2021-11-18)
 
 
