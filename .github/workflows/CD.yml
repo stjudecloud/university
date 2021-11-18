@@ -7,7 +7,7 @@ on:
 
 env:
   NODE_ENV: production
-  NODE_VERSION: 14.x
+  NODE_VERSION: 15.x
 
 jobs:
   semantic-release:
@@ -66,27 +66,27 @@ jobs:
         uses: actions/setup-node@v1.4.4
         with:
           node-version: ${{ env.NODE_VERSION }}
-#      - name: Cache NPM dependencies
-#        uses: actions/cache@v2
-#        with:
-#          path: ~/.npm
-#          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-#          restore-keys: |
-#            ${{ runner.os }}-node-
-#      - name: Cache Gatsby folder
-#        uses: actions/cache@v2
-#        with:
-#          path: .cache
-#          key: ${{ runner.os }}-cache-gatsby
-#          restore-keys: |
-#            ${{ runner.os }}-cache-gatsby
-#      - name: Cache Public folder
-#        uses: actions/cache@v2
-#        with:
-#          path: public/
-#          key: ${{ runner.os }}-public-gatsby
-#          restore-keys: |
-#            ${{ runner.os }}-public-gatsby
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Cache Gatsby folder
+        uses: actions/cache@v2
+        with:
+          path: .cache
+          key: ${{ runner.os }}-cache-gatsby
+          restore-keys: |
+            ${{ runner.os }}-cache-gatsby
+      - name: Cache Public folder
+        uses: actions/cache@v2
+        with:
+          path: public/
+          key: ${{ runner.os }}-public-gatsby
+          restore-keys: |
+            ${{ runner.os }}-public-gatsby
       - uses: actions/download-artifact@v2
         with:
           name: version-file
@@ -94,6 +94,7 @@ jobs:
       - name: Run Build
         run: |
           npm install
+          npm install --save-dev  --unsafe-perm node-sass
           GATSBY_DOCS_VERSION=$(cat ./VERSION) GATSBY_DOCS_HASH=$(git rev-parse --short "$GITHUB_SHA") npm run build
         env:
           GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
