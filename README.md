@@ -44,7 +44,7 @@
 </p>
 
 ---
-## Quick Start
+## Quick Start 
 
 You can use the following commands to get started working with St. Jude Cloud University.
 
