@@ -1,3 +1,10 @@
+## [1.10.17](https://github.com/stjudecloud/university/compare/v1.10.16...v1.10.17) (2021-11-19)
+
+
+### Bug Fixes
+
+* build fix - removed package-lock.json, clean up of debugging steps in github actions ([3847346](https://github.com/stjudecloud/university/commit/3847346177b652cf3fd61977897c616deceb38ce))
+
 ## [1.10.16](https://github.com/stjudecloud/university/compare/v1.10.15...v1.10.16) (2021-11-19)
 
 
