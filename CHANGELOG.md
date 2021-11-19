@@ -1,3 +1,10 @@
+## [1.10.16](https://github.com/stjudecloud/university/compare/v1.10.15...v1.10.16) (2021-11-19)
+
+
+### Bug Fixes
+
+* added ssh-in step ([63fc8e7](https://github.com/stjudecloud/university/commit/63fc8e7584f7d9f54ab146b2d14dba1b9b8fa63a))
+
 ## [1.10.15](https://github.com/stjudecloud/university/compare/v1.10.14...v1.10.15) (2021-11-18)
 
 
