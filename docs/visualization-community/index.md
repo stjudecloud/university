@@ -2,18 +2,22 @@
 title: Visualization Community
 ---
 
-St. Jude Cloud's [Visualization Community](https://viz.stjude.cloud/) is a safe environment where you can navigate published research visualizations and learn to use ProteinPaint/GenomePaint to create and share your own visualizations. Once you find the visualization you need, you can easily re-create it utilizing innovative tools and then display the data dynamically for a streamlined experience.
+St. Jude Cloud's [Visualization Community](https://viz.stjude.cloud/) is a safe environment where you can explore curated visualizations, learn to use ProteinPaint/GenomePaint to create your own visualizations, and/or host visualizations within a team that can be shared publicly or remain private. 
+
+Once you find the visualization you need, you can easily re-create it utilizing innovative tools and then display the data dynamically for a streamlined experience.
 
 ![](./vizhome.gif)
 
 ## Purpose
-* By utilizing St. Jude's visualization tools [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/), we allow world class genomic or epigenomic visualizations to be easily developed, accessed, and/or shared globally.
+* By utilizing St. Jude's visualization tools [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/), we allow world class genomic or proteomic visualizations to be easily developed, accessed, and/or shared globally.
 
-* You can explore the shared visualizations by [Data type](/docs/visualization-community/datatypes/index.md/Supporteddatatypes/), [Tool](https://viz.stjude.cloud/tools), Research Domain, or by chronological order of publication.
+* You can explore the shared visualizations by [Data type](/docs/visualization-community/datatypes/index.md/Supporteddatatypes/), [Tool](https://viz.stjude.cloud/tools), Research Domain, or by chronological order of publication. 
+
+* We even offer Communities to share and unify research within a genre of research. 
 
 ## Goals
 * Create sophisticated visualizations ***without being a computational scientist or engineer***
-* Unravel discoveries to accelerate live-saving research ***based on the visual analysis***
+* Unravel discoveries to accelerate life-saving research ***based on the visual analysis***
 * Collaborate with others ***by exploring and sharing visualizations within a community or team***
 
 ## Support
