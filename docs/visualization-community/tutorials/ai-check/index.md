@@ -1,8 +1,8 @@
 ---
-title: Create a GenomePaint Track with a BAM File 
+title: Create an Allelic Imbalance Track 
 ---
 # Description
-In this tutorial, one will learn how to run the ProteinPaint command from within VisCom to create a GenomePaint track by using a BAM file as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomepaint-bam-track-example-beta~29).
+In this tutorial, one will learn how to run the ProteinPaint command from within VisCom to create an Allelic Imbalance track as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomepaint-allelic-imbalance-example~32).
 
 
 !!!tip
@@ -15,14 +15,14 @@ In this tutorial, one will learn how to run the ProteinPaint command from within
 ## When data is hosted on the DNAnexus server:
 *   Login to VisCom and create a new visualization.
 *   Copy the code block example below.
-*	Upload the BAM data into DNAnexus.
-*	Locate your BAM data in your DNAnexus project.
-*	On the right of the file, click the 3 dot menu for the .bam file.
+*	Upload the aicheck data into DNAnexus.
+*	Locate your aicheck data in your DNAnexus project.
+*	On the right of the file, click the 3 dot menu for the .gz file.
 *   Select download in the dropdown.
     *	This will prompt a GET URL link.
 *	Click 'Get URL' to copy the temporary link.
 
-!!!warning 
+!!!warning
 This link allows others to access this file and is only available for 24h.
 !!!
 
@@ -40,31 +40,31 @@ This link allows others to access this file and is only available for 24h.
 
 **URL Parameter EXAMPLE**
 ```JS
-runproteinpaint({   
-	host:'https://proteinpaint.stjude.org',
-	holder: document.getElementById("#visualization_container"),
-	parseurl:true,
-	block: true,
-	nobox:1,
-	noheader:1,
-	genome:'hg19',
-	position:'chr4:55589707-55589907',
-	nativetracks:'RefGene',
-	tracks:[   
-		{
-			type:'bam',
-			url:'insert link here',
-			name:'enter name of file here',
-		}
-	]
-})
+runproteinpaint({
+  host: "https://proteinpaint.stjude.org",
+  holder: visualizationContainer[0],
+  parseurl: true,
+  block: true,
+  nobox: 1,
+  noheader: 1,
+  genome: "hg19",
+  position: "chr8:126890266-132795076",
+  nativetracks: "RefGene",
+  tracks: [
+    {
+      type: "aicheck",
+      url: "enter link here",
+      name: "enter name here",
+    },
+  ]
+});
 ```
 
 # When data is hosted on the HPC
 *   Log into VisCom and create a new visualization.
 *   Copy the code block example below.
-*	Upload the BAM data onto the HPC.
-*	Locate your BAM data in your directory.
+*	Upload the aicheck data onto the HPC.
+*	Locate your aicheck data in your directory.
 *	Find the path to this file.
 *   Add path to file in line 14
 *   Add name in line 15
@@ -74,22 +74,23 @@ runproteinpaint({
 
 **Path to File EXAMPLE**
 ```JS
-runproteinpaint({   
-	host:'https://proteinpaint.stjude.org',
-	holder: document.getElementById("#visualization_container"),
-	parseurl:true,
-	block: true,
-	nobox:1,
-	noheader:1,
-	genome:'hg19',
-	position:'chr4:55589707-55589907',
-	nativetracks:'RefGene',
-	tracks:[   
-		{
-			type:'bam',
-			file:'name/filetopath/.bam',
-			name:'enter name of file here',
-		}
-	]
-})
+runproteinpaint({
+  host: "https://proteinpaint.stjude.org",
+  holder: visualizationContainer[0],
+  parseurl: true,
+  block: true,
+  nobox: 1,
+  noheader: 1,
+  genome: "hg19",
+  position: "chr8:126890266-132795076",
+  nativetracks: "RefGene",
+  tracks: [
+    {
+      type: "aicheck",
+      file: "name/pathtofile/file.gz",
+      name: "enter name here",
+    },
+  ]
+});
 ```
+

@@ -1,63 +1,95 @@
 ---
-title: Create a visual with a BigWig file 
+title: Create a GenomePaint track with a BigWig file 
 ---
-**This is for external users that use DNANexus to host data**
 
-**Coming Soon:** Video tutorials and running by a URL parameter
-
-## create html 
-*	open notepad or text editor
-*	copy the below example code
-*   change line 18 (follow instructions below)
-*	save the doc with the .html suffix
-*	drag and drop into browser or open saved html file
-*	view visualization 
-
-## hosting on DNAnexus server:
-*	host the data onto the DNAnexus server 
-*	locate your BigWig data in your DNAnexus project
-*	ensure you have a .bw file in your project
-*	click the 3 dot menu for the .bw file and select download
-    *	this prompts a GET URL link
-*	copy the link 
-!!!warning 
-*this link allows others to access this file and is only available for 24h*
-!!!
-*	paste into line 18 in the example below
-
-**Now that you have your data organized, now it is time to create your html file so that you can embed or see your visualization**
+# Description 
+In this tutorial, one will learn how to run the ProteinPaint command from within VisCom to create a GenomePaint track by using a BigWig file as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomepaint-bigwig-example~34).
 
 !!!tip
-*	position, RefGene, or gene may be interchangeable
-*	tracks are where the differentiation will be for each visualization
-*	case sensitive lines like *indexUrl* vs *indexurl*
+*	Position or gene may be interchangeable.
+*   Genome can be different.
+*	Tracks are where the differentiation will be for each visualization.
+*	ProteinPaint has case sensitive lines like *indexUrl* vs *indexurl*.
 !!!
 
-**EXAMPLE**
+## When data is hosted on the DNAnexus server:
+*   Login to VisCom and create a new visualization.
+*   Copy the code block example below.
+*	Upload the bigwig data into DNAnexus.
+*	Locate your bigwig data in your DNAnexus project.
+*	On the right of the file, click the 3 dot menu for the .bw file.
+*   Select download in the dropdown.
+    *	This will prompt a GET URL link.
+*	Click 'Get URL' to copy the temporary link.
 
-    1	<!DOCTYPE html>
-    2   </head>
-    3	<body>
-    4	  <div id="holder"></div>
-    5	  <script type="text/javascript">
-    6	  runproteinpaint({   
-    7		host:'https://proteinpaint.stjude.org',
-    8		holder: document.getElementById('a'),
-    9		parseurl:true,
-    10		block: true,
-    11		nobox:1,
-    12		noheader:1,
-    13		genome:'hg19',
-    14      nativetracks:'RefGene',
-    15		tracks:[   
-    16			{
-    17				type:'bigwig',
-    18				file:'proteinpaint_demo/hg19/bam/kit.exon8.del.bam',
-    19				name:'BigWig test',
-    20              height: 100
-    21			}
-    22		]
-    23	});
-    24	  </script>
-    25	</body>
-    26	</html>%
+!!!warning 
+This link allows others to access this file and is only available for 24h.
+!!!
+
+*	Paste the link into line 13 in the example below.
+*   Add file name in line 14
+*   Save your visualization in VisCom.
+*   Click the 'Go Back' button in VisCom.
+*   Click your visualization title to render. 
+
+!!!tip
+* Other free storage software is compatible to use with the URL parameter.
+* Follow the DNAnexus steps, but replace the URL accordingly.
+!!!
+
+**URL Parameter EXAMPLE**
+```JS
+runproteinpaint({
+  host: "https://proteinpaint.stjude.org",
+  holder: visualizationContainer[0],
+  parseurl: true,
+  block: true,
+  nobox: 1,
+  noheader: 1,
+  genome: "hg19",
+  nativetracks: "RefGene",
+  tracks: [
+    {
+      "type": "bigwig",
+      "url": "link to .bw file",
+      "name": "name of file here",
+      "height": 100
+    },
+  ]
+})
+```
+
+# When data is hosted on the HPC
+*   Log into VisCom and create a new visualization.
+*   Copy the code block example below.
+*	Upload the bigwig data onto the HPC.
+*	Locate your bigwig data in your directory.
+*	Find the path to this file.
+*   Add path to file to line 13:
+*   Add name of file to line 14
+*   Save your visualization in VisCom.
+*   Click the 'Go Back' button in VisCom.
+*   Click your visualization title to render. 
+
+
+**Path to File EXAMPLE**
+```JS
+runproteinpaint({
+  host: "https://proteinpaint.stjude.org",
+  holder: visualizationContainer[0],
+  parseurl: true,
+  block: true,
+  nobox: 1,
+  noheader: 1,
+  genome: "hg19",
+  nativetracks: "RefGene",
+  tracks: [
+    {
+      "type": "bigwig",
+      "file": "name/filetopath/.bw",
+      "name": "name of file here",
+      "height": 100
+    },
+  ]
+})
+```
