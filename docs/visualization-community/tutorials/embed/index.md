@@ -2,18 +2,19 @@
 title: Embed Your Visualization
 ---
 # Description 
-In this tutorial, one will learn how to run the ProteinPaint command and [embed](https://stjudecloud.github.io/docs/guides/proteinpaint/developers-guide/embedding-proteinpaint/) a html file.
+In this part of the tutorial, one will learn how to [embed](https://stjudecloud.github.io/docs/guides/proteinpaint/developers-guide/embedding-proteinpaint/) a html file based on the code block developed to make a visualization. 
 
 ## Create a html file
 **You will need a text editor to create a .html file for embedding**
 *	Open notepad or a text editor.
 *	Copy your code block you generated for your visualization.
-    * Replace the ProteinPaint command with your code block.
+    * Replace the run ProteinPaint () command with your code block.
+      * This should be everything between the script <>.
 *	Save the file with the .html suffix.
-*	Drag and drop the .html file into the browser or open the saved .html file by double-clicking.
-*	Now embed your .html or view the visualization within the browser.
+*	Drag and drop the .html file into the browser, open the saved .html file by double-clicking, or save within a website.
 
-**Example**
+
+**Block Code Example**
 
 ```html
 <!DOCTYPE html>

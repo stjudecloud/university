@@ -2,19 +2,57 @@
 title: Create an Allelic Imbalance Track 
 ---
 # Description
-In this tutorial, one will learn how to run the ProteinPaint command from within VisCom to create an Allelic Imbalance track as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomepaint-allelic-imbalance-example~32).
+In this tutorial, one will learn how to run the ProteinPaint command from within VisCom to create an Allelic Imbalance track as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomepaint-allelic-imbalance-example~32). 
 
+Use: From tumor and germline DNA
+[ProteinPaint Google Docs](https://docs.google.com/document/d/1dZIOoLLbQE-kmZ31Ia_5cud30d9UeRodP4hRCSw3HII/edit)
 
 !!!tip
-*	Position or gene may be interchangeable. 
-*   Genome can be different. 
-*	Tracks are where the differentiation will be for each visualization.
-*	ProteinPaint has case sensitive lines like *indexUrl* vs *indexurl*.
+* The code block below remains static for any visualization (except *nativetracks* for Lollipop)
+
+```JS
+runproteinpaint({
+    host: "https://proteinpaint.stjude.org",
+    holder: document.getElementById('a'),
+    parseurl: true,
+    block: true,
+    nobox: 1,
+    noheader: 1,
+    nativetracks: "RefGene",
+```
+
+*   Genome and position can change values.
+
+``` JS
+genome: 
+postion: 
+```
+
+*	Tracks contain different parameters.
+
+``` JS
+tracks: [
+    {
+      type: "aicheck",
+      url: "enter link here",
+      name: "enter name here",
+    },
+  ]
+})
+```
+*	ProteinPaint has case sensitive parameters like *indexUrl* vs *indexurl*.
+*   Expert customization can be found in Google Docs hyperlink above.
 !!!
 
-## When data is hosted on the DNAnexus server:
+## Getting started:
 *   Login to VisCom and create a new visualization.
-*   Copy the code block example below.
+*   Copy the code block example that best fits where your data lives.
+*   Update the genome parameter, line 8.
+*   Update the position parameter, line 9.
+*   Update the name in the track, line 14 in either example. 
+
+
+## When data is hosted on the DNAnexus server:
 *	Upload the aicheck data into DNAnexus.
 *	Locate your aicheck data in your DNAnexus project.
 *	On the right of the file, click the 3 dot menu for the .gz file.
@@ -26,8 +64,7 @@ In this tutorial, one will learn how to run the ProteinPaint command from within
 This link allows others to access this file and is only available for 24h.
 !!!
 
-*	Paste the link into line 14 in the example below.
-*   Add name of file to line 15. 
+*	Paste the link into *url*, line 14.
 *   Save your visualization in VisCom.
 *   Click the 'Go Back' button in VisCom.
 *   Click your visualization title to render. 
@@ -57,20 +94,17 @@ runproteinpaint({
       name: "enter name here",
     },
   ]
-});
+})
 ```
 
 # When data is hosted on the HPC
-*   Log into VisCom and create a new visualization.
-*   Copy the code block example below.
 *	Upload the aicheck data onto the HPC.
 *	Locate your aicheck data in your directory.
 *	Find the path to this file.
-*   Add path to file in line 14
-*   Add name in line 15
-*   Save your visualization in VisCom.
-*   Click the 'Go Back' button in VisCom.
-*   Click your visualization title to render. 
+* Add path to file in line 14.
+* Save your visualization in VisCom.
+* Click the 'Go Back' button in VisCom.
+* Click your visualization title to render. 
 
 **Path to File EXAMPLE**
 ```JS
@@ -87,10 +121,10 @@ runproteinpaint({
   tracks: [
     {
       type: "aicheck",
-      file: "name/pathtofile/file.gz",
+      file: "name/path_to_file.gz",
       name: "enter name here",
     },
   ]
-});
+})
 ```
 
