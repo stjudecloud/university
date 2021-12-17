@@ -3,7 +3,7 @@ title: Data Types & Graphs
 ---
 Below is a highlight of supported data types visualized by ProteinPaint and GenomePaint
 <p align="center">
-</a>| .bai | .bam | .bw | .fpkm | .gz | .hic | .pgv | .txt | UMAP.csv/.tsv |</p> 
+</a>| .bai | .bam | .bw | .fpkm | .gz | .hic | .pgv | .txt | UMAP | .csv/.tsv |</p> 
 
 | Data Types                 | Graph                             |
 | -------------------------- | --------------------------------- |

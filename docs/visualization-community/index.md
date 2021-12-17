@@ -1,19 +1,23 @@
 ---
-title: Visualization Community
+title: Visualization Community (VisCom)
 ---
 
-St. Jude Cloud's [Visualization Community](https://viz.stjude.cloud/) is a safe environment where you can explore curated visualizations, learn to use ProteinPaint/GenomePaint to create your own visualizations, and/or host visualizations within a team that can be shared publicly or remain private. 
+St. Jude Cloud's [Visualization Community (VisCom)](https://viz.stjude.cloud/) is a safe environment where you can explore, create and analyze curated visualizations that utilize [ProteinPaint](https://proteinpaint.stjude.org/) and [GenomePaint](https://genomepaint.stjude.cloud/). 
 
-Once you find the visualization you need, you can easily re-create it utilizing innovative tools and then display the data dynamically for a streamlined experience.
+Once you find the visualization you need within VisCom, you can easily re-create it by copying the curated code block displayed for each visualization or by viewing our [library](https://university.stjude.cloud/docs/visualization-community/basics) and building new visualizations within your account. All visualizations remain private until a P.I. or Team Lead approves it. 
 
 ![](./vizhome.gif)
 
 ## Purpose
-* By utilizing St. Jude's visualization tools [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/), we allow world class genomic or proteomic visualizations to be easily developed, accessed, and/or shared globally.
+* You can easily explore shared visualizations by searching or filtering by institution, data type, lab, author, pubMed ID, and diagnosis. 
 
-* You can explore the shared visualizations by [Data type](/docs/visualization-community/datatypes/index.md/Supporteddatatypes/), [Tool](https://viz.stjude.cloud/tools), Research Domain, or by chronological order of publication. 
+* By utilizing St. Jude's visualization tools [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/), we allow world class genomic or proteomic visualizations to be easily developed, accessed, and/or shared globally. Each visualization saved in VisCom is private by default until a P.I. or team lead approves.
 
-* We even offer Communities to share and unify research within a genre of research. 
+* Teams can be created to provide a secure, private workspace. Visualizations can be shared and managed before becoming publicly available. Adding a permalink or PubMed ID to the visualization increases the profile and accessibility to your figure(s). 
+
+* We even offer [Communities](https://viz.stjude.cloud/communities) to share and unify research within a genre of research. 
+
+![](./contributors.png)
 
 ## Goals
 * Create sophisticated visualizations ***without being a computational scientist or engineer***
@@ -29,11 +33,9 @@ Once you find the visualization you need, you can easily re-create it utilizing 
 <p align="center">
     <a style="font-size: larger" >Coming Soon!</a> 
 <p align="center">
-</a>A new Visualize Your Data chapter</p> 
+</a> Written and video tutorials describing how to generate visuals per data type</p>
 <p align="center">
-</a> Tutorials describing how to generate visuals per data type for external users</p>
-<p align="center">
-</a> Updates to ProteinPaint and GenomePaint Guides</p>
+</a> Updates to ProteinPaint and GenomePaint guides</p>
 <p align="center">
 </a> Creating custom visualizations within your Vizualization Community account</a></p>
 

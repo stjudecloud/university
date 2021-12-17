@@ -106,7 +106,7 @@ domains:
         path: /docs/visualization-community/
         icon: stjudecloud-visualization-community-logo.svg
         chapters:
-          - title: "Getting Started"
+          - title: "Overview"
             pages:
               - title: "What is Visualizaton Community"
                 path: /docs/visualization-community/
@@ -115,7 +115,57 @@ domains:
               - title: "Data Types"
                 path: /docs/visualization-community/datatypes/
               - title: "FAQ"
-                path: /docs/visualization-community/faq/
+                path: /docs/visualization-community/faq/  
+          - title: "Getting Started"
+            collapsable: true
+            pages:
+              - title: "Overview"
+                path: /docs/visualization-community/overview
+              - title: "How to Sign-in"
+                path: /docs/visualization-community/sign-in/
+              - title: "How to Build a Template"
+                path: /docs/visualization-community/template/
+              - title: "Manage Your Data"
+                path: /docs/visualization-community/data-manage/
+              - title: "Collections & Communities"
+                path: /docs/visualization-community/col_com/
+              - title: "Public vs Private Visualizations"
+                path: /docs/visualization-community/public_private/
+              - title: "Video Tutorials"
+                path: /docs/visualization-community/videos/
+              - title: "Embedding"
+                path: /docs/visualization-community/embed/
+          - title: "Code Block Library"
+            collapsable: true
+            pages:
+              - title: "Code Block Basics"
+                path: /docs/visualization-community/basics/
+              - title: "VCF"
+                path: /docs/visualization-community/library/vcf/
+              - title: "BAM"
+                path: /docs/visualization-community/library/bam/
+              - title: "BigWig"
+                path: /docs/visualization-community/library/bigwig/
+              - title: "BigWig Stranded"
+                path: /docs/visualization-community/library/bigwigstranded/
+              - title: "Heatmap"
+                path: /docs/visualization-community/library/heatmap/
+              - title: "Single Cell"
+                path: /docs/visualization-community/library/singlecell/
+              - title: "Allelic Imbalance"
+                path: /docs/visualization-community/library/ai-check/
+              - title: "Arc"
+                path: /docs/visualization-community/library/arc/
+              - title: "Expression Rank"
+                path: /docs/visualization-community/library/expression-rank/
+              - title: "Hi-C"
+                path: /docs/visualization-community/library/hic/
+              - title: "Lollipop"
+                path: /docs/visualization-community/library/lollipop/
+              - title: "MA Volcano"
+                path: /docs/visualization-community/library/MA-Volcano/
+              - title: "Splice Junctions Cohort"
+                path: /docs/visualization-community/library/splice-junctions-cohort/
           - title: "ProteinPaint"
             collapsable: true
             pages:
@@ -191,40 +241,7 @@ domains:
               - title: "GenomePaint"
                 path: /docs/visualization-community/genomepaint/
               - title: "GenomePaint User Guide"
-                path: /docs/visualization-community/genomepaint/user-guide/      
-          - title: "Visualize Your Data"
-            collapsable: true
-            pages:
-              - title: "Video Tutorials"
-                path: /docs/visualization-community/tutorials/tutorial_videos/
-              - title: "Embedding"
-                path: /docs/visualization-community/tutorials/embed/
-              - title: "VCF"
-                path: /docs/visualization-community/tutorials/vcf/
-              - title: "BAM"
-                path: /docs/visualization-community/tutorials/bam/
-              - title: "BigWig"
-                path: /docs/visualization-community/tutorials/bigwig/
-              - title: "BigWig Stranded"
-                path: /docs/visualization-community/tutorials/bigwigstranded/
-              - title: "Heatmap"
-                path: /docs/visualization-community/tutorials/heatmap/
-              - title: "Single Cell"
-                path: /docs/visualization-community/tutorials/singlecell/
-              - title: "Allelic Imbalance"
-                path: /docs/visualization-community/tutorials/ai-check/
-              - title: "Arc"
-                path: /docs/visualization-community/tutorials/arc/
-              - title: "Expression Rank"
-                path: /docs/visualization-community/tutorials/expression-rank/
-              - title: "Hi-C"
-                path: /docs/visualization-community/tutorials/hic/
-              - title: "Lollipop"
-                path: /docs/visualization-community/tutorials/lollipop/
-              - title: "MA Volcano"
-                path: /docs/visualization-community/tutorials/MA-Volcano/
-              - title: "Splice Junctions Cohort"
-                path: /docs/visualization-community/tutorials/splice-junctions-cohort/
+                path: /docs/visualization-community/genomepaint/user-guide/    
           #- title: "Other"
            #  modules:
           #- title: "Studies"
