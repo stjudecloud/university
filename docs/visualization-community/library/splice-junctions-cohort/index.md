@@ -1,10 +1,10 @@
 ---
-title: Create a Splice-Junction Cohort
+title: Splice Junction
 ---
 
 # Description 
 
-These code block examples can be used to generate a spilice junction from a cohort as seen in 
+These code block examples can be used to generate a splice junction from a cohort as seen in 
 [Viscom](https://viz.stjude.cloud/zhou-lab/visualization/genomepaint-splice-junction-example~39).
 
 Use: See splice junctions of a cohort
