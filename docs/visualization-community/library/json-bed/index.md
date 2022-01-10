@@ -9,7 +9,7 @@ Use: Genomic feature alignment
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1GP81rer7YEb0RpIej2XXfx-k7SCAL1Od9At_oczf06A/)
 
 
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update lines 8, 12, 13, 16** 
 ```JS
@@ -34,7 +34,7 @@ runproteinpaint({
 });
 ```
 
-# Path to File EXAMPLE
+# File Key Example
 
 **Be sure to update lines 8, 12, 13, 16** 
 ```JS

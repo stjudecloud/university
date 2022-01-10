@@ -8,7 +8,7 @@ Use: Quantitative data at genomic postions
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1ZnPZKSSajWyNISSLELMozKxrZHQbdxQkkkQFnxw6zTs/edit#heading=h.6spyog171fm9)
 
 
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update lines 8, 13, 14 and 15** 
 ```JS
@@ -32,7 +32,7 @@ runproteinpaint({
 })
 ```
 
-# Path to File EXAMPLE
+# File Key Example
 
 **Be sure to update lines 8, 13, 14 and 15** 
 ```JS

@@ -8,7 +8,7 @@ Use: Allele-specific expression analysis
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1owXUQuqw5hBHFERm0Ria7anKtpyoPBaZY_MCiXXf5wE/edit#heading=h.ly3x0hngycmz)
 
 
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update lines 7 and 9**
 
@@ -43,7 +43,7 @@ runproteinpaint({
 })
 ```
 
-# Path to file EXAMPLE
+# File Key Example
 
 **Be sure to update lines 7 and 9**
 

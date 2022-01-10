@@ -7,7 +7,7 @@ These code block examples can be used to generate a profile gene value (pvg) as 
 Use: Profiling results & gene-level values
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1yrRpDUZWSRGuCa0snGwRuo721WRHgdYTX7GWIsZ_fSY/)
 
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update lines 10, 14, 16, 18, 22, 23, 24 and 25** 
 
@@ -41,7 +41,7 @@ runproteinpaint({
   }]
 });
 ```
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update lines 10, 14, 16, 18, 22, 23, 24 and 25** 
  

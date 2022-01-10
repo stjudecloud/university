@@ -7,7 +7,7 @@ These code block examples can be used to generate a figure using bigwig stranded
 Use:  Quantitative data at genomic positions using forward and reverse strand reads
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1ZnPZKSSajWyNISSLELMozKxrZHQbdxQkkkQFnxw6zTs/edit#heading=h.5m3g10g8lvol)
 
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update lines 8, 9, 13, 16 and 19**
 ```JS
@@ -38,7 +38,7 @@ runproteinpaint({
 })
 ```
 
-**Path to File EXAMPLE**
+# File Key Example
 
 **Be sure to update lines 8, 9, 13, 16 and 19**
 ```JS

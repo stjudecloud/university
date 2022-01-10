@@ -13,7 +13,7 @@ In this part of the tutorial, one will learn how to [embed](https://stjudecloud.
 4. Save the file with the .html suffix.
 5. Drag and drop the .html file into the browser, open the saved .html file by double-clicking, or save within a website.
 
-
+For further details you can go [here](https://stjudecloud.github.io/docs/guides/proteinpaint/developers-guide/embedding-proteinpaint/).
 **Block Code Example**
 
 ```html
@@ -51,4 +51,3 @@ In this part of the tutorial, one will learn how to [embed](https://stjudecloud.
 % 
 ```
 
-For further details you can go [here](https://stjudecloud.github.io/docs/guides/proteinpaint/developers-guide/embedding-proteinpaint/).

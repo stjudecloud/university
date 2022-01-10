@@ -7,7 +7,7 @@ These code block examples can be used to generate MA+Volcano plot by using a Big
 Use: Differential gene expression
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1gEhywyMzMQRM10NFvsObw1yDSWxVY7pxYjsQ2-nd6x4/edit)
 
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update lines 4, 7, 9, 12, 14 and 17** 
 ```JS
@@ -38,8 +38,7 @@ runproteinpaint({
     }
 })
 ```
-
-# Path to File EXAMPLE
+# File Key Example
 
 **Be sure to update lines 4, 7, 9, 12, 14 and 17** 
 ```JS

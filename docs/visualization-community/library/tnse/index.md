@@ -8,7 +8,10 @@ Use: 2D scatterplot of samples & metadata
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1XHi_WqVdarUNbc_ESMEBp2l-zwhnGcIfiBWA5n2omZQ/)
 
 
-# Path to file EXAMPLE
+# URL Key Example
+Coming soon: This currently is not supported with a url key at this time. 
+
+# File key Example
 
 **Be sure to update lines 8, 9, 14, 15**
 ```JS

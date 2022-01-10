@@ -8,7 +8,7 @@ Use: Explore coding and non-coding variants in cancer
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1owXUQuqw5hBHFERm0Ria7anKtpyoPBaZY_MCiXXf5wE/edit)
 
 
-# URL Parameter EXAMPLE
+# URL Key EXAMPLE
 
 **Be sure to update lines 7, 8, 13, 14 and 15**
 ``` JS
@@ -33,7 +33,7 @@ runproteinpaint({
 ```
 
 
-# Path to File EXAMPLE
+# File Key Example
 
 **Be sure to update lines 7, 8, 13 and 14**
 ```JS

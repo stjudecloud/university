@@ -2,15 +2,17 @@
 title: How to Build a Template
 ---
 
-Each visualization made in your team will display in a list view. The visualization will remain private until your PI or team lead approves it in written form to [support@stjude.cloud](support@stjude.cloud). See the Public vs. Private section for more details.
+Each visualization made in your team will display in a list view. The visualization will remain private until your PI or team lead approves it in written form to [support@stjude.cloud](support@stjude.cloud). See the **Public vs. Private** chapter for more details.
 
 ## Open a New Template
 When you are logged in, have navigated to teams as aforementioned in the previous section, then select a team from the list, and go to the **Visualizations** tab.
+
 ![](./team_list.png)
 
 All the visualizations made by that team will populate. 
 
 Scroll to the bottom of the list and select **Create Visualization**.
+
 ![](./create_button.png)
 
 This will populate an empty template. You may select a thumbnail image to represent your visualization and fill in the following fields:
@@ -24,12 +26,13 @@ This will populate an empty template. You may select a thumbnail image to repres
 
 
 ## Learn the Code Block Basics
-If you need to learn more about the code block basics go [here].
+If you need to learn more about the code block basics go [here](https://university.stjude.cloud/docs/visualization-community/basics/).
 
 ## Build Your Code
 
 Now that you have briefly learned about how the code block works, let's select a code block for the visualization you want to create. Go to the **Code Block Library** on the left and select which data type you will be using to create your visualization.
-![](./visualize_list.png)
+
+![](./codeblock.png)
 
 Next, let's learn which example you need to copy and paste into the VisCom editor so that ProteinPaint can access your data and render your visualization. Each example either has a   
 
@@ -40,7 +43,7 @@ or a
 ```JS
 url
 ``` 
-parameter. Some visualizations may have more than 1 ```url``` key; if this happens, the library example will explain what to do. 
+key. Some visualizations may have more than 1 ```url``` key; if this happens, the library example will explain what to do. 
 Below describes how to get the `file` path or `url`. 
 
 # Manage your Data
@@ -58,11 +61,12 @@ After you select the code block, depending on where the data lives, and update t
 To render the visualization, click ‘Update Visualization’ within VisCom.
 ![](./finalize_vis.png)
 You should get a success banner.
-![](.success.png)
+
+![](./success.png)
 
 Next, click the Go Back button at the top of the visualization template. Then, click the title of the visualization to render it.
 
-If you have any errors due to file formatting or within the ```runproteinpaint()```, the error will be validated and shown. Therefore, go back to your list of visualizations and click the icon to edit. 
+If you have any errors due to file formatting or code block, the error will be validated and shown after you open your visualization. Therefore, go back to your list of visualizations and click the icon to edit. 
 ![](./view_vis.png)
 
 

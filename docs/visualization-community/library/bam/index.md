@@ -8,7 +8,7 @@ Use: sequence reads alignment
 [ProteinPaint Google Docs](https://docs.google.com/presentation/d/1oGI72Vooc25oAKir4DmarNDjDmUcigQk65FU8niSE_k/edit#slide=id.g8398dfdab9_0_0)
 
 
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update lines 8, 9, 14 and 15**
 ```JS
@@ -32,7 +32,7 @@ runproteinpaint({
 })
 ```
 
-# Path to File EXAMPLE
+# File Key Example
 
 **Be sure to update lines 8, 9, 14 and 15**
 ```JS

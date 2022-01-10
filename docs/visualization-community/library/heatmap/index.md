@@ -8,7 +8,7 @@ For additional learning of each element or key please go to the heatmap [Protein
 
 **This code block below is for snv files. If you have SV or fusion transcript, CNV, ITD, Intragenic deletion/in-frame, Truncation, then we cannot support these at this time from the url key.**
  
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update line 6, 9, and 11. Update lines 14-16 if you have JSON**
 ``` JS
@@ -33,7 +33,7 @@ runproteinpaint({
 ```
 
 
-# Path to File EXAMPLE
+# File Key Example
 
 **Be sure to update line 6, 9, and 11. Update lines 14-16 if you have JSON**
 ```JS
@@ -56,10 +56,12 @@ runproteinpaint({
 	}
 })
 ```
-Adding a mutation set for more than one data type (snv, copy number, fusion, etc) is expert-level customization. Currently, VisCom only allows the `snvindel_url` key, but if you have other data types, then please reach out so that we can support this for you. These would display as *Mutation Types* as seen below: 
+Adding a mutation set for more than one data type (snv, copy number, fusion, etc) is expert-level customization. Currently, VisCom only allows the `snvindel_url` key. We are working to add these keys which would display as *Mutation Types* as seen below: 
+
 ![](./mutation_type.png)
 
 Formats for the file types are listed below and the hyperlinks are found at the ProteinPaint mutation landscape track.
+
 ![](./format.png)
 
 Once we can support this, it can be coded as:
@@ -101,7 +103,7 @@ To view an example of the JSON file format:
 Furthermore, you can convert an excel sheet to JSON.  There are many ways to do this, but we recommend [BeautifyTools](https://beautifytools.com/excel-to-json-converter.php) and to debug use [https://jsonlint.com/](https://jsonlint.com/).
 
 # Further Customization
-If you want to add ProteinPaint or GenomePaint viewers to the genes, please use the below, but the files used must be specific to render correctly. If you have trouble, please reach out. 
+If you want to add ProteinPaint or GenomePaint viewers to the genes, please see below, but the files used must be specific to render correctly. If you have trouble, please reach out. 
 
 ```JS
 "heatmapJSON":{
