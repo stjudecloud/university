@@ -8,8 +8,8 @@ Use:
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1e0JVdcf1yQDZst3j77Xeoj_hDN72B6XZ1bo_cAd2rss/edit#heading=h.pkybixxj4p6)
 
 
-# URL Parameter EXAMPLE
-
+# URL Key Example
+Coming soon: This currently is not supported with a url key at this time. 
 **Be sure to update lines 7 and 9**
 
 ```JS
@@ -25,7 +25,7 @@ runproteinpaint({
 })
 ```
 
-# Path to file EXAMPLE
+# File Key Example
 
 **Be sure to update lines 7 and 9**
 

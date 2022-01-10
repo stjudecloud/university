@@ -8,7 +8,7 @@ Use: From tumor and germline DNA
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1dZIOoLLbQE-kmZ31Ia_5cud30d9UeRodP4hRCSw3HII/)
 
 
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update lines 8, 9, 14, 15**
 ```JS
@@ -33,7 +33,7 @@ runproteinpaint({
 ```
 
 
-# Path to File EXAMPLE
+# File Key Example
 
 **Be sure to update lines 8, 9, 14, 15**
 ```JS

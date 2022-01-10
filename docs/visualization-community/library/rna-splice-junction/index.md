@@ -10,7 +10,7 @@ Use: See splice junctions of RNA
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1PFva3Mn-U4VPNW0vHHC-CSnYBeotRnqbhCMQPmyLQG4/edit)
 
 
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update lines 8, 13, 14, 17, 18, 21, 22** 
 ```JS
@@ -43,7 +43,7 @@ runproteinpaint({
 })
 ```
 
-# Path to File EXAMPLE
+# File Key Example
 
 **Be sure to update lines 8, 13, 14, 17, 18, 21, 22** 
 ```JS

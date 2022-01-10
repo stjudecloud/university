@@ -8,23 +8,11 @@ These code block examples can be used to generate a Single-Cell figure by using 
 Use: Single Cell omics viewer
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1YVxw2aPru6bAlTzUfE9GAQAvzbiBiqJiBR1X-g5ZBLI/edit)
 
-# URL Parameter EXAMPLE
-
-**Be sure to update lines 6 and 7**
-```JS
-runproteinpaint({
-	host:'https://proteinpaint.stjude.org',
-    holder:document.getElementById('aaa'),
-    noheader:1,
-	singlecell:{
-       genome:'galGal5',
-       jsonUrl:'enter link here'
-    },
-})
-```
+# URL Key Example
+Coming soon: This currently is not supported with a url key at this time. 
 
 
-# Path to File EXAMPLE
+# File Key Example
 
 **Be sure to update lines 6 and 7** 
 ```JS

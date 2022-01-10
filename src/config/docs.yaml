@@ -131,8 +131,6 @@ domains:
                 path: /docs/visualization-community/col_com/
               - title: "Public vs Private Visualizations"
                 path: /docs/visualization-community/public_private/
-              - title: "Video Tutorials"
-                path: /docs/visualization-community/videos/
               - title: "Embedding"
                 path: /docs/visualization-community/embed/
           - title: "Code Block Library"

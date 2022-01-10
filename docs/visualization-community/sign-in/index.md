@@ -1,11 +1,11 @@
 ---
 title: How to Sign-In
 ---
-In this section, you will learn how to sign-up and sign-in so that you can create visualizations within an account. Once you sign-up, you will need to be associated to a team to create a visualization, see below on how to proceed. You can go to [Visualization Community](https://viz.stjude.cloud/) and immediately begin exploring without being logged in.
+In this section, you will learn how to sign-up and/or sign-in so that you can create visualizations within an account. Once you sign-up, you will need to be associated to a team to create a visualization, see below on how to proceed. In the meantime, you can go to [Visualization Community](https://viz.stjude.cloud/) and immediately begin exploring without being logged in.
 
 **New User**
 
-To sign up for a new account, you must first go to [viz.stjude.cloud/signin](viz.stjude.cloud/signin). account authentication, be sure to select to remember your credentials so that you do not have to enter it again each time. It will then refresh to the home page of Visualization Community. When you are done, contact [support@stjude.cloud](support@stjude.cloud) to be added to a team. 
+To sign up for a new account, you must first go to [viz.stjude.cloud/signin](viz.stjude.cloud/signin). Once you complete the account authentication, be sure to select to remember your credentials so that you do not have to enter it again each time. It will then refresh to the home page. When you are done, contact [support@stjude.cloud](support@stjude.cloud) to be added to a team. 
 
 **Existing User**
 

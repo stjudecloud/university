@@ -31,4 +31,5 @@ Below is a highlight of supported data types visualized by ProteinPaint and Geno
 | 2DMAF*                    | ![](./2dmaf-square.png)           |
 | Data Facet Table*         | ![](./tklist-square.png)          |
 
-* VisCom does not support 2DMAF or Data Facet Tables at this time, but ProteinPaint can. 
+  *VisCom does not support 2DMAF or Data Facet Tables at this time.
+ 

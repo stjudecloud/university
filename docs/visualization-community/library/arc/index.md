@@ -8,7 +8,7 @@ Use: View pair-wise chromatin interactions at a locus
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1MQ0Z_AD5moDmaSx2tcn7DyVKGp49TS63pO0cceGL_Ns/edit#heading=h.8zct8j3cscak)
 
 
-# URL Parameter EXAMPLE
+# URL Key Example
 
 **Be sure to update lines 8, 9, 14 and 15**
 
@@ -37,7 +37,7 @@ runproteinpaint({
 ```
 
 
-# Path to File EXAMPLE
+# File Key Example
 
 **Be sure to update lines 8, 9, 14 and 15**
 
