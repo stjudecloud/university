@@ -1,5 +1,5 @@
 ---
-title: Create a Lollipop Figure
+title: Lollipop
 ---
 
 # Description 

@@ -1,14 +1,17 @@
 ---
-title: Code Block Basics
+title: Learning the Code Block Basics
 ---
 
-For adding code to the VisCom's editor, a ```runproteinpaint()``` must be used, which uses javascript. To find more details about this software please see the [ProteinPaint Google Docs](https://docs.google.com/document/d/1JWKq3ScW62GISFGuJvAajXchcRenZ3HAvpaxILeGaw0/edit) for help. 
-
-Let's begin covering the basics of the code block.
+To add code to the VisCom's editor, a 
+```JS
+runproteinpaint()
+``` 
+call must be used, which is written in JavaScript. To find more details about this software please see the [ProteinPaint Google Docs](https://docs.google.com/document/d/1JWKq3ScW62GISFGuJvAajXchcRenZ3HAvpaxILeGaw0/) for further detail. 
 
 !!!tip
-* ProteinPaint is case sensitive.
-* Lollipop does not have a ```file``` or ```url``` parameter.
+* ProteinPaint is case sensitive, but the URL key is case in-sensitive.
+* Lollipop does not have a `file` or `url` parameter.
+* DataFacet Tables and 2DMAF are not supported in VisCom.
 * The code block has static parameters for many of the visualizations. See below an example:
 !!!
 
@@ -21,15 +24,10 @@ runproteinpaint({
     nobox: 1,
     noheader: 1,
     nativetracks: "RefGene",
+    genome: hg38,
 ```
 
-```Genome``` will be dependent on your species that you are using. Sometimes this is replaced with ```postion```. 
-
-``` JS
-genome: hg38
-```
-
-```Tracks``` or ```Studyview``` will contain different keys. This is where you will ```name``` your study or track and point ProteinPaint to where your data lives. See example below:
+`Holder` will be different in the ProteinPaint code examples so please be sure to use this one in VisCom. `Genome` will be dependent on the species that you are investigating. Further explanation of all attributes in ProteinPaint can be found [here](https://docs.google.com/document/d/1ZnPZKSSajWyNISSLELMozKxrZHQbdxQkkkQFnxw6zTs/edit#heading=h.6spyog171fm9) (page 3).
 
 ``` JS
 studyview: {
@@ -40,13 +38,6 @@ studyview: {
        }],
         show_heatmap: 1,
 	}
-})
+}
+```
 
-```
-For heatmaps, you may add additional customization by adding JSON.
-```JS
-        heatmapJSON:{
-            "samplegroup": [
-              {
-              }
-```

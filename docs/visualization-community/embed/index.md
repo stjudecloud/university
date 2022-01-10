@@ -6,12 +6,12 @@ In this part of the tutorial, one will learn how to [embed](https://stjudecloud.
 
 ## Create a html file
 **You will need a text editor to create a .html file for embedding**
-*	Open notepad or a text editor.
-*	Copy your code block you generated for your visualization.
-    * Replace the run ProteinPaint () command with your code block.
+1. Open notepad or a text editor.
+2. Copy your code block you generated for your visualization.
+3. Replace the r`unproteinpaint()` command with your code block.
       * This should be everything between the script <>.
-*	Save the file with the .html suffix.
-*	Drag and drop the .html file into the browser, open the saved .html file by double-clicking, or save within a website.
+4. Save the file with the .html suffix.
+5. Drag and drop the .html file into the browser, open the saved .html file by double-clicking, or save within a website.
 
 
 **Block Code Example**
@@ -50,3 +50,5 @@ In this part of the tutorial, one will learn how to [embed](https://stjudecloud.
 </html>
 % 
 ```
+
+For further details you can go [here](https://stjudecloud.github.io/docs/guides/proteinpaint/developers-guide/embedding-proteinpaint/).

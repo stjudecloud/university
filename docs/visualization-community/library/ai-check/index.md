@@ -5,7 +5,7 @@ title: Allelic-Imbalance
 These code block examples can be used to generate an allelic-imblance figure as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomepaint-allelic-imbalance-example~32). 
 
 Use: From tumor and germline DNA
-[ProteinPaint Google Docs](https://docs.google.com/document/d/1dZIOoLLbQE-kmZ31Ia_5cud30d9UeRodP4hRCSw3HII/edit)
+[ProteinPaint Google Docs](https://docs.google.com/document/d/1dZIOoLLbQE-kmZ31Ia_5cud30d9UeRodP4hRCSw3HII/)
 
 
 # URL Parameter EXAMPLE

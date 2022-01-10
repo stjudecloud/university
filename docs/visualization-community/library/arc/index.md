@@ -2,7 +2,7 @@
 title: Arc
 ---
 # Description 
-These code block examples can be used to generate an allelic-imblance figure as seen in [VisCom].  
+These code block examples can be used to generate an allelic-imblance figure as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomepaint-arc-track-example~108).
 
 Use: View pair-wise chromatin interactions at a locus
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1MQ0Z_AD5moDmaSx2tcn7DyVKGp49TS63pO0cceGL_Ns/edit#heading=h.8zct8j3cscak)

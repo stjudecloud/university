@@ -1,5 +1,5 @@
 ---
-title: Create a Single-Cell track with a .fpkm file 
+title: Single Cell
 ---
 
 # Description 
@@ -39,3 +39,11 @@ runproteinpaint({
 })
 ```
 
+If you need an example of how the JSON should be formatted, you can:
+1. Example 1: Go to https://proteinpaint.stjude.org/
+   * Select Single Cell
+      * It will load an Example
+         * Select Code 
+            * Review the JSON formatting
+
+Furthermore, you can have your excel sheet converted to JSON; there are many ways to do this, but one example is using [BeautifyTools](https://beautifytools.com/excel-to-json-converter.php) and debug by using [https://jsonlint.com/](https://jsonlint.com/).

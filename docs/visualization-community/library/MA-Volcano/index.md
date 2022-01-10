@@ -1,5 +1,5 @@
 ---
-title: Create a GenomePaint MA+Volcano plot
+title: MA+Volcano 
 ---
 # Description 
 These code block examples can be used to generate MA+Volcano plot by using a BigWig Stranded file as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomepaint-mavolcano-plots-example~43)

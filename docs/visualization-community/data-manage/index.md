@@ -1,50 +1,71 @@
 ---
 title: Manage Your Data
 ---
-In this section, you can learn how to store your data and acces it for your ```url``` or ```file``` parameter to run the ```proteinpaint()``` command:
-* if you have your data stored in DNAnexus.
-* if you have your data stored on your local and want to upload to DNAnexus.
-* if you have your data stored on the HPC and want to move them to DNAnexus.
-* if you have your data stored on the HPC.
+In this section, you can learn which key to use based on where your data lives. 
+ ```JS
+ url
+ ``` 
+ or 
+ ```JS
+ file
+ ```
+keys to run the 
+```JS 
+proteinpaint()
+``` 
+command:
+Follow the below tutorials depending on where your data lives:
 
-# When data is hosted in the cloud using DNAnexus:
-If you want or have data stored on DNAnexus go [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/working-with-our-data/) to further learn how to manage your data. There are many options to upload your data to DNAnexus so be sure to check out each chapter explaining how to upload. Then, once you are ready, locate your data in your DNAnexus project by reading below.
-
-**Download your data's temporary link**
-On the right of the file within your project, click the 3-dot menu for your file. Then, select download in the dropdown. This will prompt a GET URL link. Click the 'Get URL' to copy the temporary link. If you need more assistance, follow the tutorial found [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-dnanexus/). 
-
-!!!warning 
-This link allows others to access this file and is only available for 24h.
-!!!
-
-Now, paste the link from DNAnexus into your ```url``` parameter in the code block you copied for your visualization. 
-
-!!!tip
-* Other free storage software is compatible to use with the url parameter.
-* Follow the same DNAnexus steps, but replace the URL line accordingly.
-!!!
-
-To learn more about how to find the url parameter watch this [video].
-
-# When data is hosted on the HPC
-
-**Logging-in**
-If you do not have access to the HPC, you will need to submit a request ticket to[Information Services/Services Now](https://stjude.service-now.com/sp?id=sc_cat_item&sys_id=bb8437fd1b026c109057f2ff034bcb07&sysparm_category=812f8e8d4fabf2444ce80ad14210c7bc) or email the hpc team directly to gain access. Additionally, you must also request access to the <tp> directory and any directory within <tp>. 
+Here you will want to follow the one highlighted below.
+* if you have your data stored in DNAnexus, go [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-dnanexus/). 
+* if you have your data stored on your local and want to upload to DNAnexus, go [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-local/).
+* if you have your data stored on the HPC and want to move them to DNAnexus, go [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-cluster/).
 
 !!!tip
-The High Performance Research Computing team is 
-  available to answer HPC or other Information Services 
-  questions at the weekly HPC Office Hour. This is a virtual 
-  meeting.  See https://wiki.stjude.org/display/RC/HPC+Office+Hours
-  for more information.  This time slot can also be used for 
-  assistance with specific computational problems.
-!!!
+* The url key is case in-sensitive.
+* Dropbox storage will not work since these are binary files.
+* AW and DNAnexus are two examples that the `runproteinpaint()` can access. 
+* !!!
 
-Once you have access to the HPC and <tp> directory, you will want to follow the tutorial found [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-cluster/).
+# Extending your DNAnexus download link
+First you will want to check if you have python installed.
+```JS 
+python --version
+```
+Then, check if you have python3 installed.
+```JS
+python3 --version
+```
+Install DNAnexus. 
+```JS
+pip3 install dxpy
+```
+Open DNAnexus on the command line.
+```JS
+dx
+```
+Get your token by logging into DNAnexus. Navigate to your profile icon. Select the API token in the top navbar. Select to generate the token.
+Then go to your terminal and enter:
+```JS
+dx login --token token_here
+```
+ Type the below to see what project you are in. 
+```JS 
+dx ls
+```
+ Type the below to go to a project. 
+```JS
+dx cd
+```
+Type the below to see the durations.
+```JS
+dx make_download_url file_name.txt --help
+```
+Type to set duration. 
+```JS
+dx make_download_url file_name.txt --duration 100y
+```
+Use this URL for VisCom so be sure to save this. 
 
-
-To learn more on how to find your data on the HPC watch this [video].
-
-**Coming soon:** how to run ProteinPaint locally with a license
-
-**Coming soon:** how to run ProteinPaint using a url parameter from an external server
+# Licensing 
+If you wish to have your own license of ProteinPaint please follow this [guideline](https://www.stjude.org/research/why-st-jude/shared-resources/technology-licensing/technologies/proteinpaint-web-application-for-visualizing-genomic-data-sj-15-0021.html). 

@@ -166,6 +166,20 @@ domains:
                 path: /docs/visualization-community/library/MA-Volcano/
               - title: "Splice Junctions Cohort"
                 path: /docs/visualization-community/library/splice-junctions-cohort/
+              - title: "RNA Splice Junction"
+                path: /docs/visualization-community/library/rna-splice-junction/
+              - title: "JSON BED"
+                path: /docs/visualization-community/library/json-bed/
+              - title: "Profile Gene Value"
+                path: /docs/visualization-community/library/pgv/
+              - title: "Track List and Facet Table"
+                path: /docs/visualization-community/library/facet/
+              - title: "Fusion Editor"
+                path: /docs/visualization-community/library/fusion/
+              - title: "ASE"
+                path: /docs/visualization-community/library/ase/
+              - title: "t-SNE"
+                path: /docs/visualization-community/library/tsne/
           - title: "ProteinPaint"
             collapsable: true
             pages:

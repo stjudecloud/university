@@ -1,5 +1,5 @@
 ---
-title: Create a GenomePaint Track with a VCF File
+title: VCF
 ---
 # Description 
 These code block examples can be used to generate a figure using vcf data as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomepaint-vcf-track-example~30).
