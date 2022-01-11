@@ -108,7 +108,7 @@ domains:
         chapters:
           - title: "Overview"
             pages:
-              - title: "What is Visualizaton Community"
+              - title: "What is Visualization Community"
                 path: /docs/visualization-community/
               - title: "What are ProteinPaint and GenomePaint"
                 path: /docs/visualization-community/whatare
