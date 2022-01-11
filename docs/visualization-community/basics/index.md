@@ -29,7 +29,7 @@ runproteinpaint({
     genome: hg38,
 ```
 
-Then, each visualization contains a track or study view. These are comprised of different keys or elements describing that track. See the code block library in the left navbar for the specifics on each data type. Each track will require access to the data which by a url or path key. Mutation Landscape, splice junctions from a cohort, scatterplot, and single cell tracks accept JSON. 
+Then, each visualization contains a track or study view. These are comprised of different keys or elements describing that track. See the code block library in the left navbar for the specifics on each data type. Each track will require access to the data which by a url or path key. Mutation Landscape, splice junctions from a cohort, scatterplot, and single cell tracks allow JSON. 
 
 ``` JS
 studyview: {

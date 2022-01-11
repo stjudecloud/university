@@ -9,7 +9,7 @@ Once you find the visualization you need within VisCom, you can easily re-create
 ![](./vizhome.gif)
 
 ## Purpose
-* You can easily explore shared visualizations by searching or filtering by institution, data type, lab, author, PubMedID, and diagnosis. 
+* You can explore shared visualizations by searching or filtering by institution, data type, lab, author, PubMedID, and diagnosis. 
 
 * By utilizing St. Jude's visualization tools [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/), we allow world class genomic or proteomic visualizations to be easily developed, accessed, and/or shared globally. Each visualization saved in VisCom is private by default until a P.I. or team lead approves.
 
