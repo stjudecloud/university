@@ -150,7 +150,7 @@ $ Choose an instance type for your app [mem1_ssd1_x4]: azure:mem1_ssd1_x4
 Although our app doesn't need any Internet access in this example, it may be required for your project. Also be sure to check what instance type you will need in the [API Specifications](https://documentation.dnanexus.com/developer/api/running-analyses/instance-types).
 !!!
 
-The FastQC executable supports a variety of file formats (BAM, SAM, FastQ, etc.), and outputs a HTML report and a zip file that contains all the graphs and data. We will use that knowledge to write the input and output parameters for our application. We can also specify other parameters such as the timeout policy, programming language, and instance type. For more information, refer to the [IO and Run Specification](https://documentation.dnanexus.com/developer/api/running-analyses/io-and-run-specifications) guide.
+The FastQC executable supports a variety of file formats (BAM, SAM, FASTQ, etc.), and outputs a HTML report and a zip file that contains all the graphs and data. We will use that knowledge to write the input and output parameters for our application. We can also specify other parameters such as the timeout policy, programming language, and instance type. For more information, refer to the [IO and Run Specification](https://documentation.dnanexus.com/developer/api/running-analyses/io-and-run-specifications) guide.
 
 ## Integrating Tools and Packages
 
