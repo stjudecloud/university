@@ -44,7 +44,7 @@ The RNA-Seq Expression Classification pipeline produces the following outputs:
 
 ### Workflow Steps
 
-1. [Only for realignment workflow] The aligned BAM is converted to FastQ and is aligned to `GRCh38_no_alt`
+1. [Only for realignment workflow] The aligned BAM is converted to FASTQ and is aligned to `GRCh38_no_alt`
    using [standard STAR mapping](https://stjudecloud.github.io/rfcs/0001-rnaseq-workflow-v2.0.0.html).
 2. [Only for realignment workflow] A feature count (.count.txt) file is produced for comparison to
    St. Jude Cloud reference data.
@@ -84,7 +84,7 @@ or the results can occur. If your sample is *not* aligned to this genome build, 
 recommend submitting the sample to the realignment-based workflow.
 !!!
 
-We provide two versions of the RNA-Seq Expression Classification tool depending on desired input. The full workflow allows a user to upload a sample in BAM format. That sample will then be converted to `FastQ` format, aligned with `STAR` two-pass alignment, and feature counts generated with `htseq-count`
+We provide two versions of the RNA-Seq Expression Classification tool depending on desired input. The full workflow allows a user to upload a sample in BAM format. That sample will then be converted to `FASTQ` format, aligned with `STAR` two-pass alignment, and feature counts generated with `htseq-count`
 
 To get started, you need to navigate to the [RNA-Seq Expression Classification tool page](https://platform.stjude.cloud/tools/rnaseq-expression-classification). You'll need to click the "Start" button in the left hand pane. This creates a cloud workspace in DNAnexus with the same name as the tool. After this, you will be able to upload your input files to that workspace.
 
