@@ -59,10 +59,10 @@ The Rapid RNA-Seq pipeline produces the following outputs:
     * The **Fuzzion** (Rice et al. unpublished data) fusion detection
       algorithm is run to provide high sensitivity for recurrent gene
       fusions.
-    * The **RNAPEG** (Wu et al. RNA 2018) splice
+    * The **RNAPEG** ([Wu et al.](https://pubmed.ncbi.nlm.nih.gov/29844105/)) splice
       junction read counting algorithm is run to quantify read counts
       for splice junctions. These splice junction read counts are then
-      used by **CICERO** (Li et al. Genome Biology 2020) to detect
+      used by **CICERO** ([Li et al.](https://pubmed.ncbi.nlm.nih.gov/32466770/)) to detect
       putative gene fusions.
 4. Custom visualizations for putative gene fusions and genome coverage
    are produced by ProteinPaint.
