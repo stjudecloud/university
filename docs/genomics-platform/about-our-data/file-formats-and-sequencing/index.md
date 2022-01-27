@@ -117,14 +117,7 @@ CNV files contain copy number alteration (CNA) analysis results for paired tumor
 | chrom         | chromosome                                                                                                                                                   |
 | loc.start     | start of segment                                                                                                                                             |
 | loc.end       | end of segment                                                                                                                                               |
-| num.mark      | number of windows retained in the segment (gaps and windows with low mappability are excluded)                                                               |
-| length.ratio  | The ratio between the length of the used windows to the genomic length                                                                                       |
-| seg.mean      | The estimated GC corrected difference signal (2 copy gain will have a seg.mean of 1)                                                                         |
-| GMean         | The mean coverage in the germline sample (a value of 1 represents diploid)                                                                                   |
-| DMean         | The mean coverage in the tumor sample                                                                                                                        |
-| LogRatio      | Log2 ratio between tumor and normal coverage                                                                                                                 |
-| Quality score | A empirical score used in merging                                                                                                                            |
-| SV_Matching   | Whether the boundary of the segments were supported by SVs (3: both ends supported, 2: right end supported, 1: left end supported, 0: neither end supported) |
+| LogRatio      | Log2 ratio between tumor and normal coverage                                                                                                 
 
 ### Feature Counts files
 
