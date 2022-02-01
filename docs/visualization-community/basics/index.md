@@ -7,6 +7,7 @@ To add code to the VisCom's editor, a call must be used, which is written in Jav
 runproteinpaint()
 ``` 
 
+Example data for all tracks can be found by downloading [this](https://pecan.stjude.cloud/static/pp-support/pp.demo.tgz) tarball (~30m).
 
 !!!tip
 * ProteinPaint is case sensitive, but the URL key is case in-sensitive.
