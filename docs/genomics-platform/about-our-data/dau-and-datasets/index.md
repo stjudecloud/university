@@ -42,14 +42,14 @@ The **Embargo Date** specifies the date that a publishing embargo on the file in
 | DAU or Data Set                                        | Embargo Date                  |
 | ------------------------------------------------------ | ----------------------------- |
 | Pediatric Cancer Genome Project                        | July 23, 2018                 |
+| Pan-Acute Lymphoblastic Leukemia                       | January 14, 2019              |
 | St. Jude LIFE                                          | January 15, 2019              |
 | Clinical Genomics                                      | Rolling based on release date |
 | Sickle Cell Genome Project                             | September 1, 2019             |
 | Childhood Cancer Survivor Study                        | November 1, 2019              |
-| Pan-Acute Lymphoblastic Leukemia                       | January 14, 2019              |
 | Pediatric therapy-related Myeloid Neoplasms            | February 12, 2021             |
-| Pediatric Acute Myeloid Leukemia                       | December 1, 2021              |
 | Bone Marrow Failure and Myelodysplastic Syndromes      | October 30, 2021              |
+| Pediatric Acute Myeloid Leukemia                       | December 1, 2021              |
 | Genomics and transcriptomics of relapsed pediatric AML | August 20, 2022               |
 | Medulloblastoma Preclinical Ribociclib and Gemcitabine | September 1, 2022             |
 
