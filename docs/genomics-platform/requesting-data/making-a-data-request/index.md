@@ -15,7 +15,7 @@ St. Jude Cloud does not allow for-profit companies to access any restricted acce
 1. Data in St. Jude Cloud is grouped into [Data Access Units (DAUs)](../glossary/#data-access-unit), which usually correspond to large-scale sequencing initiatives at St. Jude. 
 2. Individuals can [apply for access](../glossary/#data-access-agreement) to DAUs on a case-by-case basis for a specific amount of time (usually 1 year).
 3. Access to data in a given DAU is assessed by the corresponding [Data Access Committee](../glossary/#data-access-committee) who reviews a variety of factors to grant access.
-4. There are a number of terms of use and restrictions outlined in the [Data Access Agreement](https://platform.stjude.cloud/access_form). Everyone who will be working with the data must understand and agree to these terms.
+4. There are a number of terms of use and restrictions outlined in the [Data Access Agreement](https://platform.stjude.cloud/api/v1/data_access_agreements/). Everyone who will be working with the data must understand and agree to these terms.
 
 ## Selecting Data
 
