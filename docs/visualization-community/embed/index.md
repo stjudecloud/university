@@ -8,7 +8,7 @@ In this part of the tutorial, one will learn how to [embed](https://stjudecloud.
 **You will need a text editor to create a .html file for embedding**
 1. Open notepad or a text editor.
 2. Copy your code block you generated for your visualization.
-3. Replace the r`unproteinpaint()` command with your code block.
+3. Replace the `runproteinpaint()` command below with your code block.
       * This should be everything between the script <>.
 4. Save the file with the .html suffix.
 5. Drag and drop the .html file into the browser, open the saved .html file by double-clicking, or save within a website.

@@ -2,7 +2,9 @@
 title: Visualization Tools
 ---
 
-* [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) is the flagship protein-based visualization tool created at St. Jude. You can use it to examine the domains of genes, known isoforms of a given gene, hotspot mutations for single nucleotide variations (SNVs), insertions and deletions (Indels), and structual variations (SVs) in both pediatric and adult cancers, and RNA-Seq expression of a given protein in different tumour types. 
+* [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) is the flagship protein-based visualization tool created at St. Jude. You can use it to examine the domains of genes, known isoforms of a given gene, hotspot mutations for single nucleotide variations (SNVs), insertions and deletions (Indels), and structual variations (SVs) in both pediatric and adult cancers, and RNA-Seq expression of a given protein in different tumour types.  
+
+* ProteinPaint showcases a Genome Broswer that utilize various track types to showcase different genomic views. Furthermore, there are other Apps that can be run to show visualizations such as Scatterplots, Single Cell and even Heatmaps to name a few.
 
 ![](./protein_paint_overview.png)
   

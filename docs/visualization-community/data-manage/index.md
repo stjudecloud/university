@@ -1,27 +1,24 @@
 ---
 title: Manage Your Data
 ---
-In this section, you will learn which key to use, based on where your data lives:
- ```JS
- url
- ``` 
- or 
- ```JS
- file
- ```
-
-Follow the below tutorials depending on where your data lives:
-* if you have your data stored in DNAnexus, go [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-dnanexus/). 
-* if you have your data stored on your local and want to upload to DNAnexus, go [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-local/).
-* if you have your data stored on the HPC and want to move them to DNAnexus, go [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-cluster/).
+In this section, you will learn how and where to find your data so that you can use our visualization editors. 
 
 !!!tip
 * The url key is case in-sensitive.
 * Dropbox storage url keys will not work since these are binary files.
 * Amazon (AWS) and DNAnexus are two examples that `runproteinpaint()` can access. 
+* The <file> key is only for internal St. Jude users to access the HPC.
 !!!
 
-# Accessing DNAnexus from the command line (extend your file duration)
+Follow the below tutorials if you want to upload data to DNAnexus. 
+* if you have your data stored in DNAnexus, go [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-dnanexus/). 
+* if you have your data stored on your local and want to upload to DNAnexus, go [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-local/).
+
+!!!Required
+You must follow the below tutorial to extend your links after you upload your data.
+!!!
+
+# Accessing DNAnexus from the command line (to extend your file duration)
 First you will want to check if you have python installed.
 ```JS 
 python --version
@@ -30,7 +27,7 @@ Then, check if you have python3 installed
 ```JS
 python3 --version
 ```
-and install DNAnexus.
+now install DNAnexus.
 ```JS
 pip3 install dxpy
 ```
@@ -57,5 +54,17 @@ dx make_download_url file_name.txt --duration 100y
 ```
 Use this URL for VisCom's url key, so be sure to save this. 
 
-# Licensing 
-If you wish to have your own license of ProteinPaint please follow this [guideline](https://www.stjude.org/research/why-st-jude/shared-resources/technology-licensing/technologies/proteinpaint-web-application-for-visualizing-genomic-data-sj-15-0021.html). 
+
+# Accessing the HPC
+* If you have your data stored on the HPC and want to move them to DNAnexus, follow these [instructions](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-cluster/).
+
+* In order to allow ProteinPaint's server to access your data on the HPC, you must move it to to the <tp> directory. To access this, signin (see tutorial above if you are new) and type 
+```JS
+cd /research/rgs01/resgen/legacy/gb_customTracks/tp
+```
+
+Here, you can make a new directory to store your data. 
+!!!Important
+The data must be on the proteinpaint.stjude.org server and not ppr1, otherwise your visualizations have to be viewed by VPN.
+!!!
+

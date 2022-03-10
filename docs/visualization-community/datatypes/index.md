@@ -1,35 +1,37 @@
 ---
 title: Data Types & Graphs
 ---
-Below is a highlight of supported data types visualized by ProteinPaint and GenomePaint
+Below is a highlight of supported data types visualized by ProteinPaint and GenomePaint within VisCom.
+Code = traditional code editor view
+Easy = new easy editor view
 <p align="center">
 </a>| .bai | .bam | .bw | .fpkm | .gz | .hic | .pgv | .txt | UMAP | .csv/.tsv |</p> 
 
-| Data Types                | Graph                             |
-| ------------------------- | --------------------------------- |
-| Heatmap                   | ![](./heatmap-square.png)         |
-| Bigwig                    | ![](./bigwig-square.png)          |
-| BigWig Stranded           | ![](./bigwig-stranded-square.png) |
-| Single Cell               | ![](./singlecell-square.png)      |
-| PGV                       | ![](./pgv-square.png)             |
-| MA+ VolcanPlot            | ![](./mavb-square.png)            |
-| Hi-C                      | ![](./hic-square.png)             |
-| Lollipop                  | ![](./lollipop-square.png)        |
-| FusionEditor              | ![](./fusion-editor-square.png)   |
-| Expression Rank           | ![](./exprank-square.png)         |
-| VCF                       | ![](./vcf-square.png)             |
-| Splice junction           | ![](./junction-square.png)        |
-| Splice junction of cohort | ![](./junction-cohort-square.png) |
-| Bam                       | ![](./bam-square.png)             |
-| Ase                       | ![](./ase-square.png)             |
-| JSON BED                  | ![](./bedj-square.png)            |
-| Scatterplot               | ![](./scatterplot-square.png)     |
-| Studyview                 | ![](./lollipop-square.png)        |
-| Aicheck                   | ![](./aicheck-square.png)         |
-| MAF-timeline              | ![](./maf-timeline-square.png)    |
-| Arc                       | ![](./arc-square.png)             |
-| 2DMAF*                    | ![](./2dmaf-square.png)           |
-| Data Facet Table*         | ![](./tklist-square.png)          |
+| Data Types                | Graph                             | Editor |
+| ------------------------- | --------------------------------- | ------ |
+| Heatmap                   | ![](./heatmap-square.png)         | Code   |
+| Bigwig                    | ![](./bigwig-square.png)          | Easy   |
+| BigWig Stranded           | ![](./bigwig-stranded-square.png) | Easy   |
+| Single Cell               | ![](./singlecell-square.png)      | Code   |
+| PGV                       | ![](./pgv-square.png)             | Code   |
+| MA+ VolcanPlot            | ![](./mavb-square.png)            | Code   |
+| Hi-C                      | ![](./hic-square.png)             | Easy   |
+| Lollipop                  | ![](./lollipop-square.png)        | Code   |
+| FusionEditor              | ![](./fusion-editor-square.png)   | Code   |
+| Expression Rank           | ![](./exprank-square.png)         | Easy   |
+| VCF                       | ![](./vcf-square.png)             | Easy   |
+| Splice junction           | ![](./junction-square.png)        | Easy   |
+| Splice junction of cohort | ![](./junction-cohort-square.png) | Easy   |
+| Bam                       | ![](./bam-square.png)             | Easy   |
+| Ase                       | ![](./ase-square.png)             | N / A  |
+| JSON BED                  | ![](./bedj-square.png)            | Easy   |
+| Scatterplot               | ![](./scatterplot-square.png)     | Code   |
+| Studyview                 | ![](./lollipop-square.png)        | Code   |
+| Aicheck                   | ![](./aicheck-square.png)         | Easy   |
+| MAF-timeline              | ![](./maf-timeline-square.png)    | N / A  |
+| Arc                       | ![](./arc-square.png)             | Easy   |
+| 2DMAF                     | ![](./2dmaf-square.png)           | N / A  |
+| Data Facet Table          | ![](./tklist-square.png)          | Code   |
 
-  *VisCom does not support 2DMAF or Data Facet Tables at this time.
+N/A = not supported at this time.
  
