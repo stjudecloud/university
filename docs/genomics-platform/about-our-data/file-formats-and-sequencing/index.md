@@ -134,7 +134,7 @@ Whole Genome Sequence (WGS) and Whole Exome Sequence (WES) BAM files were produc
 
 ### RNA-Seq
 
-RNA-Seq BAM files are mapped to hg38. For alignment, `STAR` v2.7.1a 2-pass mapping is used. Below is the `STAR` command used during alignment. For more information about any of the parameters used, please refer to the [STAR manual][star-manual] for v2.7.1a. The complete RNA-Seq WDL pipeline is available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/workflows/rnaseq/rnaseq-standard.wdl). The STAR alignment parameters are also available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/tools/star.wdl). For additional information about St. Jude Cloud's RNA-seq pipeline, visit the [RFC](https://stjudecloud.github.io/rfcs/0001-rnaseq-workflow-v2.0.0.html).
+RNA-Seq BAM files are mapped to hg38. For alignment, `STAR` v2.7.1a 2-pass mapping is used. Below is the `STAR` command used during alignment. For more information about any of the parameters used, please refer to the [STAR manual][star-manual] for v2.7.1a. The complete RNA-Seq WDL pipeline is available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/workflows/rnaseq/rnaseq-standard.wdl). The STAR alignment parameters are also available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/tools/star.wdl). For additional information about St. Jude Cloud's RNA-Seq pipeline, visit the [RFC](https://stjudecloud.github.io/rfcs/0001-rnaseq-workflow-v2.0.0.html).
 
 ```bash
     STAR \
