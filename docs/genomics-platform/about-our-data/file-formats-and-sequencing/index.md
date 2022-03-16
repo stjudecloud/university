@@ -112,12 +112,12 @@ It is possible for the same variant to be included more than once. This is most 
 
 CNV files contain copy number alteration (CNA) analysis results for paired tumor-normal WGS samples. Files are produced by running paired tumor-normal BAM files through the [CONSERTING][conserting] pipeline which identifies CNA through iterative analysis of (i) local segmentation by read depth within boundaries identified by structural variation (SV) breakpoints followed by (ii) segment merging and local SV analysis. [CREST][crest] was used to identify local SV breakpoints. CNV files contain the following information:
 
-| Field         | Description                                                                                                                                                  |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| chrom         | chromosome                                                                                                                                                   |
-| loc.start     | start of segment                                                                                                                                             |
-| loc.end       | end of segment                                                                                                                                               |
-| LogRatio      | Log2 ratio between tumor and normal coverage                                                                                                 
+| Field     | Description                                  |
+| --------- | -------------------------------------------- |
+| chrom     | chromosome                                   |
+| loc.start | start of segment                             |
+| loc.end   | end of segment                               |
+| LogRatio  | Log2 ratio between tumor and normal coverage |
 
 ### Feature Counts files
 
@@ -134,7 +134,7 @@ Whole Genome Sequence (WGS) and Whole Exome Sequence (WES) BAM files were produc
 
 ### RNA-Seq
 
-RNA-Seq BAM files are mapped to hg38. For alignment, `STAR` v2.7.1a 2-pass mapping is used. Below is the `STAR` command used during alignment. For more information about any of the parameters used, please refer to the [STAR manual][star-manual] for v2.7.1a. The complete RNA-Seq WDL pipeline is available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/workflows/rnaseq/rnaseq-standard.wdl). The STAR alignment parameters are also available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/tools/star.wdl).
+RNA-Seq BAM files are mapped to hg38. For alignment, `STAR` v2.7.1a 2-pass mapping is used. Below is the `STAR` command used during alignment. For more information about any of the parameters used, please refer to the [STAR manual][star-manual] for v2.7.1a. The complete RNA-Seq WDL pipeline is available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/workflows/rnaseq/rnaseq-standard.wdl). The STAR alignment parameters are also available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/tools/star.wdl). For additional information about St. Jude Cloud's RNA-seq pipeline, visit the [RFC](https://stjudecloud.github.io/rfcs/0001-rnaseq-workflow-v2.0.0.html).
 
 ```bash
     STAR \
