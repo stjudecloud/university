@@ -6,14 +6,14 @@ Each section in **Getting Started** will have an overview of what you will learn
 
 **What you will learn:**
 * How to [sign in](https://university.stjude.cloud/docs/visualization-community/sign-in/) to Visualization Community (VisCom).
-* How to [build a template](https://university.stjude.cloud/docs/visualization-community/template/).
+* How to [use the visualization editor](https://university.stjude.cloud/docs/visualization-community/template/).
 * How to [manage your data](https://university.stjude.cloud/docs/visualization-community/data-manage/).
 * How to use the [code block library](https://university.stjude.cloud/docs/visualization-community/basics/) for the VisCom editor.
-* How to c[reate a collection or community](https://university.stjude.cloud/docs/visualization-community/col_com/).
-* How to enable to share a visualization for the [public or a private visualization](https://university.stjude.cloud/docs/visualization-community/public_private/).
+* How to [create a collection or community](https://university.stjude.cloud/docs/visualization-community/col_com/).
+* How to make a [public vs private visualization](https://university.stjude.cloud/docs/visualization-community/public_private/).
 * How to [embed](https://university.stjude.cloud/docs/visualization-community/embed/) your visualizations.
 
-Examples of curated visualizations can be found in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/collection/proteinpaint-and-genomepaint-examples~7).
+Examples of curated visualizations can be found in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/collection/proteinpaint-and-genomepaint-examples~7). Additionally, if you explore our new Easy Editor View, you can access each example immediately by selecting your choice of track or app and having it prefilled with curated data. 
 
 For additional learning about [ProteinPaint](https://proteinpaint.stjude.org/) please go to the [ProteinPaint Google Docs](https://docs.google.com/document/d/1JWKq3ScW62GISFGuJvAajXchcRenZ3HAvpaxILeGaw0/).
 

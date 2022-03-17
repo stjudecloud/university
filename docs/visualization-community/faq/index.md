@@ -17,20 +17,22 @@ KeyWord(s): VisCom (Visualization Community)
 * The visuals are curated by researchers, those composed of St Jude Cloud or others within a research team. These visuals represent high dimensional proteomic or genomic data sets. 
 
 **Can I create my own visualizations?**
-* Yes, St. Jude internal users have access to create visuals now once they sign up for an account and are assigned a team. We are working on a new workflow so that you can create visuals without being on a team. 
-* As an external user, please contact support@stjude.cloud so that we can help you create an account. Then, you may follow our **Getting Started** chapter to follow step-by-step tutorials to begin creating your own visualizations within VisCom.
+* Yes, users have access to create visuals once they sign up for an account. Visualizations cannot become public until they are assigned to a team where a PI or Team Lead must approve through our internal workflow. To be added to a team, you must contact [support@stjude.cloud](support@stjude.cloud). 
 
 **Can I share my visuals with others?**
 * Yes, you may share your visualization(s) if our PI or team lead approves. We can enable a feature for you to share the direct link administratively if the visualization is still private. Coming soon will be a sharing option within the Visualization Community platform once the visualization is public. 
 
 **Can I keep my visualizations private?**
-* Yes, we have an access control workflow where you can create visualizations which will remain private until you get approval from the team P.I. or Team Lead to to make it public. 
+* Yes, we have an access control workflow where you can create visualizations which will remain private until you get approval from the team PI or Team Lead to make it public. 
 
 **Can I use these in a publication?**
-* Yes, you may use these sophisticated figures in your publications. We currently have published visualizations in over 11 prestigious journals including Nature, Cancer Discovery, Blood, and Cell Reports. 
+* Yes, you may use these sophisticated figures in your publications. We currently have published visualizations in over 11 prestigious journals including, but not limited to, Nature, Cancer Discovery, Blood, and Cell Reports. You may search which Journals are associated by using our search engine. 
 
 **Do I have to upload my own PDF or what do I need to generate the interactive visualization?**
-* You do not need to upload a PDF. You can either use ProteinPaint/GenomePaint to create a visual. While we have curated examples, custom content is allowed. 
+* You do not need to upload a PDF. You will signin to your account and use one of our two editors: Easy View or Traditional Code. Easy view allows you to render visualizations without knowing the code block. Traditional code is encouraged for more advanced users who know how to develop the code blocks. 
+
+**What is the code block that shows with each visualization?**
+* Each visualization will have a code block building for the Easy View. Otherwise, the Traditional Editor must be manually built out. Most visualizations that are curated in the site have the code blocks enabled so you can copy and go. 
 
 **Can I access the data used to generate the visualizations?** 
 * You can access the data within each Community on the 'Data tab' or by clicking the data source icon above each individual visualization.
