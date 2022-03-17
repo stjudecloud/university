@@ -14,7 +14,7 @@ Use: sequence reads alignment
 ```JS
 runproteinpaint({   
 	host:'https://proteinpaint.stjude.org',
-	holder: document.getElementById("#visualization_container"),
+	holder: visualizationContainer[0],
 	parseurl:true,
 	block: true,
 	nobox:1,
@@ -25,7 +25,8 @@ runproteinpaint({
 	tracks:[   
 		{
 			type:'bam',
-			url:'enter link here',
+			url:'enter .bam link here',
+			indexURL: 'enter .bai link here',
 			name:'name of track',
 		}
 	]
@@ -38,7 +39,7 @@ runproteinpaint({
 ```JS
 runproteinpaint({   
 	host:'https://proteinpaint.stjude.org',
-	holder: document.getElementById("#visualization_container"),
+	holder: visualizationContainer[0],
 	parseurl:true,
 	block: true,
 	nobox:1,

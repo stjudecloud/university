@@ -32,11 +32,12 @@ runproteinpaint({
 			hetsnp_minbaf:0.1,
 			hetsnp_maxbaf:0.8,
 			samplename:'sample name',
-			rnabamurl: 'proteinpaint_demo/hg38/ase/sample12.bam',
-			rnabamtotalreads: 155650314,
-			checkrnabam:{
-				hetsnp_minbaf:.2,
-				hetsnp_maxbaf:.8
+				url: 'proteinpaint_demo/hg38/ase/sample12.bam',
+				indexUrl: 'enter link here',
+				rnabamtotalreads: 155650314,
+				checkrnabam:{
+					hetsnp_minbaf:.2,
+					hetsnp_maxbaf:.8
 			}
 		}
 	]

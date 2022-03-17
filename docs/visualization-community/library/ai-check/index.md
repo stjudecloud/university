@@ -10,6 +10,10 @@ Use: From tumor and germline DNA
 
 # URL Key Example
 
+!!!Tip
+If you are using DNAnexus links, be sure to extend the duration. See our data-manage section.
+!!!
+
 **Be sure to update lines 8, 9, 14, 15**
 ```JS
 runproteinpaint({
@@ -34,6 +38,11 @@ runproteinpaint({
 
 
 # File Key Example
+
+!!!Tip
+If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
+For more details, see our data-manage section.
+!!!
 
 **Be sure to update lines 8, 9, 14, 15**
 ```JS
