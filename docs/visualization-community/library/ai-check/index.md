@@ -11,58 +11,49 @@ Use: From tumor and germline DNA
 # URL Key Example
 
 !!!Tip
-If you are using DNAnexus links, be sure to extend the duration. See our data-manage section.
+If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+In order to render <gz> files they must also have the <tbi> file associated. What happens is that the <runproteinpaint()> looks for the <tbi> file and cannot parse the <gz> so we must give it an alternate path to the <tbi> file.>
 !!!
 
-**Be sure to update lines 8, 9, 14, 15**
+**Be sure to update lines 1, 3, 8, 9, and 10**
 ```JS
-runproteinpaint({
-  host: "https://proteinpaint.stjude.org",
-  holder: visualizationContainer[0],
-  parseurl: true,
-  block: true,
-  nobox: 1,
-  noheader: 1,
-  genome: "hg19",
-  position: "chr8:126890266-132795076",
-  nativetracks: "RefGene",
-  tracks: [
-    {
-      type: "aicheck",
-      url: "enter link here",
-      name: "name of track",
-    },
-  ]
-})
+{
+    "genome": "hg19",
+    "nativetracks": "RefGene",
+    "position": "chr17:7565096-7590856",
+    "block": true,
+    "tracks": [
+        {
+            "type": "aicheck",
+            "name": "Track name",
+            "url": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/zYf5XqZ04fBKk6VbQFQbv8P8BG8xyGyQp3FzFkG8z/\aicheck.gz",
+            "indexURL": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/b0YJQx5F110Z90P9q7ZZFXqv03Gv41Qfy0yX7gYK/\aicheck.gz.tbi"
+        }
+    ]
+}
 ```
-
 
 # File Key Example
 
 !!!Tip
 If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
-For more details, see our data-manage section.
+For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
 !!!
 
-**Be sure to update lines 8, 9, 14, 15**
+**Be sure to update lines 1, 3, 8, and 9**
 ```JS
-runproteinpaint({
-  host: "https://proteinpaint.stjude.org",
-  holder: visualizationContainer[0],
-  parseurl: true,
-  block: true,
-  nobox: 1,
-  noheader: 1,
-  genome: "hg19",
-  position: "chr8:126890266-132795076",
-  nativetracks: "RefGene",
-  tracks: [
-    {
-      type: "aicheck",
-      file: "name/path_to_file.gz",
-      name: "name of track",
-    },
-  ]
-})
+{
+    "genome": "hg19",
+    "nativetracks": "RefGene",
+    "position": "chr17:7565096-7590856",
+    "block": true,
+    "tracks": [
+        {
+            "type": "aicheck",
+            "name": "Track name",
+            "file": "proteinpaint_demo\/hg19\/aicheck\/file.gz"
+        }
+    ]
+}
 ```
 
