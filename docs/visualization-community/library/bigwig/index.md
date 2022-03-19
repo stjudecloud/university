@@ -10,48 +10,49 @@ Use: Quantitative data at genomic postions
 
 # URL Key Example
 
-**Be sure to update lines 8, 13, 14 and 15** 
+!!!Tip
+If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+**Be sure to update lines 1, 3, 8, and 9** 
 ```JS
-runproteinpaint({
-  host: "https://proteinpaint.stjude.org",
-  holder: visualizationContainer[0],
-  parseurl: true,
-  block: true,
-  nobox: 1,
-  noheader: 1,
-  genome: "hg19",
-  nativetracks: "RefGene",
-  tracks: [
-    {
-      "type": "bigwig",
-      "url": "enter link here",
-      "name": "name of track",
-      "height": 100
-    },
-  ]
-})
+{
+    "genome": "hg19",
+    "nativetracks": "RefGene",
+    "position": "chr17:7565096-7590856",
+    "block": true,
+    "tracks": [
+        {
+            "type": "bigwig",
+            "name": "Track name",
+            "url": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/gvz3YyGqb2v1gZGZQy67QQbPKfKY70q3yZb8ZZBB\/Nalm6_ATACseq.bw",
+            "height": 100
+        }
+    ]
+}
 ```
 
 # File Key Example
 
-**Be sure to update lines 8, 13, 14 and 15** 
+!!!Tip
+If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
+For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+**Be sure to update lines 1, 3, 8, and 9** 
 ```JS
-runproteinpaint({
-  host: "https://proteinpaint.stjude.org",
-  holder: visualizationContainer[0],
-  parseurl: true,
-  block: true,
-  nobox: 1,
-  noheader: 1,
-  genome: "hg19",
-  nativetracks: "RefGene",
-  tracks: [
-    {
-      "type": "bigwig",
-      "file": "enter name/path_to_file.bw",
-      "name": "name of track",
-      "height": 100
-    },
-  ]
-})
+{
+    "genome": "hg19",
+    "nativetracks": "RefGene",
+    "position": "chr17:7565096-7590856",
+    "block": true,
+    "tracks": [
+        {
+            "type": "bigwig",
+            "name": "Track name",
+            "file": "proteinpaint_demo\/hg19\/bigwig\/file.bw",
+            "height": 100
+        }
+    ]
+}
 ```

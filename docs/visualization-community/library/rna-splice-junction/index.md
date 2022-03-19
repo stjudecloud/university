@@ -10,69 +10,12 @@ Use: See splice junctions of RNA
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1PFva3Mn-U4VPNW0vHHC-CSnYBeotRnqbhCMQPmyLQG4/edit)
 
 
-# URL Key Example
+Coming soon
 
-**Be sure to update lines 8, 13, 14, 17, 18, 21, 22** 
-```JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: document.getElementById('a'),
-    parseurl: true,
-    block: true,
-    nobox: 1,
-    noheader: 1,
-    genome: "hg19",
-    nativetracks: "refgene",
-    tracks: [
-        {
-            type: "junction",
-            url: "enter link here",
-            name: "RNA splice junction demo",
-            list_description: [
-                {
-                    k: "Test 1",
-                    v: "Description 1"
-                },
-                {
-                    k: "Test 2",
-                    v: "Description 2"
-                }
-            ]
-        }
-    ]
-})
-```
-
-# File Key Example
-
-**Be sure to update lines 8, 13, 14, 17, 18, 21, 22** 
-```JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: document.getElementById('a'),
-    parseurl: true,
-    block: true,
-    nobox: 1,
-    noheader: 1,
-    genome: "hg19",
-    nativetracks: "refgene",
-    tracks: [
-        {
-            type: "junction",
-            file: "proteinpaint_demo/hg19/junction/file.gz",
-            name: "RNA splice junction demo",
-            list_description: [
-                {
-                    k: "Test 1",
-                    v: "Description 1"
-                },
-                {
-                    k: "Test 2",
-                    v: "Description 2"
-                }
-            ]
-        }
-    ]
-})
-```
-
+url: https://westus.dl.azure.dnanex.us/F/D/3yqzZzvjPkQkK3jfvQybzZZkYF6VV8byQP0f038k/file.gz
+indexURL: https://westus.dl.azure.dnanex.us/F/D/pXPbx91jBjp30Fq62BVjPZK91q774Jp04B42XppZ/junction.gz.tbi
+tracks: [
+    {
+      "type": "junction",
+      "file": "proteinpaint_demo/hg19/junction/file.gz",
+      "name": "R

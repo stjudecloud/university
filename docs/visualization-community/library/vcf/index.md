@@ -8,50 +8,14 @@ Use: Explore coding and non-coding variants in cancer
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1owXUQuqw5hBHFERm0Ria7anKtpyoPBaZY_MCiXXf5wE/edit)
 
 
-# URL Key EXAMPLE
+Comming Soon
 
-**Be sure to update lines 7, 8, 13, 14 and 15**
-``` JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    parseurl: true,
-    nobox: 1,
-    noheader: 1,
-    genome: "hg38",
-    gene: "name of gene",
-    nativetracks: "RefGene",
-    tracks: [
-        {
-            type: "vcf",
-            name: "name of track",
-            url: "enter link here",
-            indexUrl: "enter link here"
-        }
-    ]
-})
-```
+path: proteinpaint_demo/hg38/GP/TCGA_DLBC.vcf.gz
 
-
-# File Key Example
-
-**Be sure to update lines 7, 8, 13 and 14**
-```JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    parseurl: true,
-    nobox: 1,
-    noheader: 1,
-    genome: "hg38",
-    gene: "name of gene",
-    nativetracks: "RefGene",
-    tracks: [
-        {
-            type: "vcf",
-            name: "name of track",
-            file: "paste name/path_to_file/vcf.gz here"
-        }
-    ]
-})
-```
+tracks: [{
+        type: "vcf",
+        name: "Clinvar",
+        url: "https://westus.dl.azure.dnanex.us/F/DSYM/QBPkx3pb635bV1z7z9XK3PpkzVp8XY67yKjj2v6Z/SJACT004_D.WholeGenome.g.vcf.gz".
+        indexURL: "https://westus.dl.azure.dnanex.us/F/DSYM/3zkPkpvb54Q5PzJ1k039BP52Zv4kz99p2GpBQ89Y/SJACT004_D.WholeGenome.g.vcf.gz.tbi"
+      }]
+});

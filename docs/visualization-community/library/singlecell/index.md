@@ -16,15 +16,12 @@ Coming soon: This currently is not supported with a url key at this time.
 
 **Be sure to update lines 6 and 7** 
 ```JS
-runproteinpaint({
-	host:'https://proteinpaint.stjude.org',
-    holder:document.getElementById('aaa'),
-    noheader:1,
-	singlecell:{
-       genome:'galGal5',
-       jsonfile:'name/path_to_file.json'
-    },
-})
+{
+ "singlecell": {
+ 	"genome": "hg19",
+ 	"jsonfile": "proteinpaint_demo/hg19/singlecell/singlecell.json"
+	}
+}
 ```
 
 If you need an example of how the JSON should be formatted, you can:

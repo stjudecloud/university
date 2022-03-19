@@ -9,57 +9,33 @@ Use: View chromatin interactions at a locus
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1MQ0Z_AD5moDmaSx2tcn7DyVKGp49TS63pO0cceGL_Ns/edit)
 
 # URL Key Example
-**Be sure to update lines 8, 9, 14, 15 and 19** 
-
-``` JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    parseurl: true,
-    block: true,
-    nobox: 1,
-    noheader: 1,
-    genome: "hg19",
-    position: "chr7:13749862-20841903",
-    nativetracks: "RefGene",
-    tracks: [
-        {
-            type: "hicstraw",
-            url: "enter link here",
-            name: "name of track",
-            percentile_max: 95,
-            mincutoff: 1,
-            pyramidup: 1,
-            enzyme: "name of restriction enzyme"
-        }
-    ]
-})
-```
+Not currently supported in the VisEditor
 
 # File Key Example
-**Be sure to update lines 8, 9, 14, 15 and 19** 
+
+!!!Tip
+If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
+For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+**Be sure to update lines 1, 3, 8, and 9** 
 
 ``` JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    parseurl: true,
-    block: true,
-    nobox: 1,
-    noheader: 1,
-    genome: "hg19",
-    position: "chr7:13749862-20841903",
-    nativetracks: "RefGene",
-    tracks: [
+{
+    "genome": "hg19",
+    "nativetracks": "RefGene",
+    "position": "chr17:7565096-7590856",
+    "block": true,
+    "tracks": [
         {
-            type: "hicstraw",
-            file: "enter name/path_to_file.hic",
-            name: "name of track",
-            percentile_max: 95,
-            mincutoff: 1,
-            pyramidup: 1,
-            enzyme: "name of restriction enzyme"
+            "type": "hicstraw",
+            "name": "Track name",
+            "file": "proteinpaint_demo\/hg19\/hic\/hic_demo.hic",
+            "percentile_max": 95,
+            "mincutoff": 1,
+            "pyramidup": 1,
+            "enzyme": "MboI"
         }
     ]
-})
+}
 ```

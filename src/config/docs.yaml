@@ -124,7 +124,7 @@ domains:
               - title: "How to Sign-in"
                 path: /docs/visualization-community/sign-in/
               - title: "How to Use the VisEditor"
-                path: /docs/visualization-community/template/
+                path: /docs/visualization-community/editors/
               - title: "Manage Your Data"
                 path: /docs/visualization-community/data-manage/
               - title: "Collections & Communities"

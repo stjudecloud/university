@@ -10,7 +10,6 @@ With over 71 publicly curated visualizations, an average of 1k views (greatest >
 
 Once you find the visualization you need within VisCom, you can easily re-create it by copying the curated code block displayed for a visualization, by viewing our [library](https://university.stjude.cloud/docs/visualization-community/basics) of curated code blocks, or explore our new visualization editor with curated examples in your account. 
 
-![](./viz_home.gif)
 
 ## Purpose
 * You can explore shared visualizations by searching or filtering by institution, data type, lab, author, PubMedID, and even by diagnosis. 
@@ -40,5 +39,5 @@ If you wish to have your own license of ProteinPaint please follow this [guideli
 <p align="center">
 </a> Updates to ProteinPaint and GenomePaint guides</p>
 <p align="center">
-</a> More visualizations will be accessed view our new editor</a></p>
+</a> More visualizations will be accessed via our new editor</a></p>
 

@@ -11,50 +11,56 @@ Use: Genomic feature alignment
 
 # URL Key Example
 
-**Be sure to update lines 8, 12, 13, 16** 
+!!!Tip
+If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+**Be sure to update lines 1, 3, 8, 9, 10, and 14** 
 ```JS
-runproteinpaint({
-  host: "https://proteinpaint.stjude.org",
-  holder: visualizationContainer[0],
-  parseurl: true,
-  block: true,
-  nobox: 1,
-  noheader: 1,
-  genome: "hg19",
-  tracks: [
-    {
-      "type": "bedj",
-      "name": "name of track",
-      "url": "enter link here",
-      "stackheight": 16,
-      "stackspace": 1,
-      color: "teal"
-    }
-  ]
-});
+{
+    "genome": "hg19",
+    "nativetracks": "RefGene",
+    "position": "chr17:7565096-7590856",
+    "block": true,
+    "tracks": [
+        {
+            "type": "bedj",
+            "name": "Track name",
+            "url": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/YpGGYBXzpP05Fyv64G1BjVkgFffp24GxyvYzbZ1F\/gencode.gz",
+            "indexURL": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/yf9188G1431Pg6YXkJ07F1238qg5YvF7x3pZfbPx\/gencode.gz.tbi",
+            "stackheight": 16,
+            "mincutoff": 1,
+            "stackspace": 1,
+            "color": "teal"
+        }
+    ]
+}
 ```
 
 # File Key Example
 
-**Be sure to update lines 8, 12, 13, 16** 
+!!!Tip
+If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
+For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+**Be sure to update lines 1, 3, 8, and 9** 
 ```JS
-runproteinpaint({
-  host: "https://proteinpaint.stjude.org",
-  holder: visualizationContainer[0],
-  parseurl: true,
-  block: true,
-  nobox: 1,
-  noheader: 1,
-  genome: "hg19",
-  tracks: [
-    {
-      "type": "bedj",
-      "name": "name of track",
-      "file": "anno/gencode.v34.hg19.gz",
-      "stackheight": 16,
-      "stackspace": 1,
-      color: "teal"
-    }
-  ]
-});
+{
+    "genome": "hg19",
+    "nativetracks": "RefGene",
+    "position": "chr17:7565096-7590856",
+    "block": true,
+    "tracks": [
+        {
+            "type": "bedj",
+            "name": "Track name",
+            "file": "proteinpaint_demo\/hg19\/bedj\/gencode.gz",
+            "stackheight": 16,
+            "mincutoff": 1,
+            "stackspace": 1,
+            "color": "teal"
+        }
+    ]
+}
 ```

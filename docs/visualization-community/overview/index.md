@@ -6,7 +6,7 @@ Each section in **Getting Started** will have an overview of what you will learn
 
 **What you will learn:**
 * How to [sign in](https://university.stjude.cloud/docs/visualization-community/sign-in/) to Visualization Community (VisCom).
-* How to [use the visualization editor](https://university.stjude.cloud/docs/visualization-community/template/).
+* How to [use the visualization editor](https://university.stjude.cloud/docs/visualization-community/editors/).
 * How to [manage your data](https://university.stjude.cloud/docs/visualization-community/data-manage/).
 * How to use the [code block library](https://university.stjude.cloud/docs/visualization-community/basics/) for the VisCom editor.
 * How to [create a collection or community](https://university.stjude.cloud/docs/visualization-community/col_com/).
