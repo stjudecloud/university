@@ -15,24 +15,20 @@ Coming soon: This currently is not supported with a url key at this time.
 
 # File Key Example
 
-**Be sure to update lines 8, 13 and 14** 
+**Be sure to update lines 1, 3, 8, and 9** 
 ```JS
-rrunproteinpaint({
-  host: "https://proteinpaint.stjude.org",
-  holder: visualizationContainer[0],
-  parseurl: true,
-  block: true,
-  nobox: 1,
-  noheader: 1,
-  genome: "hg19",
-  nativetracks: "RefGene",
-  tracks: [
-    {
-      "type": "junction",
-      "file": "nametopath/json.gz",
-      "name": "name of track"
-    }
-  ]
-});
+{
+    "genome": "hg19",
+    "nativetracks": "RefGene",
+    "position": "chr17:7565096-7590856",
+    "block": true,
+    "tracks": [
+        {
+            "type": "mdsjunction",
+            "name": "Track name",
+            "file2": "proteinpaint_demo\/hg19\/junction\/file.gz"
+        }
+    ]
+}
 ```
 

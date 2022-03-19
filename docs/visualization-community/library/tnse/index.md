@@ -15,25 +15,20 @@ Coming soon: This currently is not supported with a url key at this time.
 
 **Be sure to update lines 8, 9, 14, 15**
 ```JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    parseurl: true,
-    nobox: 1,
-    noheader: 1,
-    genome: "hg38",
-    mdssamplescatterplot: {
-        mds: {
-            dslabel: "Pediatric",
-            querykey: "svcnv"
+{
+	"genome": "hg38",
+	"mdssamplescatterplot": {
+        "mds": {
+            "dslabel": "Pediatric2",
+            "querykey": "svcnv"
         },
-        analysisdata_file: "proteinpaint_demo/hg38/mdstsne/file.json",
-        dimensions: {
-            width: 700,
-            height: 400
+        "analysisdata_file": "proteinpaint_demo/hg38/mdstsne/file.json",
+        "dimensions": {
+            "width": 700,
+            "height": 400
         }
     }
-})
+}
 ```
 
 

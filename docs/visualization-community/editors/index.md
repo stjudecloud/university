@@ -50,12 +50,13 @@ Here is where you can add metadata about the visualization and is required for o
 **Visibility** - enabled once the PI/Team lead approves so that it can remain private (by default) or set to public which publishes to Visualization Community.
 
 # Code Editor
-This it the traditional code editor for more advanced developers that may want to explore running the proteinpaint() argument. We do have select curated code blocks in our library section. If you choose to code your own visualization with this editor, it must meet proteinpaint's requirements which can be accessed by XXXXXX.
-Once it is approved through the review process, if it is toggled to public on the info section of the visualization editor, it will report to support@stjude.cloud to be accepted. We must review the code to ensure there are no security issues.
+This it the traditional code editor for more advanced developers that may want to explore running the proteinpaint() argument. We do have select curated code blocks in our library section. If you choose to code your own visualization with this editor, it must meet proteinpaint's requirements which can be accessed by going to each code block example and clicking the ProteinPaint documentation hyperlink.
+
+Once the visualization is approved through the review process, if it is toggled to public on the info section of the visualization editor, it will report to support@stjude.cloud to be accepted. We must review the code to ensure there are no security issues.
 
 # Save and reload
 The visualization editor will save all changes in memory and then once you save it will create a template to access. If you do not save, it will not save the latest changes to your visualization in your account. 
-note
+
 # Send for Review
 This is our review process where you can send a visualization for review, with a custom message, to the PI/Team lead for the team you associate the visualization to so that they can review the visualization and decide whether to request for revisions or approve. At this time, the visualization is read-only. If the PI/Team lead asks for revisions, then the visualization will show their message and be editable. Throughout the process, the status of the visualization will change accordingly.
 

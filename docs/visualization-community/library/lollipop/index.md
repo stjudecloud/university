@@ -10,57 +10,41 @@ Use: Coding mutations and gene fusions
 
 
 # Example for Pediatric 
-**Be sure to update lines 4 and 7**
+**Be sure to update lines 1 and 2**
 ```JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    gene: "name of gene",
-    nobox: 1,
-    noheader: 1,
-    genome: "hg19",
-    dataset: "Pediatric"
-})
+{
+           "genome": "hg19",
+           "gene": "jak2",
+           "dataset": "Pediatric"
+}
 ```
 
 # Example for COSMIC 
-**Be sure to update lines 4 and 7**
+**Be sure to update lines 1 and 2**
 ```JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    gene: "name of gene",
-    nobox: 1,
-    noheader: 1,
-    genome: "hg19",
-    dataset: "COSMIC"
-})
+{
+           "genome": "hg19",
+           "gene": "jak2",
+           "dataset": "COSMIC"
+}
 ```
 
 # Example for ClinVar 
-**Be sure to update lines 4 and 7**
+**Be sure to update lines 1 and 2**
 ```JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    gene: "name of gene",
-    nobox: 1,
-    noheader: 1,
-    genome: "hg19",
-    dataset: "ClinVar"
-})
+{
+           "genome": "hg19",
+           "gene": "jak2",
+           "dataset": "ClinVar"
+}
 ```
 
 # Example for CIViC 
-**Be sure to update lines 4 and 7**
+**Be sure to update lines 1 and 2**
 ```JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    gene: "name of gene",
-    nobox: 1,
-    noheader: 1,
-    genome: "hg19",
-    dataset: "CIViC"
-})
+{
+           "genome": "hg19",
+           "gene": "jak2",
+           "dataset": "CIViC"
+}
 ```

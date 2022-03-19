@@ -4,10 +4,10 @@ title: Manage Your Data
 In this section, you will learn how and where to find your data so that you can use our visualization editors. 
 
 !!!tip
-* The url key is case in-sensitive.
+* The <url> key is case in-sensitive.
 * Dropbox storage url keys will not work since these are binary files.
 * Amazon (AWS) and DNAnexus are two examples that `runproteinpaint()` can access. 
-* The <file> key is only for internal St. Jude users to access the HPC.
+* The <file> key is only for internal St. Jude users to access the HPC within the <tp> directory.
 !!!
 
 Follow the below tutorials if you want to upload data to DNAnexus. 
@@ -64,6 +64,7 @@ cd /research/rgs01/resgen/legacy/gb_customTracks/tp
 ```
 
 Here, you can make a new directory to store your data. 
+
 !!!Important
 The data must be on the proteinpaint.stjude.org server and not ppr1, otherwise your visualizations have to be viewed by VPN.
 !!!

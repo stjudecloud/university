@@ -1,35 +1,32 @@
 ---
 title: Learning the Code Block Basics
 ---
-Our new visualization editor allows you to prompt tracks for genome views without having to build any code. 
+Our new visualization editor allows you to build visualizations using our new editor interface. The interface prompts certain fields that are required to generate the visualization so you can spend more time exploring and creating visualizations and less time coding. 
 
-!!!Apps vs tracks
-All tracks can be accessed via our easy editor, but all apps must be rendered by the traditional code editor.
-!!!
+For a description about each field, see our [How to use our Editor](https://university.stjude.cloud/docs/visualization-community/editors/) section. There are 2 ProteinPaint tracks that must render from our Traditional Code Editor: [Lollipop](https://university.stjude.cloud/docs/visualization-community/library/lollipop/) and [Track List and Data Facet](https://university.stjude.cloud/docs/visualization-community/library/facet/). The remaining Apps also will use the Traditional Code Editor at this time. Check out the other code blocks in the left navbar. Lastly, the tracks use a track object where the apps have defined objects and thus why apps and tracks are not combined together. 
 
-To add code to VisCom's editor, a <runproteinpaint> call must be used. To find more details about this software, please see the [ProteinPaint Google Docs](https://docs.google.com/document/d/1JWKq3ScW62GISFGuJvAajXchcRenZ3HAvpaxILeGaw0/) for further detail. 
+Example data for all tracks and apps can be found by downloading [this](https://pecan.stjude.cloud/static/pp-support/pp.demo.tgz) tarball (~30m). This data is used to prefill our VisEditor. 
 
-Example data for all tracks can be found by downloading [this](https://pecan.stjude.cloud/static/pp-support/pp.demo.tgz) tarball (~30m).
-
-!!!tip
-* ProteinPaint is case sensitive, but the URL key is case in-sensitive.
-* Lollipop does not have a `file` or `url` key.
-* 2DMAF is not supported in VisCom.
-!!!
-
-Below is the static code block that most visualizations will share. `Holder` will be different in the ProteinPaint code examples so please be sure to use <visualizationContainer[0]> in VisCom. Additionally, `Genome` will be dependent on the species that you are investigating. Further explanation of all attributes in ProteinPaint can be found [here](https://docs.google.com/document/d/1ZnPZKSSajWyNISSLELMozKxrZHQbdxQkkkQFnxw6zTs/edit#heading=h.6spyog171fm9) (page 3).
+Below are the static attributes that run in the background and not seen in the code block or interface:
 
 ```JS
 runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
+    host: "https://proteinpaint.stjude.org",  //this server is public facing 
+    holder: visualizationContainer[0],    //ProteinPaint.stjude.org examples use a different holder
     parseurl: true,
-    block: true,
+    block: true,  //only used for tracks, not apps 
     nobox: 1,
     noheader: 1,
-    nativetracks: "RefGene",
-    genome: hg38,
+//Below are two attributes that show in the interface. 
+    nativetracks: "RefGene",  // is a toggle in the UI
+    genome: hg38,  // is a dropdown in the UI, but needs to be in the traditional code block
 ```
+
+Further explanation of all attributes in ProteinPaint can be found [here](https://docs.google.com/document/d/1ZnPZKSSajWyNISSLELMozKxrZHQbdxQkkkQFnxw6zTs/edit#heading=h.6spyog171fm9) (page 3).
+
+!!!Important
+For the traditional code editor to work, it must have true JSON where each attribute is closed within quotes.
+!!!
 
 ProteinPaint has a GenomeViwer where multiple tracks can be run together or a user can run individual Apps. 
 **A list of each is below:**
@@ -49,12 +46,16 @@ Lollipop,
 Track list and Data facet Table
 
 **APPS:**
-Fusion Editor
-Mutation heatmap
-Scatterplot
-MA+ Volcano plot
+Fusion Editor,
+Mutation heatmap,
+Scatterplot,
+MA+ Volcano plot,
 Single Cell
 
-See the code block library in the left navbar for the specifics on each track or app. They either require a <url> or <file> key to access your data. The tracks use a track object where the apps have defined objects and thus why apps and tracks are not combined together. 
+See the code block library in the left navbar for the specifics on each track or app. They either require a <url> (and <indexURL>) or <file> key to access your data. Briefly, <url> is to an open source data storage like DNAnexus or AWS. In order to render <gz> files they must also have the <tbi> file associated. What happens is that the <runproteinpaint()> looks for the <tbi> file and cannot parse the <gz> so we must give it an alternate path to the <tbi> file.>
+
+
+
+
 
 

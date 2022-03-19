@@ -7,71 +7,16 @@ These code block examples can be used to generate a profile gene value (pvg) as 
 Use: Profiling results & gene-level values
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1yrRpDUZWSRGuCa0snGwRuo721WRHgdYTX7GWIsZ_fSY/)
 
-# URL Key Example
+Coming soon
 
-**Be sure to update lines 10, 14, 16, 18, 22, 23, 24 and 25** 
 
-```JS
-runproteinpaint({
-  "host": "https://proteinpaint.stjude.org",
-  "holder": visualizationContainer[0],
-  "parseurl": true,
-  "block": true,
-  "nobox": 1,
-  "noheader": 1,
-  "genome": "hg19",
-  "nativetracks": "RefGene",
-  "position": "chr14:24549316-24584223",
-  "tracks": [{
-    "type": "profilegenevalue",
-    "genevaluetrack": {
-      "url": "proteinpaint_demo/hg19/pgv/pgvdemo.fpkm.gz"
-    },
-    "genevaluetype": "FPKM",
-    "legendimg": {
-      "url": "proteinpaint_demo/hg19/pgv/HMM.png",
-      "width": 400,
-      "height": 400
-    },
-    "name": "name of track,
-    "genevaluematchname": "sampleID",
-    "tracks": [
-      {"type": "bedj", "url": "enter file path here", "stackheight": 18, "stackspace": 1, "toppad": 1, "bottompad": 1, "onerow": 1, "name": "Sample 1", "sampleID": "101"}
-    ]
-  }]
-});
-```
-# URL Key Example
+proteinpaint_demo/hg19/pgv/pgvdemo.fpkm.gz
 
-**Be sure to update lines 10, 14, 16, 18, 22, 23, 24 and 25** 
- 
-```JS
-runproteinpaint({
-  "host": "https://proteinpaint.stjude.org",
-  "holder": visualizationContainer[0],
-  "parseurl": true,
-  "block": true,
-  "nobox": 1,
-  "noheader": 1,
-  "genome": "hg19",
-  "nativetracks": "RefGene",
-  "position": "chr14:24549316-24584223",
-  "tracks": [{
-    "type": "profilegenevalue",
-    "genevaluetrack": {
-      "file": "proteinpaint_demo/hg19/pgv/pgvdemo.fpkm.gz"
-    },
-    "genevaluetype": "FPKM",
-    "legendimg": {
-      "file": "proteinpaint_demo/hg19/pgv/HMM.png",
-      "width": 400,
-      "height": 400
-    },
-    "name": "name of track,
-    "genevaluematchname": "sampleID",
-    "tracks": [
-      {"type": "bedj", "file": "enter file path here", "stackheight": 18, "stackspace": 1, "toppad": 1, "bottompad": 1, "onerow": 1, "name": "Sample 1", "sampleID": "101"}
-    ]
-  }]
-});
-```
+tracks: [
+        {
+            type: "profilegenevalue",
+            genevaluetrack: {
+                url: "https://westus.dl.azure.dnanex.us/F/D/753gq2jPz11bPyj35Fq7ZJ4ZZ4Zp4bpzq518PjV2/pgvdemo.fpkm.gz",
+                indexURL: "https://westus.dl.azure.dnanex.us/F/D/gK3k1vgqBg4KFj3QxYq4JVG2Zxg6jKZ76z3jYfXY/pgvdemo.fpkm.gz.tbi"
+            },
+]

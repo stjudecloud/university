@@ -10,52 +10,52 @@ Use: Expression rank based on samples in a cohort
 
 # URL Parameter EXAMPLE
 
-**Be sure to update lines 8, 9, 14, 15 and 16**
+!!!Tip
+If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+**Be sure to update lines 1, 3, 8, 9, 10, and 11**
 
 ```JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    parseurl: true,
-    block: true,
-    nobox: 1,
-    noheader: 1,
-    genome: "hg38",
-    position: "chr8:127340055-128243343",
-    nativetracks: "RefGene",
-    tracks: [
+{
+    "genome": "hg38",
+    "nativetracks": "RefGene",
+    "position": "chr8:127340055-128243343",
+    "block": true,
+    "tracks": [
         {
-            type: "mdsexpressionrank",
-            url: "enter hyperlink here",
-            name: "name of track",
-            sample: "name of sample"
+            "type": "mdsexpressionrank",
+            "name": "Track name",
+            "url": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/X5FV210570zX090JvqJ32kxXX0XxGVyFYP1XbX05\/TCGA.fpkm.gz",
+            "indexURL": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/VP5JfbPJKkzBpB5j0KXX33zZfyqjqQjq5VKqXb3J\/TCGA.fpkm.gz.tbi",
+            "sample": "TCGA-GS-A9TQ"
         }
     ]
-})
+}
 ```
 
 # Path to file EXAMPLE
 
-**Be sure to update lines 8, 9, 14, 15 and 16**
+!!!Tip
+If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
+For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+**Be sure to update lines 1, 3, 8, 9, and 10**
 
 ```JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    parseurl: true,
-    block: true,
-    nobox: 1,
-    noheader: 1,
-    genome: "hg38",
-    position: "chr8:127340055-128243343",
-    nativetracks: "RefGene",
-    tracks: [
+{
+    "genome": "hg38",
+    "nativetracks": "RefGene",
+    "position": "chr8:127340055-128243343",
+    "block": true,
+    "tracks": [
         {
-            type: "mdsexpressionrank",
-            file: " enter name/file_to_path.fpkm.gz ",
-            name: "name of track",
-            sample: "name of sample"
+            "type": "mdsexpressionrank",
+            "name": "Track name",
+            "file": "proteinpaint_demo\/hg38\/exprank\/TCGA.fpkm.gz",
+            "sample": "TCGA-GS-A9TQ"
         }
     ]
-})
+}
 ```

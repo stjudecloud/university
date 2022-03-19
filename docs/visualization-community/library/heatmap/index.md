@@ -6,79 +6,100 @@ These code block examples can be used to generate a heatmap as seen in [VisCom](
 
 For additional learning of each element or key please go to the heatmap [ProteinPaint Google Docs](https://docs.google.com/document/d/1JA9O4dUSwCga4Ua4DK3vbG0x9JGtKuI3j-9gjb6Tz6U/edit).
 
-**This code block below is for snv files. If you have SV or fusion transcript, CNV, ITD, Intragenic deletion/in-frame, Truncation, then we cannot support these at this time from the url key.**
+**Each code block is for each of the accepted data formats using the <url> key: SNV/indel; SV/Fusion; CNV; ITD; Deletion; or Truncation. Scroll to the next section to see the <file> key examples. Formats for the file types are found at the ProteinPaint mutation landscape track.**
+
+SNV [Format](https://drive.google.com/open?id=1OJ9aXq2_-a3BfIQdKLYCYzrJRTpu4_9i3gephTY-Z38), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.snvindel.txt)
+SV [Format](https://drive.google.com/open?id=1klDZ0MHVkQTW2-lCu_AvpRE4_FcbhdB-yI17wNdPaOM), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.svfusion.txt)
+CNV [Format]([Format](https://drive.google.com/open?id=1WHptqOWNf96V0bYEDpj-EsKZGYnbBNc9aQIrhzdEJaU)), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.cnv.txt)
+ITD [Format](https://drive.google.com/open?id=1Bh9awBsraoHbV8iWXv_3oDeXMsjIAHaOKHr973IJyZc), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.itd.txt)
+Deletion [Format](https://drive.google.com/open?id=1tWbf3rg3BmVIZPGGPk023P0aBkDw_ry5XuZLGyGodyg), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.deletion.txt)
+Truncation [Format](https://drive.google.com/open?id=1P1g-Y8r30pSKfan1BhYZcsUtSk7wRb4plaO1S-JCJr4), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.truncation.txt)
+
+# URL Parameter EXAMPLE
+
+!!!Tip
+If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+**Be sure to update lines 1, 4, and 6)**
+
+```JS
+//Mutation Landscape (heatmap snv and indel)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "snvindel_url": "https://westus.dl.azure.dnanex.us/F/D/Xj9QvbV461b5K6JpqPXkP2ZqVkgz39q44ZKK3J8J/svIndelTestData.txt",
+       }],
+        "show_heatmap": 1,
+		}
+	}
+/// Mutation Landscape (heatmap (SV / fusion)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "sv_url": "https://westus.dl.azure.dnanex.us/F/D/KJVP9x86Vgp6pk0GYqkf825pgzGkVKx55Z8qVV7B/svTestData.txt",
+       }],
+        "show_heatmap": 1,
+		}
+	}
+///Mutation Landscape (CNV / Gene Level)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "cnv_url": "https://westus.dl.azure.dnanex.us/F/D/xZfxXpFQ636b15xBQf0Bb9ZG3Zj30p62fX02xQVz/cnvTestData.txt",
+       }],
+        "show_heatmap": 1,
+		}
+	}
+///Mutation Landscape (ITD)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "itd_url": "https://westus.dl.azure.dnanex.us/F/D/G1gBQZ32BQqVyQx8KvzYkF5V7Qg5Q0Z2p4qyFZq1/itdTestData.txt",
+       }],
+        "show_heatmap": 1,
+		}
+	}
+//Mutation Landscape (Deletion)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "deletion_url": "https://westus.dl.azure.dnanex.us/F/D/fpF14BVPGx6Z2vQ2976vff2q01QxgbPq8q0QJG4X/delTestData.txt",
+       }],
+        "show_heatmap": 1,
+		}
+	}
+///Mutation Landscape (Truncation)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "truncation_url": "https://westus.dl.azure.dnanex.us/F/D/ZFgxG8p34GYzyjXzzKpKyGJX9BykxYzzXQ9jZ2p9/truncTestData.txt",
+       }],
+        "show_heatmap": 1,
+		}
+	}
+```
+
  
-# URL Key Example
-
-**Be sure to update line 6, 9, and 11. Update lines 14-16 if you have JSON**
-``` JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    nobox: 1,
-    noheader: true,
-    genome: "hg38",
-    studyview: {
-        hide_navigation: 1,
-        name: "name of study",
-        mutationset: [{
-            snvindel_url: "enter link here",
-       }],
-        show_heatmap: 1,
-        {
-            //Enter JSON here.
-        } 
-	}
-})
-```
-
-
-# File Key Example
-
-**Be sure to update line 6, 9, and 11. Update lines 14-16 if you have JSON**
-```JS
-runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    nobox: 1,
-    noheader: true,
-    genome: "hg38",
-    studyview: {
-        hide_navigation: 1,
-        name: "name of study",
-        mutationset: [{
-            snvindel: "name/path_to_file.txt",
-       }],
-        show_heatmap: 1,
-        {
-            //Enter JSON here. 
-        }
-	}
-})
-```
-Adding a mutation set for more than one data type (snv, copy number, fusion, etc) is expert-level customization. Currently, VisCom only allows the `snvindel_url` key. We are working to add these keys which would display as *Mutation Types* as seen below: 
-
-![](./mutation_type.png)
-
-Formats for the file types are listed below and the hyperlinks are found at the ProteinPaint mutation landscape track.
-
-![](./format.png)
-
-Once we can support this, it can be coded as:
-
-```JS
-"mutationset": [
-        {
-            "name": "DNA",
-            "snvindel": "proteinpaint_demo/hg19/heatmap/snvindel",
-            "fusion2": "proteinpaint_demo/hg19/heatmap/fusion.dux4.json",
-            "deletion": "proteinpaint_demo/hg19/heatmap/erg.deletion",
-            "ctermloss": "proteinpaint_demo/hg19/heatmap/erg.closs",
-            "cnv": "proteinpaint_demo/hg19/heatmap/cnv"
-        }
-    ]
-```  
-Additionally, you may add supporting metadata directly to the JSON file. A JSON file example can be found within the mutation landscape track in ProteinPaint under the **code** tab (*see image below*). In that example, the JSON file has all the sample group information and all metadata across multiple `mutationsets` together.
+Additionally, you may add supporting metadata directly. A JSON example can be found within the mutation landscape track in ProteinPaint under the **code** tab (*see image below*). In that example, the JSON file has all the sample group information and all metadata across multiple `mutationsets` together.
 ![](./code.png)
 
 If you choose to add your own JSON for the sample groups, you will follow the below:
@@ -130,44 +151,85 @@ If you want to add ProteinPaint or GenomePaint viewers to the genes, please see 
 
 This example is used in our [oncoprint](https://viz.stjude.cloud/st-jude-childrens-research-hospital/visualization/genomes-for-kids-the-scope-of-pathogenic-mutations-in-pediatric-cancer-revealed-by-comprehensive-dna-and-rna-sequencing~97) to specifically render GenomePaint on the genes.
     
-**EXAMPLE: shows full code block with url key and added genomepaint track.**
 
-**Be sure to update lines 6, 9, 11, 27. If you have JSON this can be added, too.**
-
+# File Path Example
 ```JS
-    runproteinpaint({
-    host: "https://proteinpaint.stjude.org",
-    holder: visualizationContainer[0],
-    nobox: 1,
-    noheader: true,
-    genome: "hg38",
-    studyview: {
-        hide_navigation: 1,
-        name: "G4K",
-        mutationset: [{
-            snvindel_url: "enter link here",
-       }],
-       "show_heatmap": 1,
-        "heatmapJSON":{
-            "runPpInputTemplate": {
-                "rowLabelClick": {
-                "geneKey": "positionbygene",
-				"useIsoform": true,
-                    "template": {
-                        "nobox": 1,
-                        "noheader": 1,
-                        "block": 1,
-                        "genome": "hg19",
-                        "positionbygene": "fill-in-name-of-clicked-gene",
-                        "nativetracks": "refgene",
-                        "tracks": [{
-                            "mdsjsonurl": "enter link here"
-                        }
-						]
-                    }
-                }
-            }
-        }
-    }
+//Mutation Landscape (heatmap JSON file)
+{
+"genome": "hg19",
+    "study": "proteinpaint_demo/hg19/heatmap/heatmapDemo.json"
 }
+//Mutation Landscape (heatmap snv and indel)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "snvindel": "proteinpaint_demo/hg19/heatmap/snvindel",
+       }],
+        "show_heatmap": 1,
+		}
+	}
+/// Mutation Landscape (heatmap (SV / fusion)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "fusion2": "proteinpaint_demo/hg19/heatmap/fusion.dux4.json",
+       }],
+        "show_heatmap": 1,
+		}
+	}
+///Mutation Landscape (CNV / Gene Level)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "cnv": "proteinpaint_demo/hg19/heatmap/cnv",
+       }],
+        "show_heatmap": 1,
+		}
+	}
+///Mutation Landscape (ITD)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "itd_url": "path/to/file/itd",
+       }],
+        "show_heatmap": 1,
+		}
+	}
+//Mutation Landscape (Deletion)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "deletion": "proteinpaint_demo/hg19/heatmap/erg.deletion",
+       }],
+        "show_heatmap": 1,
+		}
+	}
+///Mutation Landscape (Truncation)
+{
+"genome": "hg38",
+    "studyview": {
+        "hide_navigation": 1,
+        "name": "TEST",
+        "mutationset": [{
+            "ctermloss": "proteinpaint_demo/hg19/heatmap/erg.closs",
+       }],
+        "show_heatmap": 1,
+		}
+	}
 ```
+

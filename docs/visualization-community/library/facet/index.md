@@ -8,36 +8,6 @@ Use:
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1e0JVdcf1yQDZst3j77Xeoj_hDN72B6XZ1bo_cAd2rss/edit#heading=h.pkybixxj4p6)
 
 
-# URL Key Example
-Coming soon: This currently is not supported with a url key at this time. 
-**Be sure to update lines 7 and 9**
-
-```JS
-runproteinpaint({
-  	"host": "https://proteinpaint.stjude.org/",
-  	"holder": visualizationContainer[0],
-	"block": 1,
-	"nobox": 1,
-	"noheader": 1,
- 	"genome": "hg19",
-	"nativetracks":"refgene",
- 	"tkjsonfile": "proteinpaint_demo/hg19/tklist/tracks.json"
-})
-```
-
-# File Key Example
-
-**Be sure to update lines 7 and 9**
-
-```JS
-runproteinpaint({
-  	"host": "https://proteinpaint.stjude.org/",
-  	"holder": visualizationContainer[0],
-	"block": 1,
-	"nobox": 1,
-	"noheader": 1,
- 	"genome": "hg19",
-	"nativetracks":"refgene",
- 	"tkjsonfile": "proteinpaint_demo/hg19/tklist/tracks.json"
-})
-```
+!!!URGENT
+Not currently supported in the VisEditor
+!!!

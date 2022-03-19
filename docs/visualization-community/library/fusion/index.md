@@ -10,16 +10,6 @@ https://pecan.stjude.cloud/static/hg19/fusioneditor/cicero.output
 const host = 'https://proteinpaint.stjude.org'
 const rawtext = 'copy output file here'
 
-**Viscom does not support this visualization type at this time.**
-```JS
-runproteinpaint({
-    host: host,
-    holder: visualizationContainer[0],
-    genome: 'hg19',
-    noheader: 1,
-    fusioneditor: {
-        input: rawtext,
-        dataname: 'name of cicero output'
-    }
-})
-```
+!!!URGENT
+Not currently supported in the VisEditor
+!!!

@@ -9,62 +9,63 @@ Use:  Quantitative data at genomic positions using forward and reverse strand re
 
 # URL Key Example
 
-**Be sure to update lines 8, 9, 13, 16 and 19**
+!!!Tip
+If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+**Be sure to update lines 1, 3, 8, 10, and 13**
 ```JS
-runproteinpaint({
-  host: "https://proteinpaint.stjude.org",
-  holder: visualizationContainer[0],
-  parseurl: true,
-  block: true,
-  nobox: 1,
-  noheader: 1,
-  genome: "hg19",
-  position: "chr8:128597079-130293343",
-  nativetracks: "RefGene",
-  tracks: [
-    {
-      name: "name of track",
-      strand1:
-          {
-            url: "enter link here/sense.bw"},
-      strand2:
-          {
-            url: "enter link here/antisense.bw",
-            normalize: {dividefactor: -1}
-          },
-      type: "bigwigstranded"
-    }
-  ]
-})
+{
+    "genome": "hg19",
+    "nativetracks": "RefGene",
+    "position": "chr17:7565096-7590856",
+    "block": true,
+    "tracks": [
+        {
+            "type": "bigwigstranded",
+            "name": "Track name",
+            "strand1": {
+                "url": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/1jG5YJYqxpQqz9JQx6xzJVV2J23p0jG5Bp9f60BJ\/sense.bw"
+            },
+            "strand2": {
+                "url": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/JK7j09Bb0P33fZ0KFvJ07Gx292BQpXb95kZ2K87X\/antisense.bw",
+                "normalize": {
+                    "dividefactor": -1
+                }
+            }
+        }
+    ]
+}
 ```
 
 # File Key Example
 
-**Be sure to update lines 8, 9, 13, 16 and 19**
+!!!Tip
+If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
+For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+**Be sure to update lines 1, 3, 8, 10, and 13**
 ```JS
-runproteinpaint({
-  host: "https://proteinpaint.stjude.org",
-  holder: visualizationContainer[0],
-  parseurl: true,
-  block: true,
-  nobox: 1,
-  noheader: 1,
-  genome: "hg19",
-  position: "chr8:128597079-130293343",
-  nativetracks: "RefGene",
-  tracks: [
-    {
-      name: "name of track",
-      strand1:
-          {
-            file: "name/filetopath/sense.bw"},
-      strand2:
-          {
-            file: "name/filetopath/antisense.bw",
-            normalize: {dividefactor: -1}
-          },
-      type: "bigwigstranded"
-    }
-  ]
-})
+{
+    "genome": "hg19",
+    "nativetracks": "RefGene",
+    "position": "chr17:7565096-7590856",
+    "block": true,
+    "tracks": [
+        {
+            "type": "bigwigstranded",
+            "name": "Track name",
+            "strand1": {
+                "file": "proteinpaint_demo\/hg19\/strandedbigwig\/sense.bw"
+            },
+            "strand2": {
+                "file": "proteinpaint_demo\/hg19\/strandedbigwig\/antisense.bw",
+                "normalize": {
+                    "dividefactor": -1
+                }
+            }
+        }
+    ]
+}
 ```
