@@ -4,7 +4,7 @@ title: Allelic-Imbalance
 # Description 
 These code block examples can be used to generate an allelic-imblance figure as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomepaint-allelic-imbalance-example~32). 
 
-Use: From tumor and germline DNA
+Use: Displays the allelic imbalance of the heterozygous SNP markers in a tumor genome as compared to this patient’s germline genome, as a way of indicating loss-of-heterozygosity.
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1dZIOoLLbQE-kmZ31Ia_5cud30d9UeRodP4hRCSw3HII/)
 
 
@@ -51,7 +51,7 @@ For more details, see our [manage data](https://university.stjude.cloud/docs/vis
         {
             "type": "aicheck",
             "name": "Track name",
-            "file": "proteinpaint_demo\/hg19\/aicheck\/file.gz"
+            "file": "proteinpaint_demo\/hg19\/aicheck\/file.gz" 
         }
     ]
 }

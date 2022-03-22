@@ -5,7 +5,7 @@ title: JSON BED
 # Description
 These code block examples can be used to generate a figure using JSON BED data as seen in [VisCom](https://viz.stjude.cloud/zhou-lab/visualization/genomepaint-json-bed-example~38).
 
-Use: Genomic feature alignment
+Use: This customizable bed format shows defined genomic regions identified by ChIP seq, mass spec or other means.
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1GP81rer7YEb0RpIej2XXfx-k7SCAL1Od9At_oczf06A/)
 
 

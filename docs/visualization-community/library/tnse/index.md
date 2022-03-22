@@ -4,12 +4,12 @@ title: t-SNE (Sample Scatterplot)
 # Description 
 These code block examples can be used to generate a t-SNE as seen in [VisCom](https://viz.stjude.cloud/st-jude-childrens-research-hospital/visualization/t-sne-plot-of-903-pediatric-blood-cancer-rna-seq-profiles-including-71-pdx-samples~56). 
 
-Use: 2D scatterplot of samples & metadata
+Use: tSNE plots are a display that converts high dimensional data to an interpretable proximity plot such that similarity may be assessed across RNA-seq profiles.
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1XHi_WqVdarUNbc_ESMEBp2l-zwhnGcIfiBWA5n2omZQ/)
 
 
 # URL Key Example
-Coming soon: This currently is not supported with a url key at this time. 
+This currently is not supported with a url key at this time. 
 
 # File key Example
 

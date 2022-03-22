@@ -5,9 +5,13 @@ title: Lollipop
 # Description 
 These code block examples can be used to generate a lollipop figure as seen in [VisCom](https://viz.stjude.cloud/zhou-lab/visualization/proteintpaint-lollipop-example~57).
 
-Use: Coding mutations and gene fusions
+Use: Used for displaying the frequency and type of mutation for a given gene on the protein structure in the context of functional domains.
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1D78jKVaQrWBhAjnfmCqj0Cirf6s-CdcbfPkuZQMT8Co/edit#heading=h.tyjcwt)
 
+
+!!!Tip
+This is a track and will be uplifted into the new VisEditor easy view soon.
+!!!
 
 # Example for Pediatric 
 **Be sure to update lines 1 and 2**

@@ -2,10 +2,13 @@
 title: Data Types & Graphs
 ---
 Below is a highlight of supported data types visualized by ProteinPaint and GenomePaint within VisCom.
+
 Code = traditional code editor view
+
 Easy = new easy editor view
+
 <p align="center">
-</a>| .bai | .bam | .bw | .fpkm | .gz | .hic | .pgv | .txt | UMAP | .csv/.tsv |</p> 
+</a>| .bai | .bam | .bw | .fpkm | .gz | .tbi | .hic | .txt |</p> 
 
 | Data Types                | Graph                             | Editor |
 | ------------------------- | --------------------------------- | ------ |
