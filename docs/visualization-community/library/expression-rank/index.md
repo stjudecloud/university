@@ -4,14 +4,14 @@ title: Expression Rank
 # Description 
 These code block examples can be used to generate a gene expression rank track by using a fpkm file as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/proteinpaint-expression-rank-example~36).
 
-Use: Expression rank based on samples in a cohort
+Use: RNA-seq coverage data as a pair of bigWig tracks, with forward strand on top and reverse strand on bottom.
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1owXUQuqw5hBHFERm0Ria7anKtpyoPBaZY_MCiXXf5wE/edit#heading=h.q9ccqxkrh30s)
 
 
 # URL Parameter EXAMPLE
 
 !!!Tip
-If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section. The <sample> parameter must be unique to the file otherwise it will **not** render. 
 !!!
 
 **Be sure to update lines 1, 3, 8, 9, 10, and 11**

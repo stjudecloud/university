@@ -176,8 +176,6 @@ domains:
                 path: /docs/visualization-community/library/facet/
               - title: "Fusion Editor"
                 path: /docs/visualization-community/library/fusion/
-              - title: "ASE"
-                path: /docs/visualization-community/library/ase/
               - title: "t-SNE"
                 path: /docs/visualization-community/library/tsne/
           - title: "ProteinPaint"

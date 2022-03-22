@@ -1,12 +1,14 @@
 ---
-title: Heatmap
+title: Mutation Landscape (Heatmap)
 ---
 # Description 
-These code block examples can be used to generate a heatmap as seen in [VisCom](https://viz.stjude.cloud/st-jude-childrens-research-hospital/visualization/genomes-for-kids-a-landscape-of-pediatric-cancer-demonstration-visualization~94).
+These code block examples can be used to generate a Mutation Landscape (heatmap) as seen in [VisCom](https://viz.stjude.cloud/st-jude-childrens-research-hospital/visualization/genomes-for-kids-a-landscape-of-pediatric-cancer-demonstration-visualization~94).
+
+Use: Used for displaying the frequency of various mutations, CNVs and SVs in cancer relevant genes across a cohort of samples from one or many diagnoses.
 
 For additional learning of each element or key please go to the heatmap [ProteinPaint Google Docs](https://docs.google.com/document/d/1JA9O4dUSwCga4Ua4DK3vbG0x9JGtKuI3j-9gjb6Tz6U/edit).
 
-**Each code block is for each of the accepted data formats using the <url> key: SNV/indel; SV/Fusion; CNV; ITD; Deletion; or Truncation. Scroll to the next section to see the <file> key examples. Formats for the file types are found at the ProteinPaint mutation landscape track.**
+**Each code block is for each of the accepted data formats using the <url> key: SNV/indel; SV/Fusion; CNV; ITD; Deletion; or Truncation. Scroll down to see the <file> key examples. Formats for the file types are also found at the ProteinPaint mutation landscape track.**
 
 SNV [Format](https://drive.google.com/open?id=1OJ9aXq2_-a3BfIQdKLYCYzrJRTpu4_9i3gephTY-Z38), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.snvindel.txt)
 SV [Format](https://drive.google.com/open?id=1klDZ0MHVkQTW2-lCu_AvpRE4_FcbhdB-yI17wNdPaOM), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.svfusion.txt)
@@ -18,7 +20,7 @@ Truncation [Format](https://drive.google.com/open?id=1P1g-Y8r30pSKfan1BhYZcsUtSk
 # URL Parameter EXAMPLE
 
 !!!Tip
-If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section. Each data type has its own url key. 
 !!!
 
 **Be sure to update lines 1, 4, and 6)**
@@ -102,14 +104,21 @@ If you are using DNAnexus links, be sure to extend the duration. See our [manage
 Additionally, you may add supporting metadata directly. A JSON example can be found within the mutation landscape track in ProteinPaint under the **code** tab (*see image below*). In that example, the JSON file has all the sample group information and all metadata across multiple `mutationsets` together.
 ![](./code.png)
 
-If you choose to add your own JSON for the sample groups, you will follow the below:
+If you choose to add your own JSON for the sample groups, you will need to add this to your code block:
 
 ``` JS
-        heatmapJSON:{
+       ///show_heatmap: 1, <- add the comma after 1 if using this extended JSON
+       heatmapJSON:{
             "samplegroup": [
               { //Enter JSON here
-              }
+              },
+              ///metabarNames:[] <-- end of your JSON from ProteinPaint's cheat sheet
+       }
+    }
+}
 ```
+
+
 
 To view an example of the JSON file format:
 1. Example 1: Go to [https://proteinpaint.stjude.org/](https://proteinpaint.stjude.org/)
@@ -117,14 +126,14 @@ To view an example of the JSON file format:
         * Select Example
 	        * Select Code 
                 * Review the JSON formatting
-2. Example 2: See example 1, but then select Data tab > Advanced > Schema. This does not show all the JSON configurations of that file used but only the sample data. 
+2. Example 2: See example 1, but then select the Data tab > Advanced > Schema. This does not show all the JSON configurations of that file used but only the sample data. 
 3. Example 3: Go [here](https://viz.stjude.cloud/st-jude-childrens-research-hospital/visualization/genomes-for-kids-the-scope-of-pathogenic-mutations-in-pediatric-cancer-revealed-by-comprehensive-dna-and-rna-sequencing~97) and review the code block below the visualization.
 4. Example 4: Go [here](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomes-for-kids-a-landscape-of-pediatric-cancer-demonstration-visualization~94) and review the code block below the visualization.
 
 Furthermore, you can convert an excel sheet to JSON.  There are many ways to do this, but we recommend [BeautifyTools](https://beautifytools.com/excel-to-json-converter.php) and to debug use [https://jsonlint.com/](https://jsonlint.com/).
 
 # Further Customization
-If you want to add ProteinPaint or GenomePaint viewers to the genes, please see below, but the files used must be specific to render correctly. If you have trouble, please reach out. 
+If you want to add ProteinPaint or GenomePaint viewers to the genes, please see below, but the files used must be specific to render correctly. If you have trouble, please reach out. Additionally, you can order specific groups of meta data by re-organzing the samples in the Sample Group tab. 
 
 ```JS
 "heatmapJSON":{
@@ -233,3 +242,4 @@ This example is used in our [oncoprint](https://viz.stjude.cloud/st-jude-childre
 	}
 ```
 
+Check out our Genome for Kids (G4K) demo highlighting how to make an oncoprint in our [videos](https://university.stjude.cloud/docs/visualization-community/videos/) section. 

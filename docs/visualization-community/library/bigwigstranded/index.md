@@ -4,7 +4,7 @@ title: BigWig Stranded
 # Description 
 These code block examples can be used to generate a figure using bigwig stranded data as seen in [VisCom](https://viz.stjude.cloud/st-jude-cloud-demo/visualization/genomepaint-stranded-bigwig-example~40).
 
-Use:  Quantitative data at genomic positions using forward and reverse strand reads
+Use:  RNA-seq coverage data as a pair of bigWig tracks, with forward strand on top and reverse strand on bottom.
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1ZnPZKSSajWyNISSLELMozKxrZHQbdxQkkkQFnxw6zTs/edit#heading=h.5m3g10g8lvol)
 
 # URL Key Example
@@ -57,10 +57,10 @@ For more details, see our [manage data](https://university.stjude.cloud/docs/vis
             "type": "bigwigstranded",
             "name": "Track name",
             "strand1": {
-                "file": "proteinpaint_demo\/hg19\/strandedbigwig\/sense.bw"
+                "file": "proteinpaint_demo\/hg19\/strandedbigwig\/sense.bw"   
             },
             "strand2": {
-                "file": "proteinpaint_demo\/hg19\/strandedbigwig\/antisense.bw",
+                "file": "proteinpaint_demo\/hg19\/strandedbigwig\/antisense.bw",   
                 "normalize": {
                     "dividefactor": -1
                 }

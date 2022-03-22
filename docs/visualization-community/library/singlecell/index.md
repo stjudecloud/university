@@ -5,11 +5,11 @@ title: Single Cell
 # Description 
 These code block examples can be used to generate a Single-Cell figure by using a .fpkm file as seen in [VisCom](https://viz.stjude.cloud/hyde-lab/visualization/retinal-regeneration-single-cell-of-chick-retina-following-nmdagrowth-factor-gf-insulinfgf-treatment~73).
 
-Use: Single Cell omics viewer
+Use: A data driven dimensional reduction method used to display single cell RNA seq data from a large number of cells.
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1YVxw2aPru6bAlTzUfE9GAQAvzbiBiqJiBR1X-g5ZBLI/edit)
 
 # URL Key Example
-Coming soon: This currently is not supported with a url key at this time. 
+This currently is not supported with a url key at this time. 
 
 
 # File Key Example
