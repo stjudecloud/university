@@ -2,7 +2,15 @@
 title: How to Use Our Editors 
 ---
 
-Once you navigate to your Dashboard or Teams list, you may create a new visualization. This will open our new Easy View editor which allows a user to have prompted fields for tracks or will open our Traditional View editor which allows a user to have a prompted code block for apps. There is an option to toggle to the traditional code editor if you want to customize your own code block for the tracks. We recommend this be used for advnace users.
+There are two ways to create a visualization. If you are signed in, you can navigate to Dashboard and then select Create a Visualization.
+[picture]
+These will remain privately in your account and not be shared until you assign the visualization a team within the editor
+[picture]
+If you are associated to a team, you can Select Teams and Select Visualizations, scroll until you see Create A Visualization. These will remain private in your teams list and show in your account if you started the visualization. Should you wish to transfer the ownership of the visualizations so they no longer exist in your account, please contac [support@stjude.cloud](support@stjude.cloud). 
+[picture]
+
+
+This will open our new Easy View editor which allows a user to have prompted fields for tracks or will open our Traditional View editor which allows a user to have a prompted code block for apps. There is an option to toggle to the traditional code editor if you want to customize your own code block for the tracks. We recommend this be used for advnace users.
 
 When you begin, you will be navigated to a landing page.
 Select a track or app to begin. For more on the specifics of each, please see our track vs apps section in the left navbar. 
