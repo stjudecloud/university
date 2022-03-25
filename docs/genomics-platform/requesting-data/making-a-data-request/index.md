@@ -6,6 +6,15 @@ title: Making a Data Request
    
 Creating a data request is the premier way to access raw St. Jude next generation sequencing data in the cloud. You can get a **free** copy of the data in a secure cloud environment powered by [Microsoft Azure](https://azure.microsoft.com/en-us/) and [DNAnexus](https://www.dnanexus.com/), or you can elect to download the data to your local computing environment.
 
+<iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/embed/i9bJJ5uA_fY" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+</iframe>
+
 !!!warning For-Profit Companies
 St. Jude Cloud does not allow for-profit companies to access any restricted access genomics data. We are actively working with our institution to assess the feasibility of providing data to for-profit entities. If you work for a for-profit company and would like to be notified if this restriction changes, feel free to email us at [support@stjude.cloud](mailto:support@stjude.cloud).
 !!!
