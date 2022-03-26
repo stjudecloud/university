@@ -24,7 +24,7 @@ runproteinpaint({
 
 Further explanation of all attributes in ProteinPaint can be found [here](https://docs.google.com/document/d/1ZnPZKSSajWyNISSLELMozKxrZHQbdxQkkkQFnxw6zTs/edit#heading=h.6spyog171fm9) (page 3).
 
-!!!Important
+!!!Tip
 For the traditional code editor to work, it must have true JSON where each attribute is closed within quotes.
 !!!
 

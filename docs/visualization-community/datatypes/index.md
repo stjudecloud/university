@@ -20,7 +20,7 @@ Easy = new easy editor view
 | MA+ VolcanPlot            | ![](./mavb-square.png)            | Code   |
 | Hi-C                      | ![](./hic-square.png)             | Easy   |
 | Lollipop                  | ![](./lollipop-square.png)        | Code   |
-| FusionEditor              | ![](./fusion-editor-square.png)   | Code   |
+| FusionEditor              | ![](./fusion-editor-square.png)   | N / A  |
 | Expression Rank           | ![](./exprank-square.png)         | Easy   |
 | VCF                       | ![](./vcf-square.png)             | Easy   |
 | Splice junction           | ![](./junction-square.png)        | Easy   |
@@ -35,6 +35,8 @@ Easy = new easy editor view
 | Arc                       | ![](./arc-square.png)             | Easy   |
 | 2DMAF                     | ![](./2dmaf-square.png)           | N / A  |
 | Data Facet Table          | ![](./tklist-square.png)          | Code   |
+
+  *GenomePaint is supported via the code editor.
 
 N/A = not supported at this time.
  

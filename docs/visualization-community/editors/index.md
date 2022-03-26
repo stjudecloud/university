@@ -3,16 +3,21 @@ title: How to Use Our Editors
 ---
 
 There are two ways to create a visualization. If you are signed in, you can navigate to Dashboard and then select Create a Visualization.
-[picture]
-These will remain privately in your account and not be shared until you assign the visualization a team within the editor
-[picture]
+
+![](./create.png) 
+
+These will remain privately in your account and not be shared until you assign the visualization a team within the editor.
+
+![](./private.png)
+
 If you are associated to a team, you can Select Teams and Select Visualizations, scroll until you see Create A Visualization. These will remain private in your teams list and show in your account if you started the visualization. Should you wish to transfer the ownership of the visualizations so they no longer exist in your account, please contac [support@stjude.cloud](support@stjude.cloud). 
-[picture]
 
+![](./create_button.png)
 
-This will open our new Easy View editor which allows a user to have prompted fields for tracks or will open our Traditional View editor which allows a user to have a prompted code block for apps. There is an option to toggle to the traditional code editor if you want to customize your own code block for the tracks. We recommend this be used for advnace users.
+When you begin, you will be navigated to a landing page that allows a user to explore and discover all the available visualizations run by ProteinPaint and GenomePaint.
 
-When you begin, you will be navigated to a landing page.
+![](./LandingPage.png)
+
 Select a track or app to begin. For more on the specifics of each, please see our track vs apps section in the left navbar. 
 
 !!!Important
@@ -20,11 +25,11 @@ You cannot combine tracks with apps.
 Tracks render our Easy View editor while Apps render our Traditional Code editor.
 !!!
 
-Both Apps and Tracks are prefilled with example data. Our editors also build the code block as you go if you utilize the Easy View editor.
+Both Apps and Tracks are prefilled with example data. Our editors also build the code block as you go if you utilize the Easy View editor. Please note that example data uses spliced files from [proteinpaint.stjude.cloud](proteinpaint.stjude.cloud) and may show 'No data in view' if mixed and matched.
 
-To understand the fields you can edit see below:
+To understand the different track fields read below:
 
-**Genome Build** - select a genome build that we can support (e.g.: hg19, hg39, mm9, etc).
+**Genome Build** - select a genome build that we can support (e.g.: hg19, hg39, mm9, etc). This must be the default to all tracks in a visualization draft. 
 **Position** - this is where you want to set your data and refgene view.
 **RefGene** - toggles refgene on or off; you can upload your own in the GenomePaint track.
 **Track Name** - custom to what you want to call that track.
@@ -70,7 +75,7 @@ This is our review process where you can send a visualization for review, with a
 
 By approving, the visualization is still set to private by default. Only when the visualization is approved can the visualization be set to public in the info section. 
 
-!!!Visualization statuses
+!!!Tip
 Visualizations will change statuses based on where it is in the approval process.
 Draft - blue
 Waiting for review - yellow
