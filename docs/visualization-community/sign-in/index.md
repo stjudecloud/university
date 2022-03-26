@@ -24,6 +24,5 @@ If you wish to add metadata or autogenerate a thumbnail, please email [support@s
 
 Teams is where you can navigate to create, share, or preview saved visualizations that were associated to the team. The new VisEditor has an **Info** section where a team can be selected. Once this is selected and set, the visualization is shared between the owner and team. This does not constitute this as public-facing. A great example to do this is if you start a visualization and pass the efforts to another member in the team to complete out the visualization.
 
-[picture]
 
 To learn how to create a visualization, see the next section: **How to Use Our Editors**.

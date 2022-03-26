@@ -4,10 +4,10 @@ title: Public vs Private Visualizations
 In this section, you will learn how to make a visualization public. 
 By default, all visualizations are private and cannot become public until it goes through the access control approval process. You can draft visualizations in your own dashboard which will not be seen by your team until you assign the visualization a team in the Info section. This can be useful if you want to generate a template and then hand over the efforts to another colleague in your team. 
 
-[picture]
+![](./private)
 
 
-### Approval Process:
+### Approval Process: COMING SOON! For now, please reach out to support@stjude.cloud
 
 To begin, complete all necessary fields or complete the custom code block to render a visualization. 
 Complete the details in the **Info** section. 
