@@ -15,7 +15,7 @@ https://docs.google.com/document/d/1jkVYRPIJpkWvA9vqtahRlNn63Hk5DehjHbF_BH9k7Rs/
 
 https://pecan.stjude.cloud/static/hg19/fusioneditor/cicero.output
 
-!!!Tip
+!!!tip
 /n must be used for line reads to work in this JSON format in the VisEditor
 !!!
 

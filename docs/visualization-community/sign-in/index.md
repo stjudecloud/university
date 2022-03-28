@@ -9,7 +9,8 @@ To sign up for a new account, you must first go to [viz.stjude.cloud/signin](viz
 
 **Sign-In**
 
-To sign in to your account, you must select **login** in the top right, use one of our authentication processes and then you will see a user icon in the top right of the navigation bar with a **Dashboard** and  **Teams** selection
+To sign in to your account, you must select **login** in the top right, use one of our authentication processes and then you will see a user icon in the top right of the navigation bar with a **Dashboard** and  **Teams** selection.
+
 ![](./teams.png) 
 
 If you want to be added to a team to utilize this collaborative enviornment or to publish to VisCom, please email [support@stjude.cloud](support@stjude.cloud) to be added to a team. Additionally, if you are the PI or Team Lead, please specify us in the email. 
@@ -18,7 +19,7 @@ If you want to be added to a team to utilize this collaborative enviornment or t
 
 Dashboard is where you can navigate to render your saved visualization sessions. The visualizations are viewed in a card-style view where you can see assigned metadata if public, headers to designate statuses, and even a thumbnail to render the visualization. 
 
-!!!Tip
+!!!tip
 If you wish to add metadata or autogenerate a thumbnail, please email [support@stjude.cloud](support@stjude.cloud) so we can internally enable this private feature.
 !!!
 

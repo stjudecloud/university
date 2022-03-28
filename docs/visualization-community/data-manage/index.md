@@ -14,8 +14,8 @@ Follow the below tutorials if you want to upload data to DNAnexus.
 * if you have your data stored in DNAnexus, go [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-dnanexus/). 
 * if you have your data stored on your local and want to upload to DNAnexus, go [here](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-local/).
 
-!!!Required
-You must follow the below tutorial to extend your links after you upload your data.
+!!!warning
+You must follow the below tutorial to extend your links after you upload your data. Otherwise the links in DNAnexus are available for 24h only.
 !!!
 
 # Accessing DNAnexus from the command line (to extend your file duration)
@@ -58,14 +58,14 @@ Use this URL for VisCom's url key, so be sure to save this.
 # Accessing the HPC
 * If you have your data stored on the HPC and want to move them to DNAnexus, follow these [instructions](https://university.stjude.cloud/docs/genomics-platform/managing-data/upload-cluster/).
 
-* In order to allow ProteinPaint's server to access your data on the HPC, you must move it to to the <tp> directory. To access this, signin (see tutorial above if you are new) and type 
+* In order to allow ProteinPaint's server to access your data on the HPC, you must move it to to the <tp> directory. To access this, signin (see [this](https://university.stjude.cloud/docs/visualization-community/sign-in/) tutorial) and type 
 ```JS
 cd /research/rgs01/resgen/legacy/gb_customTracks/tp
 ```
 
 Here, you can make a new directory to store your data. 
 
-!!!Tip
+!!!tip
 The data must be on the proteinpaint.stjude.org server and not ppr1, otherwise your visualizations have to be viewed by VPN.
 !!!
 

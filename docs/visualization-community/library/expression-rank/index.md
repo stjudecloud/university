@@ -10,7 +10,7 @@ Use: RNA-seq coverage data as a pair of bigWig tracks, with forward strand on to
 
 # URL Parameter EXAMPLE
 
-!!!Tip
+!!!tip
 If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section. The <sample> parameter must be unique to the file otherwise it will **not** render. 
 !!!
 
@@ -36,7 +36,7 @@ If you are using DNAnexus links, be sure to extend the duration. See our [manage
 
 # Path to file EXAMPLE
 
-!!!Tip
+!!!tip
 If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
 For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
 !!!
