@@ -9,9 +9,8 @@ Use: The MA plot contrasts the magnitude of expression (M) on the x axis against
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1gEhywyMzMQRM10NFvsObw1yDSWxVY7pxYjsQ2-nd6x4/edit)
 
 
-### Supported by the Traditional Code Editor only
-!!!tip
-If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!warning
+If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section. Supported by the Traditional Code Editor only.
 !!!
 
 # URL Parameter EXAMPLE

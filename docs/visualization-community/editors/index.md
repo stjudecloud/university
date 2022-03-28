@@ -101,15 +101,15 @@ This is helpful when a team is proactively curating their visualizations and dat
 
 !!!tip
 Visualizations will change statuses based on where it is in the approval process:
-Draft - blue
-Waiting for review - yellow
-Needs Review - red
-Revisions requested - red
-Approved - green
+Draft - blue; 
+Waiting for review - yellow; 
+Needs Review - red; 
+Revisions requested - red; 
+Approved - green; 
 !!!
 
 # Export
-Export a SVG of the visualization.
+Export a SVG of the visualization to use for publications or other related material.
 
 # Docs
 This will take you to the visualization community help guides. 

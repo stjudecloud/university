@@ -7,7 +7,7 @@ These code block examples can be used to generate a figure using vcf data as see
 Use: This track localizes the variant data on reference genomes and can render frequency data for cohorts.
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1owXUQuqw5hBHFERm0Ria7anKtpyoPBaZY_MCiXXf5wE/edit)
 
-!!!tip
+!!!warning
 If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
 In order to render <gz> files they must also have the <tbi> file associated. What happens is that the ProteinPaint looks for the <tbi> file and cannot parse the <gz> so we must give it an alternate path to the <tbi> file.>
 !!!

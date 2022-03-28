@@ -9,7 +9,7 @@ Use: Used for displaying the frequency and type of mutation for a given gene on 
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1D78jKVaQrWBhAjnfmCqj0Cirf6s-CdcbfPkuZQMT8Co/edit#heading=h.tyjcwt)
 
 
-!!!tip
+!!!warning
 This is a track and will be uplifted into the new VisEditor easy view soon.
 !!!
 

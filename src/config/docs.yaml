@@ -176,8 +176,6 @@ domains:
                 path: /docs/visualization-community/library/pgv/
               - title: "Track List and Facet Table"
                 path: /docs/visualization-community/library/facet/
-              - title: "Fusion Editor"
-                path: /docs/visualization-community/library/fusion/
               - title: "t-SNE"
                 path: /docs/visualization-community/library/tsne/
           - title: "ProteinPaint"
