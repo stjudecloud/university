@@ -10,7 +10,7 @@ Use: The MA plot contrasts the magnitude of expression (M) on the x axis against
 
 
 ### Supported by the Traditional Code Editor only
-!!!Tip
+!!!tip
 If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
 !!!
 

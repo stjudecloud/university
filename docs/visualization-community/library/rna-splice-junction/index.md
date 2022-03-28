@@ -32,7 +32,7 @@ In order to render <gz> files they must also have the <tbi> file associated. Wha
 }
 ```
 
-!!!Tip
+!!!tip
 If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
 For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
 !!!
