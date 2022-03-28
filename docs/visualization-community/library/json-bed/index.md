@@ -11,7 +11,7 @@ Use: This customizable bed format shows defined genomic regions identified by Ch
 
 # URL Key Example
 
-!!!tip
+!!!warning
 If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
 !!!
 

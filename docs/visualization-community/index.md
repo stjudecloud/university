@@ -15,7 +15,7 @@ Once you find the visualization you need within VisCom, you can easily re-create
 
 *If you want to use the new VisEditor with a curated example data found in VisCom, then just be sure to copy/paste the file or url key hyperlink to re-create it. Add the hyperlink to the URL field that populates for that track or app. 
 
-![](./explore.png)
+![](./Explore.png)
 
 ## Purpose
 * You can explore shared visualizations by searching or filtering by institution, data type, lab, author, PubMedID, and even by diagnosis. 

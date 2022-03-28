@@ -19,7 +19,7 @@ Truncation [Format](https://drive.google.com/open?id=1P1g-Y8r30pSKfan1BhYZcsUtSk
 
 # URL Parameter EXAMPLE
 
-!!!tip
+!!!warning
 If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section. Each data type has its own url key. 
 !!!
 

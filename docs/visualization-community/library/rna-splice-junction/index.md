@@ -9,7 +9,7 @@ These code block examples can be used to generate a RNA splice junction from a c
 Use: This visualization displays the number of mapped junction reads precisely along with a gene model and will include alternative splicing and isoforms if available.
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1PFva3Mn-U4VPNW0vHHC-CSnYBeotRnqbhCMQPmyLQG4/edit)
 
-!!!Tip
+!!!warning
 If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
 In order to render <gz> files they must also have the <tbi> file associated. What happens is that the <runproteinpaint()> looks for the <tbi> file and cannot parse the <gz> so we must give it an alternate path to the <tbi> file.>
 !!!
