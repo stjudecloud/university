@@ -4,6 +4,11 @@ title: Embed Your Visualization
 # Description 
 In this part of the tutorial, one will learn how to [embed](https://stjudecloud.github.io/docs/guides/proteinpaint/developers-guide/embedding-proteinpaint/) a html file based on the code block developed to make a visualization. 
 
+!!!warning
+The code editor uses JSON and ProteinPaint uses javascript, you will need to use their code example templates. 
+We are working on a new embed feature soon.
+!!!
+
 ## Create a html file
 **You will need a text editor to create a .html file for embedding**
 1. Open notepad or a text editor.

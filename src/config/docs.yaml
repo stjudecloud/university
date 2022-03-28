@@ -125,6 +125,8 @@ domains:
                 path: /docs/visualization-community/sign-in/
               - title: "How to Use the VisEditor"
                 path: /docs/visualization-community/editors/
+              - title: "Tracks and Apps"
+                path: /docs/visualization-community/tracks_apps/
               - title: "Manage Your Data"
                 path: /docs/visualization-community/data-manage/
               - title: "Collections & Communities"

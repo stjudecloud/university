@@ -24,8 +24,8 @@ If you have any questions, please reach out to [support@stjude.cloud](support@st
 
 
 <p align="center">
-    <a style="font-size: larger" >Coming Soon!</a> 
+    <a style="font-size: larger" >Check out our videos!</a> 
 <p align="center">
-</a> Video series covering various topics for an optimal user experience.</p>
+</a> A video series covering each section can be found [here](https://university.stjude.cloud/docs/visualization-community/videos/).</p>
 
 

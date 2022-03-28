@@ -6,16 +6,16 @@ St. Jude Cloud's [Visualization Community (VisCom)](https://viz.stjude.cloud/) i
 
 
 # Explore and Create
-With over 71 publicly curated visualizations, with an average of 1k views (greatest >12K), an optimized free-text search engine and filters to query metadata allow a user to explore unique visualizations to spot trends and detect outliers in massive high-dimensional data. 
+As of date, we have over 75 publicly curated visualizations, with an average of 1k views (greatest >12K), an optimized free-text search engine and filters to query metadata allow a user to explore unique visualizations to spot trends and detect outliers in massive high-dimensional data. 
 
 Once you find the visualization you need within VisCom, you can easily re-create it by any of the choices below and then use the code editor to paste the code block. 
-1.) copying the curated code block displayed for a visualization
-2.) by viewing our [library](https://university.stjude.cloud/docs/visualization-community/basics) of curated code blocks
-3.) or explore our new visualization editor with curated pre-filled examples
+1.) copying the curated code block displayed for a visualization.
+2.) by viewing our [library](https://university.stjude.cloud/docs/visualization-community/basics) of curated code blocks.*
+3.) or explore our new visualization editor with curated pre-filled examples.
 
-If you want to use the new VisEditor with fields, then just be sure to copy/paste the file or url key information from a curated example to populate. 
+*If you want to use the new VisEditor with a curated example data found in VisCom, then just be sure to copy/paste the file or url key hyperlink to re-create it. Add the hyperlink to the URL field that populates for that track or app. 
 
-![](./Explore.gif)
+![](./explore.png)
 
 ## Purpose
 * You can explore shared visualizations by searching or filtering by institution, data type, lab, author, PubMedID, and even by diagnosis. 
