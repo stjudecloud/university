@@ -9,7 +9,7 @@ Use: Used to display gene. expression results from RNA seq across a cohort of sa
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1yrRpDUZWSRGuCa0snGwRuo721WRHgdYTX7GWIsZ_fSY/)
 
 !!!warning
-If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section. The <file> keys can be switched with <url> keys. Legendimg is optional.
+If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section. The file keys can be switched with url keys. Legendimg is optional.
 !!!
 
 

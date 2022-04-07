@@ -39,6 +39,11 @@ If you are using DNAnexus links, be sure to extend the duration. See our [manage
 }
 ```
 
+!!!tip
+If you are using a path on the HPC, the file must exist in a directory in the /tp directory.
+For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
 # Path to file EXAMPLE
 **Be sure to update lines 4, 7, 9, 12, 14 and 17** 
 ```JS

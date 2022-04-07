@@ -13,7 +13,7 @@ Use: Visualizes the aligned reads and assists in understanding depth and quality
 
 !!!warning
 If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
-In order to render <bam> files they must also have the <bai> file associated. What happens is that the ProteinPaint looks for the <abi> file and cannot parse the <bam> so we must give it an alternate path to the <bai> file.>
+In order to render .bam files they must also have the .bai file associated. What happens is that the ProteinPaint looks for the .bai file and cannot parse the .bam so we must give it an alternate path to the .bai file.
 !!!
 
 **Be sure to update lines 1, 3, 8, 9, and 10**
@@ -37,7 +37,7 @@ In order to render <bam> files they must also have the <bai> file associated. Wh
 # File Key Example
 
 !!!warning
-If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
+If you are using a path on the HPC, the file must exist in a directory in the /tp directory.
 For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
 !!!
 
