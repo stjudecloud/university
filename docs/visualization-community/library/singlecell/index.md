@@ -12,6 +12,11 @@ Use: A data driven dimensional reduction method used to display single cell RNA 
 This currently is not supported with a url key at this time. 
 
 
+!!!tip
+If you are using a path on the HPC, the file must exist in a directory in the /tp directory.
+For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
 # File Key Example
 
 **Be sure to update lines 6 and 7** 

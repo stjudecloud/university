@@ -11,6 +11,12 @@ Use: tSNE plots are a display that converts high dimensional data to an interpre
 # URL Key Example
 This currently is not supported with a url key at this time. 
 
+!!!tip
+If you are using a path on the HPC, the file must exist in a directory in the /tp directory.
+For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+
 # File key Example
 
 **Be sure to update lines 8, 9, 14, 15**

@@ -13,13 +13,15 @@ Once you find the visualization you need within VisCom, you can easily re-create
 2.) by viewing our [library](https://university.stjude.cloud/docs/visualization-community/basics) of curated code blocks.*
 3.) or explore our new visualization editor with curated pre-filled examples.
 
-*If you want to use the new VisEditor with a curated example data found in VisCom, then just be sure to copy/paste the file or url key hyperlink to re-create it. Add the hyperlink to the URL field that populates for that track or app. 
+*To use a curated example data found in VisCom within the VisEditor, be sure to copy/paste the file or url key hyperlink to re-create it. Add the hyperlink to the URL field appropriate for that track or app.
 
 ![](./Explore.png)
 
 ## Purpose
 * You can explore shared visualizations by searching or filtering by institution, data type, lab, author, PubMedID, and even by diagnosis. 
-* By utilizing St. Jude's visualization tools [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/), we allow world class genomic or proteomic visualizations to be easily developed, accessed, and/or shared globally. Each visualization saved in VisCom is private by default until a P.I. or team lead approves.
+* St. Jude's visualization tools ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/) allow world class genomic or proteomic visualizations.
+to be easily developed, accessed, and shared globally. Each visualization in VisCom is private until a P.I. or 
+team lead approves their release.
 * Visualizations can be shared and managed before becoming publicly available. Teams can be developed to provide a secure, private workspace for instant collaboration. Once public, adding a permalink or PubMedID to the visualization increases the profile and accessibility to your figure(s). 
 * We even offer [Communities](https://viz.stjude.cloud/communities) to share and unify research within a genre of research. 
 
@@ -31,7 +33,7 @@ Once you find the visualization you need within VisCom, you can easily re-create
 * Collaborate with others ***by exploring and sharing visualizations within a community or team***
 
 ## Support
-* [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/) is developed & supported by [Xin Zhou's group](https://www.stjude.org/directory/z/xin-zhou.html)
+* [ProteinPaint](https://viz.stjude.cloud/tools/proteinpaint/) and [GenomePaint](https://viz.stjude.cloud/tools/genomepaint/) is developed & supported by [Xin Zhou's Lab](https://www.stjude.org/directory/z/xin-zhou.html)
 
 * Visualization Community is developed by the St. Jude Cloud team to facilitate scientific research using St. Jude-developed visualization tools. For more information, please read the [paper](https://cancerdiscovery.aacrjournals.org/content/11/5/1082) or contact us at [support@stjude.cloud](support@stjude.cloud). If you need to cite Visualization Community, please see this [page](https://university.stjude.cloud/docs/citing-stjude-cloud/).
 

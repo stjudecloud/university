@@ -11,7 +11,7 @@ Use: This visualization displays the number of mapped junction reads precisely a
 
 !!!warning
 If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
-In order to render <gz> files they must also have the <tbi> file associated. What happens is that the <runproteinpaint()> looks for the <tbi> file and cannot parse the <gz> so we must give it an alternate path to the <tbi> file.>
+In order to render .gz files they must also have the .tbi file associated. What happens is that the runproteinpaint() looks for the .tbi file and cannot parse the .gz so we must give it an alternate path to the .tbi file.
 !!!
 
 # URL Parameter EXAMPLE
@@ -33,7 +33,7 @@ In order to render <gz> files they must also have the <tbi> file associated. Wha
 ```
 
 !!!tip
-If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
+If you are using a path on the HPC, the file must exist in a directory in the /tp directory.
 For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
 !!!
 

@@ -41,7 +41,7 @@ If you are using DNAnexus links, be sure to extend the duration. See our [manage
 # File Key Example
 
 !!!warning
-If you are using a path on the HPC, the file must exist in a directory in the <tp> directory.
+If you are using a path on the HPC, the file must exist in a directory in the /tp directory.
 For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
 !!!
 

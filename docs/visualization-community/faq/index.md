@@ -7,26 +7,26 @@ KeyWord(s): VisCom (Visualization Community)
 * [Visualization Community](https://viz.stjude.cloud/) is a safe environment where you can explore public research visualizations, learn how to use [ProteinPaint](https://proteinpaint.stjude.org/)/[GenomePaint](https://genomepaint.stjude.cloud/), and even create visualizations that can be privately or publicly accessed from your own dataset.
 
 **How does Visualization Community work?**
-* VisCom is hosted in St. Jude's cloud enviornment where there is no outsource program or application to download. It only requires a computer and internet connection and is completely free for non-profit/academic use. Your data set must be hosted on St. Jude's HPC in a specific directory outlined in our [Manage your Data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section or have a URL to access the data. 
+* VisCom is hosted in St. Jude’s cloud environment so there is no application to download. It only requires a computer and internet connection and is completely free for non-profit/academic use. Your data set must be hosted on St. Jude's HPC in a specific directory outlined in our [Manage your Data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section or have a URL to access the data. 
 
 * You will ***not*** incur any costs except in the following situations:
 
 *When data driving a visualization is stored in St. Jude Cloud Genomics Platform or DNAnexus, a monthly fee will be incurred for storage costs. See your [DNAnexus billing information](https://platform.dnanexus.com/profile/settings/billing) for the cost per GB.*
 
 **What do the visualizations represent?**
-* The visuals are curated by researchers, those composed of St Jude Cloud or others within a research team. These visuals represent high dimensional proteomic or genomic data sets. 
+* The visualizations represent the integration of high dimensional genomic or proteomic data sets or the summarization of such data sets .
 
 **Can I create my own visualizations?**
 * Yes, users have access to create visuals once they sign up for an account. Visualizations cannot become public until they are assigned to a team where a PI or Team Lead must approve through our internal workflow. To be added to a team, you must contact [support@stjude.cloud](support@stjude.cloud). 
 
 **Can I share my visuals with others?**
-* Yes, you may share your visualization(s) if our PI or team lead approves. We can enable a feature for you to share the direct link administratively if the visualization is still private. Coming soon will be a sharing option within the Visualization Community platform once the visualization is public. 
+* Yes, you may share your visualization(s) once your PI or team lead approves. We can share the direct link administratively,  if the visualization is still private, on request at [support@stjude.cloud](support@stjude.cloud).
 
 **Can I keep my visualizations private?**
 * Yes, we have an access control workflow where you can create visualizations which will remain private until you get approval from the team PI or Team Lead to make it public. 
 
 **Can I use these in a publication?**
-* Yes, you may use these sophisticated figures in your publications. We currently have published visualizations in over 11 prestigious journals including, but not limited to, Nature, Cancer Discovery, Blood, and Cell Reports. You may search which Journals are associated by using our search engine. 
+* Yes, we encourage you to use these figures in your publications. We currently have published visualizations in over 11 prestigious journals including, but not limited to, Nature, Cancer Discovery, Blood, and Cell Reports. You may search for a journal by entering a key word in our search engine.
 
 **Do I have to upload my own PDF or what do I need to generate the interactive visualization?**
 * You do not need to upload a PDF. You will signin to your account and use one of our two editors: Easy View or Traditional Code. Easy view allows you to render visualizations without knowing the code block. Traditional code is encouraged for more advanced users who know how to develop the code blocks. 

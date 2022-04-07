@@ -13,6 +13,12 @@ Use: This visualization displays the number and color codes the type of mapped j
 # URL Key Example
 This currently is not supported with a url key at this time. 
 
+!!!tip
+If you are using a path on the HPC, the file must exist in a directory in the /tp directory.
+For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+
 # File Key Example
 
 **Be sure to update lines 1, 3, 8, and 9** 
