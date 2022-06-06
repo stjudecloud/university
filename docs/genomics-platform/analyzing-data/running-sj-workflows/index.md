@@ -48,7 +48,7 @@ You can upload these files using the [the command line](../command-line).
 
 Once you've uploaded data to your cloud workspace, click "Launch Tool" on the workflow's landing page. A dropdown will present any presets required for running the workflow. For example, some workflows ask that you select whether you wish to start with FASTQ files or a BAM file. Launching the workflow will redirect you to you workspace in DNAnexus.
 
-The gif below shows an example with the [Rapid RNA-Seq workflow](https://platform.stjude.cloud/tools/rapid_rna-seq)
+The gif below shows an example with the [Rapid RNA-Seq workflow](https://platform.stjude.cloud/workflows/rapid_rna-seq)
 
 ![](./example_tool-launch.gif)
 
