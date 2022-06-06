@@ -4,7 +4,7 @@ title: RNA-Seq Expression Classification
 
 ## Overview
 
-St. Jude Cloud provides functionality for generating RNA-Seq Expression Classification plots. This tool allows plotting of RNA-Seq data by running through the St. Jude Cloud normalization [pipeline](https://stjudecloud.github.io/rfcs/0001-rnaseq-workflow-v2.0.html). The generated count data is then compared to a reference set of data from a cohort of St. Jude samples and a plot is produced.
+St. Jude Cloud provides functionality for generating RNA-Seq Expression Classification plots. This workflow allows plotting of RNA-Seq data by running through the St. Jude Cloud normalization [pipeline](https://stjudecloud.github.io/rfcs/0001-rnaseq-workflow-v2.0.html). The generated count data is then compared to a reference set of data from a cohort of St. Jude samples and a plot is produced.
 
 ### Requirements
 
@@ -84,9 +84,9 @@ or the results can occur. If your sample is *not* aligned to this genome build, 
 recommend submitting the sample to the realignment-based workflow.
 !!!
 
-We provide two versions of the RNA-Seq Expression Classification tool depending on desired input. The full workflow allows a user to upload a sample in BAM format. That sample will then be converted to `FASTQ` format, aligned with `STAR` two-pass alignment, and feature counts generated with `htseq-count`
+We provide two versions of the RNA-Seq Expression Classification workflow depending on desired input. The full workflow allows a user to upload a sample in BAM format. That sample will then be converted to `FASTQ` format, aligned with `STAR` two-pass alignment, and feature counts generated with `htseq-count`
 
-To get started, you need to navigate to the [RNA-Seq Expression Classification tool page](https://platform.stjude.cloud/tools/rnaseq-expression-classification). You'll need to click the "Start" button in the left hand pane. This creates a cloud workspace in DNAnexus with the same name as the tool. After this, you will be able to upload your input files to that workspace.
+To get started, you need to navigate to the [RNA-Seq Expression Classification workflow page](https://platform.stjude.cloud/workflows/rnaseq-expression-classification). You'll need to click the "Start" button in the left hand pane. This creates a cloud workspace in DNAnexus with the same name as the workflow. After this, you will be able to upload your input files to that workspace.
 
 ### Obtaining reference data
 
@@ -99,12 +99,12 @@ Reference data can also be retrieved through the [Genomics Platform Data Browser
 These must then be provided to the workflow through the `reference_counts` parameter. By default, all reference files will be used by the app, but this can be restricted to one of the three tumor types [Blood, Brain, Solid] through the app settings.
 
 !!!warning
-The RNA-Seq Expression Classification tool does not allow the same sample name to be included more than once. If data from multiple projects is requested through St. Jude Cloud Genomics Platform, a sample may be included more than once. We offer an opinionated deduplication method at https://github.com/stjudecloud/utilities. 
+The RNA-Seq Expression Classification workflow does not allow the same sample name to be included more than once. If data from multiple projects is requested through St. Jude Cloud Genomics Platform, a sample may be included more than once. We offer an opinionated deduplication method at https://github.com/stjudecloud/utilities. 
 !!!
 
-### Running the tool
+### Running the workflow
 
-Once you've uploaded data to your cloud workspace, click "Launch Tool" on the tool's landing page. A dropdown will present the different presets for running the workflow. Here, you can select whether you wish to start with a counts file or a BAM file. Once the tool has been vended, **copy** the workflow to the project containing the reference data.
+Once you've uploaded data to your cloud workspace, click "Launch Tool" on the workflow's landing page. A dropdown will present the different presets for running the workflow. Here, you can select whether you wish to start with a counts file or a BAM file. Once the workflow has been vended, **copy** the workflow to the project containing the reference data.
 
 ### Uploading data
 
@@ -180,7 +180,7 @@ An optional gene list can be specified as an input. This is a single column text
 
 By default, all tumor types (blood, brain, and solid) will be included in the analysis. It is also possible to run each of the three types separately by selecting the appropriate tumor type. 
 
-The tool supports both Fresh/Frozen and FFPE inputs. By default, only Fresh/Frozen samples from the reference cohort will be included. This setting can be changed to run only FFPE or Fresh/Frozen + FFPE samples.
+The workflow supports both Fresh/Frozen and FFPE inputs. By default, only Fresh/Frozen samples from the reference cohort will be included. This setting can be changed to run only FFPE or Fresh/Frozen + FFPE samples.
 
 It is also possible to return intermediate files from the workflow. If desired, 'original_matrix' is the matrix of counts after covariates and additional metadata has been removed,  'variance_stabilized' is the matrix after running varianceStabilizingTransformation, 'batch_corrected' is the matrix after ComBat batch correction, 'tsne_output' is the matrix after Rtsne has been run and 'matrix' is the original file input to the R script for plotting.
 
@@ -191,7 +191,7 @@ The expression workflow can optionally include PDX samples from the reference co
 Once your input files are hooked up, you should be able to start the workflow by clicking the "Run Analysis" button in the top right hand corner of the workflow dialog.
 
 ### Monitoring run progress
-Once you have started one or more RNA-Seq Expression Classification runs, you can safely close your browser and come back later to check the status of the jobs. To do this, navigate to the tool's landing page. Next, click "View Results" then select the "View Running Jobs" option. You will be redirected to the job monitoring page. Each job you kicked off gets one row in this table.
+Once you have started one or more RNA-Seq Expression Classification runs, you can safely close your browser and come back later to check the status of the jobs. To do this, navigate to the workflow's landing page. Next, click "View Results" then select the "View Running Jobs" option. You will be redirected to the job monitoring page. Each job you kicked off gets one row in this table.
 
 You can click the "+" on any of the runs to check the status of individual steps of the RNA-Seq Expression Classification pipeline. Other information, such as time, cost of individual steps in the pipeline, and even viewing the job logs can accessed by clicking around the sub-items.
 
