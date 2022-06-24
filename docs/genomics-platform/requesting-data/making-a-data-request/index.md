@@ -83,7 +83,7 @@ Through the Electronic Data Access Agreement wizard, you will add all of the nec
 If you would like to download the data to local storage, there are extra steps you'll need to follow such as [getting additional signatures](../how-to-fill-out-daa/#data-download-permission) on your data access agreement. We recommend that you work with the data in the cloud if it's feasible; the data provided by St. Jude is free, the compute charges are reasonable, and working in the cloud helps to eliminate the long, error-prone download process. Porting your tools to be run in the cloud is easy as well. We recommend you follow [this guide](../../analyzing-data/creating-a-cloud-app) to get started.
 !!!
 
-Request approval typically takes less than 2 weeks if your data access agreement is correctly and completely filled out. You will receive automated emails from notifications@stjude.cloud at the time that your request is approved. Note that an email for each of the Data Access Units requested is sent, and they are not all approved at once, but rather as soon as each committee grants approval. 
+Access request approval typically takes less than 2 weeks if your data access agreement is correctly and completely filled out. You will receive automated emails from notifications@stjude.cloud when your request is approved. Note that an email for each of the Data Access Units requested is sent, and they are not all approved at once, but rather as soon as each committee grants approval. 
 
 !!!tip 
 If you receive an email from us that your DAA is incomplete, you may edit your DAA and upload the revised copy using the 'Add a Form' button the on [My Dashboard](../../managing-data/working-with-our-data/#managing-your-data-requests) page. 
