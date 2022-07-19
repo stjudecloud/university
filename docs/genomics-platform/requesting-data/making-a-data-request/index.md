@@ -28,13 +28,13 @@ St. Jude Cloud does not allow for-profit companies to access any restricted acce
 
 ## Selecting Data
 
-![](./data-browser-overview.png)
+![](./databrowser-guide.png)
 
 The primary way to make your data selection is through our [Genomics Platform Data Browser](https://platform.stjude.cloud/data/diseases/paired-tumor-normal). You can search our raw genomic data by diagnosis, publication, study, or individual samples by selecting a tab along the top. You may further refine your search by applying filters from three categories: Sequencing Type, Sample Type, and File Type. Please note that applying multiple filters within the same category filters using 'OR' logic, while applying multiple filters across different categories filters using 'AND' logic. For example in the overview image above, we have filtered the browser to only show data that is (either WGS OR WES) AND (Diagnosis OR Relapse) AND BAM.
  
 As you filter and make selections, the data summary panel in the upper left hand corner will update dynamically to give you important descriptive information about the set of data you have selected. Click on an empty box to make a selection; when selected, the box will turn blue with a white check mark. Once you have completed your data selection, click on *Request Data* to submit your request and proceed. 
 
-![](./request-data-select-data.gif)
+<!--![](./databrowser.gif)-->
 
 !!!note
 You must have [created an account](../../accounts-and-billing) and be logged in to submit a data request. If you have not yet created an account or you are not logged in, the submit button will say *Log In* rather than *Request Data*.
