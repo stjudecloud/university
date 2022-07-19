@@ -56,9 +56,9 @@ Data from St. Jude Cloud is available for free via the DNAnexus platform, but to
 !!!
 
 
-To complete DNAnexus billing account setup, email Stefanie Mendoza (smendoza@dnanexus.com) and DNAnexus Billing (billing@dnanexus.com). Use the template below, adding in the required information. Your DNAnexus account ID and email can be found listed on your User Account page on DNAnexus. 
+To complete DNAnexus billing account setup, email DNAnexus support (support@dnanexus.com). Use the template below, adding in the required information. Your DNAnexus account ID and email can be found listed on your User Account page on DNAnexus. 
 
->   Hello Stefanie,
+>   Hello DNAnexus Support,
 >   
 > I am a St. Jude Cloud user and would like to complete the set up of my DNAnexus billing account so that I can access data. Here is my account information and when I am available to finish set up:
 >  1. DNAnexus account ID:
