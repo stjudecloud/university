@@ -9,7 +9,33 @@ Use: The standard Hi-C visualization for chromatin conformation data highlightin
 [ProteinPaint Google Docs](https://docs.google.com/document/d/1MQ0Z_AD5moDmaSx2tcn7DyVKGp49TS63pO0cceGL_Ns/edit)
 
 # URL Key Example
-Not currently supported in the VisEditor. No URL key enabled.
+
+!!!warning
+If you are using DNAnexus links, be sure to extend the duration. See our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+**Be sure to update lines 1, 3, 9, and 13** 
+
+JS
+```
+{
+    "genome": "hg19",
+    "nativetracks": "RefGene",
+    "position": "chr17:7565096-7590856",
+    "block": true,
+    "tracks": [
+        {
+            "type": "hicstraw",
+            "name": "Track name",
+            "url": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/qJzQ6J0BVVQGP57F0Q2b2x2BFKJVQqpxP76g8BYY\/hic_Nalm6.inter.hic",
+            "percentile_max": 95,
+            "mincutoff": 1,
+            "pyramidup": 1,
+            "enzyme": "MboI"
+        }
+    ]
+}
+```
 
 # File Key Example
 

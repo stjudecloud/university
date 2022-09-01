@@ -142,42 +142,42 @@ domains:
             pages:
               - title: "Code Block Basics"
                 path: /docs/visualization-community/basics/
-              - title: "VCF"
-                path: /docs/visualization-community/library/vcf/
+              - title: "Allelic Imbalance"
+                path: /docs/visualization-community/library/ai-check/
+              - title: "Arc"
+                path: /docs/visualization-community/library/arc/
               - title: "BAM"
                 path: /docs/visualization-community/library/bam/
               - title: "BigWig"
                 path: /docs/visualization-community/library/bigwig/
               - title: "BigWig Stranded"
                 path: /docs/visualization-community/library/bigwigstranded/
-              - title: "Heatmap"
-                path: /docs/visualization-community/library/heatmap/
-              - title: "Single Cell"
-                path: /docs/visualization-community/library/singlecell/
-              - title: "Allelic Imbalance"
-                path: /docs/visualization-community/library/ai-check/
-              - title: "Arc"
-                path: /docs/visualization-community/library/arc/
               - title: "Expression Rank"
                 path: /docs/visualization-community/library/expression-rank/
               - title: "Hi-C"
                 path: /docs/visualization-community/library/hic/
+              - title: "Heatmap"
+                path: /docs/visualization-community/library/heatmap/
+              - title: "JSON BED"
+                path: /docs/visualization-community/library/json-bed/
               - title: "Lollipop"
                 path: /docs/visualization-community/library/lollipop/
               - title: "MA Volcano"
                 path: /docs/visualization-community/library/MA-Volcano/
-              - title: "Splice Junctions Cohort"
-                path: /docs/visualization-community/library/splice-junctions-cohort/
-              - title: "RNA Splice Junction"
-                path: /docs/visualization-community/library/rna-splice-junction/
-              - title: "JSON BED"
-                path: /docs/visualization-community/library/json-bed/
               - title: "Profile Gene Value"
                 path: /docs/visualization-community/library/pgv/
+              - title: "RNA Splice Junction"
+                path: /docs/visualization-community/library/rna-splice-junction/
+              - title: "Single Cell"
+                path: /docs/visualization-community/library/singlecell/
+              - title: "Splice Junctions Cohort"
+                path: /docs/visualization-community/library/splice-junctions-cohort/ 
               - title: "Track List and Facet Table"
                 path: /docs/visualization-community/library/facet/
               - title: "t-SNE"
                 path: /docs/visualization-community/library/tsne/
+              - title: "VCF"
+                path: /docs/visualization-community/library/vcf/
           - title: "ProteinPaint"
             collapsable: true
             pages:

@@ -15,7 +15,18 @@ In order to render .gz files they must also have the .tbi file associated. What 
 !!!
 
 # URL Parameter EXAMPLE
-**Be sure to update lines 1, 3, 8, and 9**
+This currently is not supported with a url key at this time.  
+
+
+!!!tip
+If you are using a path on the HPC, the file must exist in a directory in the /tp directory.
+For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
+!!!
+
+
+# Path to file EXAMPLE
+**Be sure to update lines 1, 3, 8, 9 and 10**
+
 ```JS
 {
     "genome": "hg19",
@@ -27,31 +38,6 @@ In order to render .gz files they must also have the .tbi file associated. What 
             "type": "junction",
             "name": "Track name",
             "file": "proteinpaint_demo\/hg19\/junction\/file.gz"
-        }
-    ]
-}
-```
-
-!!!tip
-If you are using a path on the HPC, the file must exist in a directory in the /tp directory.
-For more details, see our [manage data](https://university.stjude.cloud/docs/visualization-community/data-manage/) section.
-!!!
-
-
-# Path to file EXAMPLE
-**Be sure to update lines 1, 3, 8, 9 and 10**
-```JS
-{
-    "genome": "hg19",
-    "nativetracks": "RefGene",
-    "position": "chr17:7565096-7590856",
-    "block": true,
-    "tracks": [
-        {
-            "type": "junction",
-            "name": "Track name",
-            "url": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/3yqzZzvjPkQkK3jfvQybzZZkYF6VV8byQP0f038k\/file.gz",
-            "indexURL": "https:\/\/westus.dl.azure.dnanex.us\/F\/D\/pXPbx91jBjp30Fq62BVjPZK91q774Jp04B42XppZ\/junction.gz.tbi"
         }
     ]
 }
