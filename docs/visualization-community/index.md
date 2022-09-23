@@ -36,5 +36,5 @@ Once you find the visualization you need within VisCom, you can easily re-create
 
 # Licensing 
 If you wish to have your own license of ProteinPaint please follow this [guideline](https://www.stjude.org/research/why-st-jude/shared-resources/technology-licensing/technologies/proteinpaint-web-application-for-visualizing-genomic-data-sj-15-0021.html). 
-
+ 
 
