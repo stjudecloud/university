@@ -100,7 +100,7 @@ We note here that downloading data at a large scale, no matter which tool is use
 ## What clinical information is available about samples in St. Jude Cloud?
 
 You can view the basic clinical and phenotypic information we currently provide
-[here](../requesting-data/about-our-data/#metadata).
+[here](../about-our-data/metadata-and-clinical).
 
 ## Can I gain access to further clinical information than what is currently available?
 
