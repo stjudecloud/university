@@ -96,11 +96,34 @@ domains:
         icon: stjudecloud-pecan-logo.svg
         chapters:
           - title: "Getting Started"
+            collapsable: true
+            pages: 
+             - title: "What is Pecan"
+               path: /docs/pecan/what-is-pecan/
+             - title: "What data is available"
+               path: /docs/pecan/data/
+             - title: "FAQ"
+               path: /docs/pecan/faq
+          - title: "Data Facets and Tools"
+            collapsable: true
+            pages: 
+              - title: "Expression"
+                path: /docs/pecan/expression/
+              - title: "Epigenetic (Coming Soon)"
+                path: /docs/pecan/epigenetic/
+              - title: "Histology"
+                path: /docs/pecan/histology/
+              - title: "Mutational Signatures"
+                path: /docs/pecan/mut-sigs/
+              - title: "Variant Resources"
+                path: /docs/pecan/variant-resources/
+          - title: "PeCan PIE"
+            collapsable: true
             pages:
-              - title: "PeCan PIE"
-                path: /docs/pecan/pecan-pie/
-              - title: Frequently Asked Questions
-                path: /docs/pecan/faq/
+              - title: "How to use PeCan PIE"
+                path: /docs/pecan/pecan-pie
+              - title: "FAQ"
+                path: /docs/pecan/pecan-pie/faq/
       - title: "Visualization Community"
         subtitle: "Create and share genomic visualizations."
         path: /docs/visualization-community/
