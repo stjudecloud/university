@@ -4,7 +4,7 @@ title: Data Download
 
 # New Feature
 [Visualization Community](https://viz.stjude.cloud/) has collaborated with [ProteinPaint](https://proteinpaint.stjude.org/) to implement a new feature.
-A clinical data set from the [Childhood Cancer Survivorship Study](https://stjude.cloud/studies/clinical-genomics) and [St. Jude Life](https://sjlife.stjude.org/) Data Access Units have made a download feature available within the [Cancer Survivorship Community](https://viz.stjude.cloud/community/cancer-survivorship-community~4).
+A clinical data set from the [Childhood Cancer Survivor Study](https://stjude.cloud/studies/clinical-genomics) and [St. Jude Life](https://sjlife.stjude.org/) Data Access Units have made a download feature available within the [Cancer Survivorship Community](https://viz.stjude.cloud/community/cancer-survivorship-community~4).
 
 In order to gain access, you must 1) have an approved Data Access Agreement (DAA) from both CCSS and SJLIFE Data Access Units (DAU) and 2) be [signed in](https://viz.stjude.cloud/signin) to Visualization Community. 
 
@@ -13,7 +13,7 @@ In order to gain access, you must 1) have an approved Data Access Agreement (DAA
 ## SJLIFE and CCSS DAA approval
 
 !!!tip
-- You can read more about [Childhood Cancer Survivorship Study](https://stjude.cloud/studies/clinical-genomics) which consists of germline-only whole genome sequencing samples of childhood cancer survivors. The following [data set](https://university.stjude.cloud/docs/genomics-platform/about-our-data/dau-and-datasets/#childhood-cancer-survivor-study)] is included within CCSS.
+- You can read more about the [Childhood Cancer Survivor Study](https://ccss.stjude.org/) which consists of germline-only whole genome sequencing samples of childhood cancer survivors. The following [data set](https://university.stjude.cloud/docs/genomics-platform/about-our-data/dau-and-datasets/#childhood-cancer-survivor-study) is included within CCSS.
 - You can read more about [St. Jude Life](https://sjlife.stjude.org/) which contains germline-only whole genome and whole exome sequencing data focused on studying the long-term adverse outcomes associated with cancer and cancer-related therapy. The following [data set](https://university.stjude.cloud/docs/genomics-platform/about-our-data/dau-and-datasets/#st-jude-life) is included within SJLIFE.
 !!!
 
