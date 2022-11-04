@@ -92,31 +92,31 @@ domains:
                 path: /docs/genomics-platform/workflow-guides/warden/
       - title: "PeCan"
         subtitle: "Explore the pediatric cancer knowledgebase."
-        path: /docs/pecan/
+        path: /docs/pecan/what-is-pecan/
         icon: stjudecloud-pecan-logo.svg
         chapters:
           - title: "Getting Started"
-            collapsable: true
+            collapsable: false
             pages: 
              - title: "What is Pecan"
                path: /docs/pecan/what-is-pecan/
              - title: "What data is available"
-               path: /docs/pecan/data/
+               path: /docs/pecan/what-is-pecan/data/
              - title: "FAQ"
-               path: /docs/pecan/faq
+               path: /docs/pecan/what-is-pecan/faq/
           - title: "Data Facets and Tools"
             collapsable: true
             pages: 
               - title: "Expression"
-                path: /docs/pecan/expression/
+                path: /docs/pecan/data-facets/expression/
               - title: "Epigenetic (Coming Soon)"
-                path: /docs/pecan/epigenetic/
+                path: /docs/pecan/data-facets/epigenetic/
               - title: "Histology"
-                path: /docs/pecan/histology/
+                path: /docs/pecan/data-facets/histology/
               - title: "Mutational Signatures"
-                path: /docs/pecan/mut-sigs/
+                path: /docs/pecan/data-facets/mut-sigs/
               - title: "Variant Resources"
-                path: /docs/pecan/variant-resources/
+                path: /docs/pecan/data-facets/variant-resources/
           - title: "PeCan PIE"
             collapsable: true
             pages:
