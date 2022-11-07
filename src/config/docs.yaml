@@ -92,38 +92,33 @@ domains:
                 path: /docs/genomics-platform/workflow-guides/warden/
       - title: "PeCan"
         subtitle: "Explore the pediatric cancer knowledgebase."
-        path: /docs/pecan/what-is-pecan/
+        path: /docs/pecan/
         icon: stjudecloud-pecan-logo.svg
         chapters:
           - title: "Getting Started"
-            collapsable: false
-            pages: 
-             - title: "What is Pecan"
-               path: /docs/pecan/what-is-pecan/
-             - title: "What data is available"
-               path: /docs/pecan/what-is-pecan/data/
-             - title: "FAQ"
-               path: /docs/pecan/what-is-pecan/faq/
+            pages:
+              - title: "What data is available"
+                path: /docs/pecan/data/
+              - title: "FAQ"
+                path: /docs/pecan/faq/
           - title: "Data Facets and Tools"
-            collapsable: true
             pages: 
               - title: "Expression"
-                path: /docs/pecan/data-facets/expression/
-              - title: "Epigenetic (Coming Soon)"
-                path: /docs/pecan/data-facets/epigenetic/
+                path: /docs/pecan/expression/
+#              - title: "Epigenetic-Coming Soon"
+#              path: /docs/pecan/epigenetic/
               - title: "Histology"
-                path: /docs/pecan/data-facets/histology/
+                path: /docs/pecan/histology/
               - title: "Mutational Signatures"
-                path: /docs/pecan/data-facets/mut-sigs/
+                path: /docs/pecan/mut-sigs/
               - title: "Variant Resources"
-                path: /docs/pecan/data-facets/variant-resources/
+                path: /docs/pecan/variant-resources/
           - title: "PeCan PIE"
-            collapsable: true
             pages:
               - title: "How to use PeCan PIE"
-                path: /docs/pecan/pecan-pie
+                path: /docs/pecan/pecan-pie/
               - title: "FAQ"
-                path: /docs/pecan/pecan-pie/faq/
+                path: /docs/pecan/pie-faq/
       - title: "Visualization Community"
         subtitle: "Create and share genomic visualizations."
         path: /docs/visualization-community/
