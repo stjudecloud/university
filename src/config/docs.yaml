@@ -97,7 +97,7 @@ domains:
         chapters:
           - title: "Getting Started"
             pages:
-              - title: "What data is available"
+              - title: "Data Sets Available"
                 path: /docs/pecan/data/
               - title: "FAQ"
                 path: /docs/pecan/faq/

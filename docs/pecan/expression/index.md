@@ -6,7 +6,7 @@ title: Expression
 
 ![](./tSNE.png)
 
-**Figure 1:** [Interactive tSNE for Blood, Brain, and Solid Samples](https://viz.stjude.cloud/st-jude-childrens-research-hospital/visualization/pediatric-blood-solid-and-brain-tumor-rna-seq-t-sne-plot-1574-samples~24). Further details for each sample can be accessed by mousing over the dots and by accessing the associated [metadata](https://platform.stjude.cloud/api/v1/manifest).This visualization is supported by ProteinPaint.
+**Figure 1:** [Interactive tSNE for Blood, Brain, and Solid Samples](https://viz.stjude.cloud/st-jude-childrens-research-hospital/visualization/pediatric-blood-solid-and-brain-tumor-rna-seq-t-sne-plot-1574-samples~24). Further details for each sample can be accessed by mousing over the dots and by accessing the associated [metadata](https://platform.stjude.cloud/api/v1/manifest). This visualization is supported by ProteinPaint.
 
 ### Methods
 

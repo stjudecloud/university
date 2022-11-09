@@ -39,7 +39,7 @@ All slides come off the microscope using HNE staining which are then imported in
 
 ### Data
 
-All data is shared from the [COMET Blue Sky Initiatve](https://www.stjude.org/research/initiatives/blue-sky.html) led by [Dr. Mike Dyer](https://www.stjude.org/directory/d/michael-dyer.html). 
+All data is shared from the [COMET Blue Sky Initiatve](https://www.stjude.org/research/initiatives/blue-sky.html) led by [Dr. Mike Dyer](https://www.stjude.org/directory/d/michael-dyer.html). Slides are downloadable in PeCan in this Histology Data Facet. 
 
 COMET: Solid tumor 
 **CO**mprehensive **MET**hylation
