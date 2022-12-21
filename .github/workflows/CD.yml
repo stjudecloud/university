@@ -13,7 +13,7 @@ jobs:
   semantic-release:
     name: "Semantic Release 🗂"
     if: github.ref == 'refs/heads/master'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     env:
       CI: true
       GIT_AUTHOR_NAME: ${{ github.event.pusher.name }}
@@ -55,7 +55,7 @@ jobs:
         run: cat ./VERSION
   build:
     name: "Gatsby Build 🧰"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: [semantic-release]
     env:
       CI: true
@@ -114,7 +114,7 @@ jobs:
     name: "Deploy to Netlify 🚀"
     if: github.ref == 'refs/heads/master'
     needs: [build, semantic-release]
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     env:
       CI: true
     steps:
