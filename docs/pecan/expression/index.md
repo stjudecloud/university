@@ -9,6 +9,7 @@ title: Expression
 **Figure 1:** [Interactive tSNE for Blood, Brain, and Solid Samples](https://viz.stjude.cloud/st-jude-childrens-research-hospital/visualization/pediatric-blood-solid-and-brain-tumor-rna-seq-t-sne-plot-1574-samples~24). Further details for each sample can be accessed by mousing over the dots and by accessing the associated [metadata](https://platform.stjude.cloud/api/v1/manifest). This visualization is supported by ProteinPaint.
 
 ### Methods
+[RAPID RNA-Seq workflow](https://university.stjude.cloud/docs/genomics-platform/workflow-guides/rapid-rnaseq/) hosted on [St. Jude Cloud's Genomics Platform ](https://platform.stjude.cloud/workflows) was used to runall pediatric cancer cohort. 
 
 ![](./RNA-Seq.png)
 

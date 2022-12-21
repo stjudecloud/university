@@ -18,7 +18,7 @@ Identification of COSMIC SBS (Single Base Substitution) signatures (v3.1) upon c
 
 ## BAR PLOT VIEW 
 
-The user can view a bar plot consisting of the mutational signatures within a given sample in 3 separate ways: 1) samples by subtype (Figure 2), 2) samples by the mutational signature (Figure 3), or 3) samples for a specific subtype with a specific mutational signature (Figure 4). Each bar plot provides a title, the total number of samples, the method used to identify the mutational signatures, the summary of mutational signatures, the summary of mutational signatures per sample, and the mutational burden per sample. Additionally, clicking any of the mutational signature legend icons will provide summary data and a link to COSMIC website. Moreover, clicking the mutational signature bar plot also provides the summary and link to COSMIC website.  
+A user can view a bar plot summary consisting of the mutational signatures within a given sample in 3 separate ways: 1) samples by subtype (Figure 2), 2) samples by the mutational signature (Figure 3), or 3) samples for a specific subtype with a specific mutational signature (Figure 4). Each bar plot provides a title, the total number of samples, the method used to identify the mutational signatures, the summary of mutational signatures, the summary of mutational signatures per sample, and the mutational burden per sample. Additionally, clicking any of the mutational signature legend icons will provide summary data and a link to COSMIC website. Moreover, clicking the mutational signature bar plot also provides the summary and link to COSMIC website.  
 
  
 
@@ -44,7 +44,7 @@ The user can view a bar plot consisting of the mutational signatures within a gi
 
 
 ![](./recently_viewed.png)
-**Figure 5:** Recently Viewed. This functionality exists to allow the user to cache the last 5 samples per selection from the user experiences explained in Figures 2-3. This can be helpful when analyzing samples together. Once the 6th sample is selected for that cohort, the first sample selected is removed. The user can also remove samples one by one (see hover x in the image) or a user can remove all samples by selecting the hover X button per header.
+**Figure 5:** Recently Viewed. This functionality exists to allow the user to cache the last 5 samples per selection from the user experiences explained in Figures 2-3. This can be helpful when analyzing samples together. Once the 6th sample is selected for that cohort, the first sample selected is removed, therefore the queue follows a first in last out methodology. The user can also remove samples individually (see hover x in the image) or a user can remove all samples by selecting the hover X button per header.
 
  
 

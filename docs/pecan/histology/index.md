@@ -35,7 +35,7 @@ This view (Figure 3) enables the exploration of a sample slide via a slide image
 
 ### Methods
 
-All slides come off the microscope using HNE staining which are then imported into Azure using a script X. Here, the slides are imported into PeCan's database. Currently, there is only 1 slide per sample being presented. In the future, there will be use cases where a sample may have multiple slides associated to the same sample ID. These will be denoted in the UI differently so that the user can differentiate 1 slide per sample from many slides per sample. 
+All slides come off the microscope using HNE staining which are then imported into Azure. Currently, there is only 1 slide per sample being presented. In the future, there will be use cases where a sample may have multiple slides associated to the same sample ID. 
 
 ### Data
 
