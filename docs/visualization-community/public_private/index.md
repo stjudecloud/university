@@ -7,11 +7,11 @@ By default, all visualizations are private and cannot become public until it goe
 ![](./private.png)
 
 
-### Access Control, Approval Process
+# Access Control, Approval Process
 
 First, build your visualization and curate your view. 
 
-Then, complete the details in the **Info** section. 
+Then, complete the abstract details in the **Info** section. These abstracts should be detailed about your visualization and can include link-outs.
 ![](./info.png)
 
 Click the **Send for Review** button in the navbar. **You cannot remove a team once you add it and save.**
@@ -52,3 +52,6 @@ If you need to change the owner of the visualization or unpublish it, please con
 
 Please read our [terms of use](https://stjude.cloud/terms-of-use) and [privacy policy](https://stjude.cloud/privacy-policy).
 
+# CURATED VISUALIZATION
+
+Once the visualization is ready to be public on the site, you have the ability to 1) assign metadata so that a user can easily filter or search your visualization, 2) add a thumbnail to represent the visualization, and 3) add a permalink to your publication, if there is one and 4) add a Journal logo icon to increase the credentials of your visualization. Please email [support@stjude.cloud](support@stjude.cloud) for more information regarding these features.  

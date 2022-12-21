@@ -137,6 +137,8 @@ domains:
                 path: /docs/visualization-community/embed/
               - title: "Videos"
                 path: /docs/visualization-community/videos/
+              - title: "NEW Data Download"
+                path: /docs/visualization-community/data-download/
           - title: "Code Block Library"
             collapsable: true
             pages:
