@@ -43,7 +43,8 @@ Your DAA must be approved before you have access to the download feature. You wi
 
 First, [sign in](https://viz.stjude.cloud/signin) to VisCom. *If you need help creating an account or signing in please follow these [guidelines](https://university.stjude.cloud/docs/visualization-community/sign-in/).*
 
-Once you are logged in, you will navigate to the [Cancer Survivorship Community](https://viz.stjude.cloud/community/cancer-survivorship-community~4). Here, is where you can begin to explore the [Clinical Browser ](https://viz.stjude.cloud/cancer-survivorship/visualization/clinical-data-browser~18). 
+
+Once you are signed in, you will navigate to the [Cancer Survivorship Community](https://viz.stjude.cloud/community/cancer-survivorship-community~4). Here, is where you can begin to explore the [Clinical Browser ](https://viz.stjude.cloud/cancer-survivorship/visualization/clinical-data-browser~18). 
 
 Next, you will want to click **Charts**.
 
@@ -52,9 +53,12 @@ Now you can access the data download button to begin selecting the terms for dow
 ![](./full.gif)
 
 !!!tip
-If you are not logged in, you will be prompted to [login]( https://viz.stjude.cloud/signin) to [VisCom](https://viz.stjude.cloud/).
+If you are not signed in, you will be prompted to [sign-in]( https://viz.stjude.cloud/signin) to [VisCom](https://viz.stjude.cloud/).
 !!!
 
+!!!warning
+If get a Requires Sign-in error after you have signed in already, please clear your cache to clear out your stale credentials and sessions.
+!!!
 
 
 
