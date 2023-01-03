@@ -57,7 +57,7 @@ If you are not signed in, you will be prompted to [sign-in]( https://viz.stjude.
 !!!
 
 !!!warning
-If get a Requires Sign-in error after you have signed in already, please clear your cache to clear out your stale credentials and sessions.
+If you get a *Requires Sign-in* error after you have signed in already, please clear your cache to clear out your stale credentials and sessions.
 !!!
 
 
