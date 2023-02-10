@@ -2,6 +2,8 @@
 title: PIE FAQ
 ---
 
+These details are for use by our clinical analysts for variant classification and comprehensive data visualization as well as external professionals in the field. As one of St. Jude’s goals is to save kids worldwide, providing sufficient tools to clinicians and experts with no or little access to costly software for variant classification and visualization, would help them to better understand their patient’s cancer and potentially provide them with better care and treatment. 
+
 **Q: Are there limits on the size of VCF files?**
 
 Uploaded files must not exceed 4 gigabytes. If an uploaded file is larger
@@ -86,3 +88,40 @@ running the pipeline and hosting. DNANexus accounts are required to
 keep track of your jobs in the cloud so that you can retrieve and
 manage from multiple locations. Accounts also make it possible to
 alert you of job completion via email.
+
+## Frequently asked questions
+
+If you have any questions not covered here, feel free to reach out on [our contact form](https://hospital.stjude.org/apps/forms/fb/st-jude-cloud-contact/).
+
+**Q: Which files are supported?**
+
+PIE works with variants in VCF format:
+
+* Uploaded files must be compliant with the [VCF specification](https://samtools.github.io/hts-specs/).
+* VCF files may be either uncompressed, or compressed with `bgzip` **only**. `bgzip` is part of the htslib/tabix packages (see below).
+
+Improperly formatted VCF files will not work with PIE. Some common
+problems include:
+
+* Missing header line
+* Missing required columns
+* Files were compressed by gzip, zip, or any method other than the required bgzip
+
+To verify compatibility of your VCF you can try one of these methods:
+
+1. Compressing your VCF with
+   [bgzip](http://www.htslib.org/doc/bgzip.html) and indexing it with
+   [tabix](http://www.htslib.org/doc/tabix.html), both programs from
+   the [HTSlib](http://www.htslib.org/) package (some systems also
+   use the earlier, pre-HTSlib "tabix" package). This process will
+   only succeed for compliant VCF files, and can help diagnose
+   failures.
+2. Running "vcf-validator" program from the
+   [vcftools](https://vcftools.github.io/) package.
+
+While the VCF specification also requires that variants be sorted by
+chromosome name and position, PIE is now often able to automatically
+correct sorting issues in uploaded files. PIE requires sorted data in
+order to query data for targeted genes.
+
+
