@@ -1,12 +1,14 @@
 ---
 title: Pecan PIE
 ---
+![PIE](.././pie.svg)
 
 |                       |                                                                                          |
 | --------------------- | ---------------------------------------------------------------------------------------- |
 | **Authors**           | Michael Edmonson, Aman Patel                                                             |
 | **Publication**       | [Edmonson et al., Genome Research 2019](https://genome.cshlp.org/content/29/9/1555.full) |
 | **Technical Support** | [Contact Us](https://stjude.cloud/contact)                                               |
+
 
 Pecan PIE (the **Pe**diatric **Can**cer Variant **P**athogenicity **I**nformation **E**xchange) is a cloud-based variant classificationand interpretation service. It annotates and ranks variants by putative pathogenicity, then displays them in an interactive web interface for formal review and classification following [ACMG guidelines](https://www.ncbi.nlm.nih.gov/pubmed/25741868). The portal also contains a repository of expert-reviewed germline mutations that may predispose individuals to cancer. It is free for non-commercial use.
 
@@ -37,7 +39,7 @@ computing costs, your DNAnexus account will not be billed.
 
 Pecan PIE takes standard VCF files as input, which may be either uncompressed or compressed with `bgzip`.
 
-1. Click the "Submit a job" button. Click the VCF tab. 
+1. Click the "Submit a job" button. Click the VCF tab.
 2. Choose the genome your variants were mapped to, which may be either GRCh37-lite or GRCh38.
 3. Drag and drop your file (or upload from your computer).
 
@@ -56,15 +58,15 @@ removing variants that will not be assigned a medal in any case because they are
 
 ## Progress page
 
-After uploading is complete you will be taken to a status screen showing the progress of your job through the system. Analysis typically takes 10-15 minutes depending on file size and system availability. 
+After uploading is complete you will be taken to a status screen showing the progress of your job through the system. Analysis typically takes 10-15 minutes depending on file size and system availability.
 
-It isn't necessary to keep your browser open on this page until your esults are ready: the system will e-mail you with a link to return toyour results. Optional browser notifications are also available. 
+It isn't necessary to keep your browser open on this page until your esults are ready: the system will e-mail you with a link to return toyour results. Optional browser notifications are also available.
 
 ## Analysis of Results
 
 ### Results browser
 
-When your job is complete you will be taken to an overview page wherevou can browse your results and examine a detailed results page for each variant. Each header can be clicked for sorting. 
+When your job is complete you will be taken to an overview page wherevou can browse your results and examine a detailed results page for each variant. Each header can be clicked for sorting.
 
 [PICTURE TBD]]
 
@@ -78,7 +80,7 @@ The variants in the results can be filtered by:
 | Committee Classification | If the variant has been reviewed by the St. Jude germline variant review committee, the result will appear in this column, otherwise it will be blank.</td> |
 
 The "search" box lets you filter the results by gene and/or amino acid change. The view is dynamically filtered to matching variants as you
-type. 
+type.
 
 ### Medal meaning
 
