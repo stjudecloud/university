@@ -9,29 +9,27 @@ The PeCan Knowledgebase is comprised of curated pediatric cancer genomics data i
 All oncoprints generated are supported by ProteinPaint's mutational landscape [study](https://proteinpaint.stjude.org/?appcard=study) views. 
 
 **ONCOPRINT DATA**
-The data used for these oncoprints are generated from collaborations such as DKFZ, TARGET, Shanghai Children's Medical Hospital, and St. Jude Children's Research Hospital.
-The gene lists provided are not curated, however, there are `Associated Study` link-outs when a subset of data is used for specific visualizations and/or publications. 
+The data used for these oncoprints are generated from collaborations such as [TARGET](https://ocg.cancer.gov/programs/target), [DKFZ](https://www.dkfz.de/en/index.html), Shanghai Children's Medical Hospital, and St. Jude Children's Research Hospital. 
 
 !!!tip
-An example of an `Associated Study` can be found [here](https://pecan-v2.staging.stjude.cloud/variants/oncoprint/BT%7CMB) for Medulloblastoma. 
+- The gene lists provided are not curated, however, there are `Associated Study` links that may have used a subset of data shown.
+- An example of an `Associated Study` for Meduloblastoma can be found [here](https://pecan-v2.staging.stjude.cloud/variants/oncoprint/BT%7CMB).
 !!!
 
 **VARIANT PREVALENCE METHODS**
-Variant Prevalence views are custom built using rules that are decsribed below:
+Variant Prevalence views are custom built using rules that are decsribed below.
 
 ***Mutation type proportion rules:***
-The gene lists provided are not curated, however, for each diagnosis, the occurrences of genes in the population of samples for that diagnoses are counted and ranked. A select number of diagnoses have curated gene pathways. We provide 20 genes if no gene pathways are found, else 50 are returned. [Here](https://www.gsea-msigdb.org/gsea/msigdb/index.jsp) is the GSEA resource that can be helpful for determining gene pathways that may not be found in our platform. 
+The gene lists provided are not curated, however, for each diagnoses, the occurrences of genes in the population of samples for that diagnoses are counted and ranked. A select number of diagnoses have curated gene pathways. We provide 20 genes if no gene pathways are found, else 50 are returned.
 
 !!!note
 TTN, MUC16, LPR1B, C11orf95, and IGH are genes primarily not focused in pediatric cancer, so these genes may not show in this view.
 !!!
 
 ***Variant selection rules:***
-SNV/INDEL variant classes that are included are: Proteinins, Intron, 3' UTR, 5' UTR, Splice Region, Frameshift, Missense, Proteindel, Splice, Exon, Nonsense. Silent mutations and also variants with mRNA accessions that do not start with 'NM' are excluded in our data. CNV variant classes that are included are: CNV Loss, CNV Gain. 
+SNV/INDEL variant classes that are included are found below with the definition of each. 
 
 ***Glossary of Classes***
-
-The list below summarizes all classes of mutations.
 
 | Mutation Class | Description                                                                                                      |
 | -------------- | ---------------------------------------------------------------------------------------------------------------- |
@@ -47,15 +45,21 @@ The list below summarizes all classes of mutations.
 | UTR_3          | a variant in the 3' untranslated region                                                                          |
 | EXON           | a variant in the exon of a non-coding RNA                                                                        |
 | INTRON         | an intronic variant                                                                                              |
+| CNV LOSS       | a copy number loss                                                                                               |
+| CNV GAIN       | a copy number gain                                                                                               |
 
-**Table 1. Mutation Class.** Definition of classes seen in oncoprint, variant prevalence, and ProteinPaint views.
+**Table 1. Mutation Class.** Definition of variant classes seen in Oncoprint, Variant Prevalence, and ProteinPaint views. 
+
+!!!tip
+- Silent mutations and variants with mRNA accessions that do not start with 'NM' are excluded in our data. 
+- UTR variants are only seen in ProteinPaint if coordinates are used to view between genes, otherwise variants may be hidden.
+- CNV variant classes are not displayed in ProteinPaint.
+!!!
 
 ***Variant origin count rules:***
 If the variant origin is not null nor germline, then it is counted as somatic which also includes the relapse samples. When the variant origin is not null and is germline, the record is counted as germline.
 
 ***Glossary of Origins***
-
-The list below summarizes all origins of mutations.
 
 | Mutation Origin | Description                                             |
 | --------------- | ------------------------------------------------------- |
@@ -69,7 +73,7 @@ The list below summarizes all origins of mutations.
 This is the total number of variants (including those with a value of null) for that given gene for the selected diagnosis and/or subtype divided by the gene with the largest variant total (rounded to the nearest 50) for that selected diagnosis and/or subtype. 
 
 **VARIANT PREVALENCE DATA**
-The most prevelant genes are shown based on the rules described above for variant selection and variant origin. The legend (Mutation Type) is the same as seen in the oncoprint tab. 
+The most prevelant genes are shown based on the rules described above for variant selection and variant origin. The legend (Mutation Type) is the same variant classes seen in oncoprint. View **Glossary of Classes** above to learn more. 
 
 !!!warning
 * Variant prevalence data will not consider the CNV records from DKTK, MAGIC and PCGP. 
@@ -128,7 +132,7 @@ See below for more information regarding the glossary for origins and mutation c
 TBD
 
 **MUTATIONAL SIGNATURES DATA**
-Identification of [COSMIC SBS signatures](https://cancer.sanger.ac.uk/signatures/sbs/)(v3.1) upon consideration of WGS somatic variants were performed using SigProfilerSingleSample (v3.1) for G4K, PCGP, Clinical Pilot and Real-Time Clincal Genomics (RTCG) samples. 
+Identification of [COSMIC SBS signatures](https://cancer.sanger.ac.uk/signatures/sbs/)(v3.2) upon consideration of WGS somatic variants were performed using SigProfilerSingleSample (v3.2) for G4K, PCGP, Clinical Pilot and Real-Time Clincal Genomics (RTCG) samples. 
 
 !!!tip
 An example of 790 samples plotted can be found in [Figure 5 of McLeod et al](https://cancerdiscovery.aacrjournals.org/content/11/5/1082.long).

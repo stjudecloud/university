@@ -20,7 +20,7 @@ To get started, click our navigational membrane which navigates the user to our 
 The sunburst plot gives an at-a-glance disease distribution and disease hierarchy where all samples have been mapped to a WHO pediatric cancer classification based ontology.
 As a user selects a subtype within in the sunburst, the patients and samples total will update along with the diagnosis selection as well as the samples available for each facet.
 
-The diseases are categorized in three main root categories: 1) HM -Hematopoietic Malignancies, 2) BT -Brain Tumor, and 3) ST -Solid Tumor. A user is encouraged to navigate via a subtype-centric experience by selecting a subtype and then navigate to each data facet for that selected data. Alternatively, a user can explore all of the available data within a data facet by clicking directly on the data facet icon instead of filtering by subtype on the sunburst.
+The diseases are categorized in three main root categories: **1)** HM -Hematopoietic Malignancies, **2)** BT -Brain Tumor, and **3)** ST -Solid Tumor. A user is encouraged to navigate via a subtype-centric experience by selecting a subtype and then navigate to each data facet for that selected data. Alternatively, a user can explore all of the available data within a data facet by clicking directly on the data facet icon instead of filtering by subtype on the sunburst.
 
 [Click here](../genomics-platform/requesting-data/about-our-data/#short-disease-code-mapping) for a full mapping of disease codes or [here](http://localhost:8000/docs/pecan/methods-data/) to learn more about our data and methods.
 
@@ -36,7 +36,7 @@ Data Facets represent a distinct type of post-processed genomic data for collect
   </div>
   <div>
     <h5 class="font-bold"><a href="https://university.stjude.cloud/docs/pecan/variants/"class="text-blue-primary">Variants</a></h5>
-    <p style="margin-top: 0;">Visualizations to showcase variant data in an oncoprint format, variant prevalence display, GenomePaint view, ProteinPaint view and designated variant details pages.</p>
+    <p style="margin-top: 0;">Visualizations to showcase variant data in an Oncoprint format, Variant Prevalence display, GenomePaint view, ProteinPaint view and designated variant details pages.</p>
   </div>
 </div>
 

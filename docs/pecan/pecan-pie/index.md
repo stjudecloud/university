@@ -18,14 +18,13 @@ See [<i class="material-icons material-icons-sjcloud-custom">file_download</i> P
 presented at the ASHG 2017 annual meeting (note that some of this information is out of date, various improvements have been made since
 then).
 
-Go to <https://pecan.stjude.cloud/pie> to get started!
-
 ## Overview
 
 ![](./Figure1.png)
 
-An overview of the Pecan PIE workflow:
+**Figure 1** PIE workflow. An overview diagram of the Pecan PIE workflow.
 
+### Steps
 1. Log in and upload a VCF of SNVs and indels.
 2. The portal will process your variants, notifying you upon completion. Variants are annotated with VEP+ (VEP with postprocessing for enhanced splice variant calling) then classified with Medal Ceremony.
 3. Browse results, which include a detailed page for each variation. Variants may be formally classified with an interface based on ACMG guidelines.
@@ -45,7 +44,7 @@ Pecan PIE takes standard VCF files as input, which may be either uncompressed or
 
 OR
 
-1. Click "Single Variant" tab and choose whether you want to input a SNV, INDEL or HGVS annotation.
+4. Click "Single Variant" tab and choose whether you want to input a SNV, INDEL or HGVS annotation.
 
 ## Advanced options (available only with VCF files)
 

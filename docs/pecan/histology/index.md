@@ -4,7 +4,7 @@ title: Histology
 ![Histology](.././histology.svg)
 **Overview:** Explore over X000 histology slides (H&E stained) that have been harmonized to our ontology disease hierarchy.
 
-**ADVANCED SEARCH** - The Histology homepage (Figure 1) will comprise an advanced search page enabling filtering of slides via metadata--diagnosis, subtype, sex, age, site, evaluation, site classification-- via drop-down lists. The return provides thumbnails with minimum data about the slide (e.g., subtype, sex, age, and SJID). Sample IDs can be searched individually.
+**ADVANCED SEARCH** - The Histology homepage (**Figure 1**) will comprise an advanced search page enabling filtering of slides via metadata--diagnosis, subtype, sex, age, site, evaluation, site classification-- via drop-down lists. The return provides thumbnails with minimum data about the slide (e.g., subtype, sex, age, and SJID). Sample IDs can be searched individually.
 
 
 ![](./advanced_search.png)
@@ -12,7 +12,7 @@ title: Histology
 **Figure 1:** Advanced search. A user can select Diagnosis/Subtype and other fields to filter the database of histology slides.
 
 **SAMPLE SLIDE IMAGE**
-This view (Figure 2) enables access to each histology slide via a “sample slide page" with the associated clinical report data. Additionally, if a slide is associated to a patient with multiple slides across time, the user can easily toggle between the images. Lastly, the user can copy the URL to share, or download the slide (.svs format) for further analysis.
+This view (**Figure 2**) enables access to each histology slide via a “sample slide page" with the associated clinical report data. Additionally, if a slide is associated to a patient with multiple slides across time, the user can easily toggle between the images. Further, the user can copy the URL to share, or download the slide (.svs format) for further investigation.
 
 
 ![](./sample_slide.png)
@@ -20,7 +20,7 @@ This view (Figure 2) enables access to each histology slide via a “sample slid
 
 
 **OPEN SLIDE VIEWER**
-This view (Figure 3) enables the exploration of a sample slide via a slide image viewer page supported by OpenSeaDragon.
+This view (**Figure 3**) enables the exploration of a sample slide via a slide image viewer page supported by OpenSeaDragon (feature listed below).
 
 **Features:**
 *Home*: refreshes the slide to the original state
