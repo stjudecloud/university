@@ -30,23 +30,66 @@ The diseases are categorized in three main root categories: 1) HM -Hematopoietic
 # Data Facets explained
 Data Facets represent a distinct type of post-processed genomic data for collections of pediatric cancer samples via a designated interface.
 
-[![Variants](./variants.svg)](https://university.stjude.cloud/docs/pecan/variants/)
+<div class="flex flex-row">
+  <div class="pr-8 pt-0 flex-none">
+    <a href="https://university.stjude.cloud/docs/pecan/variants/"><img src="./variants.svg" alt="Variants"></a>
+  </div>
+  <div>
+    <h5 class="font-bold"><a href="https://university.stjude.cloud/docs/pecan/variants/"class="text-blue-primary">Variants</a></h5>
+    <p style="margin-top: 0;">Visualizations to showcase variant data in an oncoprint format, variant prevalence display, GenomePaint view, ProteinPaint view and designated variant details pages.</p>
+  </div>
+</div>
 
-**[Variants](https://university.stjude.cloud/docs/pecan/variants/)** - visualizations to showcase variant data in an oncoprint format, variant prevalence display, GenomePaint view, ProteinPaint view and designated variant details pages.
+<div class="flex flex-row">
+  <div class="pr-8 pt-0 flex-none">
+    <a href="https://university.stjude.cloud/docs/pecan/mut-sigs/"><img src="./mutational-signatures.svg" alt="Mutational Signatures"></a>
+  </div>
+  <div>
+    <h5 class="font-bold"><a href="https://university.stjude.cloud/docs/pecan/mut-sigs/"class="text-blue-primary">Mutational Signatures</a></h5>
+    <p style="margin-top: 0;">Samples depicted via a heatmap where COSMIC mutational signatures in pediatric cancer subtypes were analyzed by WGS.</p>
+  </div>
+</div>
 
-[![Mutational Signatures](./mutational-signatures.svg)](https://university.stjude.cloud/docs/pecan/mut-sigs/)
-**[Mutational Signatures](https://university.stjude.cloud/docs/pecan/mut-sigs/)** - samples depicted via a heatmap where COSMIC mutational signatures in pediatric cancer subtypes were analyzed by WGS.
+<div class="flex flex-row">
+  <div class="pr-8 pt-0 flex-none">
+    <a href="https://university.stjude.cloud/docs/pecan/expression"><img src="./expression.svg" alt="Expression"></a>
+  </div>
+  <div>
+    <h5 class="font-bold"><a href="https://university.stjude.cloud/docs/pecan/expression/"class="text-blue-primary">Expression</a></h5>
+    <p style="margin-top: 0;">An expression landscape of RNA-Seq fresh frozen tumor samples.</p>
+  </div>
+</div>
 
-[![Expression](./expression.svg)](https://university.stjude.cloud/docs/pecan/expression/)
-**[Expression](https://university.stjude.cloud/docs/pecan/expression/)** - an expression landscape of RNA-Seq fresh frozen tumor samples.
+<div class="flex flex-row">
+  <div class="pr-8 pt-0 flex-none">
+    <a href="https://university.stjude.cloud/docs/pecan/histology/"><img src="./histology.svg" alt="Histology" ></a>
+  </div>
+  <div>
+    <h5 class="font-bold"><a href="https://university.stjude.cloud/docs/pecan/histology/"class="text-blue-primary">Histology</a></h5>
+    <p style="margin-top: 0;">Solid tumor samples that have histology imaging (all H&E).</p>
+  </div>
+</div>
 
-[![Histology](./histology.svg)](https://university.stjude.cloud/docs/pecan/histology/)
-**[Histology](https://university.stjude.cloud/docs/pecan/histology/)** - solid tumor samples that have histology imaging (all H&E).
+<div class="flex flex-row">
+  <div class="pr-8 pt-0 flex-none opacity-50">
+    <a href="https://university.stjude.cloud/docs/pecan/epigenetic/"><img src="./epigenetic.svg" alt="Epigenetic"></a>
+  </div>
+  <div>
+    <h5 class="font-bold"><a href="https://university.stjude.cloud/docs/pecan/epigenetic/"class="text-blue-primary">Epigenetic <small>(coming soon)</small></a></h5>
+    <p style="margin-top: 0;">Solid tumor samples with methylation profiling that have linked histology images.</p>
+  </div>
+</div>
 
-<a href="https://university.stjude.cloud/docs/pecan/epigenetic/"><img src="./epigenetic.svg" style="opacity:.5;" /></a>
-
-**[Epigenetic (coming soon)](https://university.stjude.cloud/docs/pecan/epigenetic/)** - solid tumor samples with methylation profiling that have linked histology images.
 
 # Tools
-![PIE](./pie.svg)
-Pecan [PIE (the **Pe**diatric **Can**cer Variant **P**athogenicity **I**nformation **E**xchange)](https://university.stjude.cloud/docs/pecan/pie/) is a cloud-based variant classification and interpretation service.
+
+
+<div class="flex flex-row">
+  <div class="pr-8 pt-0 flex-none">
+    <a href="https://university.stjude.cloud/docs/pecan/pie/"><img src="./pie.svg" alt="PIE"></a>
+  </div>
+  <div>
+    <h5 class="font-bold"><a href="https://university.stjude.cloud/docs/pecan/pie/"class="text-blue-primary">PIE (the <strong>Pe</strong>diatric <strong>Can</strong>cer Variant <strong>P</strong>athogenicity <strong>I</strong>nformation <strong>E</strong>xchange</a></h5>
+    <p style="margin-top: 0;">is a cloud-based variant classification and interpretation service.</p>
+  </div>
+</div>
