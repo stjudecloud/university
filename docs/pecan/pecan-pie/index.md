@@ -22,7 +22,7 @@ then).
 
 ![](./Figure1.png)
 
-**Figure 1** PIE workflow. An overview diagram of the Pecan PIE workflow.
+**Figure 1 PIE workflow.** An overview diagram of the Pecan PIE workflow.
 
 ### Steps
 1. Log in and upload a VCF of SNVs and indels.

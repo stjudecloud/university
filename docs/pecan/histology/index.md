@@ -12,7 +12,7 @@ title: Histology
 **Figure 1:** Advanced search. A user can select Diagnosis/Subtype and other fields to filter the database of histology slides.
 
 **SAMPLE SLIDE IMAGE**
-This view (**Figure 2**) enables access to each histology slide via a “sample slide page" with the associated clinical report data. Additionally, if a slide is associated to a patient with multiple slides across time, the user can easily toggle between the images. Further, the user can copy the URL to share, or download the slide (.svs format) for further investigation.
+This view (**Figure 2**) enables access to each histology slide via a “sample slide page" with the associated clinical report data. Additionally, if a slide is associated to a patient with multiple slides across time, the user can easily toggle between the images (*see **Figure 2** below*). Further, the user can copy the URL to share, or download the slide (`.svs` format) for further investigation.
 
 
 ![](./sample_slide.png)
