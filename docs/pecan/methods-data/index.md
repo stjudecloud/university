@@ -52,7 +52,7 @@ Variant classes are found below with the definition of each.
 
 **Table 1. Mutation Class glossary.** Definition of variant classes that are provided in Oncoprint, Variant Prevalence, and ProteinPaint views. 
 
-!!!tip
+!!!warning
 - Silent mutations and variants with mRNA accessions that do not start with 'NM' are excluded in our data. 
 - UTR variants are only seen in ProteinPaint if coordinates are used to view between genes, otherwise variants may be hidden.
 - CNV variant classes are not displayed in ProteinPaint.
@@ -84,19 +84,19 @@ The most prevelant genes are shown based on the rules described above for varian
 
 The variants that will be used for the Variant Prevalence page are indicated in the below table.
 
-| dataset_label | sample_count | snv_indel_sample_count | cnv_sample_count | sv_sample_count | fusion_genes_sample_count |
-| ------------- | ------------ | ---------------------- | ---------------- | --------------- | ------------------------- |
-| BROAD         | 95           | 76                     | 0                | 7               | 0                         |
-| DKFZ          | 576          | 551                    | 0                | 5               | 0                         |
-| DKTK          | 321          | 253                    | 0                | 0               | 0                         |
-| MAGIC         | 94           | 90                     | 0                | 0               | 0                         |
-| PCGP          | 2339         | 1925                   | 0                | 743             | 545                       |
-| SCMC          | 209          | 205                    | 0                | 196             | 58                        |
-| SJCRH         | 133          | 26                     | 0                | 7               | 0                         |
-| TARGET        | 1728         | 1680                   | 424              | 620             | 618                       |
-| UTSMC         | 15           | 15                     | 0                | 0               | 0                         |
+| dataset_label | variant type                 |
+| ------------- | ---------------------------- |
+| BROAD         | snv, indel, sv               |
+| DKFZ          | snv, indel, sv               |
+| DKTK          | snv, indel                   |
+| MAGIC         | snv, indel                   |
+| PCGP          | snv, indel, sv, fusions      |
+| SCMC          | snv, indel, sv, fusions      |
+| SJCRH         | snv, indel, sv               |
+| TARGET        | snv, indel, cnv, sv, fusions |
+| UTSMC         | snv, indel                   |
 
-**Table 3: Variant Prevelance.** The table provides the number of samples per data set with the available variant information which are represented in PeCan. 
+**Table 3: Variant Prevelance.** The table provides the available variant information which are represented in PeCan per dataset. 
 
 **GENOMEPAINT METHODS**
 
@@ -131,10 +131,10 @@ See below for more information regarding the glossary for origins and mutation c
 
 **MUTATIONAL SIGNATURES (SNV) METHODS** 
 
-TBD
+Mutational Signature heatmap is a custom interface to generate the cohort barplot summary pages and sample profiles. The COSMIC signatures identified in each sample is also shown on the sample profile pages.
 
 **MUTATIONAL SIGNATURES DATA**
-Identification of [COSMIC SBS signatures](https://cancer.sanger.ac.uk/signatures/sbs/)(v3.2) upon consideration of WGS somatic variants were performed using SigProfilerSingleSample (v3.2) for G4K, PCGP, Clinical Pilot and Real-Time Clincal Genomics (RTCG) samples. 
+Data from G4K, PCGP, Clinical Pilot and Real-Time Clincal Genomics (RTCG) samples were used in the de novo extraction method. 
 
 !!!tip
 An example of 790 fresh tumor samples can be found in [Figure 5 of McLeod et al](https://cancerdiscovery.aacrjournals.org/content/11/5/1082.long).
@@ -158,9 +158,6 @@ An example of 1,574 RNA-Seq samples can be found in [McLeod et al](https://cance
 All slides (with H&E staining) come off the microscope in `.svs` format which are then uploaded and processed in Azure. Currently, each sample is only accompanied by one slide but we plan on extending this feature for multiple slides per sample. 
 
 **HISTOLOGY DATA**
-All histological images are shared from the [COMET Blue Sky Initiatve](https://www.stjude.org/research/initiatives/blue-sky.html) led by [Dr. Mike Dyer](https://www.stjude.org/directory/d/michael-dyer.html). Slides can be downloaded or shared on the individual slide image pages.
+All histological images are shared by the [COMET Blue Sky Initiatve](https://www.stjude.org/research/initiatives/blue-sky.html) led by [Dr. Mike Dyer](https://www.stjude.org/directory/d/michael-dyer.html). A large subset of COMET slides are pending publication.
 
-!!!tip
-An example of a slide image page can be found [here](https://pecan-v2.staging.stjude.cloud/histology/sample/SJMEL001003_D2).
-!!!
 

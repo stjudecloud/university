@@ -1,5 +1,5 @@
 ---
-title: PeCan Knowledgebase
+title: Pediatric Cancer (PeCan) Knowledge base
 ---
 
 The PeCan platform presents curated pediatric cancer genomics data including variants, mutational signatures, and gene expression data in addition to histological slide images from over 9000 hematological, CNS, and non-CNS solid tumor patient samples.
@@ -95,3 +95,7 @@ Data Facets represent a distinct type of post-processed genomic data for collect
     <p style="margin-top: 0;">is a cloud-based variant classification and interpretation service.</p>
   </div>
 </div>
+
+!!!tip
+Looking for the legacy PeCan Help Guides? [Go here.](https://university.stjude.cloud/docs/legacy)
+!!!

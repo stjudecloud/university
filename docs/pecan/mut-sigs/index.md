@@ -2,7 +2,7 @@
 title: Mutational Signatures
 ---
 
-![Mutational Signatures](.././mutational-signatures.svg)
+![Mutational Signatures](./mutational-signatures.svg)
 
 **Overview**
 Analysis of samples from St. Jude Children's Research Hospital, specifically from PCGP, Clinical Pilot, and G4K were demonstrated originally in the [Figure 5 of McLeod et al](https://cancerdiscovery.aacrjournals.org/content/11/5/1082.long). Now, Real-time Clinical Genomics samples have been incorporated into the visualization. These samples are depicted via a heatmap where COSMIC single base substitution (SBS) mutational signatures in pediatric cancer subtypes were analyzed by WGS.
