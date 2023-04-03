@@ -4,7 +4,7 @@ title: Expression
 
 ![Expression](./expression.svg)
 
-**Overview:** The expression landscape of 2,500 RNA-Seq fresh frozen tumor samples (1389 blood tumors, 888 solid tumors, and 1155 brain tumors) in St. Jude Cloud is displayed via a t-SNE plot (**Figure 1**) generated using the [St. Jude Cloud RNA-Seq Expression Analysis workflow](https://platform.stjude.cloud/workflows/rnaseq-expression-classification). 
+**Overview:** The expression landscape of 2500 RNA-Seq fresh frozen tumor samples (1389 blood tumors, 888 solid tumors, and 1155 brain tumors) in St. Jude Cloud is displayed via a t-SNE plot (**Figure 1**) generated using the [St. Jude Cloud RNA-Seq Expression Analysis workflow](https://platform.stjude.cloud/workflows/rnaseq-expression-classification). 
 
 !!!tip
 An example with a subset of this data can be found in [Figure 4f of McLeod et al](https://cancerdiscovery.aacrjournals.org/content/11/5/1082.long).

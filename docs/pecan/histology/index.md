@@ -2,7 +2,7 @@
 title: Histology
 ---
 ![Histology](./histology.svg)
-**Overview:** Explore over 400 histology slides (H&E stained) that have been harmonized to our ontology disease hierarchy. *The remaining 3000 COMET slides are pending publication.*
+**Overview:** Explore over 400 histology slides (H&E stained) that have been harmonized to our ontology disease hierarchy. *The remaining COMET slides are pending publication.*
 
 **ADVANCED SEARCH** - The Histology homepage (**Figure 1**) will comprise an advanced search page enabling filtering of slides via metadata--diagnosis, subtype, sex, age, site, evaluation, site classification-- via drop-down lists. The return provides thumbnails with minimum data about the slide (e.g., subtype, sex, age, and SJID). Sample IDs can be searched individually.
 
@@ -32,4 +32,8 @@ This view (**Figure 3**) enables the exploration of a sample slide via a slide i
 
 ![](./slide_viewer.png)
 **Figure 3: OpenSeaDragon Analysis.** Using the OpenSeaDragon functionality enables deep exploration within the slide.
+
+!!!tip
+A user can view a specific region of the slide and share that view with others by copying/pasting the URL since it encompasses the coordinates.
+!!!
 

@@ -131,7 +131,8 @@ See below for more information regarding the glossary for origins and mutation c
 
 **MUTATIONAL SIGNATURES (SNV) METHODS** 
 
-Mutational Signature heatmap is a custom interface to generate the cohort barplot summary pages and sample profiles. The COSMIC signatures identified in each sample is also shown on the sample profile pages.
+Identification of COSMIC SBS signatures (v3.3) upon consideration of [somatic variants](https://university.stjude.cloud/docs/genomics-platform/about-our-data/file-formats-and-sequencing/#somatic-vcf-files) was performed using SigProfilerExtractor (v1.1.20) on pediatric tumor samples grouped by subtype.
+
 
 **MUTATIONAL SIGNATURES DATA**
 Data from G4K, PCGP, Clinical Pilot and Real-Time Clincal Genomics (RTCG) samples were used in the de novo extraction method. 
@@ -161,3 +162,4 @@ All slides (with H&E staining) come off the microscope in `.svs` format which ar
 All histological images are shared by the [COMET Blue Sky Initiatve](https://www.stjude.org/research/initiatives/blue-sky.html) led by [Dr. Mike Dyer](https://www.stjude.org/directory/d/michael-dyer.html). A large subset of COMET slides are pending publication.
 
 
+Intersted in collaborating with your data? Reach out to us at [support@stjude.cloud](support@stjude.cloud).

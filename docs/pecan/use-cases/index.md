@@ -21,9 +21,4 @@ The following are common scenarios a user might want to achieve in PeCan.
 13. A user can employ the lasso feature where you draw a region on the map and then select "list samples". **Read more about [Expression here](https://university.stjude.cloud/docs/pecan/expression).**
 
 
-# Coming Soon
-1. Epigenetic data facet.
-2. Sample summary pages.
-3. Cohort building.
-
 Interested in a new feature? Submit your idea to [support@stjude.cloud](suport@stjude.cloud)

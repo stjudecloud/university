@@ -8,13 +8,13 @@ title: Mutational Signatures
 Analysis of samples from St. Jude Children's Research Hospital, specifically from PCGP, Clinical Pilot, and G4K were demonstrated originally in the [Figure 5 of McLeod et al](https://cancerdiscovery.aacrjournals.org/content/11/5/1082.long). Now, Real-time Clinical Genomics samples have been incorporated into the visualization. These samples are depicted via a heatmap where COSMIC single base substitution (SBS) mutational signatures in pediatric cancer subtypes were analyzed by WGS.
 
 ## HEATMAP VIEW
-Identification of COSMIC SBS signatures (v3.1) upon consideration of WGS somatic variants were performed using SigProfilerSingleSample (v1.3) across 790 samples (**Figure 1**). The user can explore a sample summary bar plot view by clicking the subtype (x-axis), SBS signature (y-axis), or the subtype with a patricular SBS signature (cell).
+Identification of COSMIC SBS signatures (v3.3) upon consideration of somatic variants was performed using SigProfilerExtractor (v1.1.20) on pediatric tumor samples grouped by subtype across 2000 samples (**Figure 1**). The user can explore a sample summary bar plot view by clicking the subtype (x-axis), SBS signature (y-axis), or the subtype with a patricular SBS signature (cell).
 
 ![](./Heatmap.png)
 **Figure 1:** Heatmap View. The heatmap is comprised of sample data and COSMIC SBS mutational signatures that have greater than 0.8 cosine similarity.
 
 ## BAR PLOT VIEW
-A user can view a sample summary bar plot consisting of the mutational signatures within a given subtype in 3 separate ways: 1) samples by subtype (**Figure 2**), 2) samples by the COSMIC mutational signature (**Figure 3**), or 3) samples for a specific subtype with a specific mutational signature (**Figure 4**). 
+A user can view a sample summary bar plot consisting of the mutational signatures (presented in the heatmap) within a given subtype in 3 separate ways: 1) samples by subtype (**Figure 2**), 2) samples by the COSMIC mutational signature (**Figure 3**), or 3) samples for a specific subtype with a specific mutational signature (**Figure 4**). 
 
 
 ![](./subtype_barplot.png)
@@ -35,7 +35,7 @@ Each bar plot provides a title, the total number of samples, the method used to 
 A table view (**Figure 5**) is also available for each barplot view so that a user can see the same information as the bar plot view but in a tabular manner. Sample ID, subtype, the total number of somatic SNVs, the existing mutational signature per sample, and the cosine similarity are given.
 
 ![](./table_view.png)
-**Figure 5.** Table View: The table view is an alternative to the barplot view for each use case described in Figures 11-13.
+**Figure 5.** Table View: The table view is an alternative to the barplot view for each use case described in **Figures 2-4**.
 
 A user can select a mutational signature (column 4) and see a summary or the call to action to the COSMIC website.
 
