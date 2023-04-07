@@ -162,4 +162,4 @@ All slides (with H&E staining) come off the microscope in `.svs` format which ar
 All histological images are shared by the [COMET Blue Sky Initiatve](https://www.stjude.org/research/initiatives/blue-sky.html) led by [Dr. Mike Dyer](https://www.stjude.org/directory/d/michael-dyer.html). A large subset of COMET slides are pending publication.
 
 
-Intersted in collaborating with your data? Reach out to us at [support@stjude.cloud](support@stjude.cloud).
+Interested in collaborating with your data? Reach out to us at [support@stjude.cloud](support@stjude.cloud).
