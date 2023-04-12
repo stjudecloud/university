@@ -13,7 +13,7 @@ A user will default to a placeholder if a diagnosis and/or subtype is not select
 ![](./oncoprint.png)
 **Figure 1: Variants: Oncoprint view, without filtering.** A placeholder is shown when a user directly accesses the Variants data facet.
 
-Diagnosis and/or subtype is required for generating a new oncoprint (**Figure 2**).
+Diagnosis and/or subtype is required for generating a new oncoprint (**Figure 2**). 
 
 !!!warning
 Updating the filters will **not** update the sunburst selection, but it **will** update the other facet views (e.g., Variant Prevelance, GenomePaint, and/or ProteinPaint).
@@ -50,9 +50,9 @@ Diagnosis and/or subtype is required for generating a new barplot (**Figure 5**)
 
 Once the filters are selected and submitted, then a new barplot will render. Once these filters are selected and submitted, then the new mutational data (i-iii) will render for that diagnosis and/or subtype selection:  (i) the mutation type proportion (0-1) depicted as a bar plot displaying the proportion of each mutation type (consistent ordering of mutation types for each gene); (ii) mutations are depicted in a table view displaying somatic and germline counts; (iii) total # of mutations are depicted as a barplot to represent the total number of variants in a given gene for that selected diagnosis and/or subtype.
 
-!!!tip
-- An example of when a user can choose to render the barplot for just a disease can be found here: [Brain](https://pecan-v2.staging.stjude.cloud/variants/variant-prevalence/BT), [Solid](https://pecan-v2.staging.stjude.cloud/variants/variant-prevalence/ST), or [Blood(Heme)](https://pecan-v2.staging.stjude.cloud/variants/variant-prevalence/HM).
-- Clicking on a gene will enable a button that allows the user to view the gene in either the ProteinPaint or GenomePaint view.
+!!!tip 
+- An example of when a user can choose to render the barplot for just a disease can be found here: [Brain](https://pecan-v2.staging.stjude.cloud/variants/variant-prevalence/BT), [Solid](https://pecan-v2.staging.stjude.cloud/variants/variant-prevalence/ST), or [Blood(Heme)](https://pecan-v2.staging.stjude.cloud/variants/variant-prevalence/HM). 
+- Clicking on a gene will enable a button that allows the user to view the gene in either the ProteinPaint or GenomePaint view. 
       - If a subtype is already selected, the data will also be filtered.
 !!!
 
@@ -112,12 +112,12 @@ A few highlights to mention about the ProteinPaint configs are described below (
 Certain variants that are classified as pathogenic or likely pathogenic (P/LP) may have a Variant Details page (**Figure 11**).
 
 ![](./varian_list.png)
-**Figure 11.** Accessing Variant Details. First select the variant of interest, this will populate a sunburst view. Click `list` (*highlighted in red above*) which will populate the variants table. Then, click the `pathogenic` or `likely pathogenic` button to access the variants detail page.
 
+**Figure 11.** Accessing Variant Details. First select the variant of interest, this will populate a sunburst view. Click `list` (*highlighted in red above*) which will populate the variants table. Then, click the `pathogenic` or `likely pathogenic` button to access the variants detail page. 
 
 
 !!!note
-If there are more variant changes at the same coordinate, a user can hover under the bottom variant and find a total which creates the variant table for all variants at that amino acid (*as seen in Figure 11*).
+If there are more variant changes at the same coordinate, a user can hover under the bottom variant and find a total which creates the variant table for all variants at that amino acid (*as seen in Figure 11*). 
 !!!
 
 ## VARIANT DETAILS
@@ -145,7 +145,7 @@ This embedded ProteinPaint [Zhou et al., Nat. Genet. 2016](https://www.nature.co
 
 *ASHG pathogenicity classification*
 
-Formal variant pathogenicity classification is supported by an interface implementing [ACMG guidelines]([ACMG](https://www.ncbi.nlm.nih.gov/pubmed/25741868)) ([Richards et al., Genet Med. 2015](https://www.nature.com/gim/journal/v17/n5/full/gim201530a.html)). The system will compute an appropriate pathogenicity score based on the categories detected by the pipeline. ACMG tag descriptions can be found in **Table 1**.
+Formal variant pathogenicity classification is supported by an interface implementing [ACMG guidelines]([ACMG](https://www.ncbi.nlm.nih.gov/pubmed/25741868)) ([Richards et al., Genet Med. 2015](https://www.nature.com/gim/journal/v17/n5/full/gim201530a.html)). The system will compute an appropriate pathogenicity score based on the categories detected by the pipeline. ACMG tag descriptions can be found in **Table 1**. 
 
 | Tags | Description                                                                                           |
 | ---- | ----------------------------------------------------------------------------------------------------- |
