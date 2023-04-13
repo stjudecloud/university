@@ -27,7 +27,7 @@ Updating the filters will **not** update the sunburst selection, but it **will**
 - Clicking a gene will enable a button that allows the user to navigate to ProteinPaint or GenomePaint for that gene.
 !!!
 
-Once the filters are selected and submitted, then an oncoprint will render. For example, a user can choose to render an oncoprint for just a disease: [Brain](https://pecan-v2.staging.stjude.cloud/variants/oncoprint/BT), [Solid](https://pecan-v2.staging.stjude.cloud/variants/oncoprint/ST), or [Blood(Heme)](https://pecan-v2.staging.stjude.cloud/variants/oncoprint/HM). Further, the user can customize the oncoprint by employing the ProteinPaint [settings](https://docs.google.com/document/d/1bx3VRdTzJDYdmt4CaU4PfHCOz5JSfTyuSFIuGTx-X2g/).
+Once the filters are selected and submitted, then an oncoprint will render. For example, a user can choose to render an oncoprint for just a disease: [Brain](https://pecan.stjude.cloud/variants/oncoprint/BT), [Solid](https://pecan.stjude.cloud/variants/oncoprint/ST), or [Blood(Heme)](https://pecan.stjude.cloud/variants/oncoprint/HM). Further, the user can customize the oncoprint by employing the ProteinPaint [settings](https://docs.google.com/document/d/1bx3VRdTzJDYdmt4CaU4PfHCOz5JSfTyuSFIuGTx-X2g/).
 
 
 A few highlights to mention about the ProteinPaint configs are described below (**Figure 3**).
