@@ -35,23 +35,23 @@ A few highlights to mention about the ProteinPaint configs are described below (
 ![](oncoprint_proteinpaint.png)
 **Figure 3: Oncoprint configs.** ProteinPaint's UI has customizable configurations that enable a user to edit and change the visualization.
 
-## VARIANT PREVELANCE
+## VARIANT PREVALENCE
 A user will default to a placeholder if a diangosis and/or subtype is not selected from the Sunburst (**Figure 4**).
 
 ![](./variant_prev.png)
 
-**Figure 4: Variants: Variant Prevelance view, without filtering.** A placeholder is shown when a user directly accesses the tab.
+**Figure 4: Variants: Variant Prevalence view, without filtering.** A placeholder is shown when a user directly accesses the tab.
 
 Diagnosis and/or subtype is required for generating a new barplot (**Figure 5**).
 
 ![](./variant_prev_example.png)
 
-**Figure 5: Variant Prevelance view, with filtering.** This visualization will provide variant data dependent upon the diagnosis and subtype selected. The `Mutation Type` legend will be the same variant classes as seen for Oncoprint.
+**Figure 5: Variant Prevalence view, with filtering.** This visualization will provide variant data dependent upon the diagnosis and subtype selected. The `Mutation Type` legend will be the same variant classes as seen for Oncoprint.
 
 Once the filters are selected and submitted, then a new barplot will render. Once these filters are selected and submitted, then the new mutational data (i-iii) will render for that diagnosis and/or subtype selection:  (i) the mutation type proportion (0-1) depicted as a bar plot displaying the proportion of each mutation type (consistent ordering of mutation types for each gene); (ii) mutations are depicted in a table view displaying somatic and germline counts; (iii) total # of mutations are depicted as a barplot to represent the total number of variants in a given gene for that selected diagnosis and/or subtype.
 
 !!!tip 
-- An example of when a user can choose to render the barplot for just a disease can be found here: [Brain](https://pecan-v2.staging.stjude.cloud/variants/variant-prevalence/BT), [Solid](https://pecan-v2.staging.stjude.cloud/variants/variant-prevalence/ST), or [Blood(Heme)](https://pecan-v2.staging.stjude.cloud/variants/variant-prevalence/HM). 
+- An example of when a user can choose to render the barplot for just a disease can be found here: [Brain](https://pecan.stjude.cloud/variants/variant-prevalence/BT), [Solid](https://pecan.stjude.cloud/variants/variant-prevalence/ST), or [Blood(Heme)](https://pecan.stjude.cloud/variants/variant-prevalence/HM). 
 - Clicking on a gene will enable a button that allows the user to view the gene in either the ProteinPaint or GenomePaint view. 
       - If a subtype is already selected, the data will also be filtered.
 !!!
