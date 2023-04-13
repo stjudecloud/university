@@ -7,7 +7,7 @@ on:
 
 env:
   NODE_ENV: production
-  NODE_VERSION: 15.x
+  NODE_VERSION: 14.x
 
 jobs:
   semantic-release:
@@ -26,7 +26,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: 14.x
+          node-version: ${{ env.NODE_VERSION }}
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Cache NPM dependencies
@@ -70,9 +70,9 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ~/.npm
-          key: ${{ runner.os }}-node15-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.os }}-node14-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node15-
+            ${{ runner.os }}-node14-
       - name: Cache Gatsby folder
         uses: actions/cache@v2
         with:
