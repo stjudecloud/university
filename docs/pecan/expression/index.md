@@ -40,5 +40,5 @@ Further, the lasso enables a user to select a region on the plot to enable furth
 **Figure 3: Lasso.** A user can use the lasso feature to populate a table to retrieve a list of sampleIDs for the selected region.
 
 !!!warning
-Filtering by the sunburst will autopopulate the search with a specific key. A user can remove the text or click the subtypes on the right to continue exploring.
+Filtering by the sunburst will auto-populate the search with a specific key. A user can remove the text or click the subtypes on the right to continue exploring.
 !!!
