@@ -111,7 +111,7 @@ A few highlights to mention about the ProteinPaint configs are described below (
 
 Certain variants that are classified as pathogenic or likely pathogenic (P/LP) may have a Variant Details page (**Figure 11**).
 
-![](./varian_list.png)
+![](./variant_list.png)
 
 **Figure 11.** Accessing Variant Details. First select the variant of interest, this will populate a sunburst view. Click `list` (*highlighted in red above*) which will populate the variants table. Then, click the `pathogenic` or `likely pathogenic` button to access the variants detail page.
 
