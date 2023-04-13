@@ -1,27 +1,28 @@
 ---
 title: The Data Explained
 ---
+The PeCan Knowledgebase is comprised of curated pediatric cancer genomics data including variants, mutational signatures, and gene expression data in addition to histological slide images from ~9000 hematological, CNS, and non-CNS solid tumor patient samples.
 
 # Variants 
 
 **ONCOPRINT METHODS**
-All oncoprints generated are supported by ProteinPaint's mutational landscape [study](https://proteinpaint.stjude.org/?appcard=study) views. 
+All oncoprint visualizations have been generated using ProteinPaint's mutational landscape [study](https://proteinpaint.stjude.org/?appcard=study) views. 
 
 **ONCOPRINT DATA**
-The data used for these oncoprints are generated from collaborations such as [TARGET](https://ocg.cancer.gov/programs/target), [DKFZ](https://www.dkfz.de/en/index.html), Shanghai Children's Medical Hospital, and St. Jude Children's Research Hospital. 
+Variant data represented within oncoprint visualizations are sourced from published studies from organizations including St. Jude Children’s Research Hospital, NCI-TARGET [TARGET](https://ocg.cancer.gov/programs/target), German Cancer Research Center [DKFZ](https://www.dkfz.de/en/index.html), and Shanghai Children's Medical Hospital. 
 
-A user can access associated studies that used a subset of the data displayed in the onocprint by clicking `Associated Study` where applicable. 
+A user can access associated studies that involve a subset of the data displayed in the onocprint by clicking `Associated Study` where applicable. 
 
 !!!tip
-- The gene lists provided are not curated, however, there are select `Associated Study` links that may have used a subset of data shown.
+- The gene lists provided are not curated, however, a user may access `Associated Study` links that involve a subset of data shown.
     - An example of accessing an `Associated Study` for Medulloblastoma in the Variants data facet can be found [here](https://pecan-v2.staging.stjude.cloud/variants/oncoprint/BT%7CMB).
 !!!
 
 **VARIANT PREVALENCE METHODS**
-Variant Prevalence is a custom interface employing rules (*described below*) to generate the Mutation Type Proportion barplots, Variant Origin, and Total number of Mutations barplot. 
+Variant Prevalence is a custom interface portraying barplots (for selected genes) conveying the prevalence of each variant types for the displayed genes (selected as *described below*). In addition, Variant Origin, and Total number of Mutations are displayed.
 
 ***Mutation type proportion rules:***
-The gene lists provided are not curated, however, for each diagnoses, the occurrences of genes in the population of samples for that diagnoses are counted and ranked. A select number of diagnoses have curated gene pathways. We provide 20 genes if no gene pathways are found, else 50 are returned.
+Note that the gene lists provided are not curated, however, for each selected diagnosis cohort of samples, the occurrence gene among the samples therein are counted and ranked. A select number of diagnoses have curated gene pathways. If pathway information is available for the diagnosis cohort, 20 genes are listed, else we return a list of the top 50 genes.
 
 !!!note
 TTN, MUC16, LPR1B, C11orf95, and IGH are genes primarily not ranked in pediatric cancer, so these genes may not show in Variant Prevalence.
@@ -52,13 +53,13 @@ Variant classes are found below with the definition of each.
 **Table 1. Mutation Class glossary.** Definition of variant classes that are provided in Oncoprint, Variant Prevalence, and ProteinPaint views. 
 
 !!!warning
-- Silent mutations and variants with mRNA accessions that do not start with 'NM' are excluded in our data. 
-- UTR variants are only seen in ProteinPaint if coordinates are used to view between genes, otherwise variants may be hidden.
+- Silent mutations and variants occurring within genes with mRNA accessions that do not start with 'NM' are excluded in our data. 
+- UTR variants are only shown in ProteinPaint if coordinates are used to view between genes, otherwise variants may be hidden.
 - CNV variant classes are not displayed in ProteinPaint.
 !!!
 
 ***Variant origin count rules:***
-If the variant origin is not not germline, then it is counted as somatic, which also includes the relapse samples. When the variant origin is germline, the record is counted as germline.
+If the variant origin is not recorded as germline, then it is counted as somatic, which also includes the relapse samples. When the variant origin is germline, the record is counted as germline.
 
 ***Glossary of Origins***
 
@@ -74,11 +75,10 @@ If the variant origin is not not germline, then it is counted as somatic, which 
 This is the total number of variants for that given gene for the selected diagnosis and/or subtype divided by the gene with the largest variant total (*rounded to the nearest 50*) for that selected diagnosis and/or subtype. 
 
 **VARIANT PREVALENCE DATA**
-The most prevelant genes are shown based on the rules described above for variant selection and variant origin. The legend **Mutation Type** is the same variant classes seen in oncoprint. View **Glossary of Classes** above to learn more. 
+The most prevelant genes are shown based on the rules described above for variant selection and variant origin. The legend **Mutation Type** is the same variant classes used for the oncoprints. View **Glossary of Classes** above to learn more. 
 
 !!!warning
-* Variant prevalence data will only consider the CNV records from TARGET. 
-* Inferring data per gene or pathway should be analyzed thoroughly.
+* CNV data is only considered in the variant prevalence display for TARGET samples. 
 !!!
 
 The variants that will be used for the Variant Prevalence page are indicated in the below table.
@@ -110,7 +110,7 @@ The `Pediatric2` dataset expands the original `Pediatric` dataset by adding non-
 | hg19       | Pediatric, PAN-ALL |
 | hg38       | Pediatric, SJLIFE  |
 
-**Table 4. GenomePaint datasets.** GenomePaint supports different datasets depending on reference genome (hg19/hg38). 
+**Table 4. GenomePaint datasets.** GenomePaint supports different combinations of datasets for each reference genome (hg19/hg38). 
 
 **PROTEINPAINT METHODS**
 
@@ -124,7 +124,7 @@ The `Pediatric` dataset consists of somatic variants and tumor RNA-seq data show
 | hg19       | Pediatric, COSMIC, ClinVar      |
 | hg39       | Pediatric, GDC, COSMIC, ClinVar |
 
-**Table 5. ProteinPaint dataset.** ProteinPaint supports different datasets depending on reference genome (hg19/hg38). 
+**Table 5. ProteinPaint dataset.** ProteinPaint supports different combinations of datasets for each reference genome (hg19/hg38). 
 
 See below for more information regarding the glossary for origins and mutation classes.
 
@@ -132,21 +132,20 @@ See below for more information regarding the glossary for origins and mutation c
 
 Identification of COSMIC SBS signatures (v3.3) upon consideration of [somatic variants](https://university.stjude.cloud/docs/genomics-platform/about-our-data/file-formats-and-sequencing/#somatic-vcf-files) was performed using SigProfilerExtractor (v1.1.20) on pediatric tumor samples grouped by subtype.
 
-
 **MUTATIONAL SIGNATURES DATA**
-Data from G4K, PCGP, Clinical Pilot and Real-Time Clincal Genomics (RTCG) samples were used in the de novo extraction method. 
+Sample data from G4K, PCGP, Clinical Pilot and Real-Time Clincal Genomics (RTCG) samples were considered for mutational signature detection analysis. 
 
 !!!tip
-An example of 790 fresh tumor samples can be found in [Figure 5 of McLeod et al](https://cancerdiscovery.aacrjournals.org/content/11/5/1082.long).
+An example of 790 tumor samples can be found in [Figure 5 of McLeod et al](https://cancerdiscovery.aacrjournals.org/content/11/5/1082.long).
 !!!
 
 # EXPRESSION
 
 **EXPRESSION METHODS**
-[RAPID RNA-Seq workflow](https://university.stjude.cloud/docs/genomics-platform/workflow-guides/rapid-rnaseq/) hosted on [St. Jude Cloud's Genomics Platform ](https://platform.stjude.cloud/workflows) was employed and plotted using [ProteinPaint's](https://proteinpaint.stjude.org/) scatterplot. 
+[RAPID RNA-Seq workflow](https://university.stjude.cloud/docs/genomics-platform/workflow-guides/rapid-rnaseq/) hosted on [St. Jude Cloud's Genomics Platform ](https://platform.stjude.cloud/workflows) was employed for the analysis of RNA-seq gene expression count data and plotted using [ProteinPaint's](https://proteinpaint.stjude.org/) scatterplot. 
 
 **EXPRESSION DATA**
-The data used to generate the tSNE is comprised of G4K, PCGP, Clinical Pilot and Real-Time Clinical Genomics samples. 
+The sample data used to generate the expression scatterplot maps are from the G4K, PCGP, Clinical Pilot and Real-Time Clinical Genomics studies. 
 
 !!!tip
 An example of 1,574 RNA-Seq samples can be found in [McLeod et al](https://cancerdiscovery.aacrjournals.org/content/11/5/1082.long) and accessed [here](https://viz.stjude.cloud/st-jude-childrens-research-hospital/visualization/pediatric-blood-solid-and-brain-tumor-rna-seq-t-sne-plot-1574-samples~24).
@@ -160,5 +159,5 @@ All slides (with H&E staining) come off the microscope in `.svs` format which ar
 **HISTOLOGY DATA**
 All histological images are shared by the [COMET Blue Sky Initiatve](https://www.stjude.org/research/initiatives/blue-sky.html) led by [Dr. Mike Dyer](https://www.stjude.org/directory/d/michael-dyer.html). A large subset of COMET slides are pending publication.
 
-
 Interested in collaborating with your data? Reach out to us at [support@stjude.cloud](support@stjude.cloud).
+
