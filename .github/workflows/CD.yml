@@ -24,9 +24,9 @@ jobs:
       NODE_ENV: development
     steps:
       - name: Setup Node
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v3
         with:
-          node-version: "15.x"
+          node-version: 18
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Cache NPM dependencies
