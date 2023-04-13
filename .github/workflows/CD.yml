@@ -29,15 +29,8 @@ jobs:
           node-version: 18
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
       - name: Install Node Dependencies
-        run: npm install
+        run: npm install semantic-release@21.0.1 @semantic-release/git@10.0.1 @semantic-release/changelog@6.0.3
       - name: Build and Publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
