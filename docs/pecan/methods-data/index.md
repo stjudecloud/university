@@ -1,7 +1,6 @@
 ---
 title: The Data Explained
 ---
-The PeCan Knowledgebase is comprised of curated pediatric cancer genomics data including variants, mutational signatures, and gene expression data in addition to histological slide images from over 9000 hematological, CNS, and non-CNS solid tumor patient samples.
 
 # Variants 
 
