@@ -1,7 +1,7 @@
 ---
 title: Histology
 ---
-![Histology](./histology.svg)
+![Histology](./../histology.svg)
 **Overview:** Explore over 400 histology slides (H&E stained) that have been harmonized to our ontology disease hierarchy. *The remaining COMET slides are pending publication.*
 
 **ADVANCED SEARCH** - The Histology homepage (**Figure 1**) will comprise an advanced search page enabling filtering of slides via metadata--diagnosis, subtype, sex, age, site, evaluation, site classification-- via drop-down lists. The return provides thumbnails with minimum data about the slide (e.g., subtype, sex, age, and SJID). Sample IDs can be searched individually.

@@ -1,7 +1,7 @@
 ---
 title: Epigenetic
 ---
-![Epigenetic](./epigenetic.svg)
+![Epigenetic](./../epigenetic.svg)
 
 COMING SOON!
 

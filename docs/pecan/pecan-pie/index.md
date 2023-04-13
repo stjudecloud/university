@@ -1,7 +1,7 @@
 ---
 title: Pecan PIE
 ---
-![PIE](./pie.svg)
+![PIE](./../pie.svg)
 
 |                       |                                                                                          |
 | --------------------- | ---------------------------------------------------------------------------------------- |
@@ -67,7 +67,7 @@ It isn't necessary to keep your browser open on this page until your esults are 
 
 When your job is complete you will be taken to an overview page wherevou can browse your results and examine a detailed results page for each variant. Each header can be clicked for sorting.
 
-[PICTURE TBD]]
+![](./pie.png)
 
 The variants in the results can be filtered by:
 

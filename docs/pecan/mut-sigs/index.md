@@ -2,7 +2,7 @@
 title: Mutational Signatures
 ---
 
-![Mutational Signatures](./mutational-signatures.svg)
+![Mutational Signatures](./../mutational-signatures.svg)
 
 **Overview**
 Analysis of samples from St. Jude Children's Research Hospital, specifically from PCGP, Clinical Pilot, and G4K were demonstrated originally in the [Figure 5 of McLeod et al](https://cancerdiscovery.aacrjournals.org/content/11/5/1082.long). Now, Real-time Clinical Genomics samples have been incorporated into the visualization. These samples are depicted via a heatmap where COSMIC single base substitution (SBS) mutational signatures in pediatric cancer subtypes were analyzed by WGS.
@@ -14,7 +14,7 @@ Identification of COSMIC SBS signatures (v3.3) upon consideration of somatic var
 **Figure 1:** Heatmap View. The heatmap is comprised of sample data and COSMIC SBS mutational signatures that have greater than 0.8 cosine similarity.
 
 ## BAR PLOT VIEW
-A user can view a sample summary bar plot consisting of the mutational signatures (presented in the heatmap) within a given subtype in 3 separate ways: 1) samples by subtype (**Figure 2**), 2) samples by the COSMIC mutational signature (**Figure 3**), or 3) samples for a specific subtype with a specific mutational signature (**Figure 4**). 
+A user can view a sample summary bar plot consisting of the mutational signatures (presented in the heatmap) within a given subtype in 3 separate ways: 1) samples by subtype (**Figure 2**), 2) samples by the COSMIC mutational signature (**Figure 3**), or 3) samples for a specific subtype with a specific mutational signature (**Figure 4**).
 
 
 ![](./subtype_barplot.png)
@@ -51,4 +51,4 @@ By selecting an individual sample, the user will navigate to a sample page view 
 An additional feature exists to allow the user to cache the last 5 samples per selection from the user experience. This can be helpful when analyzing samples together. Once the 6th sample is selected for that cohort, the first sample selected is removed, therefore the queue follows a first in last out methodology. The user can also remove samples individually (see hover x in the image) or a user can remove all samples by selecting the hover X button per header.
 
 ![](./recently_viewed.png)
-**Figure 8:** Recently Viewed. Functionality to support investigation across samples. 
+**Figure 8:** Recently Viewed. Functionality to support investigation across samples.
