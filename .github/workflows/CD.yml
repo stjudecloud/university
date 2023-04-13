@@ -7,7 +7,7 @@ on:
 
 env:
   NODE_ENV: production
-  NODE_VERSION: 15.x
+  NODE_VERSION: 16.x
 
 jobs:
   semantic-release:
@@ -24,16 +24,20 @@ jobs:
       NODE_ENV: development
     steps:
       - name: Setup Node
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v1
         with:
-          node-version: 18
+          node-version: ${{ env.NODE_VERSION }}
       - name: Checkout Repository
         uses: actions/checkout@v2
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
       - name: Install Node Dependencies
-        run: |
-          rm -f package-lock.json
-          npm install semantic-release@21.0.1 @semantic-release/git@10.0.1 @semantic-release/changelog@6.0.3
-          rm -f package-lock.json
+        run: npm install
       - name: Build and Publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
