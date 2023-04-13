@@ -95,7 +95,35 @@ domains:
         path: /docs/pecan/
         icon: stjudecloud-pecan-logo.svg
         chapters:
-          - title: "Getting Started"
+          - title: "Overview"
+            pages:
+              - title: "Getting Started"
+                path: /docs/pecan/
+              - title: "Methods and Data"
+                path: /docs/pecan/methods-data/
+              - title: "FAQ"
+                path: /docs/pecan/faq/
+          - title: "Data Facets"
+            pages: 
+              - title: "Variants"
+                path: /docs/pecan/variants/
+              - title: "Mutational Signatures"
+                path: /docs/pecan/mut-sigs/
+              - title: "Expression"
+                path: /docs/pecan/expression/
+              - title: "Histology"
+                path: /docs/pecan/histology/
+              - title: "Use Cases"
+                path: /docs/pecan/use-cases/
+#             - title: "Epigenetic-Coming Soon"
+#               path: /docs/pecan/epigenetic/
+          - title: "PeCan PIE"
+            pages:
+              - title: "What is PIE"
+                path: /docs/pecan/pecan-pie/
+              - title: "FAQ"
+                path: /docs/pecan/pie-faq/
+          - title: "Legacy PeCan Help Guide"
             pages:
               - title: "PeCan PIE"
                 path: /docs/pecan/pecan-pie/
