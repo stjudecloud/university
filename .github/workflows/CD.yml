@@ -30,7 +30,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
       - name: Install Node Dependencies
-        run: npm install semantic-release@21.0.1 @semantic-release/git@10.0.1 @semantic-release/changelog@6.0.3
+        run: |
+          rm -f package-lock.json
+          npm install semantic-release@21.0.1 @semantic-release/git@10.0.1 @semantic-release/changelog@6.0.3
+          rm -f package-lock.json
       - name: Build and Publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
