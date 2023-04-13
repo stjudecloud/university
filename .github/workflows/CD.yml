@@ -29,13 +29,6 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - name: Checkout Repository
         uses: actions/checkout@v2
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node14-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node14-
       - name: Install Node Dependencies
         run: npm install
       - name: Build and Publish
@@ -66,13 +59,6 @@ jobs:
         uses: actions/setup-node@v1.4.4
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node14-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node14-
       - name: Cache Gatsby folder
         uses: actions/cache@v2
         with:
