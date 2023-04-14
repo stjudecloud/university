@@ -87,6 +87,8 @@ jobs:
       - name: Run Build
         run: |
           npm install
+          npm ls node-sass
+          node -p "require('node-sass').info"
           GATSBY_DOCS_VERSION=$(cat ./VERSION) GATSBY_DOCS_HASH=$(git rev-parse --short "$GITHUB_SHA") npm run build
         env:
           GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
