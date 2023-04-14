@@ -81,6 +81,8 @@ jobs:
             ${{ runner.os }}-build-
       - name: Install Node Dependencies
         run: npm install
+        env:
+          NODE_ENV: development
       - name: Cache Gatsby folder
         uses: actions/cache@v2
         with:
