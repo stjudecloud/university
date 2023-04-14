@@ -34,9 +34,8 @@ jobs:
           python-version: '2.7' 
       - name: Cache NPM dependencies
         uses: actions/cache@v3
-        id: npm-cache
         with:
-          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          path: node_modules
           key: ${{ runner.os }}-release-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-release-
@@ -72,9 +71,8 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - name: Cache NPM dependencies
         uses: actions/cache@v3
-        id: npm-cache
         with:
-          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          path: node_modules
           key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-build-
