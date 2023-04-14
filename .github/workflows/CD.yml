@@ -29,11 +29,17 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: npm
-          cache-dependency-path: package-lock.json
       - uses: actions/setup-python@v4
         with:
           python-version: '2.7' 
+      - name: Cache NPM dependencies
+        uses: actions/cache@v3
+        id: npm-cache
+        with:
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-release-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-release-
       - name: Install Node Dependencies
         run: npm install
       - name: Build and Publish
@@ -60,12 +66,18 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-      - name: Setup Node
+      - name: Set Up Node ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-          cache: npm
-          cache-dependency-path: package-lock.json
+      - name: Cache NPM dependencies
+        uses: actions/cache@v3
+        id: npm-cache
+        with:
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-
       - name: Cache Gatsby folder
         uses: actions/cache@v2
         with:
@@ -87,8 +99,6 @@ jobs:
       - name: Run Build
         run: |
           npm install
-          npm ls node-sass
-          node -p "require('node-sass').info"
           GATSBY_DOCS_VERSION=$(cat ./VERSION) GATSBY_DOCS_HASH=$(git rev-parse --short "$GITHUB_SHA") npm run build
         env:
           GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true
