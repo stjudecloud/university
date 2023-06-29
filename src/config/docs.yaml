@@ -123,12 +123,12 @@ domains:
                 path: /docs/pecan/pecan-pie/
               - title: "FAQ"
                 path: /docs/pecan/pie-faq/
-          - title: "Legacy PeCan Help Guide"
-            pages:
-              - title: "PeCan PIE"
-                path: /docs/pecan/pecan-pie/
-              - title: Frequently Asked Questions
-                path: /docs/pecan/faq/
+ #         - title: "Legacy PeCan Help Guide"
+ #           pages:
+ #             - title: "PeCan PIE"
+ #               path: /docs/pecan/pecan-pie/
+ #             - title: Frequently Asked Questions
+ #               path: /docs/pecan/faq/
       - title: "Visualization Community"
         subtitle: "Create and share genomic visualizations."
         path: /docs/visualization-community/
