@@ -58,7 +58,7 @@ jobs:
         run: cat ./VERSION
   build:
     name: "Gatsby Build 🧰"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     needs: [semantic-release]
     env:
       CI: true
@@ -71,7 +71,7 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
       - uses: actions/setup-python@v4
         with:
-          python-version: "2.7"
+          python-version: "pypy2.7"
       - name: Cache NPM dependencies
         uses: actions/cache@v3
         with:
