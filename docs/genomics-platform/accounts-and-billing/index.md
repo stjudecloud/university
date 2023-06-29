@@ -5,8 +5,6 @@ title: Accounts and Billing
 
 St. Jude Cloud is built on top of [DNAnexus](https://www.dnanexus.com/), a data-analysis and management platform that specializes in the field of bioinformatics. All of our account management is shared between St. Jude Cloud and DNAnexus. In other words, if you have a DNAnexus account, you automatically have a St. Jude Cloud account, and vice versa. 
 
-Each new user receives a $50 credit upon creation of their St. Jude Cloud account with DNAnexus (see the [note](#billing-setup) in the Billing Setup section). If you use this initial credit and are interested in additional funding, please reach out to support@stjude.cloud as additional collaboration funds may be available.
-
 !!!warning St. Jude Employees
 The account creation and login process is slightly different if you are an internal user (you work at St. Jude). Internal users please go to the [intranet home page](https://home.stjude.org) and type 'Bioinformatics Self-Service' into the search bar. From there, click on the link that says 'Bioinformatics Self-Service on St. Jude Cloud' to access the internal guide to creating an account.
 !!!
@@ -53,15 +51,21 @@ If your account is already set up and you would like to access your Billing info
 
 ### Billing Setup
 
-1. Click on the drop down next to your user name in the far right of the DNAnexus navigation bar, and select 'Profile'.
-2. Click on 'Billing Account' from the tabs listed just under the navigation bar.
-3. Click on the green 'ADD BILLING INFO' button to the right of your account name.
-![](./DX-setup_billing_ext.gif)
-4. A window labeled 'ACCOUNT UPGRADE' will pop up. In this window agree to DNAnexus's Terms of Service, agree to DNAnexus's pricing model, review your account information, and finally enter your billing information.
-5. Click 'Upgrade Account'. This will send an email to the individual listed as the billing contact requesting that they verify the change.
-
 !!!note 
-On step 4, you must enter the billing contact's name, physical address, email address and phone number. You do not need to enter any credit card information. Once the billing contact has verified the account upgrade request, your account will be credited $50.
-
-Please [contact us](mailto:support@stjude.cloud) for help if you encounter any problems creating an account.
+Data from St. Jude Cloud is available for free via the DNAnexus platform, but to submit a request and access the data, your DNAnexus billing account must be setup, which includes providing a source of funds. For a more detailed explanation of what is freely available and what actions would incur costs, [see our FAQ](../faq#will-i-be-charged-for-using-st-jude-cloud-genomics-platform).
 !!!
+
+
+To complete DNAnexus billing account setup, email DNAnexus support (support@dnanexus.com). Use the template below, adding in the required information. Your DNAnexus account ID and email can be found listed on your User Account page on DNAnexus. 
+
+>   Hello DNAnexus Support,
+>   
+> I am a St. Jude Cloud user and would like to complete the set up of my DNAnexus billing account so that I can access data. Here is my account information and when I am available to finish set up:
+>  1. DNAnexus account ID:
+>  2. Account Email:
+>  3. Several time slots you are available to receive the link via email:
+> 
+> Thank you,
+     
+
+

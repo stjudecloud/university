@@ -112,19 +112,12 @@ It is possible for the same variant to be included more than once. This is most 
 
 CNV files contain copy number alteration (CNA) analysis results for paired tumor-normal WGS samples. Files are produced by running paired tumor-normal BAM files through the [CONSERTING][conserting] pipeline which identifies CNA through iterative analysis of (i) local segmentation by read depth within boundaries identified by structural variation (SV) breakpoints followed by (ii) segment merging and local SV analysis. [CREST][crest] was used to identify local SV breakpoints. CNV files contain the following information:
 
-| Field         | Description                                                                                                                                                  |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| chrom         | chromosome                                                                                                                                                   |
-| loc.start     | start of segment                                                                                                                                             |
-| loc.end       | end of segment                                                                                                                                               |
-| num.mark      | number of windows retained in the segment (gaps and windows with low mappability are excluded)                                                               |
-| length.ratio  | The ratio between the length of the used windows to the genomic length                                                                                       |
-| seg.mean      | The estimated GC corrected difference signal (2 copy gain will have a seg.mean of 1)                                                                         |
-| GMean         | The mean coverage in the germline sample (a value of 1 represents diploid)                                                                                   |
-| DMean         | The mean coverage in the tumor sample                                                                                                                        |
-| LogRatio      | Log2 ratio between tumor and normal coverage                                                                                                                 |
-| Quality score | A empirical score used in merging                                                                                                                            |
-| SV_Matching   | Whether the boundary of the segments were supported by SVs (3: both ends supported, 2: right end supported, 1: left end supported, 0: neither end supported) |
+| Field     | Description                                  |
+| --------- | -------------------------------------------- |
+| chrom     | chromosome                                   |
+| loc.start | start of segment                             |
+| loc.end   | end of segment                               |
+| LogRatio  | Log2 ratio between tumor and normal coverage |
 
 ### Feature Counts files
 
@@ -141,7 +134,7 @@ Whole Genome Sequence (WGS) and Whole Exome Sequence (WES) BAM files were produc
 
 ### RNA-Seq
 
-RNA-Seq BAM files are mapped to hg38. For alignment, `STAR` v2.7.1a 2-pass mapping is used. Below is the `STAR` command used during alignment. For more information about any of the parameters used, please refer to the [STAR manual][star-manual] for v2.7.1a. The complete RNA-Seq WDL pipeline is available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/workflows/rnaseq/rnaseq-standard.wdl). The STAR alignment parameters are also available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/tools/star.wdl).
+RNA-Seq BAM files are mapped to hg38. For alignment, `STAR` v2.7.1a 2-pass mapping is used. Below is the `STAR` command used during alignment. For more information about any of the parameters used, please refer to the [STAR manual][star-manual] for v2.7.1a. The complete RNA-Seq WDL pipeline is available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/workflows/rnaseq/rnaseq-standard.wdl). The STAR alignment parameters are also available on [GitHub](https://github.com/stjudecloud/workflows/blob/master/tools/star.wdl). For additional information about St. Jude Cloud's RNA-Seq pipeline, visit the [RFC](https://stjudecloud.github.io/rfcs/0001-rnaseq-workflow-v2.0.0.html).
 
 ```bash
     STAR \

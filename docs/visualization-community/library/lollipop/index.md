@@ -44,10 +44,10 @@ This is a track and will be uplifted into the new VisEditor easy view soon.
 ```
 
 # Example for CIViC 
-**Be sure to update lines 1 and 2**
+**Be sure to update line 2. CIViC is only available in the hg38 ref genome**
 ```JS
 {
-           "genome": "hg19",
+           "genome": "hg38",
            "gene": "jak2",
            "dataset": "CIViC"
 }

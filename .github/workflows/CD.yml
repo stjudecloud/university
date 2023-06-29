@@ -23,19 +23,22 @@ jobs:
       HUSKY: 0
       NODE_ENV: development
     steps:
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: "15.x"
       - name: Checkout Repository
-        uses: actions/checkout@v2
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          node-version: ${{ env.NODE_VERSION }}
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '2.7' 
+      - name: Cache NPM dependencies
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-release-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-release-
       - name: Install Node Dependencies
         run: npm install
       - name: Build and Publish
@@ -61,18 +64,25 @@ jobs:
       CI: true
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2.3.4
-      - name: Set Up Node ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v1.4.4
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - name: Cache NPM dependencies
-        uses: actions/cache@v2
+      - uses: actions/setup-python@v4
         with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          python-version: '2.7' 
+      - name: Cache NPM dependencies
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.os }}-node-
+            ${{ runner.os }}-build-
+      - name: Install Node Dependencies
+        run: npm install
+        env:
+          NODE_ENV: development
       - name: Cache Gatsby folder
         uses: actions/cache@v2
         with:
@@ -93,7 +103,6 @@ jobs:
           path: .
       - name: Run Build
         run: |
-          npm install
           GATSBY_DOCS_VERSION=$(cat ./VERSION) GATSBY_DOCS_HASH=$(git rev-parse --short "$GITHUB_SHA") npm run build
         env:
           GATSBY_EXPERIMENTAL_PAGE_BUILD_ON_DATA_CHANGES: true

@@ -10,7 +10,7 @@ A St. Jude Cloud **Data Access Unit (DAU)** is a grouping of data that typically
 ### Data Access Agreement
 
 A St. Jude Cloud **Data Access Agreement (DAA)** is a legally binding document outlining a number of terms and conditions to which anyone working with St. Jude Cloud data must agree.
-We do not negotiate the terms of this document unless terms are found to be in conflict with the institution's state law. Filling out the Data Access Agreement carefully and completely is crucial to having your request approved promptly. [Click Here](../../../files/DataAccessAgreement_v4.2_10.13.20.pdf) to download a copy of the DAA. [Click Here](../how-to-fill-out-daa) for a step by step guide on how to fill out the DAA.
+We do not negotiate the terms of this document unless terms are found to be in conflict with the institution's state law. Filling out the Data Access Agreement carefully and completely is crucial to having your request approved promptly. [Click Here](https://platform.stjude.cloud/api/v1/data_access_agreements/) to download a copy of the DAA. [Click Here](../how-to-fill-out-daa) for a step by step guide on how to fill out the DAA.
 
 If you have incompletely or incorrectly filled out your DAA and would like to upload a revised form, [Click Here](../how-to-fill-out-daa/#uploading-a-revised-daa) for instructions.
 

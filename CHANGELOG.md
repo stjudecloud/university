@@ -1,3 +1,23 @@
+## [1.10.28](https://github.com/stjudecloud/university/compare/v1.10.27...v1.10.28) (2022-10-03)
+
+## [1.10.27](https://github.com/stjudecloud/university/compare/v1.10.26...v1.10.27) (2022-07-19)
+
+## [1.10.26](https://github.com/stjudecloud/university/compare/v1.10.25...v1.10.26) (2022-06-24)
+
+## [1.10.25](https://github.com/stjudecloud/university/compare/v1.10.24...v1.10.25) (2022-05-20)
+
+## [1.10.24](https://github.com/stjudecloud/university/compare/v1.10.23...v1.10.24) (2022-05-05)
+
+## [1.10.23](https://github.com/stjudecloud/university/compare/v1.10.22...v1.10.23) (2022-03-28)
+
+## [1.10.22](https://github.com/stjudecloud/university/compare/v1.10.21...v1.10.22) (2022-03-17)
+
+## [1.10.21](https://github.com/stjudecloud/university/compare/v1.10.20...v1.10.21) (2022-03-09)
+
+## [1.10.20](https://github.com/stjudecloud/university/compare/v1.10.19...v1.10.20) (2022-03-08)
+
+## [1.10.19](https://github.com/stjudecloud/university/compare/v1.10.18...v1.10.19) (2022-02-01)
+
 ## [1.10.18](https://github.com/stjudecloud/university/compare/v1.10.17...v1.10.18) (2021-12-17)
 
 ## [1.10.17](https://github.com/stjudecloud/university/compare/v1.10.16...v1.10.17) (2021-11-19)

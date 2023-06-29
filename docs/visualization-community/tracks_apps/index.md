@@ -2,7 +2,7 @@
 title: Tracks versus Apps
 ---
 
-Visualization Community supports GenomePaint and ProteinPaint tracks and apps.
+Visualization Community supports GenomePaint and ProteinPaint tracks and apps. All data types supported can be found [here](https://university.stjude.cloud/docs/visualization-community/datatypes/).
 
 **Genome Browser tracks**: this versatile app allows direct comparison of multi-omic data aligned along a common genome. Built-in reference data is also available for select genomes (some regions may not be in view). Users can customize an array of multiple samples from multiple data types. These all render in our easy view editor. 
 

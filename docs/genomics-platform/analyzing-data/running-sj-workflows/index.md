@@ -46,9 +46,9 @@ You can upload these files using the [the command line](../command-line).
 
 ## Running the Workflow
 
-Once you've uploaded data to your cloud workspace, click "Launch Tool" on the workflow's landing page. A dropdown will present any presets required for running the workflow. For example, some workflows ask that you select whether you wish to start with FastQ files or a BAM file. Launching the workflow will redirect you to you workspace in DNAnexus.
+Once you've uploaded data to your cloud workspace, click "Launch Tool" on the workflow's landing page. A dropdown will present any presets required for running the workflow. For example, some workflows ask that you select whether you wish to start with FASTQ files or a BAM file. Launching the workflow will redirect you to you workspace in DNAnexus.
 
-The gif below shows an example with the [Rapid RNA-Seq workflow](https://platform.stjude.cloud/tools/rapid_rna-seq)
+The gif below shows an example with the [Rapid RNA-Seq workflow](https://platform.stjude.cloud/workflows/rapid_rna-seq)
 
 ![](./example_tool-launch.gif)
 
@@ -63,7 +63,7 @@ descriptions, see **Inputs** table on the documentation page for the workflow th
 ### Hooking up Inputs
 
 Next, you'll need to hook up the input files you uploaded in 
-[the upload files section](#uploading-files). In the example below, we are running the Rapid RNA-Seq workflow using the FastQ version of the pipeline. The example gif shows  that you hook up the inputs by clicking on the `Fastq/R1` and `Fastq/R2` slots and selecting the respective input files. This process is similar for all workflows.
+[the upload files section](#uploading-files). In the example below, we are running the Rapid RNA-Seq workflow using the FASTQ version of the pipeline. The example gif shows  that you hook up the inputs by clicking on the `Fastq/R1` and `Fastq/R2` slots and selecting the respective input files. This process is similar for all workflows.
 
 ![](./hookup-inputs.gif)
 

@@ -21,10 +21,6 @@
      <img alt="License: MIT"
           src="https://img.shields.io/badge/License-MIT-blue.svg" />
    </a>
-   <a href="https://join.slack.com/t/stjudecloud-users/shared_invite/zt-kfri8f76-v49czGQj_O6islYDXBuNXQ" target="_blank">
-     <img alt="Slack Channel"
-          src="https://img.shields.io/badge/slack-@stjudecloud--users-CF0E5B.svg?logo=slack&logoColor=white&labelColor=3F0E40" />
-   </a>
   </p>
 
 

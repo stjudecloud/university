@@ -2,24 +2,26 @@
 title: Filling Out The Data Access Agreement
 ---
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/U-CN-22NfUI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 The [Data Access Agreement (DAA)](../glossary/#data-access-agreement) is a legal document used by St. Jude Cloud to verify the identity and intent of those requesting to access St. Jude Children’s Research Hospital’s genomics data. The document binds you and your institution in agreement to protect, use and share the data appropriately. 
 
 Upon selection of your desired data, you will be prompted to complete a Data Access Agreement if you have not already been approved for access to the selected datasets. In order to simplify the data access request process, an [electronic data access agreement](#the-electronic-data-access-agreement-process) is available for US residents only.
 
 
-If you reside outside of the US, you must fill out the Data Access Agreement manually. You may click [here](../../../files/DataAccessAgreement_v4.2_10.13.20.pdf) to download the latest version of the DAA. Please read the first 6 pages carefully, which consist of terms and conditions that you and your institution must agree to in order to access any data on St. Jude Cloud. Then, follow the directions starting at [Data Access Units](#data-access-units) to ensure that you have correctly filled out the DAA. Please note that there are [two additional required sections](#downloading-data) if you intend to download data to your local infrastructure.
+If you reside outside of the US, you must fill out the Data Access Agreement manually. You may click [here](https://platform.stjude.cloud/api/v1/data_access_agreements/) to download the latest version of the DAA. Please read the first 6 pages carefully, which consist of terms and conditions that you and your institution must agree to in order to access any data on St. Jude Cloud. Then, follow the directions starting at [Data Access Units](#data-access-units) to ensure that you have correctly filled out the DAA. Please note that there are [two additional required sections](#downloading-data) if you intend to download data to your local infrastructure.
 
 ## The Data Access Agreement
 
 ### Downloading Data
 
-*If and only if* you wish to download the genomic data locally, you must have the [Principal Investigator](#principal-investigator) initial on page 7 and have the [Information Security Officer](#information-security-officer) sign on page 13. If filling out the Data Access Agreement electronically, you must select the option to download within the setup wizard and input the contact information of your institution’s Information Security Officer. 
+*If and only if* you wish to download the genomic data locally, you must have the [Principal Investigator](#principal-investigator) initial on page 9 and have the [Information Security Officer](#information-security-officer) sign on page 15. If filling out the Data Access Agreement electronically, you must select the option to download within the setup wizard and input the contact information of your institution’s Information Security Officer. 
 
 ### Data Access Units
 
 A St. Jude Cloud **Data Access Unit (DAU)** is a grouping of data that typically corresponds to a project, study, or dataset generated at the same time at the same institution. To learn more, see our section on [Data Access Units](../about-our-data/#data-access-units).
 
-On page 7 of the DAA, you must mark all Data Access Units for which you are applying. The DAU(s) associated to the data you requested are listed in the Controlled Access Data section, directly above the Download Data Access Agreement button. This can be found on the Request Data webpage which immediately follows your selection of data from the data browser. 
+On page 9 of the DAA, you must mark all Data Access Units for which you are applying. The DAU(s) associated to the data you requested are listed in the Controlled Access Data section, directly above the Download Data Access Agreement button. This can be found on the Request Data webpage which immediately follows your selection of data from the data browser. 
 
 ![](./docs-DAU-short.png)
 
@@ -27,7 +29,7 @@ If you mark the incorrect datasets, you will be required to resubmit your agreem
 
 ### Contemplated Use
 
-On page 8 of the DAA, you must submit a description of your research project. Please specifically describe the intended role of St. Jude’s data in your research project. Your contemplated use can be anywhere from a paragraph to a few pages long, although a typical contemplated use is 1-2 paragraphs. Each [Data Access Committee](../glossary/#data-access-committee) will evaluate your contemplated use case and decide whether to approve or deny your application for data access based on their own set of protocols. Please [contact us](https://stjude.cloud/contact) if you have any questions regarding the protocols of the approval process.
+On page 10 of the DAA, you must submit a description of your research project. Please specifically describe the intended role of St. Jude’s data in your research project. Your contemplated use can be anywhere from a paragraph to a few pages long, although a typical contemplated use is 1-2 paragraphs. Each [Data Access Committee](../glossary/#data-access-committee) will evaluate your contemplated use case and decide whether to approve or deny your application for data access based on their own set of protocols. Please [contact us](https://stjude.cloud/contact) if you have any questions regarding the protocols of the approval process.
 
 ![](./docs-CU-short.png)
 
@@ -39,7 +41,7 @@ The below is a simulated example of a contemplated use.
 
 ### Principal Investigator
 
-On page 9 of the DAA, the Principal Investigator of the research project must input their information and sign the agreement. Typically the PI signee is the faculty-level supervisor on the project, but it is not a requirement.
+On page 11 of the DAA, the Principal Investigator of the research project must input their information and sign the agreement. Typically the PI signee is the faculty-level supervisor on the project, but it is not a requirement.
 
 **Who may qualify as a Principal Investigator (PI)?**  
 The PI is designated by the grantee organization to direct the project or activity being supported by the grant. The PI is responsible and accountable to the grantee for the proper conduct of the project or activity. The role of the PI within the eRA Commons is to complete the grant process, either by completing the required forms via the eRA Commons or by delegating this responsibility to another individual. A PI can access information for any grant for which they are designated the PI. See eRA Commons Roles & Privileges Matrix. 
@@ -47,18 +49,18 @@ The PI is designated by the grantee organization to direct the project or activi
 
 ### Additional Applicants
 
-Pages 10 and 11 of the DAA must be signed by any additional person(s) who will have access to the data. Additional applicants may include those working on your project, those working in your lab, or those who have access to where the data will be stored. These individuals will be legally bound to protecting and handling the data properly. Pages 10 and 11 may be duplicated and added to the agreement to accommodate for more than 8 additional applicants. When filling out the DAA electronically, you may only include up to 8 additional applicants on your agreement.
+Pages 12 and 13 of the DAA must be signed by any additional person(s) who will have access to the data. Additional applicants may include those working on your project, those working in your lab, or those who have access to where the data will be stored. These individuals will be legally bound to protecting and handling the data properly. Pages 12 and 13 may be duplicated and added to the agreement to accommodate for more than 8 additional applicants. When filling out the DAA electronically, you may only include up to 8 additional applicants on your agreement.
 ![](./docs-AA.png)
 
 ### Institutional Authority
 
-Page 12 of the agreement must be filled out and signed by your Institutional or Administrative Authority. The institutional authority is an individual who has the authority to sign for a grant application. This individual cannot be the same as the Principal Investigator that signed on page 9, as this additional signature provides a second-party authority of the institution to ensure that the institution will uphold the terms of this agreement.
+Page 14 of the agreement must be filled out and signed by your Institutional or Administrative Authority. The institutional authority is an individual who has the authority to sign for a grant application. This individual cannot be the same as the Principal Investigator that signed on page 11, as this additional signature provides a second-party authority of the institution to ensure that the institution will uphold the terms of this agreement.
     ![](./docs-IA.png)
 
 
 ### Information Security Officer
 
-On page 13 of the DAA, your institution’s Information Security Officer's signature is required *if and only if* you intend to [download](#downloading-data) a local copy of the data (note: you must also initial in the line below the DAU selection). This individual may go by varying job titles, such as Information Director or Chief Information Security Officer, but is the individual responsible for information security at your institution. This signature verifies that the data, once downloaded, will remain protected by your institution's data security protocols.
+On page 15 of the DAA, your institution’s Information Security Officer's signature is required *if and only if* you intend to [download](#downloading-data) a local copy of the data (note: you must also initial in the line below the DAU selection). This individual may go by varying job titles, such as Information Director or Chief Information Security Officer, but is the individual responsible for information security at your institution. This signature verifies that the data, once downloaded, will remain protected by your institution's data security protocols.
     ![](./docs-ISO.png)
 
 ### Uploading A Revised DAA
