@@ -6,18 +6,12 @@ These details are for use by our clinical analysts for variant classification an
 
 **Q: Are there limits on the size of VCF files?**
 
-Uploaded files must not exceed 4 gigabytes. If an uploaded file is larger
-than 2 megabytes, the cancer predisposition gene list filter will be
+Uploaded files must not exceed 2 MB. If an uploaded file is larger
+than 2 MB, the cancer predisposition gene list filter will be
 automatically enabled unless you are using a custom gene list. This reduces
 the processing burden on the system by removing variants outside of targeted
-genes.
+genes. You can archive the file in a .gz or .bgz if needed.
 
-**Q: Is there an example/demo VCF I can try with PIE?**
-
-A. You can use [this VCF](ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/release/NA12878_HG001/NISTv3.3.2/GRCh37/HG001_GRCh37_GIAB_highconf_CG-IllFB-IllGATKHC-Ion-10X-SOLID_CHROM1-X_v.3.3.2_highconf_PGandRTGphasetransfer.vcf.gz)
-from the Genome in a Bottle project. This ~133 megabyte
-bgzip-compressed VCF was used during testing of Pecan PIE and is known
-to work. These variants are mapped to GRCh37.
 
 **Q. What genome versions are supported?**
 
