@@ -68,7 +68,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-react": "^7.21.5",
     "husky": "^5.0.6",
-    "node-sass": "^4.14.1",
+    "node-sass": "^9.0.0",
     "prettier": "2.1.2"
   },
   "keywords": [
