@@ -5,11 +5,11 @@
   "version": "1.0.0",
   "author": "Clay McLeod <clay.mcleod@STJUDE.org>",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-brands-svg-icons": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.1.13",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@headlessui/react": "^0.2.0",
     "algoliasearch": "^3.35.1",
     "autoprefixer": "^9.8.6",
