@@ -141,6 +141,15 @@ Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/
 
 Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
 
+!!!note
+The Rapid RNA-seq workflow has an automatic timeout after 30 hours to prevent possible runaway costs, if you need to adjust or remove this timeout entirely, you must do so via the DNAnexus CLI. You can use the following command:
+
+`dx run app-stjude_cicero --extra-args '{"timeoutPolicyByExecutable": {"app-GQB77jQ078YQk83ZYF5X7fyq":{"*": {"hours": 0}}}}'`
+
+For the app specification in the timeout, you will need to view your copy of the workflow and find the DX app ID for the CICERO stage (not the app name), then add that to the command. 
+
+Please reach out to support@stjude.cloud with any questions about doing this.
+!!!
 
 ## Analysis of Results
 Each tool in St. Jude Cloud produces a visualization that makes understanding results more accessible than working with excel spreadsheet or tab delimited files. This is the primary way we recommend you work with your results. 
