@@ -142,13 +142,31 @@ Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/
 Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
 
 !!!note
-The Rapid RNA-seq workflow has an automatic timeout after 30 hours to prevent possible runaway costs, if you need to adjust or remove this timeout entirely, you must do so via the DNAnexus CLI. You can use the following command:
+Several of the apps that make up the Rapid RNA-seq workflow have an automatic timeout value included to prevent possible runaway costs, if you need to adjust or remove any of these, currently you must do so via the DNAnexus CLI (though a method to do so from the UI should be available in the future). Specifcally, the apps and their timeout values are:
+
+* STAR - 24.5 hour timeout
+* RNApeg - 15 hour timeout
+* CICERO - 30 hour timeout
+* Coverage_bw - no timeout
+* Fuzzion - no timeout
+
+You can use the following command to change or remove a timeout for one of the steps in the workflow, but will need the information for the specific apps within your version of the workflow. To do this, here is an example where the CICERO timeout is removed entirely:
 
 `dx run app-stjude_cicero --extra-args '{"timeoutPolicyByExecutable": {"app-GQB77jQ078YQk83ZYF5X7fyq":{"*": {"hours": 0}}}}'`
 
-For the app specification in the timeout, you will need to view your copy of the workflow and find the DX app ID for the CICERO stage (not the app name), then add that to the command. 
+To find the information required in that command, if you have `jq` installed, you can find the app-name from your copy of the workflow with:
 
-Please reach out to support@stjude.cloud with any questions about doing this.
+`dx describe --json "Rapid RNA-Seq (BAM)" | jq -r '.stages | .[] | select(.id == "cicero").executable'`
+
+And that can be combined with a second dx describe to get the app ID that's needed for the run command:
+
+`dx describe --json $(dx describe --json "Rapid RNA-Seq (BAM)" | jq -r '.stages | .[] | select(.id == "cicero").executable') | jq -r .id`
+
+Without having `jq` installed, it can be more tricky:
+
+`dx describe $(dx describe "Rapid RNA-Seq (BAM)" | grep app-stjude_cicero | sed 's/.*app-/app-/') | grep ID | sed 's/.*app-/app-/'`
+
+Please reach out to support@dnanexus.com and support@stjude.cloud with any questions about doing this.
 !!!
 
 ## Analysis of Results
