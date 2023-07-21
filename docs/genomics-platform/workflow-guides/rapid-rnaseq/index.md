@@ -141,6 +141,35 @@ Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/
 
 Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
 
+!!!note
+Several of the apps that make up the Rapid RNA-seq workflow have an automatic timeout value included to prevent possible runaway costs, if you need to adjust or remove any of these, currently you must do so via the DNAnexus CLI (though a method to do so from the UI should be available in the future). Specifically, the apps and their timeout values are:
+
+* STAR - 24.5 hour timeout
+* RNApeg - 15 hour timeout
+* CICERO - 30 hour timeout
+* Coverage_bw - no timeout
+* Fuzzion - no timeout
+
+You can use the following command to change or remove a timeout for one of the steps in the workflow, but will need the information for the specific apps within your version of the workflow. To do this, here is an example where the CICERO timeout is removed entirely:
+
+`dx run "Rapid RNA-Seq (BAM)" --extra-args '{"timeoutPolicyByExecutable": {"app-GQB77jQ078YQk83ZYF5X7fyq":{"*": {"hours": 0}}}}'`
+
+You will need to specify the workflow you are trying to run, either "Rapid RNA-Seq (BAM)" or "Rapid RNA-Seq (FastQ)". You will also need to update with the appropriate DNAnexus app ID (replace `app-GQB77jQ078YQk83ZYF5X7fyq` above). 
+
+To find the information required in that command, if you have `jq` installed, you can find the app name from your copy of the workflow with:
+
+`dx describe --json "Rapid RNA-Seq (BAM)" | jq -r '.stages | .[] | select(.id == "cicero").executable'`
+
+And that can be combined with a second `dx describe` to get the app ID that's needed for the run command:
+
+`dx describe --json $(dx describe --json "Rapid RNA-Seq (BAM)" | jq -r '.stages | .[] | select(.id == "cicero").executable') | jq -r .id`
+
+The values can also be manually found in the output of `dx describe`.
+
+Detailed information on timeout values can be found in the [DNAnexus documentation](https://documentation.dnanexus.com/developer/api/running-analyses/applets-and-entry-points#specifying-job-timeouts).
+
+Please reach out to support@dnanexus.com and support@stjude.cloud with any questions about doing this.
+!!!
 
 ## Analysis of Results
 Each tool in St. Jude Cloud produces a visualization that makes understanding results more accessible than working with excel spreadsheet or tab delimited files. This is the primary way we recommend you work with your results. 
