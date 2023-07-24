@@ -142,7 +142,10 @@ Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/
 Refer to [the general workflow guide](../../analyzing-data/running-sj-workflows/#running-the-workflow) to learn how to launch the workflow, hook up input files, adjust parameters, start a run, and monitor run progress.
 
 !!!note
-Several of the apps that make up the Rapid RNA-seq workflow have an automatic timeout value included to prevent possible runaway costs, if you need to adjust or remove any of these, currently you must do so via the DNAnexus CLI (though a method to do so from the UI should be available in the future). Specifically, the apps and their timeout values are:
+Several of the apps that make up the Rapid RNA-seq workflow have an automatic timeout value included to prevent possible runaway costs, if you need to adjust or remove any of these, currently you must do so via the DNAnexus CLI (though a method to do so from the UI should be available in the future). See the section below for more information about these timeouts and how to adjust or remove.
+!!!
+
+The Rapid RNA-seq pipeline contains several different apps and each of their timeout values are currently set as:
 
 * STAR - 24.5 hour timeout
 * RNApeg - 15 hour timeout
@@ -169,7 +172,7 @@ The values can also be manually found in the output of `dx describe`.
 Detailed information on timeout values can be found in the [DNAnexus documentation](https://documentation.dnanexus.com/developer/api/running-analyses/applets-and-entry-points#specifying-job-timeouts).
 
 Please reach out to support@dnanexus.com and support@stjude.cloud with any questions about doing this.
-!!!
+
 
 ## Analysis of Results
 Each tool in St. Jude Cloud produces a visualization that makes understanding results more accessible than working with excel spreadsheet or tab delimited files. This is the primary way we recommend you work with your results. 
