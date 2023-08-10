@@ -51,7 +51,7 @@ Diagnosis and/or subtype is required for generating a new barplot (**Figure 5**)
 Once the filters are selected and submitted, then a new barplot will render. Once these filters are selected and submitted, then the new mutational data (i-iii) will render for that diagnosis and/or subtype selection:  (i) the mutation type proportion (0-1) depicted as a bar plot displaying the proportion of each mutation type (consistent ordering of mutation types for each gene); (ii) mutations are depicted in a table view displaying somatic and germline counts; (iii) total # of mutations are depicted as a barplot to represent the total number of variants in a given gene for that selected diagnosis and/or subtype.
 
 !!!tip
-- An example of when a user can choose to render the barplot for just a disease can be found here: [Brain](https://pecan.stjude.cloud/variants/variant-prevalence/BT), [Solid](https://pecan.stjude.cloud/variants/variant-prevalence/ST), or [Blood(Heme)](https://pecan.stjude.cloud/variants/variant-prevalence/HM).
+- An example of when a user can choose to render the barplot for just a disease can be found here: [Brain](https://pecan.stjude.cloud/variants/prevalence/BT), [Solid](https://pecan.stjude.cloud/variants/prevalence/ST), or [Blood(Heme)](https://pecan.stjude.cloud/variants/prevalence/HM).
 - Clicking on a gene will enable a button that allows the user to view the gene in either the ProteinPaint or GenomePaint view.
       - If a subtype is already selected, the data will also be filtered.
 !!!
