@@ -20,7 +20,7 @@ In order to gain access, you must 1) have an approved Data Access Agreement (DAA
 
 First, navigate [here](https://platform.stjude.cloud/data/cohorts?selected_tags=SJC-DS-1002,SJC-DS-1005) to [St. Jude Cloud's Genomics Platform](https://platform.stjude.cloud/) which is already pre-selected for both CCSS and SJLIFE data sets. *If you want to custom select then you must go to [Studies](https://platform.stjude.cloud/data/cohorts) and manually select your data sets.*
 
-Next, click [Log In (at the bottom)](https://platform.stjude.cloud/login) and sign in using your DNAnexus account or the St. Jude SSO option.
+Next, click [Log In (at the bottom)](https://platform.stjude.cloud/login) and sign in using the St. Jude SSO option. You *must* use the St. Jude Auth0 to sign on in order for the permissions to be accepted. If you are a SJ employee, you can use the first option, otherwise you can use the alternative GitHub, Gmail, or email options.
 
 ![](./genomics-platform.gif)
 *To read more about Genomics Platform go [here](https://university.stjude.cloud/docs/genomics-platform/), to learn more about creating a DNAnexus account or setting up billing go [here](https://university.stjude.cloud/docs/genomics-platform/accounts-and-billing/).*

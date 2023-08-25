@@ -12,7 +12,7 @@ For additional learning of each element or key please go to the heatmap [Protein
 
 SNV [Format](https://drive.google.com/open?id=1OJ9aXq2_-a3BfIQdKLYCYzrJRTpu4_9i3gephTY-Z38), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.snvindel.txt)
 SV [Format](https://drive.google.com/open?id=1klDZ0MHVkQTW2-lCu_AvpRE4_FcbhdB-yI17wNdPaOM), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.svfusion.txt)
-CNV [Format]([Format](https://drive.google.com/open?id=1WHptqOWNf96V0bYEDpj-EsKZGYnbBNc9aQIrhzdEJaU)), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.cnv.txt)
+CNV [Format](https://drive.google.com/open?id=1WHptqOWNf96V0bYEDpj-EsKZGYnbBNc9aQIrhzdEJaU), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.cnv.txt)
 ITD [Format](https://drive.google.com/open?id=1Bh9awBsraoHbV8iWXv_3oDeXMsjIAHaOKHr973IJyZc), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.itd.txt)
 Deletion [Format](https://drive.google.com/open?id=1tWbf3rg3BmVIZPGGPk023P0aBkDw_ry5XuZLGyGodyg), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.deletion.txt)
 Truncation [Format](https://drive.google.com/open?id=1P1g-Y8r30pSKfan1BhYZcsUtSk7wRb4plaO1S-JCJr4), [example file](https://pecan.stjude.cloud/static/pp-support/example.files/example.truncation.txt)
