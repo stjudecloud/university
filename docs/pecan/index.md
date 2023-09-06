@@ -1,8 +1,8 @@
 ---
-title: (Beta) Pediatric Cancer (PeCan) Knowledge Base
+title: Pediatric Cancer (PeCan) Knowledge Base
 ---
 
-The (Beta) PeCan platform presents curated pediatric cancer genomics data including variants, mutational signatures, and gene expression data in addition to histological slide images* from ~9000 hematological, CNS, and non-CNS solid tumor patient samples. 
+The PeCan platform presents curated pediatric cancer genomics data including variants, mutational signatures, and gene expression data in addition to histological slide images* from ~9000 hematological, CNS, and non-CNS solid tumor patient samples. 
 
 Data can be explored via a series of data facets containing both retrospective and prospective study cohorts from St. Jude Children's Research Hospital and other trusted institutions and research centers around the world such as [TARGET](https://ocg.cancer.gov/programs/target), [DKFZ](https://www.dkfz.de/en/index.html), and many others. Learn more about the data [here](https://university.stjude.cloud/docs/pecan/data/).
 **Note that a number of histological slide images are currently embargoed until publication of the associated study.*
@@ -83,6 +83,3 @@ Data Facets represent a distinct type of post-processed genomic data for collect
   </div>
 </div>
 
-!!!tip
-Looking for the legacy PeCan Help Guides? [Go here.](https://university.stjude.cloud/docs/legacy)
-!!!
