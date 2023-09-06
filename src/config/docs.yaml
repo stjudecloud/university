@@ -101,6 +101,8 @@ domains:
                 path: /docs/pecan/
               - title: "Methods and Data"
                 path: /docs/pecan/methods-data/
+              - title: "Videos"
+                path: /docs/pecan/videos/
               - title: "FAQ"
                 path: /docs/pecan/faq/
           - title: "Data Facets"
