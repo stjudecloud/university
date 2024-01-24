@@ -55,12 +55,6 @@ Filtering by the sunburst will auto-populate the diagnosis and subtype filter. A
 There can be fields with a "Not Available" option for samples that did not have this value recorded (e.g., Race, Ethnicity, Sex). 
 !!!
 
-
-
-
-
-
-
 !!!tip
 An example with a subset of this data can be found in [Figure 4f of McLeod et al](https://cancerdiscovery.aacrjournals.org/content/11/5/1082.long).
 !!!
