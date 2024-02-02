@@ -38,9 +38,9 @@ Filtering by the sunburst will auto-populate the diagnosis and subtype filter. A
 
 **Filters Explained**
 ### Tumor Sample
-1. Sample ID - A user can search individual St. Jude CompBio IDs or bulk search IDs that are comma separated. 
+1. Sample ID - A user can search individual St. Jude CompBio IDs or bulk search IDs that are comma separated. This field allows for a multi-select. 
 2. Subtype - This is a modal whereby a user can custom select which subtypes to view in the plot. Child nodes will automatically become enabled or disabled if a parent node is (de)selected. The number of samples and the subtype color is desginated in the modal for reference. 
-3. Subtype Biomarker - This field populates the first 10 responses based on what the user inputs. It will autopopulate responses as a user types.
+3. Subtype Biomarker - This field allows a multi-select of subtype biomarkers to be applied to the plot. *Note: the user cannot apply a general gene like "CTNNB1" to be applied across the plot. The user must select all biomarkers they are interested in seeing from the dropdown*
 4. Sample Type - This field is a multi-select dropdown. 
 ### Patient Phenotype
 1. Sex - A multi-select dropdown. 
