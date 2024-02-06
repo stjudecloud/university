@@ -37,21 +37,27 @@ Filtering by the sunburst will auto-populate the diagnosis and subtype filter. A
 !!!
 
 **Filters Explained**
+
 ### Tumor Sample
+
 1. Sample ID - A user can search individual St. Jude CompBio IDs or bulk search IDs that are comma separated. This field allows for a multi-select. 
 2. Subtype - This is a modal whereby a user can custom select which subtypes to view in the plot. Child nodes will automatically become enabled or disabled if a parent node is (de)selected. The number of samples and the subtype color is desginated in the modal for reference. 
 3. Subtype Biomarker - This field allows a multi-select of subtype biomarkers to be applied to the plot. *Note: the user cannot apply a general gene like "CTNNB1" to be applied across the plot. The user must select all biomarkers they are interested in seeing from the dropdown*
 4. Sample Type - This field is a multi-select dropdown. 
+
 ### Patient Phenotype
+
 1. Sex - A multi-select dropdown. 
 2. Age at Diagnosis - A scale whereby a user can manually type in the age parameters or use the scale (in years). A user can type in any age, even passed our "35+" parameter. 
 3. Race - This is a multi-select dropdown.
 4. Ethnicity - This is multi-select dropdown.
+
 ### Sample Preparation
+
 1. Library Selection Protocol - This is a multi-select dropdown.
 2. Preservative - This is a mutli-select dropwdown 
 
-!!!Warning
+!!!warning
 There can be fields with a "Not Available" option for samples that did not have this value recorded (e.g., Race, Ethnicity, Sex). 
 !!!
 
