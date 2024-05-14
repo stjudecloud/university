@@ -2,72 +2,95 @@
 title: St. Jude Cloud Ontology
 ---
 
-[DRAFT-WIP May 7th, 2024] [sharepoint version](https://sjcrh.sharepoint.com/:w:/r/sites/Team-StJudeCloudPeCan2/_layouts/15/Doc.aspx?sourcedoc=%7BE6E66741-88FC-46CB-9AC7-994464310217%7D&file=Ontology_whitePaper.docx&action=default&mobileredirect=true)
+# The St. Jude Cloud Pediatric Cancer Classification Ontology: An Evolving Framework  
 
-### The St. Jude Cloud Bespoke Ontology: An Evolving Framework for Pediatric Cancer Research 
+Click [here]() to download the full St. Jude Cloud custom ontology (v0). 
 
 ## Introduction: 
 
-Ontologies facilitate the development of new conceptualizations of diseases by providing a structured framework for organizing and categorizing complex biomedical data. These ontologies are indispensable in cancer research, revolutionizing data accessibility, interoperability, integration, and interpretation and fostering collaboration among researchers. However, in the realm of pediatric cancer, existing ontologies fall short due to the disease's heterogeneity nature, sparse data availability, and evolving landscape posing significant obstacles to accurately represent its molecular and clinical profiles. Even esteemed frameworks like the World Health Organization (WHO) and Oncotree classifications, primarily catering to adults, persists gaps for a comprehensive ontology capable of integrating pediatric diagnoses. St. Jude Cloud, a cloud-based data sharing platform, currently houses an extensive collection of pediatric genomic, transcriptomic  and histological data. With over 13,000 patient samples amounting to 1.77 petabytes of data, St. Jude Cloud relies on the critical need for an evolving bespoke pediatric ontology and hence initiating the development for its own tailored ontology.  
+Ontologies designed for disease classification have redefined our understanding of diseases by providing a hierarchical structure of complex biomedical data. In cancer research, they are critical for data sharing, integration, and collaboration among researchers. However, existing ontologies on pediatric cancer classification are limited. The World Health Organization (WHO) and OncoTree primarily focus on adult cancers while leaving gaps in many pediatric cancer subtypes driven by molecular etiology presented in recent scientific literature. To enable data sharing and integration of the whole-genome, whole-exome and RNA-seq data generated from 13,956 cases of pediatric cancer and long-term survivors on St. Jude Cloud, we recognized the significance of such gaps and initiated the development of a tailored ontology to address this issue. 
 
-## History and principles of the development: 
+## Principles: 
 
-Our ontology originally drew inspiration from the established Oncotree but found that not all nodes were translatable in the pediatric domain, especially at higher nodes. For example, one change from Oncotree was to differentiate between leukemia and lymphoma. Also, our hierarchy’s structure is intentionally simplified and focused solely on the pediatric domain. Another differentiating factor of the bespoke ontology is that many pediatric diseases are driven by rare molecular drivers which became instrumental in delineating subtypes in our ontology. For instance, B-Cell Acute Lymphoblastic Leukemia (BALL) 1 led to the classification of 28 distinct subtypes over time, a substantial increase from Oncotree's current nine. T-Cell Acute Lymphoblastic Leukemia (TALL)1 led to the classification of 10 distinct subtypes, an increase from two on Oncotree. Thus, the inclusion of rare molecular drivers such as DUX42, MEF2D3, and CEBPA/FLT3- or NFATC44 rearrangements, has been included which are important for risk stratification. What examples should we include for brain and solid? 
+Our goal is to develop a pediatric-centric framework with the capability of integrating new research findings, including those involving rare molecular drivers. Currently, we focus exclusively on pediatric cancer but will consider extension to other childhood catastrophic diseases, such as Bone Marrow Failure and Sickle Cell disease. Our framework is designed to integrate molecular, pathological, and histological features by leveraging existing efforts from OncoTree, WHO, and community knowledge. 
 
-With each new batch of data that funnels into St. Jude Cloud, our curation team harmonizes by sample and makes revisions as necessary to the bespoke ontology. They curate by employing an integrative approach using histological, pathological, and molecular factors for disease classification which makes the annotations unique from other disease classifications like ICD-O-3 codes, which are primarily focused on morphological factors. 
+## Methods/Details: 
 
-## Known issues: 
-While significant progress has been made, we recognize the need for further improvements. As Oncotree and the WHO make recent updates, one of St. Jude Cloud’s mission is to evaluate new enhancements to better align to these ontologies where applicable.  
+To achieve these principles, we evaluated existing ontologies, including:  
 
-I will need guidance on how we want to propose these changes and see if there are any that are missing that we should add.  
+- OncoTree 
 
-### Hematological diseases: 
+- International Classification of Diseases for Oncology (ICD-O) 
 
-- For AML, we have developed our own distinctions, as outlined in Alex's annotations. However, it's worth noting that Jeff Klco's paper (https://www.nature.com/articles/s41588-023-01640-3) utilizes different terminology, which requires consideration. How do we want to convey this? 
+- The World Health Organization (WHO) Hematological and CNS classifications 
 
-- Need to review WHO classifications 
+  
+Our primary design is based on OncoTree due to its cancer-focused approach, structure for starting at tissue and breaking out into diseases, and alignment with our guiding principles. However, there have been deviations which initiated the tailored ontology that applies across St. Jude Cloud (*Figure1*). 
 
-- Need to review Oncotree again 
+ 
+## Key Structural Changes: 
 
-### Brain tumors: 
+- **Adjustment in Hematological Diseases:** Distinctions between leukemia and lymphoma were introduced, addressing a gap in OncoTree's applicability to the pediatric domain. 
 
-- The WHO CNS55 classification updated in 2021, and efforts are underway to incorporate these enhancements into our system. 
+- **Exclusion of Adult-Specific Terms:** We omitted terms exclusive to adult diseases, such as breast cancer and lung cancer (e.g. small cell lung cancer (SCLC)) ensuring our ontology's focus primarily remains tailored to pediatric oncology. 
 
-- Review all glioma tumors: 
+- **Expansion for Recently Discovered Molecular Drivers:** Recognizing the prominence of new molecular drivers discovered by genome-wide profiling of pediatric diseases, we expanded our ontology to include additional nodes to reflect the current knowledge. For instance: 
 
-- There's a shift from classifying diffuse intrinsic pontine glioma to midline glioma. 
+    - B-Cell Acute Lymphoblastic Leukemia (BALL)<sup>1</sup> was subdivided into 28 distinct subtypes, a considerable increase from Oncotree's original nine. 
 
-- Furthermore, our ontology significantly distinguishes between anaplastic and diffuse, which deviates from the WHO CNS5 classification (e.g., astrocytoma) 
+        - Incorporating newly discovered molecular drivers such as DUX4<sup>2</sup>, MEF2D<sup>3</sup> NUMT1 or BCL11B<sup>4</sup> rearrangements. 
 
-- Review all embryonal tumors in the context of histological vs molecularly defined: 
+    - T-Cell Acute Lymphoblastic Leukemia (TALL)<sup>5</sup> was classified into 10 distinct subtypes, up from two in OncoTree. 
 
-- Recent studies suggest reconsidering the classification of medulloblastoma group 3 and group 4 separately, advocating for annotation as Medulloblastoma, non-WNT/non-SHH6,7.  
+        - Including commonly activated transcriptional regulators including those oncogenes defining T-ALL subgroups - TAL1, TLX1, TLX3, and NKX2-1.<sup>5</sup>
 
-- Update Glioblastoma  
+## Current Status:  
 
-### Solid tumors: 
+To date, the development was primarily motivated by omics data that was being uploaded to the St. Jude Cloud platform every month for community data sharing. At this cadence, the ontology framework represents an evolving architecture as it is continuously being refined as new data is curated. In addition to the incremental updates, major revision has been planned, with current examples described below. This is to align with recent publications, to work closely with institutional experts who are heavily involved with developing the WHO classifications, thereby updating CNS tumor classification updates from WHO CNS5, to make recent updates from OncoTree.
 
-- It's proposed to merge osteoblastic osteosarcoma and chondroblastic osteosarcoma under the umbrella of osteosarcoma.  
+## Current Focus: 
 
-- Additionally, we recognize the importance of reviewing WHO solid tumor classifications for any new updates. 
+ **Review of Glioma Tumors<sup>6</sup>:**
 
-## Conclusion: 
+- There's a notable shift in classifying diffuse intrinsic pontine glioma to midline glioma, reflecting evolving understanding and diagnostic criteria noted by the WHO CNS5 guidelines. 
 
-St. Jude Cloud ontology serves as a cornerstone, providing a framework within the pediatric community currently powering applications like the Pediatric Knowledge Base (PeCan). For instance, the pivotal aspect of PeCan is its utilization of the St. Jude Cloud custom ontology to customize the selection of associated data for a cancer subtype of interest via a sunburst navigation interface. Upon selection, a summarized view of available data within each of the 4 data facets is presented, facilitating exploration and inspiring hypothesis generation.  
+- Additionally, our ontology's inclusion of modifiers such as anaplastic or diffuse diverges from the recent WHO CNS5 classification updates for grading, particularly concerning tumors like astrocytoma and glioblastoma. 
 
-As the landscape of pediatric cancer research evolves, the St. Jude Cloud ontology remains adaptable and forward-thinking. It is not merely a static framework, but a dynamic framework as new data is collected, studies emerge, and collaborations develop. However, for it to truly thrive and remain relevant, community engagement is essential. We need the input and collaboration of researchers, clinicians, and experts from diverse backgrounds to ensure that the ontology remains comprehensive, accurate, and reflective of the latest advancements in pediatric oncology. Through ongoing engagement with the community, we can collectively contribute to improving outcomes for children battling cancer and catastropic diseases. 
+**Review of Embryonal Tumors<sup>6</sup>:** 
 
-Click [here]() to download the full St. Jude Cloud custom ontology (v1).  
+- Recent studies advocate for revisiting the classification of embryonal tumors, for example medulloblastoma groups 3 and 4. Proposals suggest annotating them as Medulloblastoma, non-WNT/non-SHH<sup>7,8</sup> emphasizing molecular distinctions over histological classifications.  
 
-**Contact**: For inquiries, collaborative opportunities, or to provide feedback on improving the St. Jude Cloud ontology, please contact [support@stjude.cloud](support@stjude.cloud). 
+- Given the heterogeneity nature of medulloblastoma, there is a new term, histologically defined, that should be evaluated and employed for subtypes such as large cell/anaplastic or desmoplastic/nodular medulloblastoma.  
+
+**Review of Solid Tumors<sub>9</sub>:**  
+
+- Explore merging subtypes such as osteoblastic osteosarcoma and chondroblastic osteosarcoma under the umbrella of osteosarcoma, aligning with evolving research insights. 
+
+## Conclusion 
+Our ontology is integral to various applications within St. Jude Cloud, driving initiatives like the Genomics Platform and Pediatric Knowledge Base (PeCan). However, its growth and effectiveness rely on community involvement. The current ontology framework has been developed with the input from pathologists and researchers involved in molecular subtyping. We welcome additional input and collaboration from researchers and clinicians to ensure its ongoing improvement and relevance to pediatric oncology, ultimately contributing to better outcomes for children facing cancer and catastrophic diseases. 
+
+ 
+**Contact:** For inquiries, collaborative opportunities, or to provide feedback on improving the St. Jude Cloud ontology, please contact support@stjude.cloud. 
 
 ![](./hierarchy.png)
+**Figure 1: St. Jude Cloud Ontology.** High-level overview of the ontology that supports applications in St. Jude Cloud.  
 
 ### References 
+
 1. https://pubmed.ncbi.nlm.nih.gov/36050548/ 
+
 2.  https://pubmed.ncbi.nlm.nih.gov/27776115/  
+
 3. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5105166/  
+
 4.  https://pubmed.ncbi.nlm.nih.gov/36050548/  
-5. https://link.springer.com/article/10.1007/s00701-022-05301-y 
-6. https://www.biorxiv.org/content/10.1101/2024.02.09.579680v1.full 
-7. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8833659/ 
+
+5. https://pubmed.ncbi.nlm.nih.gov/28671688/  
+
+6. https://academic.oup.com/neuro-oncology/article/23/8/1231/6311214  
+
+7. https://www.biorxiv.org/content/10.1101/2024.02.09.579680v1.full 
+
+8. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8833659/ 
+
+9. https://ascopubs.org/doi/full/10.1200/CCI.20.00108 
