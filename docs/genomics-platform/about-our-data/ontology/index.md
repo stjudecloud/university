@@ -62,7 +62,7 @@ To date, the development was primarily motivated by omics data that was being up
 
 - Given the heterogeneity nature of medulloblastoma, there is a new term, histologically defined, that should be evaluated and employed for subtypes such as large cell/anaplastic or desmoplastic/nodular medulloblastoma.  
 
-**Review of Solid Tumors<sub>9</sub>:**  
+**Review of Solid Tumors<sup>9</sup>:**  
 
 - Explore merging subtypes such as osteoblastic osteosarcoma and chondroblastic osteosarcoma under the umbrella of osteosarcoma, aligning with evolving research insights. 
 
