@@ -33,10 +33,10 @@ Below are the set of tags which may exist for any given file in St. Jude Cloud. 
 | `attr_race`                  | Self-reported race. Values are normalized according to the [US Census Bureau classifications][censusburea]. |
 | `attr_oncotree_disease_code` | The disease code (assigned at the time of genomic sequencing) as specified by [Oncotree Version 2019-03-01][oncotree_2019_03_01]. | 
 | `attr_library_selection_protocol` | The laboratory method used to prepare and select the DNA or RNA for sequencing from a sample. The possible values are PCR, PolyA, Total, Random, Not Available, or Not Applicable. | 
-| `attr_read_length` | TBD BRIAN.  
-| `attr_sequencing_platform` | TBD BRIAN. |
-| `attr_read_type` | TBD BRIAN. | 
-| `attr_inferred_strandedness` | TBD BRIAN. | 
+| `attr_read_length` | The read length used, when available. |  
+| `attr_sequencing_platform` | Which sequencing platform was used to generate the data, when available. |
+| `attr_read_type` | The sequencing read type, if available. | 
+| `attr_inferred_strandedness` | Computationally determined strandedness of RNA-seq data, if applicable. | 
 | `sj_publication_titles` | The title of associated publications(s), if the file was associated with a paper(s). | 
 | `sj_pub_accessions`    | The related St. Jude Cloud accession number(s), if the file was associated with a paper(s). These group the files into publications as displayed on the Genomics Platform data browser. |
 | `sj_pmid_accessions`   | The related [Pubmed][pubmed] accession number, if the file was associated with a paper. |
@@ -50,7 +50,7 @@ Below are the set of tags which may exist for any given file in St. Jude Cloud. 
 | `sj_datasets`          | The datasets in the data browser which this file is associated with. |
 | `sj_pipeline_name` | Specifies which specific version of the pipeline was used when generating the file. |
 | `attr_tissue_preservative`   | The preservation method used for the tissue sample, with two options: FFPE (formalin-fixed, paraffin-embedded) or Fresh/Frozen. |
-| `attr_lab_strandedness` | Specifies the strandedness of the reads in the file, as inferred from the data, indicating whether they are Stranded-Reverse  or Unstranded, if this information is available and applicable. |
+| `attr_lab_strandedness` | Lab reported strandedness of RNA-seq data. |
 
 
 ### Disease Codes
