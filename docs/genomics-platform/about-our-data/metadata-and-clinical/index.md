@@ -45,12 +45,12 @@ Below are the set of tags which may exist for any given file in St. Jude Cloud. 
 | `attr_germline_sample` | The germline sample that was used when creating the Somatic VCF file, if applicable. |
 | `attr_diagnosis_group`       | Each file is categorized into one of five diagnosis groups based on the type of tumor - hematologic malignancy, solid tumor, brain tumor, germ cell tumor, or not applicable (for germline samples). |
 | `sj_ega_accessions`    | The related [EGA][ega] accession number, if the file was associated with a paper. |
-| `sj_access_unit` | TBD BRIAN. |
+| `sj_access_unit` | Lists which Data Access Unit(s) (DAU) the file belongs to. For more on Data Access Units, see here. (https://university.stjude.cloud/docs/genomics-platform/about-our-data/dau-and-datasets/#data-access-unit) |
 | `sj_diseases`          | If your data request was process after August 18, 2020, the field should be interpreted as the harmonized St. Jude Cloud diagnosis based on the best available information (data provided by the lab or PI and followup by scientists on the St. Jude Cloud team). If your data request was processed before August 18, 2020, this field should be interpreted as the disease identifier assigned at the time of genomic sequencing (keyly, the diagnosis known at the time of genomic testing may not be the best available information). **If your data request was processed after August 18, 2020 and you'd like to use the most up to date, harmonized diagnosis**, we recommend using `sj_diseases` when including diagnosis in your analysis. If your data request was made before this time *or* if you wish to use the values exactly as provided by the lab or PI, we recommend using the lab-provided value in `attr_diagnosis`. For more information about our ontology go [here](https://university.stjude.cloud/docs/genomics-platform/about-our-data/ontology). |
 | `sj_datasets`          | The datasets in the data browser which this file is associated with. |
-| `sj_pipeline_name` | TBD BRIAN. |
+| `sj_pipeline_name` | Specifies which specific version of the pipeline was used when generating the file. |
 | `attr_tissue_preservative`   | The preservation method used for the tissue sample, with two options: FFPE (formalin-fixed, paraffin-embedded) or Fresh/Frozen. |
-| `attr_lab_strandedness` | TBD BRIAN. |
+| `attr_lab_strandedness` | Specifies the strandedness of the reads in the file, as inferred from the data, indicating whether they are Stranded-Reverse  or Unstranded, if this information is available and applicable. |
 
 
 ### Disease Codes
