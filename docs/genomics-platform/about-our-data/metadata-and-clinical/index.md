@@ -34,7 +34,7 @@ Below are the set of tags which may exist for any given file in St. Jude Cloud. 
 | `attr_oncotree_disease_code` | The disease code (assigned at the time of genomic sequencing) as specified by [Oncotree Version 2019-03-01][oncotree_2019_03_01]. | 
 | `attr_library_selection_protocol` | The laboratory method used to prepare and select the DNA or RNA for sequencing from a sample. The possible values are PCR, PolyA, Total, Random, Not Available, or Not Applicable. | 
 | `attr_read_length` | The read length used, when available. |  
-| `attr_sequencing_platform` | Which sequencing platform was used to generate the data, when available. |
+| `attr_sequencing_platform` | This defines which sequencing platform was used to generate the data, when available. |
 | `attr_read_type` | The sequencing read type, if available. | 
 | `attr_inferred_strandedness` | Computationally determined strandedness of RNA-seq data, if applicable. | 
 | `sj_publication_titles` | The title of associated publications(s), if the file was associated with a paper(s). | 
