@@ -4,7 +4,7 @@ title: St. Jude Cloud's Disease Ontology
 
 # The St. Jude Cloud Pediatric Cancer Classification Ontology: An Evolving Framework  
 
-Click [here](https://permalinks.stjude.cloud/permalinks/st-jude-cloud-ontology) to download the full St. Jude Cloud custom disease ontology (v0). 
+Click [here](https://permalinks.stjude.cloud/permalinks/st-jude-cloud-disease-ontology) to download the full St. Jude Cloud custom disease ontology (v0). 
 
 ## Introduction: 
 
