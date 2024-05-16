@@ -1,14 +1,14 @@
 ---
-title: St. Jude Cloud Ontology
+title: St. Jude Cloud's Disease Ontology
 ---
 
 # The St. Jude Cloud Pediatric Cancer Classification Ontology: An Evolving Framework  
 
-Click [here](https://permalinks.stjude.cloud/permalinks/st-jude-cloud-ontology) to download the full St. Jude Cloud custom ontology (v0). 
+Click [here](https://permalinks.stjude.cloud/permalinks/st-jude-cloud-ontology) to download the full St. Jude Cloud custom disease ontology (v0). 
 
 ## Introduction: 
 
-Ontologies designed for disease classification have redefined our understanding of diseases by providing a hierarchical structure of complex biomedical data. In cancer research, they are critical for data sharing, integration, and collaboration among researchers. However, existing ontologies on pediatric cancer classification are limited. The World Health Organization (WHO) and OncoTree primarily focus on adult cancers while leaving gaps in many pediatric cancer subtypes driven by molecular etiology presented in recent scientific literature. To enable data sharing and integration of the whole-genome, whole-exome and RNA-seq data generated from 13,956 cases of pediatric cancer and long-term survivors on St. Jude Cloud, we recognized the significance of such gaps and initiated the development of a tailored ontology to address this issue. 
+Ontologies designed for disease classification have redefined our understanding of diseases by providing a hierarchical structure of complex biomedical data. In cancer research, they are critical for data sharing, integration, and collaboration among researchers. However, existing ontologies on pediatric cancer classification are limited. The World Health Organization (WHO) and OncoTree primarily focus on adult cancers while leaving gaps in many pediatric cancer subtypes driven by molecular etiology presented in recent scientific literature. To enable data sharing and integration of the whole-genome, whole-exome and RNA-seq data generated from 13,956 cases of pediatric cancer and long-term survivors on St. Jude Cloud, we recognized the significance of such gaps and initiated the development of a tailored disease ontology to address this issue. 
 
 ## Principles: 
 
@@ -54,7 +54,7 @@ To date, the development was primarily motivated by omics data that was being up
 
 - There's a notable shift in classifying diffuse intrinsic pontine glioma to midline glioma, reflecting evolving understanding and diagnostic criteria noted by the WHO CNS5 guidelines. 
 
-- Additionally, our ontology's inclusion of modifiers such as anaplastic or diffuse diverges from the recent WHO CNS5 classification updates for grading, particularly concerning tumors like astrocytoma and glioblastoma. 
+- Additionally, our disease ontology's inclusion of modifiers such as anaplastic or diffuse diverges from the recent WHO CNS5 classification updates for grading, particularly concerning tumors like astrocytoma and glioblastoma. 
 
 **Review of Embryonal Tumors<sup>6</sup>:** 
 
@@ -67,13 +67,13 @@ To date, the development was primarily motivated by omics data that was being up
 - Explore merging subtypes such as osteoblastic osteosarcoma and chondroblastic osteosarcoma under the umbrella of osteosarcoma, aligning with evolving research insights. 
 
 ## Conclusion 
-Our ontology is integral to various applications within St. Jude Cloud, driving initiatives like the Genomics Platform and Pediatric Knowledge Base (PeCan). However, its growth and effectiveness rely on community involvement. The current ontology framework has been developed with the input from pathologists and researchers involved in molecular subtyping. We welcome additional input and collaboration from researchers and clinicians to ensure its ongoing improvement and relevance to pediatric oncology, ultimately contributing to better outcomes for children facing cancer and catastrophic diseases. 
+Our disease ontology is integral to various applications within St. Jude Cloud, driving initiatives like the Genomics Platform and Pediatric Knowledge Base (PeCan). However, its growth and effectiveness rely on community involvement. The current ontology framework has been developed with the input from pathologists and researchers involved in molecular subtyping. We welcome additional input and collaboration from researchers and clinicians to ensure its ongoing improvement and relevance to pediatric oncology, ultimately contributing to better outcomes for children facing cancer and catastrophic diseases. 
 
  
-**Contact:** For inquiries, collaborative opportunities, or to provide feedback on improving the St. Jude Cloud ontology, please contact support@stjude.cloud. 
+**Contact:** For inquiries, collaborative opportunities, or to provide feedback on improving the St. Jude Cloud disease ontology, please contact support@stjude.cloud. 
 
 ![](./hierarchy.png)
-**Figure 1: St. Jude Cloud Ontology.** High-level overview of the ontology that supports applications in St. Jude Cloud.  
+**Figure 1: St. Jude Cloud Disease Ontology.** High-level overview of the ontology that supports applications in St. Jude Cloud.  
 
 ### References 
 

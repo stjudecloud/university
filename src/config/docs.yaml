@@ -43,8 +43,8 @@ domains:
                 path: /docs/genomics-platform/about-our-data/file-formats-and-sequencing/
               - title: "Metadata and Clinical Information"
                 path: /docs/genomics-platform/about-our-data/metadata-and-clinical/
-              - title: "St. Jude Cloud's Ontology"
-                path: /docs/genomics-platform/about-our-data/ontology/
+              - title: "St. Jude Cloud's Disease Ontology"
+                path: /docs/genomics-platform/about-our-data/disease-ontology/
           - title: "Managing Data"
             collapsable: true
             pages:
