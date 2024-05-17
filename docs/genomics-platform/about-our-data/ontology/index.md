@@ -60,17 +60,17 @@ To date, the development was primarily motivated by omics data that was being up
 
 - Recent studies advocate for revisiting the classification of embryonal tumors, for example medulloblastoma groups 3 and 4. Proposals suggest annotating them as Medulloblastoma, non-WNT/non-SHH<sup>7,8</sup> emphasizing molecular distinctions over histological classifications.  
 
-- Given the heterogeneity nature of medulloblastoma, there is a new term, histologically defined, that should be evaluated and employed for subtypes such as large cell/anaplastic or desmoplastic/nodular medulloblastoma.  
+- Given the heterogeneity nature of medulloblastoma, there is a new term, *histologically defined*, that should be evaluated and employed for subtypes such as large cell/anaplastic or desmoplastic/nodular medulloblastoma.  
 
 **Review of Solid Tumors<sup>9</sup>:**  
 
 - Explore merging subtypes such as osteoblastic osteosarcoma and chondroblastic osteosarcoma under the umbrella of osteosarcoma, aligning with evolving research insights. 
 
 ## Conclusion 
-Our ontology is integral to various applications within St. Jude Cloud, driving initiatives like the Genomics Platform and Pediatric Knowledge Base (PeCan). However, its growth and effectiveness rely on community involvement. The current ontology framework has been developed with the input from pathologists and researchers involved in molecular subtyping. We welcome additional input and collaboration from researchers and clinicians to ensure its ongoing improvement and relevance to pediatric oncology, ultimately contributing to better outcomes for children facing cancer and catastrophic diseases. 
+Our ontology is integral to various applications within St. Jude Cloud, driving initiatives like the [Genomics Platform](https://platform.stjude.cloud/) and Pediatric Knowledge Base ([PeCan](https://pecan.stjude.cloud/)). However, its growth and effectiveness rely on community involvement. The current ontology framework has been developed with the input from pathologists and researchers involved in molecular subtyping. We welcome additional input and collaboration from researchers and clinicians to ensure its ongoing improvement and relevance to pediatric oncology, ultimately contributing to better outcomes for children facing cancer and catastrophic diseases. 
 
  
-**Contact:** For inquiries, collaborative opportunities, or to provide feedback on improving the St. Jude Cloud ontology, please contact support@stjude.cloud. 
+**Contact:** For inquiries, collaborative opportunities, or to provide feedback on improving the St. Jude Cloud ontology, please contact [support@stjude.cloud](support@stjude.cloud). 
 
 ![](./hierarchy.png)
 **Figure 1: St. Jude Cloud Ontology.** High-level overview of the ontology that supports applications in St. Jude Cloud.  
