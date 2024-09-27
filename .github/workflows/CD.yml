@@ -113,7 +113,7 @@ jobs:
           INTERCOM_APP_ID: ${{ secrets.INTERCOM_APP_ID }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload Built Site
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
           name: gatsby-public-folder
           path: public/
@@ -127,7 +127,7 @@ jobs:
     env:
       CI: true
     steps:
-      - uses: actions/download-artifact@v2
+      - uses: actions/download-artifact@v4
         with:
           name: gatsby-public-folder
           path: public/
