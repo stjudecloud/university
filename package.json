@@ -59,7 +59,6 @@
     "@commitlint/config-conventional": "^11.0.0",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
-    "semantic-release": "^17.3.0",
     "babel-eslint": "^10.1.0",
     "commitizen": "^4.2.2",
     "cz-conventional-changelog": "^3.3.0",
@@ -69,17 +68,18 @@
     "eslint-plugin-react": "^7.21.5",
     "husky": "^5.0.6",
     "node-sass": "^4.14.1",
-    "prettier": "2.1.2"
+    "prettier": "2.1.2",
+    "semantic-release": "^17.3.0"
   },
   "keywords": [
     "stjudecloud"
   ],
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
+    "develop": "gatsby develop -H 0.0.0.0",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve -H 0.0.0.0",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "postinstall": "[ $NODE_ENV != 'production' ] && husky install || exit 0"
