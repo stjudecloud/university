@@ -13,7 +13,7 @@ This facet comprises three tabs, allowing users to explore the expression landsc
 
 ![](./expression-gene-violin-plots.png)
 
-**Figure 2: Gene Expression for TP53.** Gene expression violin plots for each sample, filtered by the gene of interest. Visualization powered by Plotly.
+**Figure 2: Gene Expression for MYCN.** Gene expression violin plots for each sample, filtered by the gene of interest. Visualization powered by Plotly.
 
 > **Note**
 > - All samples use the hg38 reference genome.
