@@ -6,16 +6,17 @@ title: Expression
 
 This facet comprises three tabs, allowing users to explore the expression landscape of 3,432 RNA-Seq fresh frozen tumor samples (1,389 blood tumors, 888 solid tumors, and 1,155 brain tumors) using a t-SNE plot (**Figure 1**), gene expression violin plots organized by subtype for a gene of interest (**Figure 2**), gene expression overlayed on the t-SNE, or collectively within a data matrix.
 
-[NEED NEW IMAGE]
+![](./expression-t-sne-initial-screen.png)
+![](./expression-t-sne-sample-view.png)
 
 **Figure 1: t-SNE for Blood, Brain, and Solid Samples.** Mouse over data points to access metadata details for each sample. Visualization powered by D3.
 
-[NEED NEW IMAGE]
+![](./expression-gene-violin-plots.png)
 
 **Figure 2: Gene Expression for TP53.** Gene expression violin plots for each sample, filtered by the gene of interest. Visualization powered by Plotly.
 
-> **Note**  
-> - All samples use the hg38 reference genome.  
+> **Note**
+> - All samples use the hg38 reference genome.
 > - Full metadata can be accessed through our [manifest](https://platform.stjude.cloud/api/v1/manifest).
 
 ---
@@ -31,9 +32,9 @@ This facet comprises three tabs, allowing users to explore the expression landsc
 | **Lasso Tool**             | Select a region on the plot to retrieve a list of samples for further investigation.                      |
 | **Pan/Zoom**               | Zoom in or pan to examine specific regions of the plot. This will disable subtype labels.                 |
 
-[NEED NEW GIF]
+![](./expression-t-sne-features-overview.gif)
 
-> **Warning**  
+> **Warning**
 > Filtering by the sunburst will auto-populate the Root and Subtype filters. These can be manually edited but will not update the sunburst.
 
 ---
@@ -49,14 +50,14 @@ This facet comprises three tabs, allowing users to explore the expression landsc
 
 For data normalization details, refer to our [Methods and Data](https://university.stjude.cloud/docs/pecan/methods-data/) page.
 
-[NEED NEW GIF]
+![](./expression-violin-plots.gif)
 ---
 
 ## Gene Expression Overlay on t-SNE
 
 Users can overlay gene expression on the t-SNE plot by selecting genes of interest. Count data is normalized using Median of Ratios (MoR). More details can be found on the [Methods and Data](https://university.stjude.cloud/docs/pecan/methods-data/) page.
 
-[NEED NEW GIF]
+![](./expression-gene-expression-toggle.gif)
 
 ---
 
@@ -64,7 +65,7 @@ Users can overlay gene expression on the t-SNE plot by selecting genes of intere
 
 The data matrix displays all filtered data with sortable headers for easier exploration.
 
-[NEED NEW GIF]
+Coming soon!
 
 ---
 
@@ -96,10 +97,10 @@ The data matrix displays all filtered data with sortable headers for easier expl
 | **Library Selection Protocol** | Multi-select dropdown for library protocol types.    |
 | **Preservative**               | Multi-select dropdown for sample preservative types. |
 
-> **Warning**  
+> **Warning**
 > Some fields may have a "Not Available" option for samples where the data wasn't recorded (e.g., Race, Ethnicity, Sex).
 
-> **Tip**  
+> **Tip**
 > For a subset of this data, refer to [Figure 4f of McLeod et al.](https://cancerdiscovery.aacrjournals.org/content/11/5/1082.long)
 
 ---
