@@ -65,7 +65,7 @@ Users can overlay gene expression on the t-SNE plot by selecting genes of intere
 
 The data matrix displays all filtered data with sortable headers for easier exploration.
 
-Coming soon!
+![](./expression-data-sortable-columns.gif)
 
 ---
 
