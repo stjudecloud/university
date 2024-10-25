@@ -1,3 +1,10 @@
+# [1.11.0](https://github.com/stjudecloud/university/compare/v1.10.28...v1.11.0) (2024-10-25)
+
+
+### Features
+
+* **pecan:** gene expression added and methods and data updated ([d7bab19](https://github.com/stjudecloud/university/commit/d7bab19aa72a717dd28985815da2f9540e96c113))
+
 ## [1.10.28](https://github.com/stjudecloud/university/compare/v1.10.27...v1.10.28) (2022-10-03)
 
 ## [1.10.27](https://github.com/stjudecloud/university/compare/v1.10.26...v1.10.27) (2022-07-19)
