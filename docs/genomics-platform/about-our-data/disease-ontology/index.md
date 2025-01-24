@@ -64,7 +64,7 @@ Immediate priorities include updating hematological diseases, particularly Acute
 These efforts will focus on creating consistent parent-child hierarchies and applying the NOS/NEC logic comprehensively across these domains.
 
 In tandem, we are developing a pilot for an Encyclopedia of Composable Characteristics (ECC).
-This publicly available resource found on GitHub3,4 will prioritize the decoupling of key molecular, histological, and other evidence into independently assignable attributes.
+This publicly available resource found on GitHub <sup>3, 4</sup> will prioritize the decoupling of key molecular, histological, and other evidence into independently assignable attributes.
 Future versions of the ontology will include rigorous mappings from ECC to ontology terms.
 By adopting this composable approach, we aim to minimize disruptions during future updates, support dynamic classifications, and empower other ontologies to be applied.
 
