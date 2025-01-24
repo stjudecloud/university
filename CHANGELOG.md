@@ -1,3 +1,10 @@
+## [1.11.2](https://github.com/stjudecloud/university/compare/v1.11.1...v1.11.2) (2025-01-24)
+
+
+### Bug Fixes
+
+* :memo: corrects spelling of tumor ([fd67cdb](https://github.com/stjudecloud/university/commit/fd67cdb49ca8fb8b2f1d3c08d0ca987535bbf9bd))
+
 ## [1.11.1](https://github.com/stjudecloud/university/compare/v1.11.0...v1.11.1) (2025-01-24)
 
 # [1.11.0](https://github.com/stjudecloud/university/compare/v1.10.28...v1.11.0) (2024-10-25)
