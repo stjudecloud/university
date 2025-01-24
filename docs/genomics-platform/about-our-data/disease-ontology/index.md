@@ -11,7 +11,7 @@ Click [here](https://permalinks.stjude.cloud/permalinks/st-jude-cloud-disease-on
 Submitted: January 24, 2025
 
 The St. Jude Cloud Disease Ontology (SJC-DO) is a resource for harmonizing pediatric cancer data.
-We recently updated the brain tumer classifications to align with the [WHO CNS5 Blue Book guidelines](https://tumourclassification.iarc.who.int/welcome/) <sup>1, 2</sup> and re-annotated 2,587 brain tumor samples in the St. Jude Cloud's [Genomics Platform](https://platform.stjude.cloud/) and soon, [PeCan Knowledge Base](https://pecan.stjude.cloud/).
+We recently updated the brain tumor classifications to align with the [WHO CNS5 Blue Book guidelines](https://tumourclassification.iarc.who.int/welcome/) <sup>1, 2</sup> and re-annotated 2,587 brain tumor samples in the St. Jude Cloud's [Genomics Platform](https://platform.stjude.cloud/) and soon, [PeCan Knowledge Base](https://pecan.stjude.cloud/).
 
 ## Comprehensive Updates
 
