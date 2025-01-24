@@ -1,3 +1,10 @@
+## [1.11.3](https://github.com/stjudecloud/university/compare/v1.11.2...v1.11.3) (2025-01-24)
+
+
+### Bug Fixes
+
+* :memo: updates superscripts ([a1a28bf](https://github.com/stjudecloud/university/commit/a1a28bf1669021678d49d3c6e21c8c86dd552bcb))
+
 ## [1.11.2](https://github.com/stjudecloud/university/compare/v1.11.1...v1.11.2) (2025-01-24)
 
 
