@@ -1,3 +1,10 @@
+## [1.11.5](https://github.com/stjudecloud/university/compare/v1.11.4...v1.11.5) (2025-01-27)
+
+
+### Bug Fixes
+
+* :memo: replaces ontology image with high res version ([b2d29ad](https://github.com/stjudecloud/university/commit/b2d29ad4e049d4b4840ee04a11c3f74a34b98aa9))
+
 ## [1.11.4](https://github.com/stjudecloud/university/compare/v1.11.3...v1.11.4) (2025-01-27)
 
 
