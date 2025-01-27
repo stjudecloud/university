@@ -1,3 +1,10 @@
+## [1.11.4](https://github.com/stjudecloud/university/compare/v1.11.3...v1.11.4) (2025-01-27)
+
+
+### Bug Fixes
+
+* adds back removed reference link ([425d9d2](https://github.com/stjudecloud/university/commit/425d9d2725bcaa6ab3d70f3b2b53bd102a8d23a9))
+
 ## [1.11.3](https://github.com/stjudecloud/university/compare/v1.11.2...v1.11.3) (2025-01-24)
 
 
