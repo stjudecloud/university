@@ -116,7 +116,7 @@ However, there have been deviations which initiated the tailored ontology that a
 - **Adjustment in Hematological Diseases:** Distinctions between leukemia and lymphoma were introduced, addressing a gap in OncoTree's applicability to the pediatric domain.
 - **Exclusion of Adult-Specific Terms:** We omitted terms exclusive to adult diseases, such as breast cancer and lung cancer (e.g. small cell lung cancer (SCLC)) ensuring our ontology's focus primarily remains tailored to pediatric oncology.
 - **Expansion for Recently Discovered Molecular Drivers:** Recognizing the prominence of new molecular drivers discovered by genome-wide profiling of pediatric diseases, we expanded our ontology to include additional nodes to reflect the current knowledge. For instance:
-  - B-Cell Acute Lymphoblastic Leukemia (BALL)<sup>1</sup> was subdivided into 28 distinct subtypes, a considerable increase from Oncotree's original nine.
+  - B-Cell Acute Lymphoblastic Leukemia (BALL)<sup>1</sup> was subdivided into 28 distinct subtypes, a considerable increase from OncoTree's original nine.
     - Incorporating newly discovered molecular drivers such as DUX4<sup>2</sup>, MEF2D<sup>3</sup> NUMT1 or BCL11B<sup>4</sup> rearrangements.
   - T-Cell Acute Lymphoblastic Leukemia (TALL)<sup>5</sup> was classified into 10 distinct subtypes, up from two in OncoTree.
     - Including commonly activated transcriptional regulators including those oncogenes defining T-ALL subgroups - TAL1, TLX1, TLX3, and NKX2-1.<sup>5</sup>
